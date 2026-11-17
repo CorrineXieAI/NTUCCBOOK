@@ -37,6 +37,17 @@
       每一本都可以只看你需要的那一段，在手機上也方便查。
     </p>
 
+    <div class="picker gsearch" id="search">
+      <h3>查藥名、查症狀</h3>
+      <p class="why">一次搜尋 9 本手冊。例如：吉舒達、手足症候群、口乾、抹片、凱格爾運動。</p>
+      <div class="search-box">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        <input type="search" id="gq" placeholder="輸入藥名或想找的內容" autocomplete="off" enterkeyhint="search">
+      </div>
+      <div class="gs-hint" id="gsHint"></div>
+      <div class="gs-res" id="gsRes"></div>
+    </div>
+
     <div class="picker">
       <h3>不知道從哪一本開始？</h3>
       <p class="why">依你現在的情況挑一個。</p>
@@ -172,10 +183,12 @@
     </div>
     <p><b>本站不能取代醫療專業判斷。</b>關於你的治療建議，請務必與<b>你的主治醫師</b>諮詢。若有緊急狀況，請直接就醫或聯絡你的醫療團隊。</p>
     <p class="faint">原手冊版權屬財團法人癌症希望基金會所有，如需轉載或對外散布，須經該會同意。</p>
-    <a class="totop" href="#top">↑ 回到最上面</a>
+    <a class="totop" href="#top">回到最上面</a>
   </div>
 </footer>
 
 <script src="assets/hope.js"></script>
+<script src="assets/search-index.js"></script>
+<script src="assets/search.js"></script>
 </body>
 </html>
