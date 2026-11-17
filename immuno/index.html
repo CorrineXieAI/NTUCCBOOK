@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#FFFCF5">
+<meta name="format-detection" content="telephone=no">
+<title>面對癌症免疫藥物治療 · 互動衛教手冊</title>
+<meta name="description" content="免疫系統、免疫檢查點抑制劑、CAR-T、適用評估、副作用與藥物查詢。改編自癌症希望基金會《希望之路—面對癌症免疫藥物治療》。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/hope.css">
+<style>:root{--accent:#6A8CAF}</style>
+<script>try{if(localStorage.getItem('hope-big')==='1')document.documentElement.classList.add('big')}catch(e){}</script>
+</head>
+<body>
+
+<svg style="display:none" aria-hidden="true">
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4l9 16H3l9-16z"/><path d="M12 10v4M12 17.5h.01"/></symbol>
+  <symbol id="i-nurse" viewBox="0 0 24 24"><path d="M12 13a4 4 0 100-8 4 4 0 000 8z"/><path d="M4 21a8 8 0 0116 0"/><path d="M12 2.5v2M11 3.5h2"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.4A4.1 4.1 0 0112 8a4.1 4.1 0 017 2.6c0 4.8-7 9.4-7 9.4z"/><path d="M3 14h3l1.5-2.5L9 15l1.5-3"/></symbol>
+  <symbol id="i-organ" viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.4A4.1 4.1 0 0112 8a4.1 4.1 0 017 2.6c0 4.8-7 9.4-7 9.4z"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 10.5A6 6 0 016 13.5C6 9.5 12 3 12 3z"/><path d="M9 14a3 3 0 003 3"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="i-brain" viewBox="0 0 24 24"><path d="M9 4a3 3 0 00-3 3 3 3 0 00-2 5 3 3 0 002 5 3 3 0 003 3h1V4H9z"/><path d="M15 4a3 3 0 013 3 3 3 0 012 5 3 3 0 01-2 5 3 3 0 01-3 3h-1V4h1z"/></symbol>
+  <symbol id="i-hand" viewBox="0 0 24 24"><path d="M8 12V5.5a1.5 1.5 0 013 0V11"/><path d="M11 10V4.5a1.5 1.5 0 013 0V11"/><path d="M14 10.5V6a1.5 1.5 0 013 0v7c0 4-2.5 7-6 7s-5-2-6.5-4.5L3 12.5a1.5 1.5 0 012.5-1.5L8 13"/></symbol>
+</svg>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a href="../index.html" class="shelf-link" aria-label="回到書架"><svg><use href="#i-back"/></svg><span class="lb">書架</span></a>
+    <a href="#top" class="brand">
+      <span class="dot"></span>
+      <span>面對癌症免疫藥物治療<small>互動衛教手冊</small></span>
+    </a>
+    <div class="tb-actions">
+      <button class="fs-btn" id="fsBtn" aria-label="切換大字">大字</button>
+      <button class="nav-btn" id="tocBtn" aria-label="開啟目錄"><span class="lb">目錄 </span>☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="toc" id="toc">
+  <div class="toc-panel">
+    <button class="toc-close" id="tocClose" aria-label="關閉目錄">✕</button>
+    <h3>目錄</h3>
+    <p class="hint">不必從頭看到尾，找你需要的那一段就好。</p>
+    <a href="#s1"><i>01</i>了解免疫系統</a>
+    <a href="#s2"><i>02</i>免疫治療怎麼作用</a>
+    <a href="#s3"><i>03</i>免疫治療有哪些</a>
+    <a href="#s4"><i>04</i>我適合做嗎</a>
+    <a href="#s5"><i>05</i>療程怎麼進行</a>
+    <a href="#s6"><i>06</i>可能有哪些副作用</a>
+    <a href="#s7"><i>07</i>怎麼面對、要注意什麼</a>
+    <a href="#s8"><i>08</i>藥物查詢</a>
+    <a href="#s9"><i>09</i>可以找誰幫忙</a>
+    <a class="out" href="../index.html">← 回到書架，看其他手冊</a>
+  </div>
+</div>
+
+<div id="top"></div>
+<section class="hero">
+  <div class="wrap">
+    <div class="kicker">希望之路　癌症免疫藥物治療</div>
+    <h1>把煞車放掉，<br>讓免疫系統<em>重新出手</em></h1>
+    <p class="lede">
+      癌細胞很狡猾，會干擾免疫系統的辨識。免疫治療就是用各種方式<b>重新活化免疫系統</b>，
+      讓它恢復偵查能力，辨識並消滅癌細胞。
+    </p>
+    <div class="picker">
+      <h3>你想先看哪一段？</h3>
+      <p class="why">點一下，直接跳到那一段。</p>
+      <div class="sym-grid">
+        <button class="sym" data-go="s2">免疫治療怎麼作用</button>
+        <button class="sym" data-go="a-cart">CAR-T 是什麼</button>
+        <button class="sym" data-go="s4">我適合做嗎</button>
+        <button class="sym" data-go="s5">療程怎麼進行</button>
+        <button class="sym" data-go="s6">可能有哪些副作用</button>
+        <button class="sym" data-go="s7">費用與臨床試驗</button>
+        <button class="sym" data-go="s8">查我在用的藥</button>
+        <button class="sym" data-go="sosBtn">哪些症狀要回診</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 01 -->
+<section class="band" id="s1">
+  <div class="wrap">
+    <div class="eyebrow">01　先認識它</div>
+    <h2>了解免疫系統</h2>
+    <p class="sub">免疫系統是人體最重要的自我防禦系統，就像體內的護衛軍隊。</p>
+    <div class="grid3">
+      <div class="card sun"><h4>辨識敵我</h4><p class="soft">偵測辨識入侵體內的細菌或病原體。</p></div>
+      <div class="card sun"><h4>巡查監控</h4><p class="soft">巡查防禦系統是否正常，監控體內有沒有不正常的變性細胞。</p></div>
+      <div class="card sun"><h4>防禦消滅</h4><p class="soft">啟動防禦機制、調配兵力，消滅病原體或不正常細胞，維持健康。</p></div>
+    </div>
+
+    <div class="card mt">
+      <h3>兩種能力</h3>
+      <p class="soft"><b>先天性免疫力</b>遇到不正常細胞或病原體時，能把它們吞噬消滅；接著啟動<b>適應性免疫力</b>，針對特定抗原（入侵者）產生專一的免疫力，而且有<b>記憶</b>——同樣的抗原第二次出現時，免疫系統會立刻反應、消滅它。</p>
+    </div>
+
+    <div class="acc mt">
+      <button class="acc-h"><svg class="ic"><use href="#i-shield"/></svg>免疫系統的分工<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p class="soft">免疫系統由<b>免疫器官、免疫細胞、免疫分子</b>組成。</p>
+        <dl class="spec">
+          <dt>骨髓</dt><dd>造血器官，紅血球、白血球、單核細胞、巨噬細胞及淋巴細胞的發源地；B 淋巴細胞在這裡分化成熟。</dd>
+          <dt>胸腺</dt><dd>T 淋巴細胞分化成熟的場所。未成熟的 T 細胞經血流進入胸腺，分化成能辨識「自我」與「非我」的成熟 T 細胞。</dd>
+          <dt>脾臟</dt><dd>含有大量 T 細胞、B 細胞及漿細胞。</dd>
+          <dt>淋巴結</dt><dd>淋巴細胞定居和增殖的地方，分布在頸部兩側、腋下、腹股溝及腸道等處，主要過濾、消滅不正常的細胞或病菌。</dd>
+          <dt>淋巴細胞</dt><dd>除了 T 細胞和 B 細胞，還有自然殺手（NK）細胞。</dd>
+          <dt>抗原呈現細胞</dt><dd>包含單核吞噬細胞、樹突細胞或已活化的 B 細胞。抗原要經由它們表現後，才能活化 T 細胞消滅病原。</dd>
+          <dt>免疫分子</dt><dd>補體、免疫球蛋白（抗體）、干擾素、介白素、腫瘤壞死因子等細胞因子。</dd>
+          <dt>其他</dt><dd>嗜鹼粒細胞、嗜酸粒細胞、肥大細胞。</dd>
+        </dl>
+      </div>
+    </div>
+    <div class="acc">
+      <button class="acc-h"><svg class="ic"><use href="#i-shield"/></svg>淋巴細胞小檔案：T 細胞與 B 細胞<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <h4>T 淋巴細胞</h4>
+        <ul class="bul">
+          <li><b>輔助性 T 細胞（CD4+）</b>：從抗原呈現細胞接收抗原最具特色的片段，依受體訊號與細胞素，啟動不同的免疫反應</li>
+          <li><b>毒殺性 T 細胞（CD8+）</b>：細胞免疫反應的主角。接觸癌細胞或受感染的細胞、辨認出特定抗原後，注入酵素引發癌細胞凋亡</li>
+        </ul>
+        <h4 style="margin-top:16px">B 淋巴細胞</h4>
+        <p class="soft">被輔助性 T 細胞活化後，會製造對應特定抗原的抗體。第一次接觸抗原時製造專一性較低的 IgM，之後篩選出親和力最佳的 B 細胞；同樣的抗原再進來時，能迅速產生專一性更高的 IgG，更快、更有效地中和抗原。</p>
+      </div>
+    </div>
+    <div class="acc">
+      <button class="acc-h"><svg class="ic"><use href="#i-shield"/></svg>免疫力太強或太弱都不好<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p class="soft">免疫反應過強會引發發炎反應，大致有兩種：</p>
+        <ul class="bul">
+          <li><b>過敏</b>：對黴菌、塵蟎等外來非病原性抗原發動攻擊</li>
+          <li><b>自體免疫疾病</b>：免疫系統異常，反過來攻擊身體正常細胞，如紅斑性狼瘡、類風濕性關節炎、僵直性脊椎炎</li>
+        </ul>
+        <p class="soft" style="margin-top:12px">免疫力低下時，無法有效清除病原體，就容易感染，例如皰疹、感冒或傷口反覆感染。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 -->
+<section class="band tint" id="s2">
+  <div class="wrap">
+    <div class="eyebrow">02　原理</div>
+    <h2>免疫治療怎麼作用</h2>
+    <p class="sub">
+      免疫系統裡，抗原呈現細胞和輔助 T 細胞像「千里眼」和「順風耳」，辨識出癌細胞後，指揮毒殺性 T 細胞去消滅它。
+      「免疫檢查點」蛋白質則扮演<b>煞車</b>，適時抑制反應，避免傷害正常細胞。
+    </p>
+    <div class="grid2">
+      <div class="card bad">
+        <h4>癌細胞的對策：把煞車鎖死</h4>
+        <p class="soft">癌細胞會表現能和 T 細胞受體結合的蛋白質，把免疫檢查點的煞車鎖死，讓免疫系統像被「點穴」一樣無法作用，癌細胞因此躲過攻擊、持續擴張。</p>
+      </div>
+      <div class="card calm">
+        <h4>免疫藥物：幫免疫系統解穴</h4>
+        <p class="soft">阻斷免疫檢查點的功能，就是幫免疫系統「解穴」，讓 T 細胞重新活化，發揮攻擊腫瘤的功能。</p>
+      </div>
+    </div>
+
+    <div class="card mt">
+      <h3>T 細胞對抗腫瘤的 5 個步驟</h3>
+      <ol class="steps" style="margin-top:14px">
+        <li><span class="no">1</span><h4>癌細胞釋出表面抗原</h4></li>
+        <li><span class="no">2</span><h4>抗原呈現細胞把抗原交給能辨識的 T 淋巴球</h4></li>
+        <li><span class="no">3</span><h4>認得這個抗原的 T 淋巴球被活化、增殖</h4></li>
+        <li><span class="no">4</span><h4>活化的 T 細胞辨識出癌細胞</h4></li>
+        <li><span class="no">5</span><h4>T 細胞消滅癌細胞</h4></li>
+      </ol>
+    </div>
+
+    <div class="card calm mt">
+      <h3>免疫治療的發展</h3>
+      <ul class="tl-v" style="margin-top:14px">
+        <li><b>18 世紀</b><span>史上第一劑疫苗——對抗天花的牛痘疫苗誕生。疫苗利用「抗原抗體反應」（抗原＝入侵者，抗體＝保衛者）刺激免疫系統。</span></li>
+        <li><b>19 世紀</b><span>法國生物學家巴斯德降低微生物毒性，發展出減毒疫苗，成功做出炭疽病及狂犬病疫苗。</span></li>
+        <li><b>20 世紀末：HPV 疫苗</b><span>發現人類乳突病毒和子宮頸癌的關聯，開發出子宮頸癌疫苗，是一種預防性的癌症免疫治療。之後陸續發現介白素-2（T 細胞的重要活化因子）與干擾素，但因副作用大、只對少數癌別有效，未被廣泛使用。</span></li>
+        <li><b>20 世紀末：找到「煞車」</b><span>美國學者艾利森（James P. Allison）和日本學者本庶佑（Tasuku Honjo）分別發現 T 細胞表面的 CTLA-4 和 PD-1。如果介白素-2 是免疫系統的「油門」，CTLA-4 和 PD-1 就是「煞車」——「那就把煞車放掉吧！」開創了阻斷煞車、加速免疫反應的新療法。</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 03 -->
+<section class="band" id="s3">
+  <div class="wrap">
+    <div class="eyebrow">03　種類</div>
+    <h2>免疫治療有哪些</h2>
+
+    <div class="card">
+      <h3>免疫檢查點抑制劑　最廣泛使用</h3>
+      <p class="soft">透過活化人體免疫系統攻擊癌細胞，解除被癌細胞鎖死的煞車，讓 T 細胞恢復攻擊功能。常用的有三類：</p>
+      <div class="grid3 mt">
+        <div class="card calm" style="box-shadow:none"><h4>PD-1 抑制劑</h4><p class="soft">「解除 T 細胞上的煞車」，重新啟動 T 細胞攻擊癌細胞。</p></div>
+        <div class="card calm" style="box-shadow:none"><h4>PD-L1 抑制劑</h4><p class="soft">「放掉踩煞車的腳」，讓 T 細胞能靠近並攻擊癌細胞。</p></div>
+        <div class="card calm" style="box-shadow:none"><h4>CTLA-4 抑制劑</h4><p class="soft">「讓癌細胞現形」，T 細胞就能辨識出癌細胞。</p></div>
+      </div>
+    </div>
+
+    <div class="acc mt">
+      <button class="acc-h"><svg class="ic"><use href="#i-hand"/></svg>雙特異性抗體<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p class="soft">有兩個結合部位：<b>一手拉住 T 細胞、一手拉住癌細胞</b>，T 細胞不用自己找，就能直接鎖定攻擊，大幅提高精準度。目前多用於急性淋巴性白血病（ALL）、瀰漫性大 B 細胞淋巴癌（DLBCL）或多發性骨髓瘤。</p>
+      </div>
+    </div>
+    <div class="acc" id="a-cart">
+      <button class="acc-h"><svg class="ic"><use href="#i-shield"/></svg>CAR-T 細胞免疫治療<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p class="soft">把病人血液裡的 T 細胞分離出來，在體外做「基因改造」，像加裝雷達和機械手臂，變成嵌合抗原受體 T 細胞（CAR-T），再輸回體內大量增殖，精準辨識、攻擊癌細胞。</p>
+        <p class="soft">台灣已核准 CD19 CAR-T 用於 B 細胞相關的難治型血癌，如瀰漫性大 B 細胞淋巴癌（DLBCL）、濾泡性淋巴癌（FL）、25 歲以下急性淋巴性白血病（ALL）。</p>
+        <h4 style="margin-top:16px">治療流程</h4>
+        <ol class="steps" style="margin-top:10px">
+          <li><span class="no">1</span><h4>白血球分離術</h4><p>分離出病人血液中的白血球。</p></li>
+          <li><span class="no">2</span><h4>運送</h4><p>細胞低溫運送到認證藥廠。</p></li>
+          <li><span class="no">3</span><h4>基因改造</h4><p>T 細胞需要 3～21 天改造成 CAR-T 細胞。</p></li>
+          <li><span class="no">4</span><h4>運送</h4><p>改造完成的細胞低溫運回醫院。</p></li>
+          <li><span class="no">5</span><h4>淋巴清除性化療</h4><p>抑制病人的免疫反應。</p></li>
+          <li><span class="no">6</span><h4>CAR-T 細胞輸回體內</h4></li>
+        </ol>
+      </div>
+    </div>
+    <div class="acc">
+      <button class="acc-h"><svg class="ic"><use href="#i-shield"/></svg>溶瘤病毒<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p class="soft">經過設計、只選擇性殺死癌細胞而不傷正常組織的病毒。它一方面感染腫瘤細胞、在裡面複製，讓腫瘤細胞溶解；另一方面誘導細胞激素，啟動全身性的抗腫瘤免疫反應。例如治療黑色素瘤的人類皰疹病毒製劑（T-VEC）。</p>
+      </div>
+    </div>
+    <div class="acc">
+      <button class="acc-h"><svg class="ic"><use href="#i-shield"/></svg>其他非特異性免疫療法<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p class="soft">用藥物全面刺激多種免疫細胞來打擊癌細胞，例如高劑量介白素-2 治療黑色素細胞瘤或腎細胞癌、膀胱內灌注卡介苗（BCG）治療膀胱癌、免疫調節劑 Thalidomide（賽得）類藥物治療多發性骨髓瘤。因為不是專門針對癌細胞，<b>副作用往往較大，療效通常不持久</b>。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 -->
+<section class="band tint" id="s4">
+  <div class="wrap">
+    <div class="eyebrow">04　評估</div>
+    <h2>我適合做免疫治療嗎</h2>
+    <p class="sub">
+      免疫治療不是每個人都適合：除了費用昂貴，<b>治療反應率不算高</b>，少數人可能有嚴重的免疫副作用。
+      所以醫師會用癌細胞的「生物標記」篩選適合的病人。
+    </p>
+    <div class="card">
+      <h3>常用的生物標記檢驗</h3>
+      <div style="margin:12px 0"><span class="pill">PD-L1 蛋白</span><span class="pill">MMR（錯誤配對修復基因）</span><span class="pill">MSI（微衛星不穩定性）</span><span class="pill">TMB（腫瘤突變負荷量）</span></div>
+      <p class="soft">一般來說，「高表現量」代表癌細胞的基因突變較多，預測免疫藥物效果較好，也是目前健保給付與否的重要依據。</p>
+      <div class="grid2 mt">
+        <div class="card calm" style="box-shadow:none"><h4>PD-L1 高、MSI-H、TMB 高、dMMR</h4><p class="soft">單用免疫藥物，效果好。</p></div>
+        <div class="card warn" style="box-shadow:none"><h4>表現量不高</h4><p class="soft">免疫藥物合併化療。研究證實，PD-L1 低的人用免疫加化療，對存活仍有幫助，可與醫師討論。</p></div>
+      </div>
+      <p class="soft" style="margin-top:14px">因為可能有副作用，接受治療的人必須有<b>良好的心肺與肝腎功能</b>，才能獲益而不受害。</p>
+    </div>
+
+    <div class="card mt">
+      <h3>健保給付要同時符合這些條件</h3>
+      <p class="soft">勾勾看你目前的情況，帶去和醫師討論。最後仍需醫師評估、提出申請。</p>
+      <div data-checklist="nhiNote" data-done="四項都符合，可以和醫師討論申請。" style="margin-top:10px">
+        <label class="chk"><input type="checkbox"><span>身體體能良好（<b>ECOG ≦ 1</b>）</span></label>
+        <label class="chk"><input type="checkbox"><span>心、肺、肝、腎功能良好（晚期肝癌、腎細胞癌病人除外）</span></label>
+        <label class="chk"><input type="checkbox"><span>生物標記（如 PD-L1）表現量達給付條件</span></label>
+        <label class="chk"><input type="checkbox"><span>了解：治療有效且無惡化者，<b>每三個月須重新申請</b></span></label>
+      </div>
+      <div class="chk-note" id="nhiNote"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 -->
+<section class="band" id="s5">
+  <div class="wrap">
+    <div class="eyebrow">05　療程</div>
+    <h2>療程怎麼進行</h2>
+    <div class="grid2">
+      <div class="card">
+        <h4>使用方式</h4>
+        <p class="soft">可以單獨使用、和化療或標靶藥物合併，或用兩種不同機制的免疫藥物組合。</p>
+      </div>
+      <div class="card">
+        <h4>怎麼給藥</h4>
+        <p class="soft">免疫檢查點抑制劑多為乾粉或高濃度原液，先用 100～250 毫升生理食鹽水或 5% 葡萄糖液稀釋、過濾後，<b>靜脈點滴</b>給藥。依體重計算劑量，通常<b>每兩週或每三週一次</b>。</p>
+      </div>
+      <div class="card">
+        <h4>多久評估一次</h4>
+        <p class="soft">約每 2～3 個月以影像檢查評估療效。</p>
+      </div>
+      <div class="card bad">
+        <h4>避孕與哺乳</h4>
+        <p class="soft">免疫藥物可能影響胎兒：<b>治療期間及結束後五個月內</b>，男女都要適當避孕；已確認懷孕請和主治醫師討論。藥物也可能經母乳影響嬰兒，<b>治療期間避免哺乳</b>。</p>
+      </div>
+    </div>
+
+    <div class="nurse">
+      <svg><use href="#i-nurse"/></svg>
+      <div>
+        <div class="t">腫瘤暫時變大，不一定是惡化</div>
+        <p>少數人因為淋巴球浸潤腫瘤，會出現暫時性腫瘤變大的「<b>假性惡化</b>」。如果臨床症狀沒有惡化，建議先繼續治療，至少一個月後再檢查，確認是否真的惡化。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 -->
+<section class="band tint" id="s6">
+  <div class="wrap">
+    <div class="eyebrow">06　先知道會怎樣</div>
+    <h2>可能有哪些副作用</h2>
+    <p class="sub">
+      免疫治療的副作用多半來自<b>免疫過度啟動</b>，整體風險比化療低，但表現方式不同，會依受影響的器官而異。
+    </p>
+    <div class="grid3">
+      <div class="card sun"><h4>打完 24 小時內</h4><p class="soft">需要注意反應。</p></div>
+      <div class="card sun"><h4>多在前三個月出現</h4><p class="soft">多數免疫相關不良反應在前三個月出現，但時間因人而異。</p></div>
+      <div class="card sun"><h4>不會隨劑量累積</h4><p class="soft">副作用不會因為打得越多次而增加。</p></div>
+    </div>
+
+    <div class="card seg-group mt">
+      <h3>常見副作用：依部位查看</h3>
+      <div class="seg" role="tablist">
+        <button data-seg="body" class="on">全身</button>
+        <button data-seg="skin">皮膚</button>
+        <button data-seg="thy">甲狀腺</button>
+        <button data-seg="adr">腎上腺</button>
+        <button data-seg="lung">肺</button>
+        <button data-seg="liver">肝</button>
+        <button data-seg="gut">腸</button>
+      </div>
+      <div class="seg-pane" data-seg="body"><h4>疲倦、噁心</h4><p class="soft">嚴重過度反應可能導致發燒。</p></div>
+      <div class="seg-pane" data-seg="skin"><h4>癢、紅腫</h4><p class="soft">大多是局部皮疹；黑色素瘤患者可能出現新的局部白斑。僅極少數人會出現大面積皮疹甚至嚴重皮膚症狀。</p></div>
+      <div class="seg-pane" data-seg="thy"><h4>甲狀腺功能亢進或低下</h4>
+        <p class="soft">內分泌系統發炎可能引發甲狀腺炎：</p>
+        <ul class="bul"><li><b>亢進</b>：怕熱、心悸、體重減輕、腹瀉</li><li><b>低下</b>：比平常容易累、掉髮、體重增加、怕冷、便秘</li></ul>
+        <p class="soft" style="margin-top:10px">少數人需要長期服用甲狀腺素補充。</p></div>
+      <div class="seg-pane" data-seg="adr"><h4>腎上腺皮質素低下</h4>
+        <p class="soft">容易疲憊或沒有症狀，也可能頭暈、姿勢性低血壓、低血糖、脫水或體重減輕。</p>
+        <div class="card bad" style="margin-top:12px"><p style="margin:0">嚴重時可能<b>噁心嘔吐、意識模糊甚至休克</b>，需要補充腎上腺素。</p></div></div>
+      <div class="seg-pane" data-seg="lung"><h4>間質性肺炎</h4>
+        <p class="soft">由免疫反應造成的肺部發炎，和一般細菌感染的肺炎不同。會<b>咳嗽、發燒、容易喘</b>，胸部 X 光可見肺部浸潤。</p>
+        <p class="soft" style="margin-top:10px"><b>這些人風險較高，要特別留意：</b></p>
+        <ul class="bul r"><li>60 歲以上</li><li>曾有間質性肺病或其他肺病</li><li>曾做過肺部手術</li><li>正在接受氧氣治療</li><li>曾做過胸部放射線治療</li><li>併用多種化療藥物</li><li>腎功能障礙</li></ul></div>
+      <div class="seg-pane" data-seg="liver"><h4>肝炎</h4><p class="soft">肝功能指數異常，初期容易疲憊；嚴重時會<b>皮膚或眼白變黃（黃疸）</b>、嚴重噁心嘔吐、<b>尿液變深茶色</b>。</p></div>
+      <div class="seg-pane" data-seg="gut"><h4>腹痛、腹瀉</h4><p class="soft">可能伴隨黏液狀或血便。<b>腹瀉次數比平常多 4 次以上</b>，就屬於中度不良反應；嚴重時可能進展為腸炎、敗血症、腸穿孔。</p></div>
+    </div>
+
+    <h3 class="mt2">較罕見的副作用</h3>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-brain"/></svg>腦、脊髓、下視丘<span class="cv">＋</span></button>
+      <div class="acc-b"><ul class="bul">
+        <li><b>腦炎</b>：可能精神或意識障礙，常見頭痛、嗜睡、虛弱、嘔吐、頸部僵硬、幻覺、癲癇、記憶障礙</li>
+        <li><b>脊髓炎</b>：下肢無力，或上下肢都無力</li>
+        <li><b>下視丘炎</b>：頭痛、意識不清。下視丘是內分泌的中樞，會讓甲狀腺素、腎上腺皮質素、性荷爾蒙等多項功能不足</li>
+      </ul></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-heart"/></svg>心肌炎<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">水腫、容易喘、需要坐著才能呼吸（端坐呼吸），嚴重時會心律不整、心衰竭。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-drop"/></svg>第一型糖尿病（胰臟）<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">胰臟分泌胰島素的 β 細胞被破壞而引發。常見體重減少、尿量增加、口乾舌燥、喝水多、噁心或嘔吐。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-organ"/></svg>腎功能障礙<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">腎臟發炎，可能浮腫、發燒、血尿、腳踝腫脹、尿量減少、排尿困難。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-hand"/></svg>神經與肌肉<span class="cv">＋</span></button>
+      <div class="acc-b"><ul class="bul">
+        <li><b>重症肌無力、肌肉炎</b>：眼皮沉重、腳或手腕使不上力、肌肉痛、看東西有疊影；嚴重時可能急速惡化、呼吸困難</li>
+        <li><b>周邊神經障礙</b>：手腳發麻、疼痛，或運動、感覺神經麻痺</li>
+      </ul></div></div>
+
+    <div class="card warn mt">
+      <h3>CAR-T 與雙特異性抗體的特殊副作用</h3>
+      <div class="grid2 mt">
+        <div><h4>細胞激素釋放症候群（CRS）</h4><p class="soft">多在輸注後數天出現：發燒、低血壓、呼吸困難，嚴重時可能多器官受損。</p></div>
+        <div><h4>免疫效應細胞相關神經毒性（ICANS）</h4><p class="soft">可能意識改變、說話困難或癲癇，少數進展為腦水腫。</p></div>
+      </div>
+      <p class="faint" style="margin-top:10px">雙特異性抗體也可能出現，但多半較輕微。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 07 -->
+<section class="band" id="s7">
+  <div class="wrap">
+    <div class="eyebrow">07　照顧與提醒</div>
+    <h2>怎麼面對免疫副作用</h2>
+    <p class="sub">
+      免疫相關副作用和化療、標靶不同：一旦達中重度，只停藥休息、症狀治療並不夠，還需要<b>高劑量類固醇</b>；
+      症狀緩解後慢慢減量，通常要一個月以上才能完全停藥。少數類固醇控制不了的人，要用其他免疫抑制劑。
+    </p>
+    <div class="nurse red">
+      <svg><use href="#i-alert"/></svg>
+      <div>
+        <div class="t">輕微症狀也要說</div>
+        <p>出現輕微症狀卻不理會，可能<b>急速惡化甚至轉為重症</b>，就難以繼續免疫治療。請不要輕忽任何症狀，即使很輕微也告訴醫療團隊；按時回診，做血液、肝腎功能、血糖等檢查。</p>
+      </div>
+    </div>
+
+    <h3 class="mt2">治療前後，要注意的事</h3>
+    <div class="grid2">
+      <div class="card">
+        <h4>完整病史要說清楚</h4>
+        <p class="soft">曾有<b>自體免疫疾病</b>（如橋本氏甲狀腺炎、潰瘍性結腸炎、紅斑性狼瘡、皮肌炎）、免疫功能不全、非感染性間質性肺病，或<b>曾接受器官移植</b>，要和醫師進一步討論是否適合，或治療中要特別監測哪些項目。</p>
+      </div>
+      <div class="card">
+        <h4>跨科整合更全面</h4>
+        <p class="soft">副作用可能同時影響多個器官，需要腫瘤科、風濕免疫科、胃腸科、內分泌科、皮膚科、腎臟科、神經內科、心臟科等合作，盡量選擇能跨科照顧、有治療經驗的團隊。</p>
+      </div>
+    </div>
+
+    <div class="card calm mt">
+      <h3>費用與臨床試驗</h3>
+      <p class="soft">台灣已針對部分條件健保給付。自費的話，<b>每次注射可能十到二十萬元（或更高）</b>，依體重換算劑量計費，一般成人一年療程平均約兩百到三百萬元，除非有高額私人醫療保險，多數人難以負擔。</p>
+      <p class="soft">也可以問問有沒有符合資格的<b>臨床試驗</b>，得到免費治療機會。國內多家醫院參與新藥試驗，資訊公布在「<b>台灣藥物臨床試驗資訊網</b>」。</p>
+      <ul class="bul g" style="margin-top:10px">
+        <li>試驗藥物可能已上市，也可能是測試中的新藥</li>
+        <li>可能被分到接受新藥的試驗組，也可能分到傳統標準治療的對照組</li>
+        <li>所有核可的試驗都在人體試驗倫理委員會監督下進行</li>
+        <li>病情需要調整或不滿意治療結果，<b>可以隨時退出</b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 08 -->
+<section class="band tint" id="s8">
+  <div class="wrap">
+    <div class="eyebrow">08　查詢</div>
+    <h2>我在用的是什麼藥？</h2>
+    <p class="sub">輸入中文、英文藥名或癌別。各藥物的適用條件，<b>請諮詢你的醫療團隊</b>。</p>
+    <div class="search-box">
+      <svg><use href="#i-search"/></svg>
+      <input type="search" id="drugQ" placeholder="例如：吉舒達、Nivolumab、肺癌…" autocomplete="off">
+    </div>
+    <div class="drug-tabs">
+      <button class="on" data-cat="all">全部</button>
+      <button data-cat="ici">免疫檢查點抑制劑</button>
+      <button data-cat="other">其他免疫藥物</button>
+    </div>
+    <div class="drug-count" id="drugCount"></div>
+    <div id="drugList"></div>
+  </div>
+</section>
+
+
+<section class="band" id="s9">
+  <div class="wrap">
+    <div class="eyebrow">09　你不必自己撐</div>
+    <h2>可以找誰幫忙</h2>
+    <div class="hot">
+      <div>
+        <div class="lab">癌症問題 我幫您</div>
+        <a class="num" href="tel:0809010580">0809-010-580</a>
+        <p>癌友家庭正面臨人生艱難的挑戰。鈴一鈴，一通電話，提供您專業支持與貼心陪伴。</p>
+      </div>
+    </div>
+    <div class="card mt">
+      <h3>希望小站提供的服務</h3>
+      <p class="soft" style="margin-bottom:14px">資源補助 · 照護諮詢服務 · 癌症教育出版品 · 教育系列講座與支持團體 · 心理諮詢 · 營養衛教 · <b>康復用品服務（假髮、頭巾、義乳胸衣）</b></p>
+      <div class="stations">
+        <div class="station"><div class="c">台北希望小站</div>
+          <div class="d">10058 台北市中正區臨沂街 3 巷 5 號 1 樓（捷運忠孝新生站 1 號出口）<br>
+          TEL <a href="tel:0233226286">(02) 3322-6286</a>　FAX (02) 3322-1314</div></div>
+        <div class="station"><div class="c">台中希望小站</div>
+          <div class="d">40341 台中市西區民權路 312 巷 4-1 號（茄苳腳站）<br>
+          TEL <a href="tel:0423055731">(04) 2305-5731</a>　FAX (04) 2305-5736</div></div>
+        <div class="station"><div class="c">高雄希望小站</div>
+          <div class="d">81355 高雄市左營區翠峰路 22 號<br>
+          TEL <a href="tel:075810661">(07) 581-0661</a>　FAX (07) 581-0663</div></div>
+        <div class="station"><div class="c">服務時間</div><div class="d">週一至週六 9:00～18:00</div></div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<button class="sos-fab" id="sosBtn"><svg><use href="#i-alert"/></svg>這些症狀要回診</button>
+<div class="sos-modal" id="sosModal" role="dialog" aria-modal="true" aria-label="這些症狀要回診">
+  <div class="sos-panel">
+    <h3>免疫治療期間，<br>這些症狀別輕忽</h3>
+    <p class="soft" style="font-size:.94em">即使輕微，也請及早返診或聯絡醫療團隊，避免惡化：</p>
+    <ul class="sos-list">
+      <li><span class="mk">1</span><div><b>腹瀉比平常多 4 次以上</b>，或有黏液、血便</div></li>
+      <li><span class="mk">2</span><div><b>咳嗽、發燒、容易喘</b></div></li>
+      <li><span class="mk">3</span><div>皮膚或眼白<b>變黃</b>、尿液變深茶色、嚴重噁心嘔吐</div></li>
+      <li><span class="mk">4</span><div>頭暈、<b>意識模糊</b>、頭痛、頸部僵硬、幻覺、癲癇</div></li>
+      <li><span class="mk">5</span><div><b>水腫、容易喘</b>、要坐著才能呼吸</div></li>
+      <li><span class="mk">6</span><div>眼皮沉重、看東西有疊影、手腳無力、<b>呼吸困難</b></div></li>
+      <li><span class="mk">7</span><div>口乾、喝很多、尿很多、體重減少</div></li>
+      <li><span class="mk">8</span><div>CAR-T 或雙特異性抗體治療後：<b>發燒、低血壓、呼吸困難</b>，或意識改變、說話困難</div></li>
+    </ul>
+    <button class="sos-close" id="sosClose">我知道了</button>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="src">
+      <b>資料來源</b><br>
+      本頁內容出自財團法人癌症希望基金會《希望之路——面對癌症免疫藥物治療》手冊（2025 年 10 月，四版一刷）。審稿顧問：<b>吳教恩</b>醫師（新北市立土城醫院血液腫瘤科主治醫師）、<b>陳三奇</b>醫師（臺北榮民總醫院腫瘤醫學部主治醫師）、<b>彭夢婷</b>醫師（林口長庚醫院腫瘤科主治醫師）。藥品資料來源：衛生福利部食品藥物管理署藥品仿單查詢平台。
+    </div>
+    <p>
+      <b>本頁不能取代醫療專業判斷。</b>手冊內容雖經專業審閱，然醫療科技進展快速，
+      關於你的治療建議，請務必與<b>你的主治醫師</b>諮詢。若有緊急狀況，請直接就醫或聯絡你的醫療團隊。
+    </p>
+    <p class="faint">原手冊版權屬財團法人癌症希望基金會所有，如需轉載或對外散布，須經該會同意。</p>
+    <a class="totop" href="#top">↑ 回到最上面</a><a class="totop" href="../index.html">← 回到書架</a>
+  </div>
+</footer>
+<script>window.DRUGS=[{"n": "癌自禦", "e": "Atezolizumab (Tecentriq)", "r": "抗PD-L1單株抗體", "c": "ici", "f": [["適應症（衛福部許可證）", "1.非小細胞肺癌 2.小細胞肺癌 3.三陰性乳癌 4.肝癌 5.肺泡狀軟組織肉瘤"]]}, {"n": "百穩益", "e": "Avelumab (Bavencio)", "r": "抗PD-L1單株抗體", "c": "ici", "f": [["適應症（衛福部許可證）", "1.默克細胞癌 2.腎細胞癌 3.泌尿道上皮癌"]]}, {"n": "抑癌寧", "e": "Durvalumab (Imfinzi)", "r": "抗PD-L1單株抗體", "c": "ici", "f": [["適應症（衛福部許可證）", "1.非小細胞肺癌 2.小細胞肺癌 3.膽道癌 4.肝癌 5.子宮內膜癌"]]}, {"n": "益伏", "e": "Ipilimumab (Yervoy)", "r": "抗CTLA-4單株抗體", "c": "ici", "f": [["適應症（衛福部許可證）", "1.黑色素瘤 2.腎細胞癌 3.大腸直腸癌 4.肝癌 5.非小細胞肺癌 6.惡性肋膜間皮瘤 7.食道癌"]]}, {"n": "抑佳妥", "e": "Tremelimumab (Imjudo)", "r": "抗CTLA-4單株抗體", "c": "ici", "f": [["適應症（衛福部許可證）", "肝癌"]]}, {"n": "保疾伏", "e": "Nivolumab (Opdivo)", "r": "抗PD-1單株抗體", "c": "ici", "f": [["適應症（衛福部許可證）", "1.黑色素瘤 2.非小細胞肺癌 3.惡性肋膜間皮瘤 4.腎細胞癌 5.頭頸部鱗狀細胞癌 6.何杰金氏淋巴癌 7.泌尿道上皮癌 8.胃癌、胃食道癌、食道癌 9.肝癌 10.大腸直腸癌"]]}, {"n": "吉舒達", "e": "Pembrolizumab (Keytruda)", "r": "抗PD-1單株抗體", "c": "ici", "f": [["適應症（衛福部許可證）", "1.黑色素瘤 2.非小細胞肺癌 3.惡性肋膜間皮瘤 4.何杰金氏淋巴癌 5.頭頸部鱗狀細胞癌 6.泌尿道上皮癌 7.胃癌 8.縱膈腔B細胞淋巴癌 9.大腸直腸癌 10.肝癌 11.膽管癌 12.子宮頸癌 13.腎細胞癌 14.子宮內膜癌 15.食道癌 16.三陰性乳癌 17.高腫瘤突變負荷量(TMB-H)、高微衛星不穩定(MSI-H)或錯誤配對修復功能不足(dMMR)之實體腫瘤"]]}, {"n": "百利妥", "e": "Blinatumomab (Blincyto)", "r": "雙特異性抗體", "c": "other", "f": [["適應症（衛福部許可證）", "急性淋巴性白血病(ALL)"]]}, {"n": "癌舒妥", "e": "Mosunetuzumab (Lunsumio)", "r": "雙特異性抗體", "c": "other", "f": [["適應症（衛福部許可證）", "濾泡性淋巴癌(FL)"]]}, {"n": "安泰適", "e": "Tarlatamab (Imdelltra)", "r": "雙特異性抗體", "c": "other", "f": [["適應症（衛福部許可證）", "擴散期小細胞肺癌(ES-SCLC)"]]}, {"n": "特飛立", "e": "Teclistamab (Tecvayli)", "r": "雙特異性抗體", "c": "other", "f": [["適應症（衛福部許可證）", "多發性骨髓瘤(MM)"]]}, {"n": "祈萊亞", "e": "Tisagenlecleucel (Kymriah)", "r": "抗CD19 CAR-T細胞治療", "c": "other", "f": [["適應症（衛福部許可證）", "1. B細胞急性淋巴性白血病(<25歲) 2. 瀰漫性大B細胞淋巴癌(DLBCL) 3. 濾泡性淋巴癌(FL)"]]}];</script>
+<script src="../assets/hope.js"></script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#FFFCF5">
+<meta name="format-detection" content="telephone=no">
+<title>女人的癌後性福 · 互動衛教手冊</title>
+<meta name="description" content="癌症治療後女性的親密關係：生理照護、心理調適、伴侶溝通與常見疑問。改編自癌症希望基金會《女人的癌後性福》。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/hope.css">
+<style>:root{--accent:#D98C8C}</style>
+<script>try{if(localStorage.getItem('hope-big')==='1')document.documentElement.classList.add('big')}catch(e){}</script>
+</head>
+<body>
+
+<svg style="display:none" aria-hidden="true">
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-tired" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 10.5h2.5M13.5 10.5H16"/><path d="M9 15.5c1.8-1.2 4.2-1.2 6 0"/></symbol>
+  <symbol id="i-skin" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M8 11c1.5 1 2.5-1 4 0s2.5-1 4 0"/><path d="M8 15c1.5 1 2.5-1 4 0"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4l9 16H3l9-16z"/><path d="M12 10v4M12 17.5h.01"/></symbol>
+  <symbol id="i-nurse" viewBox="0 0 24 24"><path d="M12 13a4 4 0 100-8 4 4 0 000 8z"/><path d="M4 21a8 8 0 0116 0"/><path d="M12 2.5v2M11 3.5h2"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.4A4.1 4.1 0 0112 8a4.1 4.1 0 017 2.6c0 4.8-7 9.4-7 9.4z"/><path d="M3 14h3l1.5-2.5L9 15l1.5-3"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 10.5A6 6 0 016 13.5C6 9.5 12 3 12 3z"/><path d="M9 14a3 3 0 003 3"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 10h8M8 13h5"/></symbol>
+</svg>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a href="../index.html" class="shelf-link" aria-label="回到書架"><svg><use href="#i-back"/></svg><span class="lb">書架</span></a>
+    <a href="#top" class="brand">
+      <span class="dot"></span>
+      <span>女人的癌後性福<small>互動衛教手冊</small></span>
+    </a>
+    <div class="tb-actions">
+      <button class="fs-btn" id="fsBtn" aria-label="切換大字">大字</button>
+      <button class="nav-btn" id="tocBtn" aria-label="開啟目錄"><span class="lb">目錄 </span>☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="toc" id="toc">
+  <div class="toc-panel">
+    <button class="toc-close" id="tocClose" aria-label="關閉目錄">✕</button>
+    <h3>目錄</h3>
+    <p class="hint">不必從頭看到尾，找你需要的那一段就好。</p>
+    <a href="#s1"><i>01</i>生理篇：舒適的旅程</a>
+    <a href="#s2"><i>02</i>心理篇：和自己、和伴侶溝通</a>
+    <a href="#s3"><i>03</i>技巧篇：親密寶貝箱</a>
+    <a href="#s4"><i>04</i>常見疑問</a>
+    <a href="#s5"><i>05</i>可以找誰談</a>
+    <a href="#s6"><i>06</i>可以找誰幫忙</a>
+    <a class="out" href="../index.html">← 回到書架，看其他手冊</a>
+  </div>
+</div>
+
+<div id="top"></div>
+<section class="hero">
+  <div class="wrap">
+    <div class="kicker">希望之路　女人的癌後性福</div>
+    <h1>希望性福，<br><em>從心開始</em></h1>
+    <p class="lede">
+      性愛本來就是生活的一部分。癌症治療打亂了親密關係，就像把妳的性福世界重新洗牌——
+      而這也可能是一個<b>全新的開始</b>：重新認識自己，也和伴侶更靠近。
+    </p>
+    <div class="picker">
+      <h3>妳現在最想了解的是？</h3>
+      <p class="why">點一下，直接跳到那一段。</p>
+      <div class="sym-grid">
+        <button class="sym" data-go="p-tired">太累、沒力氣</button>
+        <button class="sym" data-go="p-dry">陰道乾澀</button>
+        <button class="sym" data-go="p-pain">性愛時會痛</button>
+        <button class="sym" data-go="p-body">乳房切除、造口</button>
+        <button class="sym" data-go="s2">怎麼跟伴侶開口</button>
+        <button class="sym" data-go="s3">重新找回親密感</button>
+        <button class="sym" data-go="s4">常見疑問</button>
+        <button class="sym" data-go="s5">可以找誰談</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- intro -->
+<section class="band" id="s0">
+  <div class="wrap">
+    <div class="card calm">
+      <h3>「性」不只是性愛</h3>
+      <p class="soft">性也是和自己、和伴侶更靠近的互動過程，包含心理、觀念、關係與溝通。性本來就是很私密的話題，就算是伴侶，也會依彼此的安全感和開放程度決定聊多深；經歷了癌症風暴，要開口聊性更需要勇氣。</p>
+      <p class="soft">這一頁整理了治療後親密關係的資訊：透過肢體表達關心、親密溝通與生理照護，用愛自己、和伴侶維持親密，作為人生性旅程的全新起點。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 01 -->
+<section class="band tint" id="s1">
+  <div class="wrap">
+    <div class="eyebrow">第一章　生理篇</div>
+    <h2>性福啟航，迎向舒適旅程</h2>
+    <p class="sub">手術、化療、放療、標靶、免疫等治療的副作用，都可能影響親密關係。一起來看常見生理困擾的因應方式。</p>
+
+    <div class="acc" id="p-tired">
+      <button class="acc-h"><svg class="ic"><use href="#i-tired"/></svg>疲憊感<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <ul class="bul g">
+          <li><b>體力不佳</b>：選擇體力較好、最不疲憊的時段</li>
+          <li><b>心理負荷過重</b>：這正是停下來照顧自己的好時機，想一想什麼樣的伴侶互動能讓妳感覺被支持</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="acc" id="p-dry">
+      <button class="acc-h"><svg class="ic"><use href="#i-drop"/></svg>陰道乾澀<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <ol class="num">
+          <li><b>弱酸性陰部清潔產品</b>：搭配透氣內褲保持乾爽，會舒服一些</li>
+          <li><b>陰道軟膏</b>：部分含雌激素，<b>購買前先問妳的醫師</b></li>
+          <li><b>水性潤滑液</b>：避免油性潤滑劑——容易刺激私密處皮膚，也不能塗在乳膠保險套上，會造成破裂</li>
+          <li><b>保險套</b>：可挑選水感潤滑型或超薄型</li>
+          <li><b>指險套</b>：用手指進入陰道時，搭配潤滑液使用，避免造成傷口或不適，更安全衛生</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="acc" id="p-pain">
+      <button class="acc-h"><svg class="ic"><use href="#i-heart"/></svg>性愛疼痛<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <h4>凱格爾運動</h4>
+        <p class="soft">平常練習控制陰道肌肉的收緊與放鬆：</p>
+        <ol class="steps" style="margin-top:10px">
+          <li><span class="no">1</span><h4>平躺提肛</h4><p>平躺，雙腳分開與肩同寬，彎曲立起雙膝，提肛（收緊臀部肌肉向上）10～15 秒，休息 10 秒，至少做 5 次。</p></li>
+          <li><span class="no">2</span><h4>抬臀收緊</h4><p>吸氣時盡量抬高並收緊臀部，吐氣時回到步驟一；提肛 10～15 秒，休息 10 秒，至少做 5 次。</p></li>
+        </ol>
+        <h4 style="margin-top:16px">調整姿勢</h4>
+        <p class="soft">感到疼痛時，可以和伴侶討論調整愛撫的方式、時間，或嘗試不同姿勢：</p>
+        <ul class="bul g">
+          <li><b>容易喘</b>：可採「女性在上」，由自己控制節奏，減緩喘的狀況</li>
+          <li><b>造口有壓迫感</b>（大腸直腸癌、膀胱癌）：在造口上放個小枕頭，或採「女性在上」、「後入」，避免直接壓到造口</li>
+        </ul>
+        <h4 style="margin-top:16px">陰道擴張器</h4>
+        <p class="soft">治療部位可能造成陰道萎縮時，建議使用「擴張訓練器」搭配潤滑液做陰道復健。<b>不要等陰道變得很緊才開始</b>，以免影響效果。</p>
+        <h4 style="margin-top:16px">陰道雷射</h4>
+        <p class="soft">不動刀、近乎無痛的療程，改善陰道環境、提高濕潤度。有需要可以詢問婦產科醫師。</p>
+        <p class="soft" style="margin-top:12px">凱格爾運動、潤滑液、情趣用品等輔助工具，都是增進性福的方法。有任何問題，歡迎致電或到希望小站和專業人員一起討論。</p>
+      </div>
+    </div>
+
+    <div class="acc" id="p-body">
+      <button class="acc-h"><svg class="ic"><use href="#i-skin"/></svg>外觀改變：乳房切除、腸造口、膀胱造瘻口<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <div class="card seg-group" style="box-shadow:none">
+          <div class="seg" role="tablist">
+            <button data-seg="breast" class="on">乳房切除</button>
+            <button data-seg="stoma">腸造口</button>
+            <button data-seg="uro">膀胱造瘻口</button>
+          </div>
+          <div class="seg-pane" data-seg="breast"><ul class="bul g">
+            <li>營造浪漫氛圍：調整燈光、輕音樂、香氛；穿上喜歡的睡衣，或戴著有義乳的胸罩、假髮，打扮成舒服自在、有自信的樣子</li>
+            <li>有些人會讓伴侶撫摸乳房切除附近的肌膚，帶領伴侶重新觸碰，聊聊哪些位置和方式是舒服的。不論單側或雙側切除，都可以重新探索身體喜歡的撫摸方式</li>
+            <li>做了「乳房重建」，雖然敏感度稍弱，但重建的乳房能增強自我魅力，善用這樣的變化，再次喜歡上自己</li></ul></div>
+          <div class="seg-pane" data-seg="stoma"><ul class="bul g">
+            <li>和伴侶一起學習造口照護。親密前先排空造口，可在造口袋周邊滴少許精油，或用香氛機增加芬芳</li>
+            <li>腸造口不是隨時都在活動，可以把親密時間安排在妳知道較不會排便的時段</li>
+            <li>把造口洗乾淨，親密時可以只戴人工造口蓋或小型造口袋</li>
+            <li>前幾天避免容易產氣的食物，如魚、洋蔥、蘆筍、辣椒等辛辣或產氣食物，降低異味和脹氣</li></ul></div>
+          <div class="seg-pane" data-seg="uro"><ul class="bul g">
+            <li>親密前先檢查接縫處，把造瘻口清洗乾淨</li>
+            <li>把空尿袋塞進腰帶，或配戴寬腰帶；也可以把尿袋黏在身上，避免垂下</li>
+            <li>穿件 T 恤遮住造瘻口設備，可能會更自在</li></ul></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mt">
+      <h3>其他生理照護</h3>
+      <p class="soft">各種治療與癌別的照顧方法，可以參考：</p>
+      <div class="grid2 mt">
+        <a class="xlink" href="../chemo/index.html" style="--accent-x:#F5B921;margin-top:0"><span class="bk"></span><span class="tx">面對化學治療</span><span class="ar">→</span></a>
+        <a class="xlink" href="../radiation/index.html" style="--accent-x:#E07B39;margin-top:0"><span class="bk"></span><span class="tx">面對放射線治療</span><span class="ar">→</span></a>
+        <a class="xlink" href="../ovarian/index.html" style="--accent-x:#9C7BB0;margin-top:0"><span class="bk"></span><span class="tx">面對卵巢癌</span><span class="ar">→</span></a>
+        <a class="xlink" href="../cervical/index.html" style="--accent-x:#C9718B;margin-top:0"><span class="bk"></span><span class="tx">面對子宮頸癌</span><span class="ar">→</span></a>
+        <a class="xlink" href="../endometrial/index.html" style="--accent-x:#B07A86;margin-top:0"><span class="bk"></span><span class="tx">面對子宮內膜癌</span><span class="ar">→</span></a>
+      </div>
+      <p class="faint" style="margin-top:12px">原手冊也建議參閱《面對乳癌》，目前尚未收錄於本站。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 02 -->
+<section class="band" id="s2">
+  <div class="wrap">
+    <div class="eyebrow">第二章　心理篇</div>
+    <h2>內建妳的愛旅導航</h2>
+    <p class="sub">
+      現在的妳是個嶄新的開始，所有對性的體驗和感受都是全新的。最重要的是<b>準備一顆開放的心</b>。
+      不論是從撫觸自己的身體開始，或想直接和伴侶親密接觸，都可能是重新認識自我魅力的旅程。
+    </p>
+
+    <h3>重新認識自己的性</h3>
+    <div class="grid2">
+      <div class="card"><h4>私密處的清潔與保養</h4><p class="soft">使用弱酸性、成分越自然簡單越好的產品，挑選自己喜歡的氣味、質地、瓶身——這是愛護自己的第一步。和專業人員討論，也是一種被支持、被照顧的方式。</p></div>
+      <div class="card"><h4>心情與身體的需要</h4><p class="soft">這段時間心情像雲霄飛車。在生活中加入讓自己開心的小事，例如挑一頂適合的假髮、搭配讓自己更迷人的配件——讓妳開心、舒服的選擇，就是導航的方向。</p></div>
+    </div>
+
+    <h3 class="mt2">怎麼跟伴侶談性</h3>
+    <p class="sub">性愛沒有標準流程，每個人的感受都不同。有些人太在意對方的評價，一直想滿足伴侶，卻忘了自己的愉悅。了解彼此的喜好和需要，是培養親密感的重要過程。</p>
+    <div class="card seg-group">
+      <div class="seg" role="tablist">
+        <button data-seg="c1" class="on">想增進親密</button>
+        <button data-seg="c2">已有性生活</button>
+        <button data-seg="c3">性壓抑、無性關係</button>
+      </div>
+      <div class="seg-pane" data-seg="c1">
+        <dl class="spec">
+          <dt>對話</dt><dd>說出心裡話：哪些行為讓妳感覺開心、幸福、安全。例如：「當你鼓勵我時，我會覺得開心，也會覺得安心。」</dd>
+          <dt>行動</dt><dd>邀請對方一起進入妳的感受，或一起做滋養妳的事。例如：「如果你能陪我去看場電影、吃頓好吃的，我會覺得很被在意。」也可以說出妳喜歡一起做的事，像依偎、擁抱、牽手、散步。</dd>
+          <dt>表達</dt><dd>把和親密感有關的需求說出來，例如想要對方陪妳挑假髮、睡衣或打扮——背後是想被在乎的心情。伴侶做了讓妳感覺被滋養的事，別忘了鼓勵他。</dd>
+        </dl>
+      </div>
+      <div class="seg-pane" data-seg="c2">
+        <dl class="spec">
+          <dt>對話</dt><dd>分享自己的需要和偏好，例如什麼樣的碰觸、言語會讓妳舒適愉快。</dd>
+          <dt>行動</dt><dd>引領伴侶探索妳有感覺的敏感帶。</dd>
+          <dt>表達</dt><dd>伴侶做了讓妳特別喜歡的事，稱讚他，也是增進關係的方法。</dd>
+        </dl>
+      </div>
+      <div class="seg-pane" data-seg="c3">
+        <ul class="bul g">
+          <li>尋求<b>性諮商</b>，了解阻礙和困難在哪裡</li>
+          <li>花點時間檢視自己的感覺，例如愛撫自己、找到身上敏感的部位、發現自己的美好。過程中若感到尷尬或羞愧，探索這些感覺從哪裡來，再慢慢練習，直到真正習慣和舒服</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 -->
+<section class="band tint" id="s3">
+  <div class="wrap">
+    <div class="eyebrow">第三章　技巧篇</div>
+    <h2>性福旅程寶貝箱</h2>
+    <div class="grid3">
+      <div class="card sun"><h4>大腦：最重要的性器官</h4><p class="soft">心情放鬆、感覺彼此有連結和安全感，更能讓性的感覺發生。兩個人可以聊聊罹癌過程中的不安、彼此是不是一起努力著，也聊聊彼此被引發感覺的方式，和原本想的是否一樣。每對伴侶喜歡的方式都不同。</p></div>
+      <div class="card sun"><h4>皮膚：最大的性器官</h4><p class="soft">「觸摸」能找回舒適、放鬆和安全感，是前戲很重要的一環。幫伴侶梳頭、按摩頭皮，用乳液按摩四肢，也可以用絲巾或羽毛代替手的觸感。</p></div>
+      <div class="card sun"><h4>香氣：舒緩焦慮</h4><p class="soft">按摩時運用精油的香味，能減輕焦慮、穩定情緒，甚至緩解疼痛。一起挑選乳液香氣、互相按摩，都是增添情意的好方法。</p></div>
+    </div>
+
+    <div class="grid2 mt">
+      <div class="card">
+        <h4>親密升溫</h4>
+        <ul class="bul g" style="margin-top:8px">
+          <li>治療方式不同，可能需要不同的姿勢。有需要可以和希望小站的專業人員討論，找出適合妳和伴侶的方式</li>
+          <li>增加日常的擁抱和親吻，提升親密感</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>增添情趣</h4>
+        <ul class="bul g" style="margin-top:8px">
+          <li>用輕鬆嬉戲的方式開啟連結：一起討論新資訊、探索不同的感覺，或透過角色扮演創造新鮮感</li>
+          <li>眼罩、按摩棒等情趣用品，或特別的服裝，能打開多種感官，幫助更順利進入狀態</li>
+        </ul>
+        <div class="card bad" style="margin-top:12px;padding:14px 16px"><p style="margin:0;font-size:.92em">若<b>陰道內有傷口</b>，要避免插入式的刺激。</p></div>
+      </div>
+    </div>
+
+    <div class="nurse">
+      <svg><use href="#i-nurse"/></svg>
+      <div>
+        <div class="t">最後，想跟追尋性福的妳說</div>
+        <p>在治療期間或之後重啟性愛，不論是自己探索，還是和伴侶親密接觸，都是不放棄自我需求、重新建構親密關係的表現，也是信心與持續向前的生命力。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 -->
+<section class="band" id="s4">
+  <div class="wrap">
+    <div class="eyebrow">性福出奇蛋</div>
+    <h2>常見疑問</h2>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-chat"/></svg>癌症治療後，我會失去性慾嗎？<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft"><b>不會。</b>女性更年期前，腎上腺仍會製造荷爾蒙，女性只需要極少量的雄激素就能保有性慾。反而是疲憊、過度緊張和擔憂，會讓人少了「性」致。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-chat"/></svg>治療期間，可以有性生活嗎？<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">請先問醫師，依治療進度評估當下的身體狀況能不能負荷。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-chat"/></svg>性愛或高潮，會讓癌症復發嗎？<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft"><b>不會。</b>性愛與高潮並不會誘使癌症復發。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-chat"/></svg>癌症會透過性接觸傳染嗎？<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft"><b>不會。</b>癌症無法經由人傳染，接吻、性愛或口交這類親密接觸都不會傳染。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-chat"/></svg>擔心伴侶會因為我罹癌而拒絕我？<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">被拒絕的可能確實存在，但原因可能和妳想的不同。重要的不是被拒絕，而是<b>即使被拒絕，仍保有親密對話的能力</b>。有這層擔心，希望小站的專業人員願意陪妳一起討論。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-chat"/></svg>不發生性關係，伴侶就會外遇嗎？我該忍著身體風險配合嗎？<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">過去的我們也許沒有機會、也不知道怎麼談性。在這段全新的旅程，就是為了開創新的親密關係。不論是否擔心外遇，最重要的是在關係中和伴侶持續感受到親密與愛。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-chat"/></svg>做愛才是愛的表現嗎？<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">做愛<b>不是愛的唯一表現</b>，而是共享親密與愛的過程。前提是妳能感覺到被尊重、被愛、有價值、有吸引力、被滋養，而且是自願的。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-chat"/></svg>我在意性，但大家都說罹癌後沒有性也沒關係？<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">有這個想法，表示妳感覺到自己的性好像不只屬於自己，很多人對它有意見。也許正適合問問自己：<b>妳希望自己的性是什麼樣子？</b>小站專業人員可以和妳一起探索。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-chat"/></svg>我覺得自己變得好糟，一定不吸引人<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">罹癌後自我價值受到打擊是可能的。不妨先把「不吸引人」這個擾人的感受放一旁——這是一個從沒體驗過的全新開始，給自己和伴侶一個機會又何妨。</p></div></div>
+  </div>
+</section>
+
+<!-- 05 -->
+<section class="band tint" id="s5">
+  <div class="wrap">
+    <div class="eyebrow">妳不必自己面對</div>
+    <h2>可以找誰談性愛中的事</h2>
+    <p class="sub"><b>主治醫師、個管師、癌症資源中心</b>的人員，都可以詢問。也非常歡迎妳到癌症希望基金會的希望小站——這裡有護理師、社工師、心理師和性諮商師，受過專業訓練，願意和妳一起討論性愛中的大小事。</p>
+  </div>
+</section>
+
+
+<section class="band" id="s6">
+  <div class="wrap">
+    <div class="eyebrow">06　你不必自己撐</div>
+    <h2>可以找誰幫忙</h2>
+    <div class="hot">
+      <div>
+        <div class="lab">癌症問題 我幫您</div>
+        <a class="num" href="tel:0809010580">0809-010-580</a>
+        <p>癌友家庭正面臨人生艱難的挑戰。鈴一鈴，一通電話，提供您專業支持與貼心陪伴。</p>
+      </div>
+    </div>
+    <div class="card mt">
+      <h3>希望小站提供的服務</h3>
+      <p class="soft" style="margin-bottom:14px">資源補助 · 照護諮詢服務 · 癌症教育出版品 · 教育系列講座與支持團體 · 心理諮詢 · 營養衛教 · <b>康復用品服務（假髮、頭巾、義乳胸衣）</b></p>
+      <div class="stations">
+        <div class="station"><div class="c">台北希望小站</div>
+          <div class="d">10058 台北市中正區臨沂街 3 巷 5 號 1 樓（捷運忠孝新生站 1 號出口）<br>
+          TEL <a href="tel:0233226286">(02) 3322-6286</a>　FAX (02) 3322-1314</div></div>
+        <div class="station"><div class="c">台中希望小站</div>
+          <div class="d">40341 台中市西區民權路 312 巷 4-1 號（茄苳腳站）<br>
+          TEL <a href="tel:0423055731">(04) 2305-5731</a>　FAX (04) 2305-5736</div></div>
+        <div class="station"><div class="c">高雄希望小站</div>
+          <div class="d">81355 高雄市左營區翠峰路 22 號<br>
+          TEL <a href="tel:075810661">(07) 581-0661</a>　FAX (07) 581-0663</div></div>
+        <div class="station"><div class="c">服務時間</div><div class="d">週一至週六 9:00～18:00</div></div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<footer>
+  <div class="wrap">
+    <div class="src">
+      <b>資料來源</b><br>
+      本頁內容出自財團法人癌症希望基金會《女人的癌後性福》手冊（2025 年 5 月，五版一刷）。審稿顧問：<b>呂孟育</b>（慈恩心理治療所諮商心理師）、<b>呂嘉惠</b>（荷光性諮商性健康聯盟首席執行長、性諮商師）、<b>邱似齡</b>（荷光性諮商性健康聯盟癌症性健康學院院長、性諮商師、慈恩心理治療所）。
+    </div>
+    <p>
+      <b>本頁不能取代醫療專業判斷。</b>手冊內容雖經專業審閱，然醫療科技進展快速，
+      關於你的治療建議，請務必與<b>你的主治醫師</b>諮詢。若有緊急狀況，請直接就醫或聯絡你的醫療團隊。
+    </p>
+    <p class="faint">原手冊版權屬財團法人癌症希望基金會所有，如需轉載或對外散布，須經該會同意。</p>
+    <a class="totop" href="#top">↑ 回到最上面</a><a class="totop" href="../index.html">← 回到書架</a>
+  </div>
+</footer>
+
+<script src="../assets/hope.js"></script>
+</body>
+</html>

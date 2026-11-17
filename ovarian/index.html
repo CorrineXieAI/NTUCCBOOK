@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#FFFCF5">
+<meta name="format-detection" content="telephone=no">
+<title>面對卵巢癌 · 互動衛教手冊</title>
+<meta name="description" content="卵巢癌的危險因子、症狀、檢查、分期、手術、化療、標靶與基因檢測、追蹤。改編自癌症希望基金會《希望之路—面對卵巢癌》。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/hope.css">
+<style>:root{--accent:#9C7BB0}</style>
+<script>try{if(localStorage.getItem('hope-big')==='1')document.documentElement.classList.add('big')}catch(e){}</script>
+</head>
+<body>
+
+<svg style="display:none" aria-hidden="true">
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4l9 16H3l9-16z"/><path d="M12 10v4M12 17.5h.01"/></symbol>
+  <symbol id="i-nurse" viewBox="0 0 24 24"><path d="M12 13a4 4 0 100-8 4 4 0 000 8z"/><path d="M4 21a8 8 0 0116 0"/><path d="M12 2.5v2M11 3.5h2"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 10.5A6 6 0 016 13.5C6 9.5 12 3 12 3z"/><path d="M9 14a3 3 0 003 3"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="i-pill" viewBox="0 0 24 24"><rect x="3" y="9" width="18" height="6" rx="3" transform="rotate(-35 12 12)"/><path d="M9.5 8.5l5 7"/></symbol>
+  <symbol id="i-scan" viewBox="0 0 24 24"><path d="M4 8V5a1 1 0 011-1h3M16 4h3a1 1 0 011 1v3M20 16v3a1 1 0 01-1 1h-3M8 20H5a1 1 0 01-1-1v-3"/><path d="M8 12h8"/></symbol>
+  <symbol id="i-knife" viewBox="0 0 24 24"><path d="M4 20L18 6l2 2L8 20H4z"/><path d="M14 10l2 2"/></symbol>
+</svg>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a href="../index.html" class="shelf-link" aria-label="回到書架"><svg><use href="#i-back"/></svg><span class="lb">書架</span></a>
+    <a href="#top" class="brand">
+      <span class="dot"></span>
+      <span>面對卵巢癌<small>互動衛教手冊</small></span>
+    </a>
+    <div class="tb-actions">
+      <button class="fs-btn" id="fsBtn" aria-label="切換大字">大字</button>
+      <button class="nav-btn" id="tocBtn" aria-label="開啟目錄"><span class="lb">目錄 </span>☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="toc" id="toc">
+  <div class="toc-panel">
+    <button class="toc-close" id="tocClose" aria-label="關閉目錄">✕</button>
+    <h3>目錄</h3>
+    <p class="hint">不必從頭看到尾，找你需要的那一段就好。</p>
+    <a href="#s1"><i>01</i>卵巢癌小檔案</a>
+    <a href="#s2"><i>02</i>為什麼會得</a>
+    <a href="#s3"><i>03</i>有什麼症狀</a>
+    <a href="#s4"><i>04</i>怎麼確定診斷</a>
+    <a href="#s5"><i>05</i>分期</a>
+    <a href="#s6"><i>06</i>治療方式與藥物</a>
+    <a href="#s7"><i>07</i>副作用的照護</a>
+    <a href="#s8"><i>08</i>治療結束之後</a>
+    <a href="#s9"><i>09</i>可以找誰幫忙</a>
+    <a class="out" href="../index.html">← 回到書架，看其他手冊</a>
+  </div>
+</div>
+
+<div id="top"></div>
+<section class="hero">
+  <div class="wrap">
+    <div class="kicker">希望之路　卵巢癌</div>
+    <h1>女性的寧靜殺手，<br>靠<em>警覺</em>提早發現</h1>
+    <p class="lede">
+      卵巢癌初期症狀不明顯，容易和其他毛病混淆，<b>六到七成</b>診斷時已是第三或第四期。
+      有下腹部的問題，先想到從婦科找原因；任何不適，就盡速就醫。
+    </p>
+    <div class="picker">
+      <h3>妳想先看哪一段？</h3>
+      <p class="why">點一下，直接跳到那一段。</p>
+      <div class="sym-grid">
+        <button class="sym" data-go="s3">可能有哪些症狀</button>
+        <button class="sym" data-go="s4">要做哪些檢查</button>
+        <button class="sym" data-go="s5">我是第幾期</button>
+        <button class="sym" data-go="s6">手術</button>
+        <button class="sym" data-go="a-chemo">化學治療</button>
+        <button class="sym" data-go="a-target">標靶與基因檢測</button>
+        <button class="sym" data-go="s7">副作用照護</button>
+        <button class="sym" data-go="s8">治療後追蹤</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 01 -->
+<section class="band" id="s1">
+  <div class="wrap">
+    <div class="eyebrow">01　先弄懂它</div>
+    <h2>卵巢癌小檔案</h2>
+    <div class="grid3">
+      <div class="card sun"><h4>常見的婦科惡性腫瘤</h4><p class="soft">占女性生殖器官癌症的四分之一。</p></div>
+      <div class="card sun"><h4>女性癌症第七位</h4><p class="soft">民國 110 年初次診斷為卵巢、輸卵管及寬韌帶惡性腫瘤者共 1,793 人，發生年齡中位數 55 歲。</p></div>
+      <div class="card bad"><h4>婦癌死亡率第一</h4><p class="soft">症狀不明顯、不易察覺，死亡率是婦科癌症中第一名，號稱女性的「寧靜殺手」。</p></div>
+    </div>
+
+    <div class="card mt">
+      <h3>卵巢：蘊含生命的果實</h3>
+      <p class="soft">卵巢的主要功能是<b>排卵和分泌荷爾蒙</b>。位在骨盆腔、子宮兩側各一個，外型像杏仁，大小會隨月經週期變化。卵巢組織裡有三種細胞：</p>
+      <ul class="bul" style="margin-top:10px">
+        <li><b>上皮細胞</b>：卵巢本身就由上皮細胞組成</li>
+        <li><b>生殖細胞</b>：成熟後成為卵子，每個月由一側卵巢釋出，沿輸卵管進入子宮；沒有受孕就隨經血排出</li>
+        <li><b>間質細胞</b>：分泌動情激素和黃體激素，控制乳房發育、體型及體毛等女性特徵。隨年齡增長，荷爾蒙下降、生理期不規則，最後停經；一般在 45～55 歲之間停經，這段不穩定期就是「更年期」</li>
+      </ul>
+    </div>
+
+    <div class="card mt">
+      <h3>治療前，妳應該先知道</h3>
+      <div data-checklist="askNote" data-done="都問清楚了。把答案記下來，之後回診都用得上。" style="margin-top:12px">
+        <label class="chk"><input type="checkbox"><span>我的<b>醫師、個管師</b>姓名？</span></label>
+        <label class="chk"><input type="checkbox"><span>我的病理報告：<b>細胞型態</b>？<b>第幾期</b>？</span></label>
+        <label class="chk"><input type="checkbox"><span><b>基因型態</b>：BRCA？HRD？</span></label>
+        <label class="chk"><input type="checkbox"><span>我的<b>治療計畫</b>？手術方式？化療？標靶？</span></label>
+        <label class="chk"><input type="checkbox"><span>治療的<b>副作用</b>？</span></label>
+        <label class="chk"><input type="checkbox"><span><b>治療費用</b>？我的<b>保單</b>內容？</span></label>
+      </div>
+      <div class="chk-note" id="askNote"></div>
+      <p class="faint" style="margin-top:12px">可加入癌症希望基金會「卵巢癌攻略」LINE，幫助治療溝通。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 02 -->
+<section class="band tint" id="s2">
+  <div class="wrap">
+    <div class="eyebrow">02　原因</div>
+    <h2>為什麼會得卵巢癌</h2>
+    <p class="sub">原因至今不明，但這些危險因子被認為可能相關：</p>
+    <div class="grid2">
+      <div class="card"><h4>排卵</h4><p class="soft">排卵會讓卵巢上皮反覆受傷、修復，使細胞增生；持續排卵也讓性腺激素維持在高濃度。所以<b>未曾懷孕、生育子女少</b>的人機率較高。懷孕、餵母乳、吃避孕藥期間卵巢會暫停排卵，能降低風險。</p></div>
+      <div class="card"><h4>基因異常</h4><p class="soft">約 <b>20%</b> 的病人可能有遺傳性或自體細胞的乳癌（BRCA）基因缺陷。BRCA1、BRCA2 平常負責修復壞掉的細胞，一旦突變，細胞就會失控癌化，已知和乳癌、卵巢癌、攝護腺癌、胰臟癌有關。</p></div>
+      <div class="card"><h4>家族病史</h4><p class="soft">一等親（如母親、女兒）或姊妹中有人得卵巢癌，罹患機率約增加 <b>50%</b>。</p></div>
+      <div class="card"><h4>滑石粉</h4><p class="soft">工業的物理性或化學性產物可能是重要因素，例如石棉塵及滑石粉（嬰兒爽身粉主要成分），可能經陰道逆行到卵巢，讓腹腔及骨盆腔長期暴露在致癌物中。</p></div>
+      <div class="card"><h4>飲食</h4><p class="soft">體型肥胖，或喜歡吃高脂肪、低纖維食物的人，機率也會增加。</p></div>
+      <div class="card"><h4>年齡</h4><p class="soft">大多數病人超過 50 歲，超過 60 歲機會更大為提高。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 -->
+<section class="band" id="s3">
+  <div class="wrap">
+    <div class="eyebrow">03　警訊</div>
+    <h2>卵巢癌有什麼症狀</h2>
+    <p class="sub">初期通常沒有明顯症狀，或容易和其他毛病混淆。可能出現：</p>
+    <div class="mini">
+      <div><b>消化不良、胃食道逆流</b></div>
+      <div><b>經常腹脹、打嗝</b></div>
+      <div><b>頻尿、漏尿</b></div>
+      <div><b>排便習慣改變</b></div>
+      <div><b>骨盆疼痛、下腹痛</b></div>
+      <div><b>性交疼痛</b></div>
+    </div>
+    <p class="soft" style="margin-top:18px">等腫瘤大到牽扯腹膜或已轉移腹腔，才會有明顯症狀，甚至腹水、呼吸困難、疼痛、出血、嘔吐而無法進食。</p>
+    <div class="nurse">
+      <svg><use href="#i-nurse"/></svg>
+      <div>
+        <div class="t">提高警覺，才能早期發現</div>
+        <p>有下腹部問題，先考慮從婦科找原因，<b>高危險群更要注意</b>，有任何不適就盡速就醫。美國婦產科醫學會建議婦女<b>每年做一次骨盆腔檢查</b>。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 -->
+<section class="band tint" id="s4">
+  <div class="wrap">
+    <div class="eyebrow">04　診斷</div>
+    <h2>怎麼確定是不是卵巢癌</h2>
+    <p class="sub">卵巢癌沒有容易辨別的症狀，早期診斷不容易，<b>最重要的還是自己的警覺</b>，及時就醫檢查。</p>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-scan"/></svg>骨盆腔檢查<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">醫師以觸診檢查陰道、直腸或下腹部，判斷腫瘤的大小形狀、軟硬程度和周邊組織附著程度。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-scan"/></svg>超音波檢查<span class="cv">＋</span></button>
+      <div class="acc-b"><ul class="bul">
+        <li><b>陰道超音波</b>：探頭放入陰道，近距離掃描子宮、卵巢大小、腫瘤質地、子宮內膜厚度</li>
+        <li><b>彩色杜普勒超音波</b>：偵測腫瘤的血流阻力指數（RI），指數偏低時，罹患卵巢癌的機率偏高</li></ul></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-scan"/></svg>胸部 X 光<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">檢查肺部有沒有轉移。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-knife"/></svg>手術　唯一能確診的方式<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">醫師在手術中先取部分卵巢腫瘤做冷凍切片，確認是癌症後，再進行適當的手術治療。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-drop"/></svg>腫瘤指標 CA-125<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">約 83% 的卵巢上皮癌病人 CA-125 會升高；但胰臟癌、大腸癌、子宮內膜異位症及骨盆腔發炎也可能讓它上升，所以<b>只能當參考</b>。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-scan"/></svg>電腦斷層<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">確定腫瘤大小、範圍、有無腹水，並清楚顯示腫瘤和周遭淋巴結的關係。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-scan"/></svg>腸胃道 X 光、胃鏡、大腸鏡<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">看腸胃道有沒有被壓迫而阻塞，也分辨是原發性卵巢癌，還是胃癌、大腸癌等轉移到卵巢。</p></div></div>
+
+    <div class="card mt">
+      <h3>卵巢癌有哪幾種</h3>
+      <p class="soft">初經之後任何年齡都可能發生。少數源自<b>生殖細胞</b>，以 20 歲以下居多，只要切除病灶加上適當化療就可能治癒；大多數源自<b>上皮細胞</b>，通常發生在 40 歲以上，也是本頁主要說明的內容。</p>
+      <div class="grid2 mt">
+        <div class="card warn" style="box-shadow:none"><h4>上皮細胞（高惡性）　85%</h4><ul class="bul" style="margin-top:8px">
+          <li>漿液腺癌：最多</li><li>亮細胞腺癌、類子宮內膜腺癌：可能與子宮內膜異位症相關</li><li>黏液腺癌</li><li>未分化癌</li></ul></div>
+        <div class="card" style="box-shadow:none"><h4>其他細胞　15%</h4><ul class="bul" style="margin-top:8px">
+          <li>生殖細胞瘤：如惡性畸胎瘤、絨毛膜癌</li><li>性腺基質瘤</li><li>肉瘤</li></ul></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 -->
+<section class="band" id="s5">
+  <div class="wrap">
+    <div class="eyebrow">05　分期</div>
+    <h2>我是第幾期</h2>
+    <p class="sub">依國際婦產科聯盟（FIGO）建議，分為四期。</p>
+    <div class="card seg-group">
+      <div class="seg" role="tablist">
+        <button data-seg="o1" class="on">第Ⅰ期</button>
+        <button data-seg="o2">第Ⅱ期</button>
+        <button data-seg="o3">第Ⅲ期</button>
+        <button data-seg="o4">第Ⅳ期</button>
+      </div>
+      <div class="seg-pane" data-seg="o1"><h3>腫瘤侷限在卵巢</h3><ul class="bul">
+        <li><b>A</b>：只侷限於單側卵巢</li><li><b>B</b>：侵犯雙側卵巢</li>
+        <li><b>C</b>：侷限在卵巢，但已有惡性腹水或腫瘤已破裂——C1 腹腔或骨盆腔輕微轉移、手術中腫瘤破裂；C2 手術前腫瘤已破裂或腫瘤在卵巢表面；C3 腹水中已有癌細胞</li></ul></div>
+      <div class="seg-pane" data-seg="o2"><h3>腫瘤已侵犯到骨盆腔組織</h3><ul class="bul">
+        <li><b>A</b>：已侵犯到子宮或輸卵管</li><li><b>B</b>：已侵犯到其他骨盆腔組織，如膀胱、結腸、直腸的表面</li></ul></div>
+      <div class="seg-pane" data-seg="o3"><h3>腫瘤已侵犯到腹腔內或後腹腔淋巴結</h3><ul class="bul">
+        <li><b>A</b>：擴散到腹腔內，但只在顯微鏡下才看得出——A1 僅後腹腔淋巴結轉移；A2 顯微鏡下腫瘤已侵襲腹腔</li>
+        <li><b>B</b>：腹腔內腫瘤最大徑 ≦ 2cm</li><li><b>C</b>：腹腔內腫瘤最大徑 ＞ 2cm</li></ul></div>
+      <div class="seg-pane" data-seg="o4"><h3>已擴散、轉移到遠處</h3><ul class="bul">
+        <li><b>A</b>：惡性肋膜積水</li><li><b>B</b>：轉移至肝、脾、肺、腹腔外器官（包含腹股溝淋巴結或腹腔以外的淋巴結）</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 -->
+<section class="band tint" id="s6">
+  <div class="wrap">
+    <div class="eyebrow">06　治療</div>
+    <h2>卵巢癌怎麼治療</h2>
+    <p class="sub">要考慮期別、<b>BRCA 基因或 HRD 檢測結果</b>、年齡、生育期望和整體健康。選擇包括手術、化療和標靶，但<b>手術切除病灶是必須的基本治療</b>。</p>
+    <div class="card calm">
+      <h4>HRD 是什麼？</h4>
+      <p class="soft">HRD 檢測是檢驗「細胞同源重組缺陷」（homologous recombination deficiency）。「同源重組」是細胞 DNA 斷裂時的修復方法之一，有缺陷時可能導致細胞凋亡。</p>
+    </div>
+
+    <div class="card mt">
+      <h3>手術：減積手術</h3>
+      <p class="soft">卵巢癌常在診斷時已較晚期，手術範圍較大：除了切除肉眼看得到的腫瘤，還要盡可能切除所有被侵犯的區域，稱為<b>減積手術</b>（減少腫瘤體積）。依醫師判斷，可能一開始就做，也可能先做幾次化療再做，也可能併用高溫腹腔內化療。</p>
+      <p class="soft">通常會切除子宮、兩側卵巢、輸卵管、腸網膜，並摘除骨盆腔及動脈旁淋巴結；也會把腹水送細胞學檢查、可疑處切片。若只侵犯單側卵巢（ⅠA 期）的<b>孕齡婦女</b>，為了保有生育能力，可以考慮只切除有病灶的那一側。</p>
+      <div class="grid2 mt">
+        <div class="card warn" style="box-shadow:none"><h4>急性併發症</h4><p class="soft">疼痛、出血、感染、排尿及排便不順。</p></div>
+        <div class="card warn" style="box-shadow:none"><h4>長期併發症</h4><ul class="bul" style="margin-top:6px">
+          <li>腹腔沾黏，造成腹脹及腹痛</li>
+          <li>停經前切除兩側卵巢會提早停經，出現臉潮紅、流汗、心悸、焦慮、失眠等更年期症狀，<b>要和醫師商量是否補充女性荷爾蒙</b></li></ul></div>
+      </div>
+      <div class="nurse">
+        <svg><use href="#i-nurse"/></svg>
+        <div>
+          <div class="t">術後做凱格爾運動</div>
+          <p>鍛鍊骨盆底肌，能預防並改善尿失禁，也讓親密生活更圓滿：</p>
+          <p>① 排尿中途收縮、繃緊骨盆底肌，試著中斷尿流，數到四再放鬆。<br>② 重複幾次，直到能隨心所欲收縮這些肌肉；<b>不要繃緊腹部、大腿或臀部</b>。<br>③ 每天至少做四次。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc mt" id="a-chemo">
+      <button class="acc-h"><svg class="ic"><use href="#i-pill"/></svg>化學治療<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <ul class="bul">
+          <li><b>第一期</b>：依腫瘤細胞型態、惡性度、大小與侵犯程度，權衡好處和副作用風險，再決定是否術後化療</li>
+          <li><b>第二、三、四期</b>：化療可在減積手術前或後輔助，縮小腫瘤或預防復發。常用組合為卡鉑（Carboplatin）、太平洋紫杉醇（Paclitaxel）、癌德星（Cyclophosphamide），也可能同時合併血管新生抑制劑 Bevacizumab 增加療效。<b>對鉑金化療有反應</b>（腫瘤縮小）的人，可依 BRCA、HRD 結果選擇「維持性標靶」治療</li>
+          <li><b>復發轉移</b>：除了考慮第二次減積手術，還要用化療和標靶控制。二線化療可考慮微脂體小紅莓（Lipodox）、癌康定（Topotecan）及健擇（Gemcitabine）等</li>
+        </ul>
+        <p class="soft" style="margin-top:12px">給藥以<b>靜脈注射</b>或<b>腹膜腔注射</b>為主：靜脈注射讓藥物到全身；腹腔內化療適用於術後殘留腫瘤小於 1cm 的情況。另有「手術中溫熱灌注化療（HIPEC）」，可和醫師討論是否適合。</p>
+        <p class="soft">治療期間會有許多不適，但了解每種藥對身體的影響，就知道怎麼面對。<b>化療停止後，絕大多數副作用都會慢慢消失。</b></p>
+        <a class="xlink" href="../chemo/index.html" style="--accent-x:#F5B921"><span class="bk"></span><span class="tx"><small>化療副作用的完整照顧</small>《面對化學治療》</span><span class="ar">→</span></a>
+      </div>
+    </div>
+
+    <div class="acc" id="a-target">
+      <button class="acc-h"><svg class="ic"><use href="#i-shield"/></svg>標靶治療與基因檢測<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p class="soft">標靶治療鎖定癌細胞的特殊構造，用專一的藥物切斷腫瘤生長訊號、阻止腫瘤血管生成。</p>
+        <p class="soft">是否有 <b>BRCA 基因突變或 HRD</b> 會影響治療安排，<b>建議初診斷時就做基因檢測</b>，獲得精準的個人化治療：</p>
+        <div class="flow" style="margin:12px 0"><span>卵巢癌手術</span><i>→</i><span>基因檢測</span><i>→</i><span>化療 ± 血管新生抑制劑</span><i>→</i><span>對治療有反應</span><i>→</i><span>維持性標靶：血管新生抑制劑或 PARP 抑制劑</span></div>
+        <div class="card calm" style="box-shadow:none">
+          <h4>PARP 抑制劑怎麼作用</h4>
+          <p class="soft">PARP（Poly ADP-ribose polymerase）是負責修復斷裂 DNA 的酵素。有 BRCA 突變或 HRD 陽性的人，PARP 被抑制後，癌細胞就無法修復、進而凋亡。</p>
+        </div>
+        <a class="xlink" href="../targeted/index.html" style="--accent-x:#2F7D6E"><span class="bk"></span><span class="tx"><small>標靶副作用的照顧</small>《面對標靶治療》</span><span class="ar">→</span></a>
+      </div>
+    </div>
+
+    <h3 class="mt2">卵巢癌常用藥物查詢</h3>
+    <div class="search-box">
+      <svg><use href="#i-search"/></svg>
+      <input type="search" id="drugQ" placeholder="例如：卡鉑、令癌莎、Olaparib、BRCA…" autocomplete="off">
+    </div>
+    <div class="drug-tabs">
+      <button class="on" data-cat="all">全部</button>
+      <button data-cat="chemo">化療</button>
+      <button data-cat="target">標靶</button>
+    </div>
+    <div class="drug-count" id="drugCount"></div>
+    <div id="drugList"></div>
+  </div>
+</section>
+
+<!-- 07 -->
+<section class="band" id="s7">
+  <div class="wrap">
+    <div class="eyebrow">07　照顧</div>
+    <h2>副作用的照護</h2>
+    <div class="grid2">
+      <div class="card"><h4>腹腔沾黏</h4><p class="soft">婦科手術後可能長時間腹腔沾黏，伴隨腹脹、腹痛、便秘。除了調整飲食、規律運動，<b>請告訴醫師</b>，必要時用藥調整。</p></div>
+      <div class="card"><h4>化療副作用</h4><p class="soft">掉髮、血球低下、口腔炎、手腳麻刺、水腫、癌疲憊。可藉高蛋白飲食、注重衛生、預防跌倒、抬高下肢、運動、戴上漂亮的頭巾和假髮改善。</p></div>
+      <div class="card"><h4>更年期症狀</h4><p class="soft">心悸、盜汗、熱潮紅、情緒不安、痠痛、失眠，嚴重干擾作息時，和醫師討論因應方法。</p></div>
+      <div class="card"><h4>性生活</h4><p class="soft">陰道乾澀、性交疼痛、出血可能影響性慾，也有人誤以為性行為會讓癌症復發。行房時使用<b>水性潤滑劑</b>（如 K-Y Jelly），和伴侶多溝通，找到增進情趣的共識。</p>
+        <a class="xlink" href="../intimacy/index.html" style="--accent-x:#D98C8C"><span class="bk"></span><span class="tx"><small>延伸閱讀</small>《女人的癌後性福》</span><span class="ar">→</span></a></div>
+    </div>
+    <div class="card calm mt">
+      <h3>看診的小技巧</h3>
+      <ul class="bul g" style="margin-top:10px">
+        <li>找一位妳信賴的人陪同就醫，一起聽醫師說明、討論治療計畫</li>
+        <li>想到任何問題，馬上寫下來</li>
+        <li>看診時做筆記，或<b>徵詢醫師同意</b>後錄音、拍照，幫助記住醫師說了什麼</li>
+        <li>可善用基金會的《卵巢癌攻略》LINE 和《希望護照 APP》，記錄治療歷程與副作用</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 08 -->
+<section class="band tint" id="s8">
+  <div class="wrap">
+    <div class="eyebrow">08　風暴之後</div>
+    <h2>治療結束之後</h2>
+    <p class="sub">卵巢癌多發生在 50 歲以上，正準備好好享受人生時罹癌，無疑是很大的打擊。但整體而言，治療後<b>不必太過悲觀，大多數人都能順利回到正常生活</b>。</p>
+    <div class="card">
+      <h3>定期回診追蹤</h3>
+      <dl class="spec" style="margin-top:10px">
+        <dt>前兩年</dt><dd>每 2～4 個月回診一次</dd>
+        <dt>第三到五年</dt><dd>每 4～6 個月回診一次</dd>
+        <dt>檢查項目</dt><dd>骨盆腔內診、腫瘤指標 CA-125、骨盆腔及腹部超音波、電腦斷層</dd>
+      </dl>
+    </div>
+    <div class="card warn mt">
+      <h4>保留子宮或對側卵巢的人</h4>
+      <p class="soft">因為復發風險高，先前保留子宮或對側卵巢輸卵管的人，<b>完成生育計畫後，仍應考慮切除</b>子宮及對側卵巢輸卵管。更多生育決策資訊，可參考「癌友生育健康資訊平台」。</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="band" id="s9">
+  <div class="wrap">
+    <div class="eyebrow">09　你不必自己撐</div>
+    <h2>可以找誰幫忙</h2>
+    <div class="hot">
+      <div>
+        <div class="lab">癌症問題 我幫您</div>
+        <a class="num" href="tel:0809010580">0809-010-580</a>
+        <p>癌友家庭正面臨人生艱難的挑戰。鈴一鈴，一通電話，提供您專業支持與貼心陪伴。</p>
+      </div>
+    </div>
+    <div class="card mt">
+      <h3>希望小站提供的服務</h3>
+      <p class="soft" style="margin-bottom:14px">資源補助 · 照護諮詢服務 · 癌症教育出版品 · 教育系列講座與支持團體 · 心理諮詢 · 營養衛教 · <b>康復用品服務（假髮、頭巾、義乳胸衣）</b></p>
+      <div class="stations">
+        <div class="station"><div class="c">台北希望小站</div>
+          <div class="d">10058 台北市中正區臨沂街 3 巷 5 號 1 樓（捷運忠孝新生站 1 號出口）<br>
+          TEL <a href="tel:0233226286">(02) 3322-6286</a>　FAX (02) 3322-1314</div></div>
+        <div class="station"><div class="c">台中希望小站</div>
+          <div class="d">40341 台中市西區民權路 312 巷 4-1 號（茄苳腳站）<br>
+          TEL <a href="tel:0423055731">(04) 2305-5731</a>　FAX (04) 2305-5736</div></div>
+        <div class="station"><div class="c">高雄希望小站</div>
+          <div class="d">81355 高雄市左營區翠峰路 22 號<br>
+          TEL <a href="tel:075810661">(07) 581-0661</a>　FAX (07) 581-0663</div></div>
+        <div class="station"><div class="c">服務時間</div><div class="d">週一至週六 9:00～18:00</div></div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<button class="sos-fab" id="sosBtn"><svg><use href="#i-alert"/></svg>何時找醫護</button>
+<div class="sos-modal" id="sosModal" role="dialog" aria-modal="true" aria-label="何時找醫護">
+  <div class="sos-panel">
+    <h3>這些情況，<br>請告訴醫護人員</h3>
+    <p class="soft" style="font-size:.94em">本手冊提到需要通知醫護或醫師的情況：</p>
+    <ul class="sos-list">
+      <li><span class="mk">1</span><div>使用 Cisplatin 後<b>耳鳴</b>、聽不清楚高頻聲音、手腳麻木——即時通知</div></li>
+      <li><span class="mk">2</span><div>使用 Paclitaxel 後手腳<b>持續麻木</b></div></li>
+      <li><span class="mk">3</span><div>化療期間<b>發燒、感染</b>症狀</div></li>
+      <li><span class="mk">4</span><div>使用癌得星後<b>血尿或排尿困難</b></div></li>
+      <li><span class="mk">5</span><div>手術後長期<b>腹脹、腹痛、便秘</b></div></li>
+    </ul>
+    <p class="soft" style="font-size:.92em">化療期間的發燒等緊急狀況，請看化療手冊的<a href="../chemo/index.html" style="color:var(--orange);font-weight:700">立刻就醫指標</a>。</p>
+    <button class="sos-close" id="sosClose">我知道了</button>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="src">
+      <b>資料來源</b><br>
+      本頁內容出自財團法人癌症希望基金會《希望之路——面對卵巢癌》手冊（2024 年 10 月，九版四刷）。審稿顧問：<b>王功亮</b>醫師（臺東馬偕紀念醫院婦產科主治醫師）、<b>陳怡仁</b>醫師（臺北榮民總醫院婦女醫學部部主任、主治醫師）、<b>黃家彥</b>醫師（國泰綜合醫院婦女醫學部婦科主任、主治醫師）。藥品資料來源：衛生福利部食品藥物管理署藥品仿單查詢平台。
+    </div>
+    <p>
+      <b>本頁不能取代醫療專業判斷。</b>手冊內容雖經專業審閱，然醫療科技進展快速，
+      關於你的治療建議，請務必與<b>你的主治醫師</b>諮詢。若有緊急狀況，請直接就醫或聯絡你的醫療團隊。
+    </p>
+    <p class="faint">原手冊版權屬財團法人癌症希望基金會所有，如需轉載或對外散布，須經該會同意。</p>
+    <a class="totop" href="#top">↑ 回到最上面</a><a class="totop" href="../index.html">← 回到書架</a>
+  </div>
+</footer>
+<script>window.DRUGS=[{"n": "佳鉑帝・卡鉑（二代白金）", "e": "Carboplatin (Paraplatin)", "r": "靜脈注射／腹膜內注射", "c": "chemo", "f": [["副作用", "噁心、嘔吐、食慾不振、掉頭髮、皮膚發疹、白血球減少、血小板減少、高頻聽力受損"], ["注意事項", "需注意水分的補充。", "care"]]}, {"n": "克莫・順鉑（白金）", "e": "Cisplatin (Kemoplat)", "r": "靜脈注射", "c": "chemo", "f": [["副作用", "嚴重噁心、嘔吐、白血球及血小板減少、貧血、掉髮、腎功能受損、耳鳴、聽力受損、周邊神經病變（手、腳麻木感）、高尿酸血症"], ["注意事項", "1. 需注意水分的補充。2. 當有耳鳴及／或喪失高頻率聽力、手腳麻木感，請即時通知醫護人員。", "care"]]}, {"n": "癌得星", "e": "Cyclophosphamide (Endoxan)", "r": "口服／靜脈注射", "c": "chemo", "f": [["副作用", "噁心與嘔吐、食慾不振、腹瀉、白血球與血小板減少（出血易感染）、貧血、掉髮、心臟毒性、出血性膀胱炎、高尿酸血症、低血鈉症、色素沉著、停經、傷口癒合延遲"], ["注意事項", "維持足量的水分，不要憋尿。注意是否有血尿或排尿困難的情形。", "care"]]}, {"n": "艾黴素（小紅莓）", "e": "Doxorubicin (Adriamycin)", "r": "靜脈注射", "c": "chemo", "f": [["副作用", "噁心、嘔吐、靜脈炎、白血球減少、血小板減少、嚴重掉頭髮、心臟毒性（與累積劑量有關）、皮膚色素沉著"], ["注意事項", "1. 心臟功能不全者，使用本劑應小心。2. 注射後 24 到 48 小時，尿液會變紅色，多補充水分。", "care"]]}, {"n": "健擇・健仕", "e": "Gemcitabine (Gemzar; Gemmis)", "r": "靜脈注射", "c": "chemo", "f": [["副作用", "輕微噁心、嘔吐、貧血、白血球減少、血小板減少、輕微掉頭髮、皮膚紅疹、類似感冒症狀、發燒、水腫"], ["注意事項", "", "care"]]}, {"n": "力得（微脂體小紅莓）", "e": "Liposomal Doxorubicin (Lipo-Dox)", "r": "靜脈注射", "c": "chemo", "f": [["副作用", "手足症候群（手足皮膚紅腫及疼痛）、白血球與血小板減少、貧血、紅疹、便秘、厭食"], ["注意事項", "給藥當天或給藥三天內冰敷並保持手腳涼爽，可避免手足症候群出現。", "care"]]}, {"n": "汰癌勝・輝克癒蘇（太平洋紫杉醇）", "e": "Paclitaxel (Taxol; Phyxol)", "r": "靜脈注射", "c": "chemo", "f": [["副作用", "輕微噁心、嘔吐、腹瀉、白血球及血小板過低、貧血、末梢神經異常（如手腳麻木、刺痛感）、肌肉酸痛、掉髮、心跳過慢、低血壓、水腫、肝功能異常"], ["注意事項", "1. 用藥前會先給予預防過敏發生之藥物。2. 若手腳有持續性麻木感請告知醫護人員。", "care"]]}, {"n": "癌康定", "e": "Topotecan (Hycamtin)", "r": "靜脈注射", "c": "chemo", "f": [["副作用", "噁心、嘔吐、食慾不振、腹瀉、白血球減少、貧血、血小板缺乏症、掉頭髮、頭痛、疲倦、發燒、口腔發炎、便秘、腹痛、呼吸困難"], ["注意事項", "注意血球低下及感染發燒症狀。", "care"]]}, {"n": "癌思停；艾法施；力癌停", "e": "Bevacizumab (Avastin; Mvasi; Zirabev)", "r": "靜脈輸注", "c": "target", "f": [["類別", "血管新生抑制劑"], ["副作用", "高血壓、蛋白尿、胃腸出血、流鼻血、血管栓塞"], ["參考條件", "無須基因檢測", "care"]]}, {"n": "截永樂", "e": "Niraparib (Zejula)", "r": "口服膠囊", "c": "target", "f": [["類別", "PARP 抑制劑"], ["副作用", "噁心、嘔吐、疲倦、嗜中性白血球減少、血小板減少、貧血、便秘、腹痛、肌肉骨骼疼痛"], ["參考條件", "新診斷及復發病人之維持治療：無須基因檢測", "care"]]}, {"n": "令癌莎", "e": "Olaparib (Lynparza)", "r": "口服錠劑", "c": "target", "f": [["類別", "PARP 抑制劑"], ["副作用", "噁心、嘔吐、貧血、疲倦、腹痛、腹瀉"], ["參考條件", "新診斷病人之維持治療：具 BRCA 基因突變或 HRD；復發病人之維持治療：無須基因檢測", "care"]]}];</script>
+<script src="../assets/hope.js"></script>
+</body>
+</html>

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#FFFCF5">
+<meta name="format-detection" content="telephone=no">
+<title>飲食滿分・抗癌加分 · 互動衛教手冊</title>
+<meta name="description" content="癌症治療期間的營養觀念、體重評估、手術放療化療期間怎麼吃、各種症狀的飲食對策、食物安全、特殊營養品與高熱量飲品。改編自癌症希望基金會《飲食滿分・抗癌加分》。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/hope.css">
+<style>:root{--accent:#7FA05A}</style>
+<script>try{if(localStorage.getItem('hope-big')==='1')document.documentElement.classList.add('big')}catch(e){}</script>
+</head>
+<body>
+
+<svg style="display:none" aria-hidden="true">
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-food" viewBox="0 0 24 24"><path d="M5 3v8a2 2 0 002 2h0a2 2 0 002-2V3"/><path d="M7 13v8"/><path d="M17 3c-1.5 2-2 4-2 6s.7 3 2 3v9"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4l9 16H3l9-16z"/><path d="M12 10v4M12 17.5h.01"/></symbol>
+  <symbol id="i-nurse" viewBox="0 0 24 24"><path d="M12 13a4 4 0 100-8 4 4 0 000 8z"/><path d="M4 21a8 8 0 0116 0"/><path d="M12 2.5v2M11 3.5h2"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 10h8M8 13h5"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11l8-7 8 7v9H4v-9z"/><path d="M10 20v-5h4v5"/></symbol>
+</svg>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a href="../index.html" class="shelf-link" aria-label="回到書架"><svg><use href="#i-back"/></svg><span class="lb">書架</span></a>
+    <a href="#top" class="brand">
+      <span class="dot"></span>
+      <span>飲食滿分・抗癌加分<small>互動衛教手冊</small></span>
+    </a>
+    <div class="tb-actions">
+      <button class="fs-btn" id="fsBtn" aria-label="切換大字">大字</button>
+      <button class="nav-btn" id="tocBtn" aria-label="開啟目錄"><span class="lb">目錄 </span>☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="toc" id="toc">
+  <div class="toc-panel">
+    <button class="toc-close" id="tocClose" aria-label="關閉目錄">✕</button>
+    <h3>目錄</h3>
+    <p class="hint">不必從頭看到尾，找你需要的那一段就好。</p>
+    <a href="#s1"><i>01</i>治療期間的飲食概念</a>
+    <a href="#s2"><i>02</i>體重評估與補充方式</a>
+    <a href="#s3"><i>03</i>治療期間怎麼吃</a>
+    <a href="#s4"><i>04</i>免疫力弱時的食物安全</a>
+    <a href="#s5"><i>05</i>不舒服的時候怎麼吃</a>
+    <a href="#s6"><i>06</i>癌症飲食 Q&A</a>
+    <a href="#s7"><i>07</i>市售特殊營養品</a>
+    <a href="#s8"><i>08</i>高熱量、高蛋白飲品</a>
+    <a href="#s9"><i>09</i>可以找誰幫忙</a>
+    <a class="out" href="../index.html">← 回到書架，看其他手冊</a>
+  </div>
+</div>
+
+<div id="top"></div>
+<section class="hero">
+  <div class="wrap">
+    <div class="kicker">希望之路　飲食滿分・抗癌加分</div>
+    <h1>吃得好，<br>才有力氣<em>走完療程</em></h1>
+    <p class="lede">
+      治療期間，充足的營養能強化免疫功能、加速受損器官修復，讓體力盡早恢復。
+      「吃得好」不是奢華大餐，而是<b>均衡、熱量夠、蛋白質夠</b>。
+    </p>
+    <div class="picker">
+      <h3>你現在遇到的是？</h3>
+      <p class="why">點一下，直接看那一種狀況怎麼吃。</p>
+      <div class="sym-grid">
+        <button class="sym" data-go="f-appetite">吃不下</button>
+        <button class="sym" data-go="f-nausea">噁心、想吐</button>
+        <button class="sym" data-go="f-mouth">嘴破、喉嚨痛</button>
+        <button class="sym" data-go="f-dry">口乾、口水黏</button>
+        <button class="sym" data-go="f-swallow">吞嚥困難</button>
+        <button class="sym" data-go="f-taste">味覺變了</button>
+        <button class="sym" data-go="f-diarrhea">腹瀉</button>
+        <button class="sym" data-go="f-const">便秘</button>
+        <button class="sym" data-go="wcalc">體重掉太多了嗎</button>
+        <button class="sym" data-go="s4">白血球低，怎麼吃才安全</button>
+        <button class="sym" data-go="s7">營養品怎麼選</button>
+        <button class="sym" data-go="s8">高熱量飲品食譜</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 01 -->
+<section class="band" id="s1">
+  <div class="wrap">
+    <div class="eyebrow">01　觀念</div>
+    <h2>癌症治療期間的飲食概念</h2>
+    <p class="sub">
+      癌症的發生多是複雜的多重因素，飲食絕不是唯一原因，不必把罹病歸咎於吃錯東西，也不需要四處找抗癌秘方。
+      在治療前、中、後建立正確的飲食觀念，就能幫助對抗癌症、保持活力。
+    </p>
+    <div class="grid2">
+      <div class="card sun"><h4>腫瘤會影響食慾</h4><p class="soft">有些腫瘤會堵住食物通過的路，例如食道癌、胃癌、大腸癌；治療的副作用也可能讓人不舒服、胃口變差。</p></div>
+      <div class="card sun"><h4>味覺可能改變</h4><p class="soft">有些腫瘤和治療會影響味覺，讓食物吃起來不一樣。先找出原因，再找方法，常常變換飲食內容。</p></div>
+    </div>
+
+    <h3 class="mt2">身體需要的營養素</h3>
+    <div class="grid2">
+      <div class="card"><h4>蛋白質</h4><p class="soft">修補組織、維持免疫的必須營養素。手術、化療或放療後需要<b>更多</b>蛋白質來修補、避免感染。來源：瘦肉、魚、家禽、奶製品、蛋、豆類。</p></div>
+      <div class="card"><h4>碳水化合物和脂肪</h4><p class="soft">身體熱量主要來自碳水化合物：米飯、穀類、麵食、麵包、水果、蔬菜。脂肪來自動植物油脂與堅果種子。</p></div>
+      <div class="card"><h4>維生素和礦物質</h4><p class="soft">均衡飲食就能吃到足夠。無法均衡飲食時，醫師會依情況建議補充劑。</p></div>
+      <div class="card"><h4>水分</h4><p class="soft">健康的必備條件。喝不夠，或有嘔吐、腹瀉，都可能脫水。</p></div>
+    </div>
+
+    <div class="card calm mt">
+      <h3>每天的六大類食物</h3>
+      <p class="faint" style="margin-bottom:10px">資料來源：衛生福利部每日飲食指南</p>
+      <dl class="spec">
+        <dt>全穀雜糧類</dt><dd>1.5～4 碗</dd>
+        <dt>豆魚肉蛋類</dt><dd>3～8 份</dd>
+        <dt>乳品類</dt><dd>1.5～2 杯（一杯 240 毫升）</dd>
+        <dt>蔬菜類</dt><dd>3～5 碟</dd>
+        <dt>水果類</dt><dd>2～4 份</dd>
+        <dt>油脂與堅果種子類</dt><dd>油脂 3～7 茶匙，堅果種子 1 份</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- 02 -->
+<section class="band tint" id="s2">
+  <div class="wrap">
+    <div class="eyebrow">02　自我評估</div>
+    <h2>我的體重掉太多了嗎</h2>
+    <p class="sub">
+      體重下降是營養不良的指標之一，也會影響療效和存活率。治療期間需要的熱量和蛋白質通常比平常多。
+      <b>沒有刻意減重，一個月內體重下降超過 5%，就是警訊。</b>
+    </p>
+    <div class="card" id="wcalc">
+      <h3>體重下降計算</h3>
+      <div class="grid2" style="margin-top:14px">
+        <label class="wfield">平常體重（公斤）<input type="number" inputmode="decimal" id="wUsual" placeholder="例如 55" min="20" max="250" step="0.1"></label>
+        <label class="wfield">目前體重（公斤）<input type="number" inputmode="decimal" id="wNow" placeholder="例如 52" min="20" max="250" step="0.1"></label>
+      </div>
+      <div class="chk-note" id="wOut" style="margin-top:16px">輸入兩個數字，馬上幫你算。</div>
+      <p class="faint" style="margin-top:12px">計算方式：（平常體重 − 目前體重）÷ 平常體重 × 100%。例如一個月前 55 公斤、現在 52 公斤：（55 − 52）÷ 55 × 100% ≈ 5.5%。記得常量體重。</p>
+    </div>
+    <div class="nurse">
+      <svg><use href="#i-nurse"/></svg>
+      <div>
+        <div class="t">醫療團隊會幫你評估</div>
+        <p>醫療團隊會依血液檢查和身體質量評估，判斷是否有惡病質風險；進食狀況仍不好時，醫師可能會開增進食慾的藥。</p>
+      </div>
+    </div>
+
+    <h3 class="mt2">補充營養的方式</h3>
+    <div class="grid3">
+      <div class="card"><h4>經口進食</h4><p class="soft">盡可能由口進食，除了取得營養、獲得飽足感，更重要的是好好品嘗食物的美味。</p></div>
+      <div class="card"><h4>管灌飲食</h4><p class="soft">由口吃不到需要的熱量時，用一根細軟的管子經鼻孔或腸胃造口，把流質配方送進體內。</p></div>
+      <div class="card"><h4>全靜脈營養</h4><p class="soft">腸胃吸收有問題時，用靜脈注射給營養。常用於消化系統手術後、腸子完全阻塞、嚴重腹瀉或嘔吐、無法正常飲食或管灌的人。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 -->
+<section class="band" id="s3">
+  <div class="wrap">
+    <div class="eyebrow">03　依治療階段</div>
+    <h2>治療期間怎麼吃</h2>
+    <div class="card seg-group">
+      <div class="seg" role="tablist">
+        <button data-seg="surg" class="on">手術</button>
+        <button data-seg="rt">放射線治療</button>
+        <button data-seg="ct">化學治療</button>
+        <button data-seg="after">治療結束後</button>
+      </div>
+      <div class="seg-pane" data-seg="surg">
+        <p class="soft">術後身體需要更多熱量和蛋白質幫助傷口癒合；切除部位包含消化系統的人，吸收養分的能力會改變。醫師評估可以進食後，通常會這樣進展：</p>
+        <ol class="steps" style="margin-top:14px">
+          <li><span class="no">1</span><h4>清流質</h4><p>去油清湯或米湯、運動飲料、過濾的清果汁或蔬菜清湯、水果冰和冰棒。</p></li>
+          <li><span class="no">2</span><h4>軟質食物</h4><p><b>主食</b>：粥、麵條、白麵包、吐司、饅頭、即溶麥片、馬鈴薯。<b>蔬果</b>：果泥菜泥、嫩葉及瓜果類、去皮去籽且甜度酸度較低的水果或果汁。<b>蛋豆魚肉</b>：豆漿、豆腐、嫩瘦肉或碎肉、蛋。<b>奶製品</b>：蛋糕、布丁、冰淇淋、不加糖牛奶。</p></li>
+          <li><span class="no">3</span><h4>一般食物</h4><p>少量多餐。注意產氣食物，如豆類、瓜類、十字花科蔬菜、青椒、洋蔥、牛奶及奶製品。</p></li>
+        </ol>
+        <ul class="bul g" style="margin-top:14px">
+          <li>恢復飲食後，盡量選低脂、容易消化的食物和飲料</li>
+          <li>復原期間多喝流質，以免脫水</li>
+          <li>適當運動能促進食慾，但要循序漸進</li>
+          <li>每個人恢復的狀況不同，<b>感到不舒服要告訴醫護人員</b></li>
+        </ul>
+      </div>
+      <div class="seg-pane" data-seg="rt">
+        <p class="soft">副作用依照射部位、範圍、劑量和次數而定，同樣的治療每個人反應也不同。和飲食有關的副作用：</p>
+        <dl class="spec" style="margin:12px 0 16px">
+          <dt>腦部、脊椎</dt><dd>噁心、嘔吐</dd>
+          <dt>頭頸部</dt><dd>口腔痛、吞嚥困難或疼痛、味覺改變或喪失、喉嚨痛、口乾、唾液變濃</dd>
+          <dt>上半身</dt><dd>（肺、食道、乳房）吞嚥困難、胃灼熱</dd>
+          <dt>下半身</dt><dd>（大小腸、攝護腺、子宮頸、子宮、直腸、胰臟）食慾不振、噁心、嘔吐、腹瀉、腹脹、無法忍受奶類</dd>
+        </dl>
+        <ul class="bul g">
+          <li>放療<b>前一小時先吃一點東西</b>，不要空肚子</li>
+          <li>少量多餐，想吃就吃</li>
+          <li>唾液很濃或口乾，用茶水或<b>食鹽蘇打水</b>漱口（1 茶匙食鹽＋1 茶匙食用蘇打粉＋1,000cc 水）</li>
+          <li>疼痛、腹瀉或反胃，問醫師有沒有藥物可以舒緩</li>
+          <li>進食困難時，市售營養補充品可以幫忙提高熱量；不知道怎麼選，問營養師</li>
+          <li><b>進食非常困難時，請告訴醫護人員</b>，必要時可能要管灌</li>
+        </ul>
+        <a class="xlink" href="../radiation/index.html" style="--accent-x:#E07B39"><span class="bk"></span><span class="tx"><small>放療副作用的照顧</small>《面對放射線治療》</span><span class="ar">→</span></a>
+      </div>
+      <div class="seg-pane" data-seg="ct">
+        <p class="soft">化療會傷害快速分裂的細胞，最容易受影響的是骨髓、毛髮和消化道。和飲食有關的副作用有：食慾不振、疲倦、味覺嗅覺改變、口腔黏膜破損、噁心嘔吐、白血球變低、容易感染。</p>
+        <ul class="bul g" style="margin-top:12px">
+          <li>每次化療前<b>不要空腹</b>，先吃少量清淡食物或餅乾</li>
+          <li>容易疲倦，盡量少量多餐、吃足熱量、均衡飲食</li>
+          <li>食材多樣化，善用天然調味料或改變用餐環境來促進食慾</li>
+        </ul>
+        <a class="xlink" href="../chemo/index.html" style="--accent-x:#F5B921"><span class="bk"></span><span class="tx"><small>化療副作用的照顧</small>《面對化學治療》</span><span class="ar">→</span></a>
+      </div>
+      <div class="seg-pane" data-seg="after">
+        <p class="soft">治療結束後，大部分飲食副作用會消失；仍持續的，可以和醫療團隊一起想辦法。雖然沒有研究證明食物能防止復發，但吃得健康能幫你恢復體力、重建組織。</p>
+        <ul class="bul g" style="margin-top:12px">
+          <li>問醫師有哪些飲食限制；均衡攝取六大類、吃到需要量。不清楚熱量需求，可請營養師擬定飲食計畫</li>
+          <li>食物多樣化，每天至少 <b>5～7 份</b>不同的蔬菜水果</li>
+          <li>選擇未精緻的食物，用雜糧、全麥麵包和全穀根莖類取代精緻主食</li>
+          <li>食物煮到全熟，避免汙染</li>
+          <li>減少油脂，奶製品以低脂、無調味為佳</li>
+          <li>避免過鹹、煙燻、醃漬和過度加工的食物</li>
+          <li>盡量不要喝酒</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 -->
+<section class="band tint" id="s4">
+  <div class="wrap">
+    <div class="eyebrow">04　食物安全</div>
+    <h2>免疫力較弱時，怎麼吃才安全</h2>
+    <p class="sub">
+      治療期間抵抗力很弱，建議多補充高蛋白食物；採買、準備餐點、外食都要特別小心。
+      吃飯前、上廁所後、倒垃圾後、碰觸動物後都要<b>洗手</b>。
+    </p>
+    <div class="card bad">
+      <h3>這些不要吃</h3>
+      <ul class="bul r" style="margin-top:10px">
+        <li><b>肉和蛋</b>：生的、沒完全煮熟的、醃製品</li>
+        <li><b>蔬果</b>：沒去皮的水果；蔬菜一定要洗乾淨並煮過，不要生吃</li>
+        <li><b>食品</b>：未經低溫殺菌、發酵和過期的食品</li>
+        <li>食物出現<b>斑點</b>代表霉菌已長到相當程度，就算切掉看得到的部分，菌絲也早已侵入其他部分並產生毒素，<b>不可食用</b></li>
+      </ul>
+    </div>
+    <div class="acc mt"><button class="acc-h"><svg class="ic"><use href="#i-food"/></svg>烹煮<span class="cv">＋</span></button>
+      <div class="acc-b"><ul class="bul g">
+        <li>肉要煮到全熟，中心完全看不到紅色或粉紅色</li>
+        <li>蔬果完全洗乾淨後才剝、切</li>
+        <li>生食與熟食用不同的砧板和刀具</li>
+        <li>不要拿攪拌的勺子試味道</li>
+        <li>蛋煮到蛋白完全變硬、蛋黃不流動；豆腐煮開後再繼續沸騰 5～10 分鐘</li></ul></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-home"/></svg>存放<span class="cv">＋</span></button>
+      <div class="acc-b"><ul class="bul g">
+        <li>冷藏溫度在攝氏 5 度以下</li>
+        <li>存放食物的地方遠離水槽，不要把化學物品、清潔劑放在食物附近</li>
+        <li>解凍後立刻用掉，不要再冷凍回去</li>
+        <li>易腐壞的食物兩小時內放回冰箱；煮好的蛋、奶油、含美乃滋的食物放外面不超過 1 小時</li>
+        <li>做好放冰箱的料理，<b>48～72 小時</b>沒吃完就丟掉</li></ul></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-alert"/></svg>其他提醒<span class="cv">＋</span></button>
+      <div class="acc-b"><ul class="bul g">
+        <li>罐頭先用肥皂洗乾淨再打開</li>
+        <li>看起來或聞起來怪怪的就丟掉，<b>千萬不要嚐嚐看</b></li>
+        <li>微波或加熱剩菜時，確定熱透全熟</li></ul></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-chat"/></svg>外出用餐<span class="cv">＋</span></button>
+      <div class="acc-b"><ul class="bul g">
+        <li>盡量避開人多的地方</li>
+        <li>自備餐具</li>
+        <li>不用公用調味醬，請餐廳給你單獨的醬包</li>
+        <li>避免高風險的用餐方式，例如自助餐、沒冷藏的麵包點心店、食物暴露在外的店家、聚餐各自帶來的菜、路邊攤</li></ul></div></div>
+  </div>
+</section>
+
+<!-- 05 -->
+<section class="band" id="s5">
+  <div class="wrap">
+    <div class="eyebrow">05　症狀對策</div>
+    <h2>不舒服的時候怎麼吃</h2>
+    <p class="sub">不要害怕嘗試新食物。除了累積自己的經驗，也可以和病友分享、參加營養課程，找到最適合自己的吃法。</p>
+    <div class="card seg-group">
+      <div class="seg" role="tablist">
+        <button data-seg="appetite" class="on">吃不下</button>
+        <button data-seg="nausea">噁心嘔吐</button>
+        <button data-seg="mouth">口腔喉嚨痛</button>
+        <button data-seg="dry">口乾</button>
+        <button data-seg="swallow">吞嚥困難</button>
+        <button data-seg="taste">味覺改變</button>
+        <button data-seg="diarrhea">腹瀉</button>
+        <button data-seg="const">便秘</button>
+      </div>
+      <div class="seg-pane" data-seg="appetite" id="f-appetite">
+        <h4>食慾不振</h4>
+        <p class="soft">除了烹調上的改變，盡量保持心情愉快，慢慢吃。</p>
+        <ul class="bul g">
+          <li>餐前用稀釋的食鹽水漱口，保持口腔濕潤，提升味覺</li>
+          <li>用檸檬、蔥薑蒜等天然調味料提升風味，常換不同食物</li>
+          <li>少量多餐，三餐可以增加為<b>六到八餐</b></li>
+          <li>手邊常備點心，餓了就吃</li>
+          <li>咀嚼或吞嚥困難時，改吃流質或半流質</li>
+        </ul>
+      </div>
+      <div class="seg-pane" data-seg="nausea" id="f-nausea">
+        <h4>噁心和嘔吐</h4>
+        <p class="soft">一定要多補充水分以免脫水：整天少量多次喝水、果汁或含熱量的流質，<b>清涼的比熱的和冰的更好入口</b>。不再吐之後，從清流質、餅乾、白吐司、果凍開始吃。</p>
+        <dl class="spec" style="margin:12px 0">
+          <dt>高蛋白</dt><dd>營養補充品、高蛋白奶粉</dd>
+          <dt>主食</dt><dd>吐司、鹹蘇打餅乾、米飯、饅頭、蒸蘿蔔糕、碗粿</dd>
+          <dt>蔬果</dt><dd>蘋果、蔓越莓、葡萄汁、水蜜桃、不含糖綜合蔬果汁</dd>
+          <dt>點心</dt><dd>薑汁汽水、無咖啡因無氣泡飲料（水果飲料、運動飲料）、酸梅湯、水果冰棒、果凍、龜苓膏、米果</dd>
+        </dl>
+        <ul class="bul g">
+          <li>化療前一天和當天，不要一次吃太多</li>
+          <li>少量多餐，避免空腹或腹脹，以清淡為主</li>
+          <li>吃飯時和前後一小時避免喝水、湯、飲料</li>
+          <li>細嚼慢嚥；飯後 2 小時內盡量不要平躺</li>
+          <li>早上起床容易噁心，起床前先吃些餅乾或吐司</li>
+          <li>可以請醫師開止吐藥</li>
+        </ul>
+      </div>
+      <div class="seg-pane" data-seg="mouth" id="f-mouth">
+        <h4>口腔、喉嚨疼痛</h4>
+        <p class="soft">選擇軟的、沒有刺激性、溫的或冷的食物。</p>
+        <dl class="spec" style="margin:12px 0">
+          <dt>魚肉</dt><dd>燉軟或清蒸的魚、肉</dd>
+          <dt>豆蛋奶</dt><dd>蒸蛋、豆腐、豆花、豆漿、牛奶、奶昔</dd>
+          <dt>主食</dt><dd>有湯汁、勾芡的滑順質地，如稀飯、燕麥飲、湯麵、南瓜濃湯</dd>
+          <dt>蔬果</dt><dd>軟、非酸性的水果和切細的嫩葉菜、軟瓜類，如蘋果汁、水果冰沙、過濾蔬菜汁、去蒂菇類；去皮去籽的木瓜、香瓜、蘋果、葡萄、荔枝、龍眼、香蕉、罐頭水果</dd>
+          <dt>點心</dt><dd>不含咖啡因的飲料；不含巧克力的布丁、蛋糕、果凍、冰淇淋</dd>
+        </dl>
+        <ul class="bul g">
+          <li>把食物做得柔軟好吞：滑蛋稀飯、蔬菜磨碎、肉絞成泥，拌湯汁或勾芡增加潤滑</li>
+          <li>避免太燙、太酸、太辣、太鹹、太粗、太乾</li>
+          <li>常用食鹽水漱口，去除殘渣和細菌，幫助傷口癒合</li>
+          <li>醫師有時會開麻醉性漱口水，在吃飯前使用減輕疼痛</li>
+        </ul>
+      </div>
+      <div class="seg-pane" data-seg="dry" id="f-dry">
+        <h4>口腔乾燥或唾液黏稠</h4>
+        <p class="soft">每天喝很多流質，吃濕潤的食物，常用蘇打水或鹽水漱口刷牙。<b>不要用含酒精的漱口水</b>，也不要喝酒或酸性飲料，會讓口腔更乾。</p>
+        <dl class="spec" style="margin:12px 0">
+          <dt>高蛋白</dt><dd>滷、蒸的魚肉、牛奶、高蛋白奶粉、豆漿、蒸蛋</dd>
+          <dt>主食</dt><dd>麵包沾濃湯、白飯泡肉汁、粥、包子、水餃、湯麵、麵線、鹹湯圓</dd>
+          <dt>蔬果</dt><dd>水分多的新鮮水果（橘子、水蜜桃），蔬菜加醬汁或勾芡</dd>
+          <dt>點心</dt><dd>汽水、稀釋果汁、運動飲料、流質營養品、奶昔、冰淇淋、水果冰沙、布丁、菊花茶、奶酪、芝麻糊、杏仁豆腐、龜苓膏、綠豆湯</dd>
+        </dl>
+        <ul class="bul g">
+          <li>每天喝 <b>8～10 杯</b>流質，常小口喝水，可喝冰涼飲料，出門帶一壺水</li>
+          <li>喝汽水或嚼口香糖增加唾液；必要時用人工唾液</li>
+          <li>多吃流質降低黏稠，食物拌湯汁幫助吞嚥</li>
+          <li>停止抽菸、喝酒</li>
+        </ul>
+      </div>
+      <div class="seg-pane" data-seg="swallow" id="f-swallow">
+        <h4>吞嚥困難</h4>
+        <p class="soft">吃軟質和流質。<b>濃的流質比稀的不容易嗆到</b>。吃不夠時，喝高熱量高蛋白的流質；也可以請復健治療師教你吞嚥方法。</p>
+        <dl class="spec" style="margin:12px 0">
+          <dt>高蛋白</dt><dd>布丁、肉泥、軟質魚肉、濃湯、炒蛋或蒸蛋、豆花、豆腐</dd>
+          <dt>主食</dt><dd>碎肉粥、蒸蘿蔔糕、碗粿、麵線糊、麥片粥、五穀粥、軟麵條、馬鈴薯泥</dd>
+          <dt>蔬果</dt><dd>木瓜、軟柿、西瓜、無籽去皮的果醬或菜泥</dd>
+          <dt>點心</dt><dd>奶昔、濃湯、蛋糕、奶酪、杏仁茶、杏仁豆腐、芝麻糊、龜苓膏</dd>
+        </dl>
+        <ul class="bul g">
+          <li>每天喝 <b>6～8 杯</b>流質，調到最適合你吞嚥的濃度</li>
+          <li>增稠：太白粉、玉米粉、米麩、麥粉、杏仁粉、芝麻糊、蓮藕粉，同時增加熱量和口味變化；或依說明使用市售增稠劑</li>
+        </ul>
+        <div class="card bad" style="margin-top:14px"><p style="margin:0">進食時<b>咳嗽、嗆到，或有發燒</b>，要立刻告訴醫師。</p></div>
+      </div>
+      <div class="seg-pane" data-seg="taste" id="f-taste">
+        <h4>味覺和嗅覺改變</h4>
+        <p class="soft">試試以前不常吃的食物和飲料，並常刷牙漱口保持清潔。</p>
+        <ul class="bul g">
+          <li><b>加點新奇更開胃</b>：加點酸味（檸檬汁、柑橘、醋）或天然調味料（洋蔥、大蒜、辣椒粉、番茄醬、薄荷）；或加些糖，減少鹹、苦、酸味</li>
+          <li><b>口氣清新有食慾</b>：檸檬糖、薄荷糖、口香糖去除飯後口中的味道；吃東西前先用茶、鹽水或蘇打水漱口</li>
+          <li><b>冷涼新鮮更好吃</b>：溫冷食物味道不會太濃；多吃香瓜、橘子、西瓜；新鮮蔬菜比罐頭或冷凍的好入口</li>
+        </ul>
+      </div>
+      <div class="seg-pane" data-seg="diarrhea" id="f-diarrhea">
+        <h4>腹瀉</h4>
+        <p class="soft">避免高纖、高脂、產氣食物和碳酸飲料，多喝水以免脫水。</p>
+        <dl class="spec" style="margin:12px 0">
+          <dt>魚肉</dt><dd>清蒸或烤的去皮低脂肉類、魚類</dd>
+          <dt>豆蛋</dt><dd>蛋花、蒸蛋、豆腐、豆花</dd>
+          <dt>主食</dt><dd>白米飯、白麵包、通心粉、麵條、白吐司、白饅頭、米粥、玉米片、去皮烤馬鈴薯、鬆餅</dd>
+          <dt>蔬果</dt><dd>蔬菜湯、嫩葉菜、過濾蔬果汁、去皮水果</dd>
+          <dt>點心</dt><dd>蛋糕、甜餅乾、果凍、冰沙、無咖啡因飲料</dd>
+        </dl>
+        <div class="card warn" style="margin-top:12px"><p style="margin:0">嚴重時可改清流質讓腸道休息，但流質營養不夠，<b>以不超過 3～5 天為原則</b>。</p></div>
+      </div>
+      <div class="seg-pane" data-seg="const" id="f-const">
+        <h4>便秘</h4>
+        <p class="soft">止痛藥、飲食習慣改變、活動減少，都會讓腸子蠕動變慢。</p>
+        <ul class="bul g">
+          <li>多吃高纖食物，如全穀類、蔬菜水果、乾果（見下方纖維表）</li>
+          <li>醫師允許的話，每天喝足水分：<b>每公斤體重 30cc</b></li>
+          <li>體力許可下適度運動，促進腸道蠕動</li>
+          <li>請醫師評估使用幫助排便的藥物</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card seg-group mt">
+      <h3>常見食物的膳食纖維</h3>
+      <p class="soft">成人每天建議 <b>25～35 公克</b>。用未精製的全穀類取代白米飯，更容易達標。以下為每 100 公克所含纖維（公克），由高到低。</p>
+      <div class="seg" role="tablist">
+        <button data-seg="fb1" class="on">主食</button>
+        <button data-seg="fb2">蔬菜</button>
+        <button data-seg="fb3">豆類堅果</button>
+        <button data-seg="fb4">水果</button>
+      </div>
+      <div class="seg-pane" data-seg="fb1"><div class="fiber" data-list="小麥胚芽 8.9|全麥麵粉 5.7|燕麥片 4.7|糙米 3.3|全麥吐司 3.2|中筋麵粉 2.8|芋頭 2.8|馬鈴薯 2.4|麥片 2.1|玉米粒 1.7|冬粉 1.4|麵條（乾）0.7|白米 0.4"></div></div>
+      <div class="seg-pane" data-seg="fb2"><div class="fiber" data-list="牛蒡 6.7|木耳 6.5|香菇 3.9|榨菜 3.5|番薯葉 3.1|海帶 3.0|黃豆芽 3.0|金針菇 2.9|菜豆 2.8|蓮藕 2.7|青花菜 2.7|草菇 2.7|韭菜 2.4|菠菜 2.4|茄子 2.3|竹筍 2.3|胡蘿蔔 2.3|莧菜 2.2|紫甘藍 2.2|花椰菜 2.2|茭白筍 2.1|空心菜 2.1|青江菜 2.1|苜蓿芽 2.0|蘆筍 1.9|芥藍 1.9|龍鬚菜 1.9|苦瓜 1.9|雪裡紅 1.9|小白菜 1.8|南瓜 1.7|韭黃 1.7|芹菜 1.6|洋蔥 1.6|芥菜 1.6|茼蒿 1.6|高麗菜 1.3|油菜 1.3|蘿蔔 1.3|山東白菜 1.3|番茄 1.2|冬瓜 1.1|美國芹菜 1.0|萵苣 0.8|絲瓜 0.6|番茄汁 0.3"></div></div>
+      <div class="seg-pane" data-seg="fb3"><div class="fiber" data-list="紅豆 12.3|綠豆 11.5|豌豆 8.6|核桃粒 5.5|毛豆 4.9|花生 3.0|豆漿 3.0|干絲 2.6|凍豆腐 2.2|五香豆干 2.2|豆腐 0.6|豆腐皮 0.6"></div></div>
+      <div class="seg-pane" data-seg="fb4"><div class="fiber" data-list="柿子 4.7|泰國芭樂 3.0|西洋梨 3.0|釋迦 2.7|桃子 2.4|奇異果 2.4|柳丁 2.3|棗子 1.8|草莓 1.8|柑橘 1.7|木瓜 1.7|水梨 1.6|香蕉 1.6|五爪蘋果 1.6|水蜜桃 1.5|加州李 1.5|鳳梨 1.4|荔枝 1.3|葡萄柚 1.2|枇杷 1.2|龍眼 1.1|楊桃 1.1|白柚 1.0|蓮霧 1.0|土芒果 0.8|哈密瓜 0.8|葡萄 0.6|香瓜 0.6|西瓜 0.3|甘蔗汁 0.2|市售果汁 0～0.2"></div></div>
+      <p class="faint" style="margin-top:12px">資料來源：衛生福利部「台灣地區食品營養成分資料庫」</p>
+    </div>
+  </div>
+</section>
+
+<!-- 06 -->
+<section class="band tint" id="s6">
+  <div class="wrap">
+    <div class="eyebrow">06　常見疑問</div>
+    <h2>癌症飲食 Q&amp;A</h2>
+    <div class="qa"><h4>治療時可以吃維生素、礦物質、健康食品嗎？</h4>
+      <p class="soft">目前沒有足夠醫學證據證明偏方或輔助方法能治療癌症。很多人以為補充維生素、礦物質能加強免疫、摧毀癌細胞，事實上<b>過量服用反而會降低化療和放療的效果</b>。想用健康食品，先問醫師、營養師或護理師。</p></div>
+    <div class="qa"><h4>可以吃中草藥嗎？</h4>
+      <p class="soft">有些很安全，有些會造成副作用、影響治療，或和藥物交互作用。想吃的話，先找<b>合格中醫師</b>諮詢再購買。</p></div>
+    <div class="qa"><h4>需要特別的飲食療法嗎？斷食、生酮可以餓死癌細胞嗎？</h4>
+      <p class="soft">癌症病人主要遵循「<b>均衡飲食、增加熱量、增加蛋白質</b>」三大原則，依副作用選擇適合的質地和食物。少吃、斷食、生酮能讓癌細胞死掉的說法，<b>目前沒有足夠證據</b>；唯有均衡且足夠的營養，才能恢復身體機能和免疫力。</p></div>
+    <div class="qa"><h4>吃不下、營養不良怎麼辦？市面上有適合的營養品嗎？</h4>
+      <p class="soft">有，稱為「特殊營養品」，專為無法正常進食或沒有食慾的人設計，口服或管灌都能提供適當營養（見下一段）。購買前先諮詢營養師；但別忘了，天然食材烹調出的美味仍是最佳選擇。</p></div>
+    <div class="qa"><h4>可以改吃素或生機飲食嗎？</h4>
+      <p class="soft">治療期間抵抗力較弱，<b>不建議生機飲食</b>，最好吃熟食，以免腸胃感染。沒有特別原因不必改吃素；吃素要選多種食物，穀類搭配豆類，避免蛋白質不足。原本吃素的人可以注意：</p>
+      <ul class="bul" style="margin-top:8px">
+        <li><b>維生素 B 群</b>（B12 以外）：胚芽、燕麥等全穀雜糧、深綠色蔬菜、菇類、海藻</li>
+        <li><b>維生素 B12</b>：全素者容易缺乏。奶蛋素可補充牛奶或蛋；全素者可補充強化 B 群的酵母、綜合維他命或 B 群（單一補充 B12 劑量可能過高）</li>
+        <li><b>鈣</b>：牛奶、黑芝麻糊、深綠色蔬菜、豆製品，同時搭配運動</li>
+        <li><b>鐵</b>：莧菜、菠菜、青江菜，搭配維生素 C 食物促進吸收</li>
+        <li><b>維生素 D</b>：曬過太陽的香菇，也多曬太陽</li>
+        <li><b>鋅</b>：全穀雜糧、南瓜子、小麥胚芽、燕麥片</li>
+        <li>以天然食物為主，少吃過度加工的豆製品</li>
+      </ul></div>
+  </div>
+</section>
+
+<!-- 07 -->
+<section class="band" id="s7">
+  <div class="wrap">
+    <div class="eyebrow">07　查詢</div>
+    <h2>市售特殊營養品</h2>
+    <p class="sub">
+      可選擇有衛福部認證的「特殊營養食品」或「特定疾病配方食品」（可在衛福部網站查詢）。
+      每個人狀況不同，<b>購買前請先諮詢營養師</b>。以下為原手冊 2023 年改版整理的常見產品，供參考。
+    </p>
+    <div class="grid2" style="margin-bottom:18px">
+      <div class="card" style="padding:16px 18px"><h4>均衡配方</h4><p class="soft" style="font-size:.92em">醣類、蛋白質、脂肪比例符合一般標準，給進食量不足的人補充。</p></div>
+      <div class="card" style="padding:16px 18px"><h4>特殊配方</h4><p class="soft" style="font-size:.92em">依疾病調整營養素，如「癌症專用配方」多為高濃度、高熱量、高蛋白，可能添加魚油。<b>可能有食用量限制</b>，請看瓶身標示並在營養師指導下使用。</p></div>
+      <div class="card" style="padding:16px 18px"><h4>水解元素型配方</h4><p class="soft" style="font-size:.92em">多用於消化功能異常，如消化道手術後、靜脈營養轉管灌的過渡期。</p></div>
+      <div class="card" style="padding:16px 18px"><h4>特定胺基酸配方</h4><p class="soft" style="font-size:.92em">含麩醯胺酸等，可協助黏膜或傷口修復；但臨床結果不一致，<b>不建議長期食用</b>，尤其是惡病質及造血幹細胞移植者。</p></div>
+      <div class="card" style="padding:16px 18px"><h4>濃縮配方</h4><p class="soft" style="font-size:.92em">濃度、熱量、蛋白質為一般的 1.5～2 倍，適合吃得少或需要限水的人。</p></div>
+      <div class="card" style="padding:16px 18px"><h4>單一營養素：蛋白質</h4><p class="soft" style="font-size:.92em">熱量不足，<b>不能當唯一營養來源</b>。7 公克蛋白質 ≈ 1 份肉、1 份豆製品或 1 顆蛋。</p></div>
+    </div>
+    <div class="search-box">
+      <svg><use href="#i-search"/></svg>
+      <input type="search" id="drugQ" placeholder="例如：安素、癌症專用、無乳糖、含纖維…" autocomplete="off">
+    </div>
+    <div class="drug-tabs">
+      <button class="on" data-cat="all">全部</button>
+      <button data-cat="bal">均衡</button>
+      <button data-cat="spe">特殊（癌症）</button>
+      <button data-cat="hyd">水解元素</button>
+      <button data-cat="fib">高纖</button>
+      <button data-cat="ami">胺基酸</button>
+      <button data-cat="con">濃縮</button>
+      <button data-cat="pro">蛋白質</button>
+    </div>
+    <div class="drug-count" id="drugCount"></div>
+    <div id="drugList"></div>
+    <p class="faint" style="margin-top:12px">粉狀產品的匙數以產品附的湯匙為準，依罐身標示調配。有糖尿病、腎臟病、肝臟疾病等狀況，選擇時更要注意，請向營養師諮詢。</p>
+  </div>
+</section>
+
+<!-- 08 -->
+<section class="band tint" id="s8">
+  <div class="wrap">
+    <div class="eyebrow">08　自己做</div>
+    <h2>高熱量、高蛋白飲品</h2>
+    <p class="sub">所有材料放進果汁機高速攪拌均勻，冰過再喝；沒喝完可冷藏或冷凍。每一種都可以加一、兩匙奶粉或高蛋白粉增加蛋白質。<b>對奶類過敏，或有糖尿病、腎臟病等慢性病</b>，請營養師另外設計。</p>
+    <div class="grid3">
+      <div class="card"><h4>鄉村起司奶昔</h4><p class="faint">310 大卡｜蛋白質 11 公克</p><p class="soft">白色柔軟低脂起司 1/3 杯、香草冰淇淋 1/2 杯、果凍 1/4 杯</p></div>
+      <div class="card"><h4>古典快速早餐奶昔</h4><p class="faint">474 大卡｜蛋白質 20 公克</p><p class="soft">全脂牛奶 1/2 杯、早餐包 1 小包（奶粉＋麥片）、冰淇淋 1 杯</p></div>
+      <div class="card"><h4>桃子優酪乳凍</h4><p class="faint">400 大卡｜蛋白質 19 公克</p><p class="soft">香草早餐包 1 小包、全脂牛奶 1 杯、桃子優酪乳 1/2 杯、冰塊 6～10 顆</p></div>
+      <div class="card"><h4>巧克力可可</h4><p class="faint">600 大卡｜蛋白質 24 公克</p><p class="soft">香草冰淇淋 1 又 1/4 杯、全脂牛奶 1/2 杯、巧克力粉 1 小包、糖 2 茶匙</p></div>
+      <div class="card"><h4>水果冰沙</h4><p class="faint">370 大卡｜蛋白質 9.4 公克</p><p class="soft">水果 1 份（芒果 1/3 個、奇異果或蘋果 1 顆、或哈密瓜 1/2 個）、全脂牛奶 240cc、香草冰淇淋 1 球、蜂蜜 1 湯匙</p></div>
+      <div class="card"><h4>木瓜或香蕉牛奶</h4><p class="faint">384 大卡｜蛋白質 12 公克</p><p class="soft">木瓜 1/4 個或大香蕉半條、全脂牛奶 240cc、全脂奶粉 2 湯匙、砂糖 2 湯匙</p></div>
+      <div class="card"><h4>豆奶西米露</h4><p class="faint">313 大卡｜蛋白質 10 公克</p><p class="soft">豆奶 240cc、熟西谷米半碗、熟紅豆 1 湯匙、煮軟的番薯丁或芋頭丁 1/4 碗、砂糖 2 湯匙</p></div>
+      <div class="card"><h4>草莓（蘋果）豆奶優酪乳</h4><p class="faint">298 大卡｜蛋白質 7.1 公克</p><p class="soft">草莓 10 個或小蘋果 1 顆、豆奶 120cc、原味優酪乳半杯、果醬 2 湯匙</p></div>
+      <div class="card"><h4>五穀芝麻豆漿</h4><p class="faint">355 大卡｜蛋白質 11.6 公克</p><p class="soft">五穀粉 2～3 湯匙、芝麻粉 2 湯匙、豆漿 240cc、砂糖 2 湯匙</p></div>
+    </div>
+    <div class="nurse">
+      <svg><use href="#i-nurse"/></svg>
+      <div>
+        <div class="t">這份指南不能取代營養師</div>
+        <p>有任何問題，還是要常和醫師、護理人員以及營養師討論你需要的營養和正確的處理方式。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="band" id="s9">
+  <div class="wrap">
+    <div class="eyebrow">09　你不必自己撐</div>
+    <h2>可以找誰幫忙</h2>
+    <div class="hot">
+      <div>
+        <div class="lab">癌症問題 我幫您</div>
+        <a class="num" href="tel:0809010580">0809-010-580</a>
+        <p>癌友家庭正面臨人生艱難的挑戰。鈴一鈴，一通電話，提供您專業支持與貼心陪伴。</p>
+      </div>
+    </div>
+    <div class="card mt">
+      <h3>希望小站提供的服務</h3>
+      <p class="soft" style="margin-bottom:14px">資源補助 · 照護諮詢服務 · 癌症教育出版品 · 教育系列講座與支持團體 · 心理諮詢 · 營養衛教 · <b>康復用品服務（假髮、頭巾、義乳胸衣）</b></p>
+      <div class="stations">
+        <div class="station"><div class="c">台北希望小站</div>
+          <div class="d">10058 台北市中正區臨沂街 3 巷 5 號 1 樓（捷運忠孝新生站 1 號出口）<br>
+          TEL <a href="tel:0233226286">(02) 3322-6286</a>　FAX (02) 3322-1314</div></div>
+        <div class="station"><div class="c">台中希望小站</div>
+          <div class="d">40341 台中市西區民權路 312 巷 4-1 號（茄苳腳站）<br>
+          TEL <a href="tel:0423055731">(04) 2305-5731</a>　FAX (04) 2305-5736</div></div>
+        <div class="station"><div class="c">高雄希望小站</div>
+          <div class="d">81355 高雄市左營區翠峰路 22 號<br>
+          TEL <a href="tel:075810661">(07) 581-0661</a>　FAX (07) 581-0663</div></div>
+        <div class="station"><div class="c">服務時間</div><div class="d">週一至週六 9:00～18:00</div></div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<button class="sos-fab" id="sosBtn"><svg><use href="#i-alert"/></svg>何時找醫護</button>
+<div class="sos-modal" id="sosModal" role="dialog" aria-modal="true" aria-label="何時找醫護">
+  <div class="sos-panel">
+    <h3>這些情況，<br>請告訴醫護人員</h3>
+    <p class="soft" style="font-size:.94em">本手冊提到需要告知醫師或醫護人員的情況：</p>
+    <ul class="sos-list">
+      <li><span class="mk">1</span><div>進食時<b>咳嗽、嗆到</b>，或有<b>發燒</b>——立刻告訴醫師</div></li>
+      <li><span class="mk">2</span><div>沒有刻意減重，<b>一個月內體重下降超過 5%</b></div></li>
+      <li><span class="mk">3</span><div><b>進食非常困難</b>，必要時可能需要管灌</div></li>
+      <li><span class="mk">4</span><div>手術後恢復進食時<b>感到不舒服</b></div></li>
+      <li><span class="mk">5</span><div>放療期間疼痛、腹瀉或反胃——問醫師有沒有藥物可以舒緩</div></li>
+    </ul>
+    <button class="sos-close" id="sosClose">我知道了</button>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="src">
+      <b>資料來源</b><br>
+      本頁內容出自財團法人癌症希望基金會《飲食滿分・抗癌加分》手冊（2026 年 5 月，五版十八刷）。編輯顧問：<b>王麗民</b>（和信治癌中心醫院營養室主任）、<b>朱昱</b>（癌症希望基金會特約營養師）、<b>黃孟娟</b>（高雄醫大附設中和紀念醫院營養部主任）。食物纖維資料來源：衛生福利部「台灣地區食品營養成分資料庫」；營養品資料為原手冊 2023 年改版內容，購買前請諮詢營養師。
+    </div>
+    <p>
+      <b>本頁不能取代醫療專業判斷。</b>手冊內容雖經專業審閱，然醫療科技進展快速，
+      關於你的治療建議，請務必與<b>你的主治醫師</b>諮詢。若有緊急狀況，請直接就醫或聯絡你的醫療團隊。
+    </p>
+    <p class="faint">原手冊版權屬財團法人癌症希望基金會所有，如需轉載或對外散布，須經該會同意。</p>
+    <a class="totop" href="#top">↑ 回到最上面</a><a class="totop" href="../index.html">← 回到書架</a>
+  </div>
+</footer>
+<script>window.DRUGS=[{"n": "愛美力 HN Osmolite HN", "e": "廠商：亞培", "r": "", "c": "bal", "f": [["熱量濃度", "1.1 大卡/毫升"], ["熱量", "253 大卡"], ["蛋白質", "10.5 公克"], ["特性", "高蛋白均衡營養配方、無乳糖、低鈉、低渣"]]}, {"n": "原味安素 ENSURE HMB 升級配方", "e": "廠商：亞培", "r": "", "c": "bal", "f": [["熱量濃度", "1.1 大卡/毫升"], ["熱量", "262 大卡"], ["蛋白質", "10.5 公克"], ["特性", "均衡營養配方、無乳糖、低鈉"]]}, {"n": "管灌安素 Osmolite", "e": "廠商：亞培", "r": "", "c": "bal", "f": [["熱量濃度", "1.1 大卡/毫升"], ["熱量", "251 大卡"], ["蛋白質", "8.8 公克"], ["特性", "均衡營養配方、無乳糖、低鈉"]]}, {"n": "安素沛力 ENSURE high protein", "e": "廠商：亞培", "r": "", "c": "bal", "f": [["熱量濃度", "1.0 大卡/毫升"], ["熱量", "230 大卡"], ["蛋白質", "12 公克"], ["特性", "高蛋白均衡營養配方、無乳糖、低渣"]]}, {"n": "安素優能基 ENSURE Powder 粉狀：60.2公克（6平匙）", "e": "廠商：亞培", "r": "", "c": "bal", "f": [["熱量", "262 大卡"], ["蛋白質", "10.5 公克"], ["特性", "均衡營養配方、無乳糖、低鈉、含纖維"]]}, {"n": "愛美力 涵纖 1.2 Jevity plus FSMP", "e": "廠商：亞培", "r": "", "c": "bal", "f": [["熱量濃度", "1.2 大卡/毫升"], ["熱量", "301 大卡"], ["蛋白質", "13.9 公克"], ["特性", "高蛋白均衡營養配方，含膳食纖維及果寡醣"]]}, {"n": "健力體 Jevity", "e": "廠商：亞培", "r": "", "c": "bal", "f": [["熱量濃度", "1.1 大卡/毫升"], ["熱量", "256 大卡"], ["蛋白質", "10.4 公克"], ["特性", "高蛋白均衡營養配方、無乳糖、低鈉、含膳食纖維"]]}, {"n": "愛速康金選優纖 Isocal Premium", "e": "廠商：雀巢", "r": "", "c": "bal", "f": [["熱量濃度", "1.1 大卡/毫升"], ["熱量", "259 大卡"], ["蛋白質", "11 公克"], ["特性", "均衡營養配方、無乳糖、低鈉、含4種纖維（含可溶性纖維和不可溶性纖維）有益消化機能"]]}, {"n": "立攝適 原味均康 Resource optimum", "e": "廠商：雀巢", "r": "", "c": "bal", "f": [["熱量濃度", "1.0 大卡/毫升"], ["熱量", "253 大卡"], ["蛋白質", "9.3 公克"], ["特性", "均衡營養配方、無乳糖、低鈉"]]}, {"n": "愛速康佳氮 Isocal HN", "e": "廠商：雀巢", "r": "", "c": "bal", "f": [["熱量濃度", "1.1 大卡/毫升"], ["熱量", "263 大卡"], ["蛋白質", "11 公克"], ["特性", "高蛋白均衡營養配方、無乳糖、低鈉"]]}, {"n": "諾沛 Compleat", "e": "廠商：雀巢", "r": "", "c": "bal", "f": [["熱量濃度", "1.1 大卡/毫升"], ["熱量", "266 大卡"], ["蛋白質", "12 公克"], ["特性", "八種天然食物攪打配方"]]}, {"n": "補體素 優纖A+（不甜）", "e": "廠商：思耐得", "r": "", "c": "bal", "f": [["熱量濃度", "1.1 大卡/毫升"], ["熱量", "252 大卡"], ["蛋白質", "10.7 公克"], ["特性", "高蛋白均衡營養配方、無乳糖、含纖維"]]}, {"n": "桂格完膳營養素 原味無糖 QUAKER Complete", "e": "廠商：佳格", "r": "", "c": "bal", "f": [["熱量濃度", "1.0 大卡/毫升"], ["熱量", "250 大卡"], ["蛋白質", "9.3 公克"], ["特性", "均衡營養配方、含纖維、無乳糖"]]}, {"n": "力增 均衡配方 Reg.EN", "e": "廠商：艾益生", "r": "", "c": "bal", "f": [["熱量濃度", "1.0 大卡/毫升"], ["熱量", "250 大卡"], ["蛋白質", "9.4 公克"], ["特性", "均衡營養配方，無纖維、無乳糖"]]}, {"n": "三多補體康 均衡配方 SENTOSA-PROTICOME 粉狀：57.5公克（2平匙）", "e": "廠商：三多士", "r": "", "c": "bal", "f": [["熱量", "250 大卡"], ["蛋白質", "10.7 公克"], ["特性", "高蛋白均衡營養配方、無乳糖、含纖維"]]}, {"n": "益力康 Nutri-Aid 粉狀：56公克（7平匙）", "e": "廠商：益富", "r": "", "c": "bal", "f": [["熱量", "254 大卡"], ["蛋白質", "8.9 公克"], ["特性", "均衡營養配方、無乳糖及蔗糖、含纖維、100%乳清蛋白、奶素可用"]]}, {"n": "益力壯 給力 Nu-life HN 粉狀：50公克（6平匙）", "e": "廠商：益富", "r": "", "c": "bal", "f": [["熱量", "250 大卡"], ["蛋白質", "13.8 公克"], ["特性", "高蛋白、均衡營養配方、無乳糖、奶素可用、含黃豆蛋白、含纖維"]]}, {"n": "益力壯 均力 （液體原味）", "e": "廠商：益富", "r": "", "c": "bal", "f": [["熱量濃度", "1.0 大卡/毫升"], ["熱量", "250 大卡"], ["蛋白質", "10.3 公克"], ["特性", "高蛋白、均衡營養配方、無乳糖"]]}, {"n": "速體壯 高纖均衡配方 Nu Strong 粉狀：54公克（7平匙）", "e": "廠商：佰岳", "r": "", "c": "bal", "f": [["熱量", "256 大卡"], ["蛋白質", "10.5 公克"], ["特性", "均衡營養配方、無蔗糖及果糖、含纖維"]]}, {"n": "藻體康 均衡營養配方 Googlehealth 粉狀：56公克", "e": "廠商：開曄", "r": "", "c": "bal", "f": [["熱量", "250 大卡"], ["蛋白質", "10.1 公克"], ["特性", "高蛋白均衡營養配方、無乳糖、含纖維、含鉻"]]}, {"n": "優樂適U-12 含纖均衡營養配方 UNECE U-12 粉狀：58公克", "e": "廠商：麗豐", "r": "", "c": "bal", "f": [["熱量", "257 大卡"], ["蛋白質", "10.8 公克"], ["特性", "高蛋白均衡營養配方、奶素者可用（乳清蛋白及黃豆蛋白）、無乳糖、含纖維／益生菌"]]}, {"n": "培特康 均衡營養配方 PAT-HEALTHY 粉狀：56公克（8平匙）", "e": "廠商：凡事寧", "r": "", "c": "bal", "f": [["熱量", "250 大卡"], ["蛋白質", "10.6 公克"], ["特性", "高蛋白均衡營養配方、無乳糖、含纖維、含DHA"]]}, {"n": "紅牛愛基 均衡配方營養素 RED COW HEALTHING 粉狀：56公克（6平匙）", "e": "廠商：奕瑪", "r": "", "c": "bal", "f": [["熱量", "251 大卡"], ["蛋白質", "8.8 公克"], ["特性", "均衡營養配方、無乳糖、含纖維、低升糖指數"]]}, {"n": "舒體康 含纖均衡營養品 SUCARE 粉狀：55公克（5平匙）", "e": "廠商：惠健", "r": "", "c": "bal", "f": [["熱量", "250 大卡"], ["蛋白質", "9.9 公克"], ["特性", "均衡營養配方、無乳糖、含乳清蛋白、含纖維"]]}, {"n": "護力養 Plus經典 Basicare Plus Classic 粉狀：57公克（7平匙）", "e": "廠商：康平", "r": "", "c": "bal", "f": [["熱量", "249 大卡"], ["蛋白質", "10.3 公克"], ["特性", "高蛋白均衡營養配方，含纖維"]]}, {"n": "安體素均衡營養配方 NUBALANCE 粉狀：59公克（7平匙）", "e": "廠商：三友", "r": "", "c": "bal", "f": [["熱量", "256 大卡"], ["蛋白質", "10.1 公克"], ["特性", "均衡營養配方，含纖維／益生菌"]]}, {"n": "倍力素 ProSure", "e": "廠商：亞培", "r": "", "c": "spe", "f": [["熱量濃度", "1.3 大卡/毫升"], ["熱量", "280 大卡"], ["蛋白質", "14.6 公克"], ["特性", "癌症專用營養配方，高蛋白、含魚油（EPA、DHA）、含膳食纖維及果寡醣"]]}, {"n": "飲沛 Impact", "e": "廠商：雀巢", "r": "", "c": "spe", "f": [["熱量濃度", "1.5 大卡/毫升"], ["熱量", "362 大卡"], ["蛋白質", "22.5 公克"], ["特性", "腫瘤及手術前後營養支援配方，高蛋白、含魚油（EPA、DHA）、含纖維、添加L-精胺酸、核甘酸"]]}, {"n": "倍速 癌症專用配方 SUPPORTAN", "e": "廠商：費森尤斯卡比", "r": "", "c": "spe", "f": [["熱量濃度", "1.5 大卡/毫升"], ["熱量", "300 大卡"], ["蛋白質", "20 公克"], ["特性", "癌症專用配方，高蛋白、含魚油（EPA）、含纖維、無乳糖"]]}, {"n": "補體素 倍力 腫瘤適用", "e": "廠商：思耐得", "r": "", "c": "spe", "f": [["熱量濃度", "1.6 大卡/毫升"], ["熱量", "370 大卡"], ["蛋白質", "19.7 公克"], ["特性", "腫瘤配方，含麩醯胺酸、精胺酸、含纖維"]]}, {"n": "桂格完膳營養素 腫瘤配方 Cachexia Formula", "e": "廠商：佳格", "r": "", "c": "spe", "f": [["熱量濃度", "1.5 大卡/毫升"], ["熱量", "375 大卡"], ["蛋白質", "19.7 公克"], ["特性", "腫瘤配方，含麩醯胺酸、魚油、精胺酸、含纖維"]]}, {"n": "頤得健 腫瘤專用配方 ETHANIMMU 粉狀：72公克（5平匙）", "e": "廠商：頤登", "r": "", "c": "spe", "f": [["熱量", "278 大卡"], ["蛋白質", "16 公克"], ["特性", "腫瘤專用配方，高蛋白、含魚油、含纖維／益生菌"]]}, {"n": "勉益增 NU-IMMU 粉狀：57公克（6平匙）", "e": "廠商：益富", "r": "", "c": "spe", "f": [["熱量", "241 大卡"], ["蛋白質", "13.2 公克"], ["特性", "高蛋白營養配方，含乳清蛋白、添加精胺酸、麩醯胺酸"]]}, {"n": "創快復 ALITRAQ 粉狀：76公克/包", "e": "廠商：亞培", "r": "", "c": "hyd", "f": [["熱量", "309 大卡"], ["蛋白質", "15.8 公克"], ["特性", "元素配方、高蛋白、含麩醯胺酸"]]}, {"n": "佳易得 Peptamen 粉狀：55公克（6平匙）", "e": "廠商：雀巢", "r": "", "c": "hyd", "f": [["熱量", "256 大卡"], ["蛋白質", "12.9 公克"], ["特性", "高蛋白（含水解乳清蛋白）部分水解元素均衡營養配方、添加中鏈脂肪"]]}, {"n": "益力康高纖 Nutri-Aid HF Plus 粉狀：60公克（7平匙）", "e": "廠商：益富", "r": "", "c": "fib", "f": [["熱量", "251 大卡"], ["蛋白質", "10.4 公克"], ["特性", "高蛋白（100%乳清蛋白）均衡營養配方，含纖維，奶素可用。"]]}, {"n": "補體素優纖 A+ 粉狀：60公克（7平匙）", "e": "廠商：思耐得", "r": "", "c": "fib", "f": [["熱量", "251 大卡"], ["蛋白質", "9.7 公克"], ["特性", "均衡營養配方，含纖維，無添加乳糖。"]]}, {"n": "速養療 SYMPT.X 粉狀：15公克/包 （或1平匙=10公克）", "e": "廠商：吉泰", "r": "", "c": "ami", "f": [["熱量", "60 大卡"], ["蛋白質", "10 公克"], ["特性", "含麩醯胺酸（L-Glutamine）"]]}, {"n": "基速得 Abound 粉狀：24公克/包", "e": "廠商：亞培", "r": "", "c": "ami", "f": [["熱量", "82 大卡"], ["蛋白質", "14 公克"], ["特性", "含白胺酸代謝物（HMB）、精胺酸（L-Arginine）、麩醯胺酸（L-Glutamine）"]]}, {"n": "福惜素 粉狀：15公克/包", "e": "廠商：益富", "r": "", "c": "ami", "f": [["熱量", "60 大卡"], ["蛋白質", "10.1 公克"], ["特性", "含麩醯胺酸（L-Glutamine）、維他命C"]]}, {"n": "立攝適1.5 RESOURCE2.0 均康1.5", "e": "廠商：雀巢", "r": "", "c": "con", "f": [["熱量濃度", "2.0 大卡/毫升"], ["熱量", "383 大卡"], ["蛋白質", "16 公克"], ["特性", "高蛋白均衡營養配方，熱量濃縮。"]]}, {"n": "安素雙卡 Ensure TwoCal", "e": "廠商：亞培", "r": "", "c": "con", "f": [["熱量濃度", "2.0 大卡/毫升"], ["熱量", "478 大卡"], ["蛋白質", "19.9 公克"], ["特性", "高蛋白均衡營養配方，熱量濃縮，含纖維。"]]}, {"n": "三多奶蛋白 S-P93 粉狀一份：5匙=15公克", "e": "廠商：三多士", "r": "", "c": "pro", "f": [["蛋白質含量", "93%"], ["每份熱量", "56 大卡"], ["每份蛋白質", "13.3 公克"], ["特性", "牛奶蛋白，低乳糖。"]]}, {"n": "補體素 80 Protison 80 粉狀一份：1平匙=5公克", "e": "廠商：思耐得", "r": "", "c": "pro", "f": [["蛋白質含量", "80%"], ["每份熱量", "19.8 大卡"], ["每份蛋白質", "4 公克"], ["特性", "乳清蛋白"]]}, {"n": "紐崔萊優質蛋白素 原味 NUTRILITE 粉狀一份：1平匙=10公克", "e": "廠商：安麗", "r": "", "c": "pro", "f": [["蛋白質含量", "80%"], ["每份熱量", "38 大卡"], ["每份蛋白質", "8 公克"], ["特性", "純植物性蛋白質（大豆、小麥、豌豆），全素者可用。"]]}, {"n": "益富匯 Whey-Aid 粉狀一份：1平匙=10公克", "e": "廠商：益富", "r": "", "c": "pro", "f": [["蛋白質含量", "80%"], ["每份熱量", "43 大卡"], ["每份蛋白質", "8 公克"], ["特性", "乳清蛋白"]]}];</script><script>
+(function(){
+  document.querySelectorAll('.fiber').forEach(el=>{
+    const items=el.dataset.list.split('|').map(x=>{const m=x.trim().match(/^(.*?)\s*([\d.～]+)$/);return [m[1],m[2]];});
+    const max=Math.max(...items.map(x=>parseFloat(x[1].split('～').pop())));
+    el.innerHTML=items.map(([n,v])=>{const w=Math.max(2,parseFloat(v.split('～').pop())/max*100);
+      return '<div class="fr"><span>'+n+'</span><span class="bar"><i style="width:'+w+'%"></i></span><b>'+v+'</b></div>';}).join('');
+  });
+  const u=document.getElementById('wUsual'), n=document.getElementById('wNow'), o=document.getElementById('wOut');
+  function calc(){
+    const a=parseFloat(u.value), b=parseFloat(n.value);
+    if(!(a>0&&b>0)){o.innerHTML='輸入兩個數字，馬上幫你算。';o.style.background='';return;}
+    const p=(a-b)/a*100;
+    if(p<=0){o.style.background='var(--calm-soft)';o.innerHTML='體重<b>沒有下降</b>。繼續保持均衡飲食、足夠熱量與蛋白質。';return;}
+    const t='體重下降了 <b>'+(a-b).toFixed(1)+' 公斤，約 '+p.toFixed(1)+'%</b>。';
+    if(p>=5){o.style.background='var(--alert-soft)';o.innerHTML=t+'<br>已達 5%，<b>該補充營養了！</b>如果是一個月內、沒有刻意減重，這就是警訊，請告訴你的醫療團隊或營養師。';}
+    else {o.style.background='var(--sun-soft)';o.innerHTML=t+'<br>還沒到 5%，但要繼續留意，記得常量體重。';}
+  }
+  u.addEventListener('input',calc); n.addEventListener('input',calc);
+})();
+</script>
+<script src="../assets/hope.js"></script>
+</body>
+</html>

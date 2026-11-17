@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>面對化學治療 · 互動衛教手冊</title>
+<meta name="description" content="化療期間的副作用照顧、緊急就醫指標、藥物查詢與資源。改編自癌症希望基金會《希望之路—面對化學治療》。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   THEME — 取自原手冊封面配色：暖黃、基金會橘，加一個沉靜的綠
+   ============================================================ */
+:root{
+  --paper:#FFFCF5;
+  --paper-2:#FBF4E4;
+  --card:#FFFFFF;
+  --ink:#241F1A;
+  --ink-soft:#6E655B;
+  --ink-faint:#A2988A;
+  --line:#EDE3D0;
+
+  --sun:#F5B921;      --sun-soft:#FDF2D2;
+  --orange:#D9711F;   --orange-soft:#FAE9D9;
+  --calm:#2F7D6E;     --calm-soft:#E2F0ED;
+  --alert:#BE3A2B;    --alert-soft:#FBE8E5;
+
+  --f-disp:'Noto Serif TC',serif;
+  --f-body:'Noto Sans TC',system-ui,sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --shadow:0 10px 30px rgba(36,31,26,.07);
+  --wrap:min(980px,100% - 2.4rem);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:74px}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation-duration:.01ms!important;transition-duration:.01ms!important}
+}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:var(--f-body);font-weight:400;
+  font-size:clamp(17px,1.05rem + .15vw,19px);
+  line-height:1.85;letter-spacing:.01em;
+  -webkit-text-size-adjust:100%;
+}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:6px}
+
+/* ============================================================
+   頂列 + 目錄
+   ============================================================ */
+.topbar{
+  position:sticky;top:0;z-index:60;background:rgba(255,252,245,.94);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
+}
+.topbar-in{width:var(--wrap);margin:0 auto;display:flex;align-items:center;gap:14px;
+  height:64px}
+.brand{font-family:var(--f-disp);font-weight:900;font-size:1.06em;letter-spacing:.02em;
+  display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none}
+.brand .dot{width:12px;height:12px;border-radius:50%;background:var(--sun);
+  box-shadow:0 0 0 4px var(--sun-soft);flex:none}
+.brand small{font-family:var(--f-body);font-weight:500;font-size:.62em;color:var(--ink-faint);
+  letter-spacing:.06em;display:block;margin-top:-4px}
+.nav-btn{margin-left:auto;border:1.5px solid var(--line);background:var(--card);
+  border-radius:999px;padding:9px 18px;font-family:var(--f-body);font-size:.82em;
+  font-weight:700;color:var(--ink);cursor:pointer;transition:.2s var(--ease)}
+.nav-btn:hover{border-color:var(--orange);color:var(--orange)}
+
+.toc{position:fixed;inset:0;z-index:90;background:rgba(36,31,26,.55);
+  display:none;justify-content:flex-end}
+.toc.open{display:flex}
+.toc-panel{background:var(--paper);width:min(400px,88vw);height:100%;overflow-y:auto;
+  padding:28px 26px 60px;box-shadow:-20px 0 60px rgba(0,0,0,.2)}
+.toc-panel h3{font-family:var(--f-disp);font-size:1.3em;margin-bottom:6px}
+.toc-panel p.hint{font-size:.8em;color:var(--ink-faint);margin-bottom:20px}
+.toc-panel a{display:block;padding:13px 4px;border-bottom:1px solid var(--line);
+  color:var(--ink);text-decoration:none;font-weight:500;font-size:.95em;transition:.15s}
+.toc-panel a:hover{color:var(--orange);padding-left:10px}
+.toc-panel a i{color:var(--ink-faint);font-style:normal;font-size:.82em;margin-right:12px;
+  font-variant-numeric:tabular-nums}
+.toc-close{float:right;border:none;background:var(--paper-2);border-radius:999px;
+  width:38px;height:38px;font-size:1.1em;cursor:pointer;color:var(--ink-soft)}
+
+/* ============================================================
+   版面
+   ============================================================ */
+.wrap{width:var(--wrap);margin:0 auto}
+section.band{padding:clamp(48px,7vw,86px) 0;border-top:1px solid var(--line)}
+section.band.tint{background:var(--paper-2)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.78em;font-weight:700;
+  letter-spacing:.14em;color:var(--orange);margin-bottom:14px}
+.eyebrow::before{content:"";width:26px;height:3px;background:var(--sun);border-radius:2px}
+h1{font-family:var(--f-disp);font-weight:900;line-height:1.35;letter-spacing:.01em;
+  font-size:clamp(2.05em,5.4vw,3.05em)}
+h2{font-family:var(--f-disp);font-weight:900;line-height:1.4;letter-spacing:.01em;
+  font-size:clamp(1.6em,3.6vw,2.1em);margin-bottom:8px}
+h3{font-family:var(--f-disp);font-weight:700;font-size:1.22em;line-height:1.5;
+  margin-bottom:8px}
+h4{font-weight:700;font-size:1.02em;margin-bottom:6px}
+p{margin-bottom:1.05em}
+p:last-child{margin-bottom:0}
+.sub{color:var(--ink-soft);font-size:1.02em;max-width:62ch;margin-bottom:1.6em}
+b,strong{font-weight:700;color:var(--ink)}
+.soft{color:var(--ink-soft)} .faint{color:var(--ink-faint);font-size:.86em}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{padding:clamp(40px,6vw,72px) 0 clamp(38px,5vw,58px);
+  background:linear-gradient(178deg,var(--sun-soft) 0%,var(--paper) 78%)}
+.hero .kicker{font-size:.84em;letter-spacing:.2em;color:var(--orange);font-weight:700;
+  margin-bottom:16px}
+.hero h1 em{font-style:normal;background:linear-gradient(transparent 62%,var(--sun) 62%)}
+.hero .lede{margin-top:22px;font-size:1.08em;color:var(--ink-soft);max-width:56ch}
+
+/* 症狀快選 —— 這份手冊的主入口 */
+.picker{margin-top:34px;background:var(--card);border:1.5px solid var(--line);
+  border-radius:20px;padding:clamp(22px,3vw,30px);box-shadow:var(--shadow)}
+.picker h3{margin-bottom:4px}
+.picker .why{font-size:.86em;color:var(--ink-faint);margin-bottom:18px}
+.sym-grid{display:grid;gap:11px;
+  grid-template-columns:repeat(auto-fill,minmax(min(100%,146px),1fr));
+  /* 1fr 讓所有列等高：否則各列會依自己最高的內容各自算，換行數不同就會參差 */
+  grid-auto-rows:1fr}
+.sym{display:flex;align-items:center;justify-content:center;background:var(--paper);
+  border:1.5px solid var(--line);border-radius:13px;padding:16px 12px;min-height:68px;
+  font-family:var(--f-body);font-size:.95em;font-weight:500;color:var(--ink);
+  text-align:center;cursor:pointer;transition:.18s var(--ease);line-height:1.45}
+.sym:hover{border-color:var(--orange);background:var(--orange-soft);transform:translateY(-2px)}
+
+/* ============================================================
+   卡片 / 清單
+   ============================================================ */
+.card{background:var(--card);border:1.5px solid var(--line);border-radius:18px;
+  padding:clamp(20px,2.6vw,28px);box-shadow:var(--shadow)}
+.card + .card{margin-top:16px}
+/* 格線內的卡片由 gap 控制間距，不能再吃到堆疊用的 margin，否則第 2 張之後會被往下推 */
+.grid2 > .card + .card,
+.grid3 > .card + .card{margin-top:0}
+.grid2,.grid3{align-items:stretch}
+/* min(100%,…) 是必要的：巢狀在卡片或手風琴裡時，容器可用寬度可能小於
+   minmax 的最小值，沒有 min() 就會撐破容器造成整頁橫向捲動 */
+.grid2{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr))}
+.grid3{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
+.card.sun{background:var(--sun-soft);border-color:#EED9A2;box-shadow:none}
+.card.calm{background:var(--calm-soft);border-color:#BEDCD6;box-shadow:none}
+.card.warn{background:var(--orange-soft);border-color:#EFCDAD;box-shadow:none}
+.card.bad{background:var(--alert-soft);border-color:#F0C3BC;box-shadow:none}
+.card h3 .n{display:inline-flex;align-items:center;justify-content:center;
+  width:30px;height:30px;border-radius:9px;background:var(--sun);color:#3A2C05;
+  font-family:var(--f-body);font-size:.62em;font-weight:900;margin-right:11px;
+  vertical-align:2px}
+
+ul.bul{list-style:none;display:flex;flex-direction:column;gap:11px}
+ul.bul li{position:relative;padding-left:1.5em;color:var(--ink-soft)}
+ul.bul li::before{content:"";position:absolute;left:0;top:.72em;width:7px;height:7px;
+  border-radius:50%;background:var(--sun)}
+ul.bul.g li::before{background:var(--calm)}
+ul.bul.r li::before{background:var(--alert)}
+ul.bul li b{color:var(--ink)}
+
+.pill{display:inline-flex;align-items:center;gap:8px;background:var(--card);
+  border:1.5px solid var(--line);border-radius:999px;padding:7px 15px;
+  font-size:.84em;font-weight:500;margin:0 7px 7px 0}
+.pill.on{background:var(--calm-soft);border-color:#BEDCD6;color:var(--calm);font-weight:700}
+.pill.no{background:var(--alert-soft);border-color:#F0C3BC;color:var(--alert);font-weight:700}
+
+/* 護理師小叮嚀 */
+.nurse{display:flex;gap:16px;background:var(--calm-soft);border:1.5px solid #BEDCD6;
+  border-radius:16px;padding:20px 22px;margin-top:18px}
+.nurse svg{width:34px;height:34px;flex:none;stroke:var(--calm);fill:none;stroke-width:1.6;
+  stroke-linecap:round;stroke-linejoin:round;margin-top:2px}
+.nurse .t{font-weight:700;color:var(--calm);margin-bottom:5px;font-size:.94em}
+.nurse p{font-size:.94em;color:#38564F;margin-bottom:.7em}
+
+/* ============================================================
+   緊急就醫（常駐鈕 + 面板）
+   ============================================================ */
+.sos-fab{position:fixed;right:18px;bottom:18px;z-index:70;background:var(--alert);
+  color:#fff;border:none;border-radius:999px;padding:15px 22px;font-family:var(--f-body);
+  font-weight:900;font-size:.92em;cursor:pointer;display:flex;align-items:center;gap:9px;
+  box-shadow:0 12px 30px rgba(190,58,43,.42);transition:.2s var(--ease)}
+.sos-fab:hover{transform:translateY(-2px);box-shadow:0 16px 36px rgba(190,58,43,.5)}
+.sos-fab svg{width:20px;height:20px;stroke:#fff;fill:none;stroke-width:2.1;
+  stroke-linecap:round;stroke-linejoin:round}
+.sos-modal{position:fixed;inset:0;z-index:95;background:rgba(36,31,26,.62);
+  display:none;align-items:center;justify-content:center;padding:20px}
+.sos-modal.open{display:flex}
+.sos-panel{background:var(--card);border-radius:22px;max-width:640px;width:100%;
+  max-height:88vh;overflow-y:auto;padding:clamp(24px,4vw,36px);
+  border-top:8px solid var(--alert)}
+.sos-panel h3{color:var(--alert);font-size:1.42em;margin-bottom:4px}
+.sos-list{list-style:none;display:flex;flex-direction:column;gap:12px;margin:20px 0}
+.sos-list li{display:flex;gap:13px;align-items:flex-start;background:var(--alert-soft);
+  border-radius:12px;padding:14px 16px;font-weight:500;line-height:1.6}
+.sos-list li span.mk{flex:none;width:26px;height:26px;border-radius:50%;background:var(--alert);
+  color:#fff;font-size:.74em;font-weight:900;display:flex;align-items:center;
+  justify-content:center;margin-top:2px}
+.sos-close{width:100%;margin-top:6px;background:var(--ink);color:#fff;border:none;
+  border-radius:12px;padding:15px;font-family:var(--f-body);font-weight:700;
+  font-size:.95em;cursor:pointer}
+
+/* ============================================================
+   時間軸
+   ============================================================ */
+.tl{margin-top:26px;overflow-x:auto;padding-bottom:8px}
+.tl-in{min-width:640px}
+.tl-head{display:grid;grid-template-columns:repeat(6,1fr);font-size:.78em;
+  color:var(--ink-faint);font-weight:700;border-bottom:2px solid var(--line);
+  padding-bottom:8px;margin-bottom:14px;letter-spacing:.04em}
+.tl-row{display:grid;grid-template-columns:repeat(30,1fr);align-items:center;
+  height:44px;position:relative}
+.tl-bar{grid-row:1;border-radius:8px;height:34px;display:flex;align-items:center;
+  padding:0 14px;font-size:.8em;font-weight:700;white-space:nowrap;color:#3A2C05}
+.tl-bar.a{background:var(--sun)}
+.tl-bar.b{background:var(--orange);color:#fff}
+.tl-bar.c{background:var(--calm);color:#fff}
+.tl-bar.d{background:#C9BCA6;color:#33291A}
+
+/* ============================================================
+   手風琴（各症狀照顧）
+   ============================================================ */
+.acc{border:1.5px solid var(--line);border-radius:16px;background:var(--card);
+  overflow:hidden;margin-bottom:12px;box-shadow:var(--shadow)}
+.acc.hit{border-color:var(--orange);box-shadow:0 0 0 4px var(--orange-soft)}
+.acc-h{width:100%;display:flex;align-items:center;gap:15px;padding:20px 22px;
+  background:none;border:none;cursor:pointer;font-family:var(--f-disp);font-weight:700;
+  font-size:1.1em;color:var(--ink);text-align:left;line-height:1.45}
+.acc-h svg.ic{width:28px;height:28px;flex:none;stroke:var(--orange);fill:none;
+  stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.acc-h .cv{margin-left:auto;flex:none;width:26px;height:26px;color:var(--ink-faint);
+  transition:transform .3s var(--ease);font-size:1.3em;line-height:1;font-family:var(--f-body)}
+.acc.open .acc-h .cv{transform:rotate(45deg);color:var(--orange)}
+.acc-b{display:none;padding:0 22px 24px;border-top:1px solid var(--line);margin-top:-1px}
+.acc.open .acc-b{display:block;padding-top:20px}
+
+/* ============================================================
+   互動：清單勾選、量尺、藥物搜尋
+   ============================================================ */
+.chk{display:flex;align-items:flex-start;gap:13px;padding:12px 4px;
+  border-bottom:1px solid var(--line);cursor:pointer;line-height:1.6}
+.chk:last-child{border-bottom:none}
+.chk input{appearance:none;width:23px;height:23px;flex:none;margin-top:3px;
+  border:2px solid var(--ink-faint);border-radius:7px;cursor:pointer;transition:.15s;
+  position:relative;background:var(--card)}
+.chk input:checked{background:var(--calm);border-color:var(--calm)}
+.chk input:checked::after{content:"✓";position:absolute;inset:0;color:#fff;
+  font-size:15px;font-weight:900;display:flex;align-items:center;justify-content:center}
+.chk input:checked ~ span{color:var(--ink-faint);text-decoration:line-through}
+.chk span{font-size:.96em}
+.chk span em{font-style:normal;font-weight:700;color:var(--alert)}
+.chk-note{margin-top:16px;font-size:.88em;color:var(--ink-soft);background:var(--paper-2);
+  border-radius:11px;padding:13px 16px}
+
+/* 量尺用 grid 不用 flex：格線的每一格寬度固定相等，
+   換行時最後一排不會被 flex-grow 撐大 */
+.scale{display:grid;grid-template-columns:repeat(11,1fr);gap:6px;margin:20px 0 16px}
+.scale button{width:100%;padding:0;aspect-ratio:1;border:1.5px solid var(--line);
+  background:var(--card);border-radius:11px;font-family:var(--f-body);font-weight:700;
+  font-size:1em;color:var(--ink-soft);cursor:pointer;transition:.15s var(--ease)}
+.scale button:hover{border-color:var(--orange)}
+.scale button.sel{background:var(--orange);border-color:var(--orange);color:#fff;
+  transform:scale(1.08)}
+.scale-out{border-radius:14px;padding:18px 20px;font-size:.95em;line-height:1.72;
+  background:var(--paper-2);border:1.5px solid var(--line)}
+.scale-out.low{background:var(--calm-soft);border-color:#BEDCD6}
+.scale-out.high{background:var(--orange-soft);border-color:#EFCDAD}
+.scale-out .lv{font-family:var(--f-disp);font-weight:900;font-size:1.15em;
+  display:block;margin-bottom:5px}
+
+.search-box{position:relative;margin-bottom:18px}
+.search-box input{width:100%;border:1.5px solid var(--line);border-radius:14px;
+  padding:16px 18px 16px 50px;font-family:var(--f-body);font-size:1em;background:var(--card);
+  color:var(--ink)}
+.search-box input::placeholder{color:var(--ink-faint)}
+.search-box svg{position:absolute;left:17px;top:50%;transform:translateY(-50%);
+  width:21px;height:21px;stroke:var(--ink-faint);fill:none;stroke-width:2}
+.drug-tabs{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.drug-tabs button{border:1.5px solid var(--line);background:var(--card);border-radius:999px;
+  padding:8px 17px;font-family:var(--f-body);font-size:.84em;font-weight:700;
+  color:var(--ink-soft);cursor:pointer}
+.drug-tabs button.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.drug-count{font-size:.84em;color:var(--ink-faint);margin-bottom:12px}
+.drug{border:1.5px solid var(--line);border-radius:14px;background:var(--card);
+  padding:17px 19px;margin-bottom:10px}
+.drug .nm{font-weight:700;font-size:1.02em;margin-bottom:2px}
+.drug .en{font-size:.84em;color:var(--ink-faint);margin-bottom:11px;letter-spacing:.01em}
+.drug .rt{display:inline-block;font-size:.76em;font-weight:700;color:var(--calm);
+  background:var(--calm-soft);border-radius:6px;padding:3px 9px;margin-bottom:10px}
+.drug dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:.9em;
+  line-height:1.65}
+.drug dt{font-weight:700;color:var(--ink-soft);white-space:nowrap}
+.drug dd{color:var(--ink-soft)}
+.drug dd.care{color:var(--orange);font-weight:500}
+.empty{text-align:center;color:var(--ink-faint);padding:40px 0;font-size:.94em}
+
+/* ============================================================
+   資源 / 頁尾
+   ============================================================ */
+.hot{display:flex;flex-wrap:wrap;align-items:center;gap:18px;background:var(--ink);
+  color:#F7F1E6;border-radius:20px;padding:clamp(24px,3.4vw,32px)}
+.hot .lab{font-size:.88em;color:#BFB2A0;letter-spacing:.1em;font-weight:700}
+.hot .num{font-family:var(--f-disp);font-weight:900;font-size:clamp(1.9em,5.2vw,2.5em);
+  letter-spacing:.02em;color:var(--sun);display:block;line-height:1.2}
+.hot a{color:var(--sun);text-decoration:none}
+.hot p{font-size:.92em;color:#CFC4B3;margin:0}
+.stations{margin-top:18px}
+.station{border-bottom:1px solid var(--line);padding:15px 0}
+.station:last-child{border-bottom:none}
+.station .c{font-weight:700;margin-bottom:3px}
+.station .d{font-size:.9em;color:var(--ink-soft)}
+
+footer{background:var(--paper-2);border-top:1px solid var(--line);
+  padding:44px 0 60px;font-size:.86em;color:var(--ink-soft);line-height:1.8}
+footer .src{border-left:4px solid var(--sun);padding-left:16px;margin-bottom:20px}
+footer b{color:var(--ink)}
+.totop{display:inline-block;margin-top:18px;border:1.5px solid var(--line);
+  background:var(--card);border-radius:999px;padding:10px 20px;text-decoration:none;
+  color:var(--ink);font-weight:700;font-size:.9em}
+
+@media print{
+  .topbar,.sos-fab,.nav-btn,.toc,.picker,.totop{display:none!important}
+  .acc-b{display:block!important}
+  body{background:#fff}
+  .card,.acc{box-shadow:none;break-inside:avoid}
+}
+/* ---- 手機：欄數寫死，不讓 360px 和 390px 的手機長出不同版面 ---- */
+@media (max-width:640px){
+  /* 0–5 一排、6–10 一排，每格大小完全相同 */
+  .scale{grid-template-columns:repeat(6,1fr);gap:8px}
+  /* 症狀快選固定兩欄 */
+  .sym-grid{grid-template-columns:repeat(2,1fr)}
+  .sym{font-size:.9em;padding:14px 10px;min-height:62px}
+  /* 藥物資料改上下堆疊，右欄才不會擠成一條窄柱 */
+  .drug dl{grid-template-columns:1fr;gap:2px 0}
+  .drug dt{margin-top:8px}
+  .drug dt:first-child{margin-top:0}
+  /* 時間軸需要左右滑，給個提示 */
+  .tl::after{content:"← 左右滑動可看完整時間軸 →";display:block;text-align:center;
+    font-size:.78em;color:var(--ink-faint);padding-top:10px}
+}
+@media (max-width:560px){
+  .brand small{display:none}
+  .sos-fab{padding:13px 18px;font-size:.86em}
+}
+
+/* ---- 書架連結（加入《希望之路》網站時新增，內文未更動） ---- */
+.shelf-link{flex:none;display:inline-flex;align-items:center;gap:4px;height:40px;
+  padding:0 13px 0 9px;border-radius:999px;background:var(--paper-2);
+  border:1.5px solid var(--line);color:var(--ink-soft);text-decoration:none;
+  font-size:.8em;font-weight:700;white-space:nowrap}
+.shelf-link:hover{border-color:var(--orange);color:var(--orange)}
+.shelf-link svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2.4;
+  stroke-linecap:round;stroke-linejoin:round}
+@media (max-width:420px){.shelf-link .lb{display:none}.shelf-link{padding:0 10px 0 7px}
+  .topbar-in{gap:8px}}
+</style>
+</head>
+<body>
+
+<!-- ==================== ICON SPRITE ==================== -->
+<svg style="display:none" aria-hidden="true">
+  <symbol id="i-hair" viewBox="0 0 24 24"><path d="M5 13a7 7 0 0114 0"/><path d="M5 13v5a2 2 0 002 2h1"/><path d="M19 13v5a2 2 0 01-2 2h-1"/><path d="M9 4.5c1.5-1 4.5-1 6 0"/></symbol>
+  <symbol id="i-mouth" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 14c1.2 1.6 6.8 1.6 8 0"/><path d="M9 9.5h.01M15 9.5h.01"/></symbol>
+  <symbol id="i-nausea" viewBox="0 0 24 24"><path d="M4 8h10a4 4 0 010 8H8"/><path d="M17 5v6M20 5v6"/><path d="M6 19h6"/></symbol>
+  <symbol id="i-gut" viewBox="0 0 24 24"><path d="M6 3v6a4 4 0 004 4h1a4 4 0 014 4v4"/><path d="M18 3v4a3 3 0 01-3 3"/><path d="M4 21h6"/></symbol>
+  <symbol id="i-fever" viewBox="0 0 24 24"><path d="M12 3v10"/><circle cx="12" cy="17" r="3.5"/><path d="M9 6h6M9 9h6"/></symbol>
+  <symbol id="i-blood" viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 10.5A6 6 0 016 13.5C6 9.5 12 3 12 3z"/></symbol>
+  <symbol id="i-nerve" viewBox="0 0 24 24"><path d="M8 21V11l-2-2a4 4 0 015-6l1 2"/><path d="M16 21v-6l2-2a4 4 0 00-4-6"/><path d="M11 15h3"/></symbol>
+  <symbol id="i-skin" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M8 11c1.5 1 2.5-1 4 0s2.5-1 4 0"/><path d="M8 15c1.5 1 2.5-1 4 0"/></symbol>
+  <symbol id="i-tired" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 10.5h2.5M13.5 10.5H16"/><path d="M9 15.5c1.8-1.2 4.2-1.2 6 0"/></symbol>
+  <symbol id="i-organ" viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.4A4.1 4.1 0 0112 8a4.1 4.1 0 017 2.6c0 4.8-7 9.4-7 9.4z"/><path d="M3 14h3l1.5-2.5L9 15l1.5-3"/></symbol>
+  <symbol id="i-fertility" viewBox="0 0 24 24"><circle cx="9" cy="9" r="4.5"/><path d="M9 13.5V21M6 18h6"/><circle cx="17" cy="16" r="4"/><path d="M20 13l3-3M20 10h3v3"/></symbol>
+  <symbol id="i-food" viewBox="0 0 24 24"><path d="M5 3v8a2 2 0 002 2h0a2 2 0 002-2V3"/><path d="M7 13v8"/><path d="M17 3c-1.5 2-2 4-2 6s.7 3 2 3v9"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4l9 16H3l9-16z"/><path d="M12 10v4M12 17.5h.01"/></symbol>
+  <symbol id="i-nurse" viewBox="0 0 24 24"><path d="M12 13a4 4 0 100-8 4 4 0 000 8z"/><path d="M4 21a8 8 0 0116 0"/><path d="M12 2.5v2M11 3.5h2"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+</svg>
+
+<!-- ==================== 頂列 ==================== -->
+<header class="topbar">
+  <div class="topbar-in">
+    <a href="../index.html" class="shelf-link" aria-label="回到書架"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg><span class="lb">書架</span></a>
+    <a href="#top" class="brand">
+      <span class="dot"></span>
+      <span>面對化學治療<small>互動衛教手冊</small></span>
+    </a>
+    <button class="nav-btn" id="tocBtn">目錄 ☰</button>
+  </div>
+</header>
+
+<!-- ==================== 目錄抽屜 ==================== -->
+<div class="toc" id="toc">
+  <div class="toc-panel" id="tocPanel">
+    <button class="toc-close" id="tocClose" aria-label="關閉目錄">✕</button>
+    <h3>目錄</h3>
+    <p class="hint">不必從頭看到尾，找你需要的那一段就好。</p>
+    <a href="#s1"><i>01</i>化療是什麼</a>
+    <a href="#s2"><i>02</i>化療怎麼進行</a>
+    <a href="#s3"><i>03</i>治療前，先問清楚</a>
+    <a href="#s4"><i>04</i>副作用什麼時候來</a>
+    <a href="#s5"><i>05</i>各種不舒服怎麼照顧</a>
+    <a href="#s6"><i>06</i>癌因性疲憊</a>
+    <a href="#s7"><i>07</i>治療期間的營養</a>
+    <a href="#s8"><i>08</i>藥物查詢</a>
+    <a href="#s9"><i>09</i>可以找誰幫忙</a>
+  </div>
+</div>
+
+<!-- ==================== HERO ==================== -->
+<div id="top"></div>
+<section class="hero">
+  <div class="wrap">
+    <div class="kicker">希望之路　HOPE</div>
+    <h1>認真的病人，<br>你可以為自己<em>爭取更多</em></h1>
+    <p class="lede">
+      化療的副作用大多是<b>短暫的</b>，會隨著治療結束而消失；而且並不是每個人都會遇到全部的副作用。
+      很多不舒服其實可以事先預防、也可以處理——前提是你知道它會怎麼來、以及該找誰。
+    </p>
+
+    <div class="picker">
+      <h3>你現在最不舒服的是什麼？</h3>
+      <p class="why">點一下，直接跳到那一段的照顧方法。</p>
+      <div class="sym-grid">
+        <button class="sym" data-go="a-hair">頭髮在掉</button>
+        <button class="sym" data-go="a-mouth">嘴巴破、喉嚨痛</button>
+        <button class="sym" data-go="a-nausea">噁心、想吐</button>
+        <button class="sym" data-go="a-gut">腹瀉或便秘</button>
+        <button class="sym" data-go="a-wbc">發燒、怕感染</button>
+        <button class="sym" data-go="a-rbc">頭暈、貧血、瘀青</button>
+        <button class="sym" data-go="a-nerve">手腳發麻</button>
+        <button class="sym" data-go="a-skin">皮膚、指甲變化</button>
+        <button class="sym" data-go="s6">累到不像話</button>
+        <button class="sym" data-go="a-organ">心臟、腎臟、水腫</button>
+        <button class="sym" data-go="a-sex">生育與親密關係</button>
+        <button class="sym" data-go="s8">查我在用的藥</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 01 化療是什麼 ==================== -->
+<section class="band" id="s1">
+  <div class="wrap">
+    <div class="eyebrow">01　先弄懂它</div>
+    <h2>化學治療是什麼</h2>
+    <p class="sub">
+      正式名稱是「<b>細胞毒殺治療</b>」，用化學藥物來治療癌症。癌細胞分裂增生的速度比正常細胞快，
+      化療藥就是鎖定這個特性，阻斷癌細胞的分裂繁殖。它屬於<b>全身性</b>的治療，也可能搭配放療、標靶或免疫藥物一起使用。
+    </p>
+
+    <div class="grid3">
+      <div class="card sun">
+        <h4>副作用大多是短暫的</h4>
+        <p class="soft">程度與藥物種類、劑量、給藥方式有關，也因人而異。許多副作用可以在治療前先用藥預防或減輕。</p>
+      </div>
+      <div class="card sun">
+        <h4>副作用跟療效無關</h4>
+        <p class="soft">副作用大不代表藥有效，副作用小也不代表沒效。不需要用不舒服的程度來判斷治療好不好。</p>
+      </div>
+      <div class="card bad">
+        <h4>不要吃來路不明的藥</h4>
+        <p class="soft">中藥、健康食品、維他命都算。想補充任何東西，<b>先問你的醫師</b>——有些會干擾化療藥效。</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:38px">為什麼要做化療？五種不同的目的</h3>
+    <p class="sub">同樣叫化療，目的可能完全不一樣。知道自己屬於哪一種，比較容易理解醫師的安排。</p>
+    <div class="grid2">
+      <div class="card"><h4>前導性化療（新輔助性）</h4><p class="soft">用在手術或放療<b>之前</b>，先把腫瘤縮小，增加根治性手術的成功率。</p></div>
+      <div class="card"><h4>輔助性化療</h4><p class="soft">用在手術<b>之後</b>，殺死臨床上看不到的殘餘癌細胞，預防轉移或復發。</p></div>
+      <div class="card"><h4>根治性化療</h4><p class="soft">化療本身就是主要治療，如白血病、淋巴癌、轉移性乳癌、大腸癌等。</p></div>
+      <div class="card"><h4>維持性化療</h4><p class="soft">症狀已緩解者，用低劑量或低毒性藥物長期治療，減緩殘餘癌細胞生長。</p></div>
+      <div class="card"><h4>緩和性化療</h4><p class="soft">針對已轉移的病人，減輕癌症引起的不適、減緩癌細胞生長並延長生命。</p></div>
+      <div class="card calm"><h4>順帶一提：化療怎麼被發現的</h4><p class="soft">二戰時一艘生化武器船在義大利港口洩漏芥子氣，事後檢驗發現傷者的骨髓細胞大量死亡——有人想到「那能不能拿來治白血病？」改善毒性後，開啟了化療的年代。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 02 化療怎麼進行 ==================== -->
+<section class="band tint" id="s2">
+  <div class="wrap">
+    <div class="eyebrow">02　實務</div>
+    <h2>化療怎麼進行</h2>
+
+    <div class="card">
+      <h3>醫師會依據這 6 件事決定你的處方</h3>
+      <p class="soft" style="margin-bottom:14px">目的是把療效拉到最大、副作用壓到最小。</p>
+      <ul class="bul">
+        <li><b>癌症種類</b>——依病理組織學報告</li>
+        <li><b>細胞型態</b></li>
+        <li><b>腫瘤侵犯的程度與範圍</b>——腫瘤大小、淋巴侵犯、遠端器官是否轉移</li>
+        <li><b>荷爾蒙接受體與基因檢測結果</b></li>
+        <li><b>治療後對生理功能的影響</b></li>
+        <li><b>你當時的體能狀況</b></li>
+      </ul>
+      <div class="nurse">
+        <svg><use href="#i-nurse"/></svg>
+        <div>
+          <div class="t">開始治療前，把你在吃的藥列一張表</div>
+          <p>有些藥會干擾化療藥效。<b>藥名、服用頻率、服藥原因、劑量</b>都寫清楚，愈詳細愈好，交給醫師看。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid2" style="margin-top:16px">
+      <div class="card">
+        <h4>治療時間</h4>
+        <p class="soft">因人而異：可能每天一次、每週一次、兩週一次或每月一次。通常會<b>做做停停</b>——暫停是為了讓身體長出健康的新細胞、恢復體力，不是治療中斷。</p>
+      </div>
+      <div class="card">
+        <h4>治療地點</h4>
+        <p class="soft">看用哪種藥、劑量、你的意願與醫師建議而定，可能在<b>家裡</b>、<b>醫院門診化療室</b>或<b>住院病房</b>。</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:38px">給藥方式</h3>
+    <p class="sub">最常見的是靜脈注射，但依藥物與腫瘤位置，還有另外八種途徑。</p>
+    <div class="card">
+      <h4>（一）靜脈注射　最常見</h4>
+      <p class="soft">經由一根小塑膠管（靜脈注射導管）放置在前臂或手背的靜脈內。為了保護週邊血管不被化學藥物傷害，醫師通常會建議<b>先做人工血管</b>，也能免除治療期間反覆扎針的痛苦。</p>
+      <div class="grid2" style="margin-top:16px">
+        <div class="card calm">
+          <h4>Port-A 導管</h4>
+          <p class="soft">需手術裝設，常裝在左上或右上胸壁，大小約 10 元硬幣。<b>完全埋在皮膚下</b>，外觀只有一個凸起，洗澡、運動都照常。</p>
+        </div>
+        <div class="card calm">
+          <h4>PICC 導管</h4>
+          <p class="soft">不用進手術室。從手臂血管放入長導管，手臂外側留一個外露的橡皮注射處。護理師會教你返家後消毒換紗布，要當心移位。</p>
+        </div>
+      </div>
+      <p class="soft" style="margin-top:14px">治療結束、追蹤穩定後，人工血管就可以移除了。</p>
+      <div class="nurse" style="background:var(--alert-soft);border-color:#F0C3BC">
+        <svg style="stroke:var(--alert)"><use href="#i-alert"/></svg>
+        <div>
+          <div class="t" style="color:var(--alert)">滴注期間，注射部位有任何異常立刻說</div>
+          <p style="color:#7D2E24">有些化學藥物具腐蝕性，外漏會造成注射部位紅腫、甚至皮膚壞死。持續感覺<b>液體外滲、冰冷、疼痛、灼熱</b>或任何不適，請立即通知醫護人員。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <h4>其他八種給藥途徑</h4>
+      <ul class="bul" style="margin-top:12px">
+        <li><b>口服</b>——劑量、頻率、是否隨餐都要照醫師指示。有些必須空腹、有些必須餐後、有些餐後不能配太油的食物。<b>千萬不可自行改劑量或停藥。</b></li>
+        <li><b>脊髓腔給藥</b>——直接注射到脊髓腔，或注射到頭皮裡的腦脊髓液貯藏裝置（Ommaya）</li>
+        <li><b>動脈給藥</b>——直接注射到動脈治療特定部位腫瘤（如肝、頭頸部），只做局部控制</li>
+        <li><b>腹腔內給藥</b>——用於極微小的腹膜腫瘤（如胃癌、大腸癌的腹膜轉移）或婦科腫瘤</li>
+        <li><b>肋膜腔內給藥</b>——先以胸管排出積水，再注入抗癌藥物改善肋膜積水</li>
+        <li><b>膀胱內給藥</b>——藉尿管灌注到膀胱，治療淺層膀胱癌</li>
+        <li><b>肌肉或皮下給藥</b></li>
+        <li><b>局部給藥</b>——如皮膚擦藥</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 03 治療前提問清單 ==================== -->
+<section class="band" id="s3">
+  <div class="wrap">
+    <div class="eyebrow">03　帶著它去看診</div>
+    <h2>治療前，你應該先問清楚</h2>
+    <p class="sub">
+      看診時間很短，很容易走出診間才想起要問什麼。這張清單可以直接勾選使用——問到了就打勾，
+      沒問到的下次補問。<b>問清楚不是找麻煩，是把自己的治療搞懂。</b>
+    </p>
+
+    <div class="card">
+      <h3>化療前的 8 個問題</h3>
+      <div id="askList" style="margin-top:14px">
+        <label class="chk"><input type="checkbox"><span>這次治療的<b>目的</b>是什麼？（治癒／縮小腫瘤／預防復發／控制症狀）</span></label>
+        <label class="chk"><input type="checkbox"><span>用的是哪些<b>藥物名稱</b>？</span></label>
+        <label class="chk"><input type="checkbox"><span><b>用藥方式</b>是什麼？（靜脈、口服、其他）需要做人工血管嗎？</span></label>
+        <label class="chk"><input type="checkbox"><span><b>療程怎麼安排</b>？多久一次、總共幾次、大概要多久？</span></label>
+        <label class="chk"><input type="checkbox"><span>要<b>合併其他治療</b>嗎？（放療、標靶、免疫…）</span></label>
+        <label class="chk"><input type="checkbox"><span>我這個藥<b>可能的副作用</b>有哪些？哪些需要立刻回診？</span></label>
+        <label class="chk"><input type="checkbox"><span>治療前我要做哪些<b>準備</b>？（看牙醫、冷凍精子／卵子、假髮…）</span></label>
+        <label class="chk"><input type="checkbox"><span><b>治療費用</b>大概多少？我的<b>保單</b>涵蓋哪些？</span></label>
+      </div>
+      <div class="chk-note" id="askNote">已問到 0 / 8 題。</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================== 04 副作用時間軸 ==================== -->
+<section class="band tint" id="s4">
+  <div class="wrap">
+    <div class="eyebrow">04　先知道它什麼時候來</div>
+    <h2>副作用大概什麼時候出現</h2>
+    <p class="sub">
+      化療藥鎖定「分裂快的細胞」，所以體內其他生長快速的正常組織——毛髮、黏膜、骨髓——也會被波及。
+      以下是常見副作用的<b>大致發生時間</b>（以一次療程的第 1 天起算），每個人不同，僅供心理準備。
+    </p>
+
+    <div class="card">
+      <div class="tl">
+        <div class="tl-in">
+          <div class="tl-head">
+            <div>第1天</div><div>第5天</div><div>第10天</div><div>第15天</div><div>第20天</div><div>第25天→</div>
+          </div>
+          <div class="tl-row"><div class="tl-bar a" style="grid-column:1/6">過敏反應</div></div>
+          <div class="tl-row"><div class="tl-bar a" style="grid-column:1/8">噁心、嘔吐</div></div>
+          <div class="tl-row"><div class="tl-bar b" style="grid-column:5/16">腹瀉、口腔潰瘍</div></div>
+          <div class="tl-row"><div class="tl-bar b" style="grid-column:7/16">感染、貧血、出血</div></div>
+          <div class="tl-row"><div class="tl-bar c" style="grid-column:16/31">毛髮脫落</div></div>
+          <div class="tl-row"><div class="tl-bar c" style="grid-column:19/31">手腳麻、聽力受損、影響心臟與生育</div></div>
+          <div class="tl-row"><div class="tl-bar d" style="grid-column:1/31">疲憊感（從頭到尾都可能有）</div></div>
+        </div>
+      </div>
+      <p class="faint" style="margin-top:14px">※ 副作用的程度，因藥物種類、劑量及每個人的個別差異而不同。</p>
+    </div>
+
+    <div class="grid2" style="margin-top:18px">
+      <div class="card sun">
+        <h4>不要因為害怕副作用而逃避治療</h4>
+        <p class="soft">很多人在開始前非常擔心，但<b>並非每個人都會發生所有副作用</b>，嚴重程度也不同。大部分副作用會在治療結束後逐漸康復。</p>
+      </div>
+      <div class="card warn">
+        <h4>副作用會出現在這些地方</h4>
+        <p class="soft">毛髮脫落、口腔喉嚨潰瘍、噁心嘔吐、便秘腹瀉、皮膚指甲改變、血球低下（感染／貧血／出血）、神經肌肉（聽力、手腳麻）、影響心臟、影響生育。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 05 各症狀照顧 ==================== -->
+<section class="band" id="s5">
+  <div class="wrap">
+    <div class="eyebrow">05　照顧方法</div>
+    <h2>各種不舒服，可以怎麼照顧</h2>
+    <p class="sub">點開你需要的那一項。沒有的症狀就跳過。</p>
+
+    <!-- 毛髮 -->
+    <div class="acc" id="a-hair">
+      <button class="acc-h"><svg class="ic"><use href="#i-hair"/></svg>毛髮脫落<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p>掉髮程度主要與藥物有關（如鉑金、小紅莓類、紫杉醇等），<b>並非每個人都會發生</b>。通常在治療後兩三個星期才開始，甚至第二次治療之後才發生；可能漸漸掉，也可能一次一整撮。</p>
+        <p>脫落不只限於頭部——眉毛、腋毛、手毛、腿毛甚至陰毛都可能。剛開始掉時常讓人無法面對而想躲起來，<b>這是很正常的反應</b>。</p>
+        <ul class="bul g">
+          <li><b>先下手為強</b>——化療前就先剪短或剃掉，散落的頭髮比較不會影響心情</li>
+          <li><b>提早挑假髮</b>——在開始掉之前去挑，才有時間找到接近原本髮色與髮型的</li>
+          <li><b>不想買假髮</b>——可以問醫院的「癌症資源中心」或癌症團體<b>租借</b></li>
+          <li><b>頭巾、帽子</b>——跟著季節和心情換造型</li>
+          <li><b>頭皮會變乾癢</b>——改用溫和的洗護髮品，或用乳液輕輕按摩</li>
+          <li><b>頭皮變脆弱</b>——戴帽或頭巾避免陽光直射；改用寬齒軟毛梳；吹整溫度別過高；<b>不要用髮膠定型液，也先不要燙染</b></li>
+        </ul>
+        <div class="nurse"><svg><use href="#i-nurse"/></svg><div>
+          <div class="t">治療結束後，頭髮會慢慢長回來</div>
+          <p>甚至有些人在治療期間就開始長出新髮了。</p>
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 口腔 -->
+    <div class="acc" id="a-mouth">
+      <button class="acc-h"><svg class="ic"><use href="#i-mouth"/></svg>口腔及喉嚨潰瘍<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p>有些化學藥物會破壞口腔內及喉嚨黏膜的細胞，引起破皮或潰瘍。除了疼痛、食慾下降、吞嚥困難外，有時也會因為痛而疏於清潔，反而造成感染。</p>
+        <h4 style="margin-top:18px">清潔</h4>
+        <ul class="bul">
+          <li><b>治療開始前先看牙醫</b>，把蛀牙、牙齦疾病、沒裝好的假牙都先處理好</li>
+          <li>每餐飯後以<b>軟毛牙刷</b>輕輕刷牙，或用力漱口來取代刷牙</li>
+          <li>牙齦已破皮潰瘍時，可用<b>濕棉花棒</b>清潔牙齒，或以漱口水清潔即可</li>
+          <li>牙刷用完要洗乾淨、放在乾燥處，避免滋生細菌</li>
+        </ul>
+        <h4 style="margin-top:18px">疼痛處理</h4>
+        <ul class="bul">
+          <li>漱口水選<b>0.9% 生理食鹽水</b>或「不含酒精」的，避免市售含鹽份或酒精成份的（刺激太強）</li>
+          <li>擦藥膏時應<b>和傷口垂直方向</b>輕輕給藥，勿用力水平塗抹，以免二度傷害</li>
+          <li>疼痛厲害就請醫師開止痛藥，不要硬撐</li>
+        </ul>
+        <h4 style="margin-top:18px">飲食：避免刺激黏膜</h4>
+        <div class="grid2" style="margin-top:12px">
+          <div class="card calm">
+            <h4>多吃點 ○</h4>
+            <p class="soft"><b>冰涼的</b>：冰淇淋、奶昔、冰塊<br>
+            <b>柔軟好入口</b>：香蕉、蘋果泥、馬鈴薯泥、麥片、水煮蛋或炒蛋、通心粉、布丁<br>
+            <b>溫和不刺激</b>：不過份調味的豆腐、雞蛋、蔬菜<br>
+            <b>高蛋白高熱量</b>：蒸蛋、豆漿、雞肉泥</p>
+          </div>
+          <div class="card bad">
+            <h4>少去碰 ✕</h4>
+            <p class="soft"><b>太燙</b>：熱湯、熱茶<br>
+            <b>粗糙乾硬</b>：生菜、吐司、餅乾、炸雞<br>
+            <b>太酸</b>：較酸的水果或果汁、蕃茄、檸檬、柳橙、葡萄<br>
+            <b>太鹹</b>：醬油、醃肉</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 噁心嘔吐 -->
+    <div class="acc" id="a-nausea">
+      <button class="acc-h"><svg class="ic"><use href="#i-nausea"/></svg>噁心、嘔吐<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p>頻率和嚴重度要看用的是什麼藥，但<b>多數的噁心及嘔吐是可以控制的</b>。止吐藥建議在「化療開始前」就開始使用，效果最好。</p>
+        <h4 style="margin-top:16px">飲食方面</h4>
+        <ul class="bul">
+          <li><b>少量多餐</b>，避免一次吃太多</li>
+          <li>喝水選在<b>用餐前或用餐後一小時</b>，不要在用餐時喝水</li>
+          <li>進食時儘量<b>細嚼慢嚥</b></li>
+          <li>食物盡可能清淡，避免甜食、油炸、油膩</li>
+          <li>如果噁心多在<b>早上</b>發作，可在起床前先吃一些乾糧，像麥片、土司或餅乾</li>
+          <li>如果在治療過程中會噁心，下次治療前<b>幾小時最好保持空腹</b></li>
+          <li>飯後坐著休息一會，<b>兩小時內盡量不要平躺</b></li>
+        </ul>
+        <h4 style="margin-top:16px">環境方面</h4>
+        <ul class="bul g">
+          <li><b>無味的環境</b>——避免廚房油煙、香菸味，可以請親友幫忙烹調</li>
+          <li><b>舒服自在</b>——穿寬鬆衣服，噁心時多做深呼吸並放慢呼吸節奏</li>
+          <li><b>轉移注意力</b>——和家人朋友聊天、看電視、聽音樂</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 腸胃 -->
+    <div class="acc" id="a-gut">
+      <button class="acc-h"><svg class="ic"><use href="#i-gut"/></svg>腹瀉與便秘<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <h4>腹瀉</h4>
+        <p class="soft">化學藥物影響到腸胃道黏膜細胞會造成發炎，嚴重時引起腹瀉，通常伴隨腹部絞痛。</p>
+        <div class="card bad" style="margin:14px 0">
+          <p style="margin:0"><b>水瀉持續 24 小時</b>，或合併<b>發燒、出血</b>等症狀，就應該<b>馬上與醫師聯絡</b>。</p>
+        </div>
+        <ul class="bul">
+          <li><b>多喝水</b>——腹瀉會大量失水，務必補水以保持電解質平衡</li>
+          <li><b>吃清淡、流質</b>——嚴重時改吃清淡流質讓腸道休息，但流質無法提供足夠營養，<b>以不超過 3 到 5 天為原則</b></li>
+          <li><b>少油、少刺激</b>——避免油炸、油膩、辛辣</li>
+          <li><b>高纖改低纖</b>——此時<b>不能</b>再吃全麥麵包、麥片、生菜、豆子、堅果、水果、乾果；改成白麵包、白米飯或麵條、香蕉、乳酪、罐裝或煮過的無皮水果、優格、蛋、無皮馬鈴薯、無皮的雞肉及魚類</li>
+          <li><b>補高鉀</b>——腹瀉會讓鉀流失，除非有慢性腎衰竭等禁忌，可多補充香蕉、橘子、馬鈴薯、楊桃</li>
+        </ul>
+        <h4 style="margin-top:24px">便秘</h4>
+        <p class="soft">原因包括化療相關藥物（含止吐劑）、止痛藥、食量減少、進食型態改變、活動量減少，以及治療期間的精神情緒壓力。</p>
+        <ul class="bul g">
+          <li>多喝水幫助軟化大便</li>
+          <li>多吃高纖食物，如蔬菜、水果、全麥麵包、豆類</li>
+          <li>體力許可下適度運動，增進腸蠕動</li>
+          <li>養成正常排便習慣，避免不必要的心理壓力</li>
+        </ul>
+        <div class="nurse" style="background:var(--alert-soft);border-color:#F0C3BC">
+          <svg style="stroke:var(--alert)"><use href="#i-alert"/></svg><div>
+          <div class="t" style="color:var(--alert)">沒有醫師指示，千萬不要自行吃瀉藥、軟便劑或灌腸</div>
+          <p style="color:#7D2E24">尤其是當你的<b>白血球或血小板數量太少</b>的時候。</p>
+        </div></div>
+      </div>
+    </div>
+
+    <!-- 白血球 -->
+    <div class="acc" id="a-wbc">
+      <button class="acc-h"><svg class="ic"><use href="#i-fever"/></svg>白血球過低 · 預防感染<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p>骨髓造血功能被抑制是化療中最常發生的副作用，其中絕大部份是<b>白血球和血小板</b>的破壞與數目降低。白血球太低時，細菌與黴菌很可能入侵，造成口腔、皮膚、肺、泌尿道、直腸及生殖道的感染。</p>
+        <div class="card bad" style="margin:14px 0">
+          <p style="margin:0"><b>如果發燒，除非醫師特別交待，切記不可自行服用退燒藥或抗生素</b>——這常會延誤治療並造成嚴重感染或敗血症。請務必在約定時間內回醫院抽血追蹤。</p>
+        </div>
+        <h4 style="margin-top:16px">一、對內做好個人清潔</h4>
+        <ul class="bul g">
+          <li>徹底清潔身體可能造成感染的地方</li>
+          <li>多洗手，尤其飯前及上廁所後</li>
+          <li>進食後把口腔清潔乾淨</li>
+          <li>如廁後以清水輕柔清洗尿道口及肛門</li>
+        </ul>
+        <h4 style="margin-top:18px">二、對外避免接觸感染</h4>
+        <ul class="bul g">
+          <li>身體有任何外傷或皮膚發炎要趕快就醫</li>
+          <li>避免接觸感冒、麻疹、水痘的病人，盡量少去公共場所</li>
+          <li>不要擠壓或抓破青春痘、粉刺；不要剪或剝指甲附近的表皮</li>
+          <li>用剪刀、針、刀子時小心不要割到自己；<b>用電鬍刀，不要用刮鬍刀片</b></li>
+          <li>皮膚太乾或裂開，抹一些乳液</li>
+          <li>被割傷或擦傷，立刻用溫水、肥皂和消毒藥水（如優碘）清潔傷口</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 紅血球血小板 -->
+    <div class="acc" id="a-rbc">
+      <button class="acc-h"><svg class="ic"><use href="#i-blood"/></svg>貧血與出血<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <h4>紅血球減少 · 注意貧血</h4>
+        <p class="soft">紅血球負責把氧氣帶到身體各處，太少時組織會缺氧。嚴重貧血會極度疲倦、虛弱、頭暈、怕冷和呼吸困難，必要時醫師會考慮施打紅血球生成素（EPO）或輸血。</p>
+        <p class="soft"><b>不要以為「做治療本來就會這樣」而不去處理</b>——若治療中持續頭暈、虛弱、疲倦，要注意抽血的紅血球及血色素值。</p>
+        <ul class="bul">
+          <li>充分休息，白天也不妨抽空小睡片刻</li>
+          <li>限制活動量，減少體力消耗</li>
+          <li>從坐姿或躺姿站起來時<b>動作放慢</b>，以免頭暈目眩</li>
+          <li>化療藥導致的貧血<b>不容易從飲食調整</b>（多來自骨髓抑制而非營養不良），採均衡、高蛋白飲食即可</li>
+        </ul>
+        <h4 style="margin-top:24px">血小板過低 · 預防出血</h4>
+        <p class="soft">常見症狀有瘀血、瘀青、齒齦出血、月經經血不止；嚴重時會因腸胃道出血而解黑便或血便，或因泌尿道出血而解血尿。必要時會先輸血小板再進行化療。</p>
+        <ul class="bul r">
+          <li><b>不要任意吃藥</b>——尤其阿斯匹靈類或非類固醇消炎止痛藥，會抑制血小板功能、延遲止血</li>
+          <li>刷牙動作輕柔或使用軟毛牙刷</li>
+          <li>擤鼻涕動作輕柔，避免用指頭挖鼻孔</li>
+          <li>小心避免皮膚外傷</li>
+          <li>避免高壓力性行為，譬如因便秘而用力解大便、咳嗽或打噴嚏</li>
+          <li><b>有任何不正常出血時，應立即就醫</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 神經肌肉 -->
+    <div class="acc" id="a-nerve">
+      <button class="acc-h"><svg class="ic"><use href="#i-nerve"/></svg>手腳發麻 · 神經與肌肉<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p>大部份是周邊神經的傷害，出現手或腳的刺痛感、灼熱感、無力感或麻木感。有些藥物還會造成平衡感失調、感覺遲鈍、行動遲緩、聽覺喪失、記憶力退化，或腸蠕動變慢導致便秘。有些藥物會影響肌肉，使肌肉無力、酸痛或容易疲倦。</p>
+        <p class="soft">神經性的副作用<b>通常恢復較慢</b>，建議嘗試學習接受目前症狀，以克服生活的影響。</p>
+        <ul class="bul">
+          <li><b>要有危機感</b>——感覺遲鈍時，注意不要拿尖銳的、太燙的、太重的或任何危險的東西；抱小孩時要特別小心</li>
+          <li><b>避免摔跤滑倒</b>——上下樓梯及走路時請家人協助扶持；浴室地板鋪防滑墊；避免穿易滑的鞋子或高跟鞋</li>
+          <li><b>舒緩末梢</b>——可用嬰兒油按摩肢體末梢，並經常伸展</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 皮膚指甲 -->
+    <div class="acc" id="a-skin">
+      <button class="acc-h"><svg class="ic"><use href="#i-skin"/></svg>皮膚及指甲的變化<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <div class="card bad" style="margin-bottom:16px">
+          <p style="margin:0"><b>突然覺得非常癢、出現紅斑或蕁麻疹</b>，代表可能對藥物產生過敏，應該<b>立即通知醫護人員</b>。</p>
+        </div>
+        <p>慢性的皮膚症狀包括：皮膚變紅、乾癢、脫皮、容易長青春痘；指甲可能變得脆弱、易斷或出現一條條的帶狀紋路。</p>
+        <p class="soft">有些藥物（如 5-FU）在靜脈注射後，沿著血管走向的皮膚會變黑，這是<b>色素沉澱</b>。有些人在放療後再接受化療會出現「<b>放射線回憶</b>」——化療後膚色變深，同時發癢或灼熱，可能持續幾小時到幾天。藥物引起的皮膚變黑，通常在治療結束後幾個月內慢慢消褪，對身體不會有影響。</p>
+        <ul class="bul g">
+          <li>青春痘出現時盡量保持臉部清潔</li>
+          <li>皮膚因潮濕發癢，可抹一點爽身粉保持乾爽；感到乾燥則擦乳液保濕</li>
+          <li><b>防曬</b>——避免長時間曝曬，平時用遮陽帽、<b>PA+++ 以上或 SPF30 以上</b>的防曬乳液</li>
+          <li>做家事時戴手套保護皮膚及指甲</li>
+          <li>出現「放射線回憶」反應，可用<b>濕冷毛巾</b>敷在患部減輕灼熱及搔癢，並立即通知醫護人員</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 其他器官 -->
+    <div class="acc" id="a-organ">
+      <button class="acc-h"><svg class="ic"><use href="#i-organ"/></svg>心臟、腎臟、水腫等其他影響<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <h4>對心臟的影響</h4>
+        <p class="soft">有些化學藥物會損害心臟肌肉，通常需要較長時間觀察才會被發現（如小紅莓類）。常見症狀有心律不整、特別疲倦，嚴重時可能發展成心臟衰竭。醫師通常會持續監測心臟功能。<b>化療期間出現胸痛、呼吸急促，要隨時反應給醫護人員。</b></p>
+        <h4 style="margin-top:20px">對腎臟及膀胱的影響</h4>
+        <p class="soft">有些藥物在治療的 2～3 天會讓尿液顏色改變（變黃或變紅），或出現很濃的藥味，這是正常的。但如果出現<b>排尿時灼熱或疼痛、頻尿、血尿或發燒及發冷</b>，就要立即就醫。</p>
+        <p class="soft">多喝水是預防腎臟膀胱損害的最佳方法，但醫師通常已給大量點滴注射，<b>有噁心嘔吐時不需勉強大量喝水</b>。</p>
+        <h4 style="margin-top:20px">類似感冒的症狀</h4>
+        <p class="soft">有些人在化療後幾小時到幾天內，會有像感冒一樣的不舒服——肌肉酸痛、頭痛、疲倦及缺乏食慾。通常醫師會開一些止痛劑改善症狀。</p>
+        <h4 style="margin-top:20px">水腫</h4>
+        <p class="soft">有些藥物會造成液體滯留，使臉及四肢腫脹。除了告訴醫護人員外，更要特別注意皮膚照顧，<b>小心保護皮膚的完整性，避免破損而引起感染</b>。</p>
+      </div>
+    </div>
+
+    <!-- 性與生育 -->
+    <div class="acc" id="a-sex">
+      <button class="acc-h"><svg class="ic"><use href="#i-fertility"/></svg>生育功能與親密關係<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p>不論男性、女性，化療或多或少會影響生殖器官功能，也要看藥物種類、年齡以及健康狀況。通常在「血液癌症」使用高劑量化療的情況下，較容易影響生育功能。</p>
+        <h4 style="margin-top:18px">男性</h4>
+        <ul class="bul">
+          <li>有些用藥可能降低精蟲數目及活動力，導致暫時性或永久性的不孕</li>
+          <li><b>青少年或希望生育的男性，應在接受化療之前</b>就仔細和醫護人員討論，如需要可事先<b>低溫冷凍保存精子</b></li>
+          <li>化療期間最好採取有效避孕——有些藥物會傷害精子染色體，此時受孕胎兒有先天畸形的危險</li>
+        </ul>
+        <h4 style="margin-top:18px">女性</h4>
+        <ul class="bul">
+          <li>化學藥物可能傷害卵巢使荷爾蒙降低，造成月經週期不規則甚至完全停止，可能導致暫時性或永久性不孕</li>
+          <li>育齡婦女治療期間<b>仍有可能懷孕</b>，但有些藥物會導致嬰兒先天缺陷，治療期間最好全程正確避孕</li>
+          <li>可能出現類似更年期症狀：臉潮紅、灼熱、陰道乾澀，可使用<b>水質</b>的陰道潤滑劑（如 K-Y Jelly）</li>
+          <li>藥物可能改變陰道組織使容易感染——<b>避免使用油質潤滑劑（如凡士林）</b>，改穿棉質內褲，一旦感染要趕快就醫</li>
+        </ul>
+        <h4 style="margin-top:18px">心理調適</h4>
+        <p class="soft">對性的需求並沒有「怎樣做才算對」的標準。有些親人害怕親密接觸會對病人不好，有些人害怕性行為會傳染癌症或讓自己也受到藥物副作用——<b>這些都是無稽之談</b>。有困擾就和醫師好好討論，不必感到不自在。</p>
+        <p class="soft">治療期間仍然可以放心地繼續享有親密關係。這時候實際的性交動作比重可能會下降，不妨換個方式，以擁抱、依偎、愛撫等其他方式來達到愛的最高點。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 06 癌因性疲憊 ==================== -->
+<section class="band tint" id="s6">
+  <div class="wrap">
+    <div class="eyebrow">06　最常被忽略的一項</div>
+    <h2>癌因性疲憊：<br>無法藉由休息改善的累</h2>
+    <p class="sub">
+      台灣有<b>超過 9 成癌友</b>受到疲憊困擾，其中約 1/4 是中、重度。
+      它<b>不是治療過程中必然的現象</b>，也不等於惡化或治療無效——而且可以及早預防、透過治療改善。
+    </p>
+
+    <div class="card">
+      <h3>美國國家癌症網絡（NCCN）的定義</h3>
+      <div class="grid2" style="margin-top:14px">
+        <div><ul class="bul"><li>與癌症或治療相關</li><li>疲憊感與活動量<b>不成比例</b></li></ul></div>
+        <div><ul class="bul"><li>持續感到不舒適</li><li>已影響正常生活</li></ul></div>
+      </div>
+    </div>
+
+    <!-- 疲憊量尺 -->
+    <div class="card" style="margin-top:16px">
+      <h3>疲憊量尺：0 到 10，你現在幾分？</h3>
+      <p class="soft" style="margin-bottom:4px">0 分為完全不累，10 分為想像中的最累程度。點一下最能代表你感受的分數。</p>
+      <div class="scale" id="scale"></div>
+      <div class="scale-out" id="scaleOut">還沒選擇。疲憊是非常主觀的感受，但正因為主觀，<b>更需要你主動說出來</b>。</div>
+    </div>
+
+    <!-- 自我檢查 -->
+    <div class="card" style="margin-top:16px">
+      <h3>規律自我檢查：需符合 A～D 四大要件</h3>
+      <p class="soft" style="margin-bottom:8px">
+        <b>A. 症狀</b>：近一個月內，連續兩週、幾乎每天出現，<b>至少六項</b>以下症狀
+      </p>
+      <div id="fatA">
+        <label class="chk"><input type="checkbox" data-must="1"><span><em>（必須條件）</em>明顯疲累、缺少活力、或需要增加休息，且與近期活動程度不成比例</span></label>
+        <label class="chk"><input type="checkbox"><span>全身虛弱、沉重</span></label>
+        <label class="chk"><input type="checkbox"><span>很難集中精神或注意力</span></label>
+        <label class="chk"><input type="checkbox"><span>平常習慣做的事都變得乏味而不想去做</span></label>
+        <label class="chk"><input type="checkbox"><span>難入睡、睡得不安穩、早起有困難、或睡太多</span></label>
+        <label class="chk"><input type="checkbox"><span>睡覺起來還是覺得疲累，精神沒有恢復</span></label>
+        <label class="chk"><input type="checkbox"><span>做什麼事情都必須經過一番掙扎，勉強自己去做</span></label>
+        <label class="chk"><input type="checkbox"><span>因疲累而感到悲傷、失意、或煩躁</span></label>
+        <label class="chk"><input type="checkbox"><span>因疲累不堪而事情做一半就做不下去了</span></label>
+        <label class="chk"><input type="checkbox"><span>記性變差</span></label>
+        <label class="chk"><input type="checkbox"><span>只要做費力的事就持續感到病懨懨、不舒服</span></label>
+      </div>
+      <div style="margin-top:16px" id="fatBCD">
+        <label class="chk"><input type="checkbox"><span><b>B. 生活</b>：疲累不堪感覺干擾到職場工作、家務處理或人際互動</span></label>
+        <label class="chk"><input type="checkbox"><span><b>C. 原因</b>：病歷或檢查有紀錄，顯示疲憊症狀為癌症或治療所引起</span></label>
+        <label class="chk"><input type="checkbox"><span><b>D. 排除</b>：疲憊不是精神相關疾病引起</span></label>
+      </div>
+      <div class="chk-note" id="fatNote">A 項已勾選 0 項。</div>
+      <p class="faint" style="margin-top:12px">※ 這份表格是幫助你整理感受、和醫療團隊討論用的紀錄工具，不是診斷結果。診斷請交給你的醫療團隊。</p>
+    </div>
+
+    <div class="nurse" style="margin-top:18px">
+      <svg><use href="#i-nurse"/></svg>
+      <div>
+        <div class="t">疲憊可以及早預防、也可以透過治療改善</div>
+        <p>建議你主動說出疲憊的感受，積極與醫療團隊討論，爭取治療期間最好的生活品質。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 07 營養 ==================== -->
+<section class="band" id="s7">
+  <div class="wrap">
+    <div class="eyebrow">07　吃得好</div>
+    <h2>治療期間的營養</h2>
+    <p class="sub">
+      化療的病人比一般人需要更多營養，來提高抵抗力對抗癌細胞以及治療副作用，所以要盡可能「吃得好」。
+      <b>「吃得好」不是奢豪大餐</b>，而是均衡攝取，盡量涵蓋六大類食物的營養成分。
+    </p>
+    <div class="grid2">
+      <div class="card sun"><h4>少量多餐</h4><p class="soft">除了三餐，隨時準備小點心，想吃就吃。</p></div>
+      <div class="card sun"><h4>重質不重量</h4><p class="soft">精選營養成分高、熱量高的食物，不必吃很多也能達到需求。餐前不要喝太多水，就能多進點更有質量的食物，避免生食。</p></div>
+      <div class="card sun"><h4>嘗新換口味</h4><p class="soft">換換過去不常吃的口味，嘗試新的食譜以及食物。</p></div>
+      <div class="card sun"><h4>改變心境</h4><p class="soft">用餐前散散步，或改變用餐氣氛——燭光晚餐、公園野餐。邀請朋友或家人一起吃飯，談笑中不知不覺會多吃下許多食物。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 08 藥物查詢 ==================== -->
+<section class="band tint" id="s8">
+  <div class="wrap">
+    <div class="eyebrow">08　查詢</div>
+    <h2>我在用的是什麼藥？</h2>
+    <p class="sub">
+      輸入藥名（中文或英文都可以）就會即時篩選。找不到不代表有問題——藥物很多，
+      <b>最準確的答案永遠是你的主治醫師和藥師</b>。
+    </p>
+
+    <div class="search-box">
+      <svg><use href="#i-search"/></svg>
+      <input type="search" id="drugQ" placeholder="例如：小紅莓、Cisplatin、白金、太平洋紫杉醇…" autocomplete="off">
+    </div>
+    <div class="drug-tabs">
+      <button class="on" data-cat="all">全部</button>
+      <button data-cat="chemo">化療藥物</button>
+      <button data-cat="anti">止吐藥物</button>
+    </div>
+    <div class="drug-count" id="drugCount"></div>
+    <div id="drugList"></div>
+
+    <div class="card" style="margin-top:20px">
+      <h4>止吐藥物的使用原則</h4>
+      <ul class="bul" style="margin-top:12px">
+        <li>建議於「<b>化學治療開始前</b>」即開始使用，可達最佳止吐效果</li>
+        <li>止吐藥的選擇依化學藥的「<b>致吐性風險</b>」而定。若接受的是高致吐性化療藥物，化療後<b>至少 4 天內</b>都有很高機率會發生噁心、嘔吐</li>
+        <li>口服與靜脈注射的止吐效果相當，<b>口服可做為優先選擇</b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 09 資源 ==================== -->
+<section class="band" id="s9">
+  <div class="wrap">
+    <div class="eyebrow">09　你不必自己撐</div>
+    <h2>可以找誰幫忙</h2>
+
+    <div class="hot">
+      <div>
+        <div class="lab">癌症問題 我幫您</div>
+        <a class="num" href="tel:0809010580">0809-010-580</a>
+        <p>癌友家庭正面臨人生艱難的挑戰。鈴一鈴，一通電話，提供您專業支持與貼心陪伴。</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h3>希望小站提供的服務</h3>
+      <p class="soft" style="margin-bottom:14px">資源補助 · 照護諮詢服務 · 癌症教育出版品 · 教育系列講座與支持團體 · 心理諮詢 · 營養衛教 · <b>康復用品服務（假髮、頭巾、義乳胸衣）</b></p>
+      <div class="stations">
+        <div class="station"><div class="c">台北希望小站</div>
+          <div class="d">10058 台北市中正區臨沂街 3 巷 5 號 1 樓（捷運忠孝新生站 1 號出口）<br>
+          TEL <a href="tel:0233226286" style="color:var(--orange)">(02) 3322-6286</a>　FAX (02) 3322-1314</div></div>
+        <div class="station"><div class="c">台中希望小站</div>
+          <div class="d">40341 台中市西區民權路 312 巷 4-1 號（茄苳腳站）<br>
+          TEL <a href="tel:0423055731" style="color:var(--orange)">(04) 2305-5731</a>　FAX (04) 2305-5736</div></div>
+        <div class="station"><div class="c">高雄希望小站</div>
+          <div class="d">81355 高雄市左營區翠峰路 22 號<br>
+          TEL <a href="tel:075810661" style="color:var(--orange)">(07) 581-0661</a>　FAX (07) 581-0663</div></div>
+        <div class="station"><div class="c">服務時間</div><div class="d">週一至週六 9:00～18:00</div></div>
+      </div>
+    </div>
+
+    <div class="card calm" style="margin-top:16px">
+      <h4>沒有頭髮的日子，也有現成的支援</h4>
+      <p class="soft">不想買假髮的話，可以向醫院裡的「<b>癌症資源中心</b>」或相關癌症團體詢問<b>租借假髮</b>。基金會也提供頭巾、義乳胸衣等康復用品服務。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 緊急就醫 ==================== -->
+<button class="sos-fab" id="sosBtn"><svg><use href="#i-alert"/></svg>立刻就醫指標</button>
+<div class="sos-modal" id="sosModal" role="dialog" aria-modal="true" aria-label="立刻就醫指標">
+  <div class="sos-panel" id="sosPanel">
+    <h3>出現以下症狀，請趕快就醫</h3>
+    <p class="soft" style="font-size:.94em">不要等到下次回診，也不要先自行吃退燒藥或抗生素。</p>
+    <ul class="sos-list">
+      <li><span class="mk">1</span><div><b>發燒</b>——口溫超過攝氏 <b>38.5 度</b>，或耳溫超過 <b>38 度</b></div></li>
+      <li><span class="mk">2</span><div><b>發冷顫（畏寒）</b></div></li>
+      <li><span class="mk">3</span><div><b>身體傷口處或靜脈通路裝置</b>出現紅腫或觸痛</div></li>
+      <li><span class="mk">4</span><div><b>排尿時有灼熱感</b>、頻尿、血尿</div></li>
+      <li><span class="mk">5</span><div><b>腹瀉不止</b>——水瀉持續 24 小時，或合併發燒、出血</div></li>
+      <li><span class="mk">6</span><div><b>異常的陰道分泌物或搔癢</b></div></li>
+      <li><span class="mk">7</span><div><b>任何不正常出血</b>——齒齦出血不止、解黑便或血便、血尿</div></li>
+      <li><span class="mk">8</span><div><b>胸痛、呼吸急促</b>，或滴注時注射部位疼痛、灼熱、腫脹</div></li>
+    </ul>
+    <p class="faint">※ 醫師會根據檢驗結果選擇最合適的抗生素。一定要遵循醫囑按時服藥，切勿自行停藥，以免產生抗藥性。</p>
+    <button class="sos-close" id="sosClose">我知道了</button>
+  </div>
+</div>
+
+<!-- ==================== 頁尾 ==================== -->
+<footer>
+  <div class="wrap">
+    <div class="src">
+      <b>資料來源</b><br>
+      本頁內容出自財團法人癌症希望基金會《希望之路——面對化學治療》手冊
+      （2026 年 2 月，十七版三刷）。審稿顧問：<b>柯博升</b>醫師（臺大醫院內科部血液腫瘤科主治醫師、臺大癌醫中心分院血液腫瘤部主任）、<b>蕭吉晃</b>醫師（亞東醫院腫瘤科暨血液科主治醫師）。
+      藥品資料來源：衛生福利部食品藥物管理署藥品仿單查詢平台。
+    </div>
+    <p>
+      <b>本頁不能取代醫療專業判斷。</b>手冊內容雖經專科醫師審閱，然醫療科技進展快速，
+      關於你的治療建議，請務必與<b>你的主治醫師</b>諮詢。若有緊急狀況，請直接就醫或聯絡你的醫療團隊。
+    </p>
+    <p class="faint">
+      原手冊版權屬財團法人癌症希望基金會所有，如需轉載或對外散布，須經該會同意。
+    </p>
+    <a class="totop" href="#top">↑ 回到最上面</a>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   1) 目錄抽屜
+   ============================================================ */
+const toc = document.getElementById('toc');
+document.getElementById('tocBtn').onclick = () => toc.classList.add('open');
+document.getElementById('tocClose').onclick = () => toc.classList.remove('open');
+toc.addEventListener('click', e => { if (e.target === toc) toc.classList.remove('open'); });
+document.querySelectorAll('.toc-panel a').forEach(a =>
+  a.addEventListener('click', () => toc.classList.remove('open')));
+
+/* ============================================================
+   2) 症狀快選 —— 跳到該段並自動展開
+   ============================================================ */
+function openAcc(el){
+  if (!el) return;
+  if (el.classList.contains('acc')) {
+    el.classList.add('open');
+    el.classList.add('hit');
+    setTimeout(() => el.classList.remove('hit'), 2200);
+  }
+  el.scrollIntoView({behavior:'smooth', block:'start'});
+}
+document.querySelectorAll('.sym').forEach(b =>
+  b.addEventListener('click', () => openAcc(document.getElementById(b.dataset.go))));
+
+/* ============================================================
+   3) 手風琴
+   ============================================================ */
+document.querySelectorAll('.acc-h').forEach(h =>
+  h.addEventListener('click', () => h.parentElement.classList.toggle('open')));
+
+/* ============================================================
+   4) 化療前提問清單
+   ============================================================ */
+const askBoxes = [...document.querySelectorAll('#askList input')];
+const askNote = document.getElementById('askNote');
+function updateAsk(){
+  const n = askBoxes.filter(b => b.checked).length;
+  askNote.innerHTML = n === askBoxes.length
+    ? '<b>八題都問到了。</b>把答案記下來，之後回診或換醫師時都用得上。'
+    : `已問到 <b>${n} / ${askBoxes.length}</b> 題。沒問到的下次補問就好，不必一次問完。`;
+}
+askBoxes.forEach(b => b.addEventListener('change', updateAsk));
+updateAsk();
+
+/* ============================================================
+   5) 疲憊量尺
+   ============================================================ */
+const scale = document.getElementById('scale');
+const scaleOut = document.getElementById('scaleOut');
+const labels = ['無疲憊','無疲憊','輕度疲憊','輕度疲憊','中度疲憊','中度疲憊','中度疲憊',
+                '重度疲憊','重度疲憊','最嚴重疲憊','最嚴重疲憊'];
+for (let i = 0; i <= 10; i++) {
+  const b = document.createElement('button');
+  b.textContent = i;
+  b.setAttribute('aria-label', i + ' 分');
+  b.onclick = () => {
+    [...scale.children].forEach(x => x.classList.remove('sel'));
+    b.classList.add('sel');
+    if (i < 4) {
+      scaleOut.className = 'scale-out low';
+      scaleOut.innerHTML = `<span class="lv">${i} 分 · ${labels[i]}</span>
+        低於 4 分屬<b>輕度疲憊</b>，尚未影響生活。可採取<b>運動、飲食、睡眠</b>等「非藥物措施」來改善或預防，
+        其中<b>運動是最有效的方式</b>。`;
+    } else {
+      scaleOut.className = 'scale-out high';
+      scaleOut.innerHTML = `<span class="lv">${i} 分 · ${labels[i]}</span>
+        4 分或以上屬<b>中、重度疲憊症</b>，可能已影響到生活品質及癌症治療。
+        <b>請主動告訴你的醫療團隊</b>——必要時醫師會建議藥物治療，如精神刺激藥物、類固醇藥物、中藥、黃耆多醣注射劑等。`;
+    }
+  };
+  scale.appendChild(b);
+}
+
+/* ============================================================
+   6) 癌因性疲憊自我檢查
+   ============================================================ */
+const fatA = [...document.querySelectorAll('#fatA input')];
+const fatBCD = [...document.querySelectorAll('#fatBCD input')];
+const fatNote = document.getElementById('fatNote');
+function updateFat(){
+  const n = fatA.filter(b => b.checked).length;
+  const must = fatA[0].checked;
+  const bcd = fatBCD.filter(b => b.checked).length;
+  let msg = `A 項已勾選 <b>${n}</b> 項`;
+  if (!must && n > 0) msg += '（<b>第 1 項是必須條件</b>，目前未勾選）';
+  msg += `，B～D 已勾選 <b>${bcd} / 3</b> 項。`;
+  if (must && n >= 6 && bcd === 3) {
+    msg += '<br><br><b>你的紀錄符合 A～D 四大要件。</b>請把這份紀錄帶去，主動和你的醫療團隊討論——'
+         + '癌因性疲憊是可以處理的，不必當成「治療本來就會這樣」而忍耐。';
+  } else if (n >= 3) {
+    msg += '<br><br>不論最後符不符合全部要件，<b>只要疲憊已經影響到你的生活，就值得說出來</b>。';
+  }
+  fatNote.innerHTML = msg;
+}
+[...fatA, ...fatBCD].forEach(b => b.addEventListener('change', updateFat));
+updateFat();
+
+/* ============================================================
+   7) 緊急就醫面板
+   ============================================================ */
+const sos = document.getElementById('sosModal');
+document.getElementById('sosBtn').onclick = () => sos.classList.add('open');
+document.getElementById('sosClose').onclick = () => sos.classList.remove('open');
+sos.addEventListener('click', e => { if (e.target === sos) sos.classList.remove('open'); });
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { sos.classList.remove('open'); toc.classList.remove('open'); }
+});
+
+/* ============================================================
+   8) 藥物資料與查詢
+   欄位：中文名 / 英文名(商品名) / 給藥途徑 / 可能的副作用 / 注意事項
+   ============================================================ */
+const DRUGS = [
+["普癌汰","Bendamustine (Innomustine)","靜脈注射","比較輕微的血球低下、嘔吐、口腔炎、疲倦、水腫、咳嗽、掉髮。","「血球低下」情形相對輕微，但可能持續比較多天。","chemo"],
+["撲類惡","Bleomycin (Bleocin)","靜脈注射／肌肉注射／皮下注射／肋膜腔注射／動脈內注射","皮膚、腸胃、心血管及呼吸道不良反應，顫抖、混亂、發燒、肝毒性、神經毒性、特異體質性反應、肺部纖維化。","咳嗽、喘氣、呼吸困難時，請注意是否產生肺部纖維化的問題。","chemo"],
+["邁樂寧／補束剋","Busulfan (Myleran, Busulfex)","口服／靜脈注射","心血管、呼吸、血液、內分泌代謝及免疫不良反應，生殖異常、肝靜脈栓塞、癲癇發作、出血性膀胱炎、肺纖維化。","注意發燒反應。咳嗽、喘氣、呼吸困難時，請注意是否產生肺部纖維化的問題。","chemo"],
+["去癌達（卡巴紫杉醇）","Cabazitaxel (Jevtana)","靜脈注射","噁心嘔吐、血球數低下、腹瀉、便祕、疲倦、血尿、關節肌肉疼痛、周邊神經毒性、掉髮。","需與類固醇藥物合併使用。","chemo"],
+["佳鉑帝・卡鉑（二代白金）","Carboplatin (Paraplatin)","靜脈注射／動脈內注射／腹膜內注射","輕微：噁心、食慾不振、掉髮、皮膚疹、血球減少、腎功能影響。","","chemo"],
+["截瘤達；艾卡培","Capecitabine (Xeloda, Alvogen)","口服","口腔炎、皮膚炎、手足症候群（手腳感覺異常、麻痺、刺痛）、噁心、嘔吐、腹瀉、疲倦。","治療期間可於手掌腳掌塗抹含 Urea（尿素成分）的軟膏，以減少手足症候群發生。做家事請戴手套，外出穿包頭鞋及真皮透氣軟墊鞋。","chemo"],
+["格立得","Carmustine (BiCNU)","靜脈注射／動脈內注射／植入劑","白血球及血小板減少、貧血、噁心、嘔吐、注射部位有燒灼感或疼痛、注射部位色素沉著、肝功能輕度變化、腎功能受損、肺部纖維化。","注射太快會顏面潮紅及結膜充血。","chemo"],
+["瘤克寧","Chlorambucil (Leukeran)","口服","白血球及血小板減少、貧血、急性肺炎、噁心、嘔吐。","具致畸胎性，治療期間應避免懷孕、哺乳。","chemo"],
+["克莫・順鉑（白金）","Cisplatin (Kemoplat, CDDP)","靜脈注射","常見：嘔吐、掉髮、白血球及血小板減少、貧血、腎功能及聽力受損、耳鳴、末梢神經病變（手腳麻木感）、高尿酸血症。","增加水分補充。注意發燒、耳鳴、聽力減退症狀。","chemo"],
+["癌得星","Cyclophosphamide (Endoxan)","口服／靜脈注射","噁心、嘔吐、掉髮、白血球減少、無月經。","維持足量水分以減少出血性膀胱炎，觀察是否有血尿或排尿困難情形。","chemo"],
+["賽得薩","Cytarabine (Ara-C, Cytosar)","靜脈注射／脊椎管內注射／皮下注射","噁心、嘔吐、白血球及血小板減少、貧血、發燒、肝功能障礙、高尿酸血症。","注意個人衛生及環境清潔。","chemo"],
+["達卡巴仁","Dacarbazine (DTIC)","靜脈注射","低血壓、掉髮、噁心、嘔吐、腸胃不適、流行性感冒樣症狀。","具腐蝕性，注射時避免外滲，以免造成皮膚傷害、壞死。若注射部位疼痛、灼熱感，請立即通報。","chemo"],
+["可美淨","Dactinomycin (Actinomycin D, Cosmegen)","靜脈注射","皮膚問題、腸胃不適、疲倦、發燒、全身無力。","具腐蝕性，注射時避免外滲。","chemo"],
+["唐黴素","Daunorubicin (Daunoblastina)","靜脈注射","噁心、嘔吐、掉髮、骨髓活性受抑制、心臟毒性、尿液變紅色。","具腐蝕性，注射時感到疼痛、灼熱感請立即通報。避免外滲造成皮膚傷害、壞死。","chemo"],
+["剋癌易／鈦能（歐洲紫杉醇）","Docetaxel (Taxotere, Tynen)","靜脈注射","噁心、嘔吐、口腔炎、掉髮、白血球及血小板減少、貧血、發燒、疲倦、腹瀉、水腫、末梢神經病變（手腳麻刺感）。","治療後 7～10 天白血球會降至低點，應避免感染。如有手腳麻木感，停藥後可改善。","chemo"],
+["艾黴素（小紅莓）","Doxorubicin (Adriamycin)","靜脈注射","噁心、嘔吐、靜脈炎、注射後尿液變紅色、白血球及血小板減少、貧血、發燒、疲倦、掉髮、心臟毒性。","累積劑量過高可能有心毒性的危險。具腐蝕性，注射時感到疼痛、灼熱感請立即通報，避免外滲。","chemo"],
+["賀樂維","Eribulin (Halaven)","靜脈注射","輕度掉髮、白血球減少、疲倦、末梢神經病變、心律不整、貧血。","若出現嚴重周邊神經病變（如手腳麻木、刺痛、燒灼感），請告知醫師。","chemo"],
+["泛艾黴素（二代小紅莓）","Epirubicin (Pharmorubicin)","靜脈注射","噁心、嘔吐、靜脈炎、注射後尿液變紅色、白血球及血小板減少、貧血、發燒、疲倦、掉髮、心臟毒性。","累積劑量過高可能有心毒性的危險。具腐蝕性，注射時感到疼痛、灼熱感請立即通報，避免外滲。","chemo"],
+["滅必治／癌妥滅","Etoposide (Vepeside, Fytosid)","口服／靜脈注射","噁心、嘔吐、掉髮、粘膜炎、腸胃不適、身體無力、血球低下、發燒。","","chemo"],
+["好復","Fluorouracil (5-FU)","口服／靜脈注射／局部使用","噁心、嘔吐、食慾不振、口腔及腸胃黏膜潰瘍、腹瀉、脫皮、紅疹、皮膚色素沉著、指甲變形、光敏感。","注射期間發生嘔吐超過 6 次或意識混亂、嗜睡情形，應立即通報。應加強防曬，預防臉部黑斑及皮膚、指甲顏色改變。","chemo"],
+["福達樂","Fludarabine phosphate (Fludara)","口服／靜脈注射","發燒、水腫、白血球及血小板減少、貧血、肺炎。","","chemo"],
+["健仕／健彌達","Gemcitabine (Gemmis, Gemita)","靜脈注射","輕微噁心、嘔吐、白血球及血小板減少、貧血、疲倦。","","chemo"],
+["愛治膠囊","Hydroxyurea (Hydrea)","口服","噁心、嘔吐、皮膚紅疹、白血球及血小板減少、貧血、口腔黏膜潰瘍、掉髮、食慾不振、腹瀉、便秘、嗜睡。","建議整粒吞服，避免膠囊內成分接觸皮膚或黏膜。","chemo"],
+["艾達黴素","Idarubicin (Zavedos)","靜脈注射","頭痛、皮膚、心血管不良反應，腸胃不適、骨髓抑制、腎毒性、感染病症。","具腐蝕性，注射時感到疼痛、灼熱感請立即通報。避免外滲造成皮膚傷害、壞死。","chemo"],
+["好克癌","Ifosfamide (Holoxan)","靜脈注射","噁心、嘔吐、掉髮、白血球及血小板減少、貧血、泌尿毒性。","攝取適量水分，注意解尿情形。","chemo"],
+["抗癌妥／益立諾／癌可癒／依瑞諾丁","Irinotecan (Campto, Irino, Innocan)","靜脈注射","噁心、嘔吐、急性膽鹼性症候群（早期腹瀉、盜汗、流淚、瞳孔縮小、流口水、腹部痙攣）、白血球減少症、血小板減少、掉髮、延遲性腹瀉。","治療後若發生急性腹瀉（一天 4～6 次）伴隨腹痛、體重急降或發燒等，須立即回診。","chemo"],
+["安能得微脂體","Irinotecan HCl liposome (Onivyde)","靜脈注射","噁心、嘔吐、食慾減低、白血球及血小板減少、貧血、腹瀉、肝功能指數升高、疲倦。","","chemo"],
+["易莎平","Ixabepilone (Ixempra)","靜脈注射","噁心、血球低下、掉髮、末梢神經病變、手足症候群。","監測末梢神經症狀，如灼熱感、遲鈍、疼痛或手腳皮膚紅腫等。治療期間可冰敷手腳、保持涼爽、多擦護手乳霜。","chemo"],
+["力得（微脂體小紅莓）","Pegylated Liposomal Doxorubicin (Lipo-Dox)","靜脈注射","輕微掉髮、噁心、嘴破、心臟毒性、手足症候群（手腳皮膚紅腫、疼痛）。","治療期間可冰敷手腳、保持涼爽、多擦護手乳霜。","chemo"],
+["樂拿舒","L-asparaginase (Leunase)","靜脈注射","疲倦、關節痛、水腫、神經症狀、腸胃不適、肝毒性、過敏反應。","於注射前先進行過敏反應檢測。","chemo"],
+["贊必佳","Lurbinectedin (Zepzelca)","靜脈注射","嘔吐、疲倦、貧血、白血球及血小板減少、便祕、腹瀉、肝毒性。","","chemo"],
+["威克瘤","Melphalan (Alkeran)","口服／靜脈注射","噁心、嘔吐、腹瀉、白血球減少、血小板減少、掉頭髮、肺炎、肺纖維化、高尿酸血症。","需注意血球數。","chemo"],
+["美克多能","Mercaptopurine (6-MP)","口服","皮膚色素沈著、皮疹、腹瀉。","","chemo"],
+["滅殺除癌錠／盈壽求得（小黃莓）","Methotrexate (MTX)","口服／靜脈注射／脊椎管內注射／肌肉注射","噁心、嘔吐、嘴破、腹瀉、白血球及血小板減少、掉髮、視力模糊、頭暈、皮膚色素沉著、皮膚紅疹、間質性肺炎。","可能會產生光敏感反應。","chemo"],
+["排多癌（小藍莓）","Mitomycin-C","靜脈注射／膀胱內灌藥","噁心、嘔吐、食慾不振、掉髮、腹瀉、發燒、白血球及血小板減少、貧血。","注射後約 1～2 天尿液會呈現藍色。具腐蝕性，注射時感到疼痛、灼熱感請立即通報，避免外滲。","chemo"],
+["雙羥蒽醌（小藍莓）","Mitoxantrone","靜脈注射","掉髮、噁心、嘔吐、食慾不振、血球低下、腹瀉、口腔潰瘍、心毒性、肝毒性。","具腐蝕性，注射時避免外滲。注射後 24 小時尿液會呈現藍綠色。","chemo"],
+["亞伯杉（奈米白蛋白太平洋紫杉醇）","Nab-paclitaxel (Abraxane)","靜脈注射","噁心、血球低下、疲倦、周邊神經病變、掉髮、水腫、便秘、紅疹、肝功能異常。","注射期間注意過敏反應。","chemo"],
+["益樂鉑定／歐力普／歐克力（三代白金）","Oxaliplatin (Eloxatin, Oxalip)","靜脈注射","噁心、血球低下、腹瀉、週邊神經病變（手腳麻、感覺遲鈍、刺痛）、出血。","手腳麻、刺等症狀通常於停止治療後 3～6 個月可逐漸改善。","chemo"],
+["汰癌勝／輝克癒蘇（太平洋紫杉醇）","Paclitaxel (Taxol, Phyxol)","靜脈注射","疲倦、噁心、嘴破、感染、掉髮、血球低下、腹瀉、週邊神經病變、關節痛。","用藥前會先給予預防過敏發生之藥物（皮質類固醇、抗組織胺、抗潰瘍藥）。","chemo"],
+["媛倍斯／愛寧達／派癌休／伏肺瘤","Pemetrexed (Alimta, Pexada, Apeta)","靜脈注射","疲倦、噁心、嘔吐、食慾減低、血球低下、貧血、便秘、紅疹。","補充葉酸、維他命 B12 可降低副作用發生。","chemo"],
+["服瘤停","Pralatrexate (Folotyn)","靜脈注射","疲倦、噁心、嘴破、血球低下、貧血、皮膚反應、便秘、水腫。","補充葉酸、維他命 B12 可降低副作用發生。","chemo"],
+["帝盟多／特莫斯","Temozolomide (Temodal, Tamos)","口服","疲倦、噁心、嘔吐、便秘、頭痛、血球低下、輕微掉髮。","膠囊不可打開、嚼碎，需整粒吞服。","chemo"],
+["朗斯弗","Trifluridine tipiracil (Lonsurf)","口服","無力、疲倦、噁心、食慾減退、腹瀉、嘔吐、腹痛及發燒、血球減少。","外出時配戴口罩，定期量測體溫。","chemo"],
+["癌康定","Topotecan (Hycamtin)","口服／靜脈注射","嘔吐、嘴破、腹瀉、血球低下、掉髮、便秘、腹痛。","預防感染。","chemo"],
+["愛斯萬","TS-1 (S-1)","口服","腸道不適、血球低下、嘴破、腹瀉。","","chemo"],
+["優富多／友復膠囊","Uracil Tegafur (UFT, UFUR)","口服","疲倦、噁心、嘔吐、嘴破、腹瀉、腹痛、皮膚色素沉澱、指甲異常。","皮膚防曬。","chemo"],
+["敏畢瘤／敏伯斯登","Vinblastine","靜脈注射","掉髮、噁心、嘔吐、血球低下、貧血、便秘、周邊神經毒性、手腳麻。","具腐蝕性，注射時避免外滲。出現手腳發麻、針刺感及嚴重便秘情形請告訴醫師。","chemo"],
+["敏克瘤／文克斯汀","Vincristine (Oncovin)","靜脈注射","掉髮、噁心、嘔吐、血球低下、貧血、便秘、周邊神經毒性、手腳麻。","具腐蝕性，注射時避免外滲。出現手腳發麻、針刺感及嚴重便秘情形請告訴醫師。","chemo"],
+["溫諾平","Vinorelbine (Navelbine)","口服／靜脈注射","疲倦、噁心、嘔吐、掉髮、血球低下、便秘、神經方面不適（麻痺、刺痛、虛弱）。","口服膠囊需冷藏；若壓碎、液體外漏應停止服用。針劑具腐蝕性，注射時避免外滲。","chemo"],
+["止敏吐","Aprepitant (Emend)","口服／靜脈注射","疲倦、輕微頭痛、食慾不佳、打嗝、腹瀉。","NK-1 接受器的拮抗劑。","anti"],
+["得立生／敏速平／力佳爽","Dexamethasone (Decadron, Dorison, Methasone)","口服／靜脈注射","失眠、食慾增加、腸胃不適、心悸。","類固醇，可加強止吐效果。","anti"],
+["康您適強／賜安特／貼固守","Granisetron (Kytril, Setron, Sancuso)","口服／靜脈注射／外用貼片","輕微頭痛、便秘。","5-HT3 接受器的拮抗劑。","anti"],
+["嘔可舒／嘔立舒","Palonosetron (Akynzeo, Aloxi)","口服／靜脈注射","輕微頭痛、便秘、腹瀉、暈眩。","5-HT3 接受器的拮抗劑。","anti"]
+];
+
+const listEl = document.getElementById('drugList');
+const countEl = document.getElementById('drugCount');
+const qEl = document.getElementById('drugQ');
+let cat = 'all';
+
+function esc(s){ return s.replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+
+function render(){
+  const q = qEl.value.trim().toLowerCase();
+  const rows = DRUGS.filter(d => {
+    if (cat !== 'all' && d[5] !== cat) return false;
+    if (!q) return true;
+    return (d[0] + ' ' + d[1] + ' ' + d[2] + ' ' + d[3] + ' ' + d[4]).toLowerCase().includes(q);
+  });
+  countEl.textContent = q ? `找到 ${rows.length} 筆` : `共 ${rows.length} 筆`;
+  if (!rows.length) {
+    listEl.innerHTML = '<div class="empty">找不到符合的藥物。<br>換個關鍵字試試，或直接問你的醫師與藥師。</div>';
+    return;
+  }
+  listEl.innerHTML = rows.map(d => `
+    <div class="drug">
+      <div class="nm">${esc(d[0])}</div>
+      <div class="en">${esc(d[1])}</div>
+      <span class="rt">${esc(d[2])}</span>
+      <dl>
+        <dt>可能副作用</dt><dd>${esc(d[3])}</dd>
+        ${d[4] ? `<dt>注意事項</dt><dd class="care">${esc(d[4])}</dd>` : ''}
+      </dl>
+    </div>`).join('');
+}
+qEl.addEventListener('input', render);
+document.querySelectorAll('.drug-tabs button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('.drug-tabs button').forEach(x => x.classList.remove('on'));
+  b.classList.add('on');
+  cat = b.dataset.cat;
+  render();
+}));
+render();
+</script>
+</body>
+</html>

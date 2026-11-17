@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#FFFCF5">
+<meta name="format-detection" content="telephone=no">
+<title>面對子宮內膜癌 · 互動衛教手冊</title>
+<meta name="description" content="子宮內膜癌的症狀、診斷、分期、手術與放療、荷爾蒙治療與生育保留、化療照顧與追蹤。改編自癌症希望基金會《希望之路—面對子宮內膜癌》。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/hope.css">
+<style>:root{--accent:#B07A86}</style>
+<script>try{if(localStorage.getItem('hope-big')==='1')document.documentElement.classList.add('big')}catch(e){}</script>
+</head>
+<body>
+
+<svg style="display:none" aria-hidden="true">
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4l9 16H3l9-16z"/><path d="M12 10v4M12 17.5h.01"/></symbol>
+  <symbol id="i-nurse" viewBox="0 0 24 24"><path d="M12 13a4 4 0 100-8 4 4 0 000 8z"/><path d="M4 21a8 8 0 0116 0"/><path d="M12 2.5v2M11 3.5h2"/></symbol>
+  <symbol id="i-fertility" viewBox="0 0 24 24"><circle cx="9" cy="9" r="4.5"/><path d="M9 13.5V21M6 18h6"/><circle cx="17" cy="16" r="4"/><path d="M20 13l3-3M20 10h3v3"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="i-pill" viewBox="0 0 24 24"><rect x="3" y="9" width="18" height="6" rx="3" transform="rotate(-35 12 12)"/><path d="M9.5 8.5l5 7"/></symbol>
+  <symbol id="i-scan" viewBox="0 0 24 24"><path d="M4 8V5a1 1 0 011-1h3M16 4h3a1 1 0 011 1v3M20 16v3a1 1 0 01-1 1h-3M8 20H5a1 1 0 01-1-1v-3"/><path d="M8 12h8"/></symbol>
+  <symbol id="i-knife" viewBox="0 0 24 24"><path d="M4 20L18 6l2 2L8 20H4z"/><path d="M14 10l2 2"/></symbol>
+  <symbol id="i-beam" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.8 2.8M16.2 16.2L19 19M5 19l2.8-2.8M16.2 7.8L19 5"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></symbol>
+</svg>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a href="../index.html" class="shelf-link" aria-label="回到書架"><svg><use href="#i-back"/></svg><span class="lb">書架</span></a>
+    <a href="#top" class="brand">
+      <span class="dot"></span>
+      <span>面對子宮內膜癌<small>互動衛教手冊</small></span>
+    </a>
+    <div class="tb-actions">
+      <button class="fs-btn" id="fsBtn" aria-label="切換大字">大字</button>
+      <button class="nav-btn" id="tocBtn" aria-label="開啟目錄"><span class="lb">目錄 </span>☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="toc" id="toc">
+  <div class="toc-panel">
+    <button class="toc-close" id="tocClose" aria-label="關閉目錄">✕</button>
+    <h3>目錄</h3>
+    <p class="hint">不必從頭看到尾，找你需要的那一段就好。</p>
+    <a href="#s1"><i>01</i>子宮內膜癌小檔案</a>
+    <a href="#s2"><i>02</i>為什麼會得</a>
+    <a href="#s3"><i>03</i>有什麼症狀</a>
+    <a href="#s4"><i>04</i>怎麼確定診斷</a>
+    <a href="#s5"><i>05</i>分期</a>
+    <a href="#s6"><i>06</i>治療方式與藥物</a>
+    <a href="#s7"><i>07</i>治療結束後</a>
+    <a href="#s8"><i>08</i>可以找誰幫忙</a>
+    <a class="out" href="../index.html">← 回到書架，看其他手冊</a>
+  </div>
+</div>
+
+<div id="top"></div>
+<section class="hero">
+  <div class="wrap">
+    <div class="kicker">希望之路　子宮內膜癌</div>
+    <h1>停經之後，<br><em>一滴血</em>都不該流</h1>
+    <p class="lede">
+      超過九成的子宮內膜癌有<b>異常出血</b>，許多人就是因為這個症狀發現的，約 70% 屬於第一期。
+      停經後若有陰道出血或血絲狀分泌物，請盡快到婦產科檢查。
+    </p>
+    <div class="picker">
+      <h3>你想先看哪一段？</h3>
+      <p class="why">點一下，直接跳到那一段。</p>
+      <div class="sym-grid">
+        <button class="sym" data-go="s3">有什麼症狀</button>
+        <button class="sym" data-go="s4">要做哪些檢查</button>
+        <button class="sym" data-go="s5">我是第幾期</button>
+        <button class="sym" data-go="a-surg">手術與術後照顧</button>
+        <button class="sym" data-go="a-rt">放射線治療</button>
+        <button class="sym" data-go="a-hormone">想保留生育</button>
+        <button class="sym" data-go="a-chemo">化療期間照顧</button>
+        <button class="sym" data-go="s7">治療後追蹤</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 01 -->
+<section class="band" id="s1">
+  <div class="wrap">
+    <div class="eyebrow">01　先弄懂它</div>
+    <h2>子宮內膜癌小檔案</h2>
+    <div class="grid2">
+      <div class="card sun"><h4>台灣最常見的婦科癌症</h4><p class="soft">民國 111 年子宮體癌有 3,541 人，居女性癌症第 5 位，其中 93%（3,295 人）是子宮內膜癌。從民國 99 年起，已超越子宮頸癌，成為婦女生殖道癌症發生率第一名。</p></div>
+      <div class="card sun"><h4>好發在停經後</h4><p class="soft">好發年齡集中在停經後 50～59 歲，但也有 <b>20% 在停經前</b>發現。少生育、飲食改變、肥胖、作息不正常、壓力導致不排卵、過度使用排卵藥等，都和它的上升有關。</p></div>
+      <div class="card calm"><h4>早期發現，存活率高</h4><p class="soft">治療以手術為主，放療和化療為輔。第一、二期五年存活率約九成及八成；第三、四期下降到六至二成。</p></div>
+      <div class="card bad"><h4>抹片篩檢不出來</h4><p class="soft">子宮內膜癌<b>無法透過子宮頸抹片</b>篩檢。有異常出血，就要就醫做進一步檢查。</p></div>
+    </div>
+
+    <div class="card mt">
+      <h3>子宮體癌，大多是子宮內膜癌</h3>
+      <p class="soft">子宮下方狹窄處是子宮頸，上方較寬的部分是子宮體，子宮體有內膜層和肌肉層。生育年齡的婦女，內膜大約每 28 天受荷爾蒙刺激變厚，沒有受孕就剝落，形成月經。</p>
+      <ul class="bul" style="margin-top:10px">
+        <li><b>子宮頸癌</b>：長在子宮頸，主要和人類乳突病毒（HPV）感染有關</li>
+        <li><b>子宮體癌</b>：長在子宮體，分為子宮內膜癌和惡性子宮肉瘤，約九成是子宮內膜癌</li>
+      </ul>
+      <div class="grid2 mt">
+        <div class="card calm" style="box-shadow:none"><h4>第一型子宮內膜癌（占 93%）</h4><p class="soft">較年輕女性，和肥胖、雌激素過度刺激有關。</p></div>
+        <div class="card calm" style="box-shadow:none"><h4>第二型子宮內膜癌</h4><p class="soft">較年長女性，和基因缺陷有關。</p></div>
+      </div>
+    </div>
+
+    <div class="acc mt">
+      <button class="acc-h"><svg class="ic"><use href="#i-alert"/></svg>惡性子宮肉瘤（占 5.5%）<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p class="soft">包括惡性平滑肌肉瘤、惡性子宮內膜基質肉瘤。相對少見，好發於 60～70 歲，主要症狀是<b>子宮快速長大</b>，伴隨異常出血、腹部壓痛、體重下降，發現時多半已是晚期；多經血液轉移，預後較差。早期以分期手術為主，輔以放療或化療，可降低復發。</p>
+        <p class="soft">良性子宮肌瘤很常見，很少變成惡性肉瘤；但光看症狀很難分辨良性或惡性，<b>不可不慎</b>。</p>
+      </div>
+    </div>
+
+    <div class="card mt">
+      <h3>治療前，妳應該先知道</h3>
+      <div data-checklist="askNote" data-done="都問清楚了。把答案記下來，之後回診都用得上。" style="margin-top:12px">
+        <label class="chk"><input type="checkbox"><span>我的<b>醫師、個管師</b>姓名？</span></label>
+        <label class="chk"><input type="checkbox"><span>我的<b>治療計畫</b>？<b>手術方式</b>？</span></label>
+        <label class="chk"><input type="checkbox"><span>我的病理報告：<b>第幾期</b>？<b>細胞型態</b>？</span></label>
+        <label class="chk"><input type="checkbox"><span>治療可能的<b>副作用</b>？</span></label>
+        <label class="chk"><input type="checkbox"><span><b>治療費用</b>？我的<b>保單</b>內容？</span></label>
+      </div>
+      <div class="chk-note" id="askNote"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 -->
+<section class="band tint" id="s2">
+  <div class="wrap">
+    <div class="eyebrow">02　原因</div>
+    <h2>為什麼會得子宮內膜癌</h2>
+    <p class="sub">女性雌激素刺激容易讓子宮內膜增生，增加罹癌風險。危險因素包括：</p>
+    <div class="mini">
+      <div><b>雌激素的刺激</b></div>
+      <div><b>肥胖</b></div>
+      <div><b>糖尿病</b></div>
+      <div><b>初經早、停經晚</b><span>12 歲以前初經，或 52 歲以後停經</span></div>
+      <div><b>未曾生育或不孕</b></div>
+      <div><b>多囊性卵巢疾病</b></div>
+      <div><b>家族遺傳病史</b><span>乳癌、子宮內膜癌或大腸癌</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 -->
+<section class="band" id="s3">
+  <div class="wrap">
+    <div class="eyebrow">03　警訊</div>
+    <h2>子宮內膜癌有什麼症狀</h2>
+    <div class="grid2">
+      <div class="card bad"><h4>陰道異常出血　唯一且最典型</h4><p class="soft">超過九成的人會發生，多在<b>停經後</b>。未停經的人則是經血量變多，或兩次月經之間異常出血。</p></div>
+      <div class="card"><h4>異常血絲狀分泌物</h4><p class="soft">如果是帶有<b>惡臭的膿血性分泌物</b>，多數已到晚期。</p></div>
+      <div class="card"><h4>下腹痛、貧血、倦怠</h4><p class="soft">腫瘤塞住子宮頸讓血或膿水排不出、腫瘤變大或轉移，都會引起腹痛；持續出血造成貧血虛弱。這些屬於晚期症狀。</p></div>
+    </div>
+    <div class="nurse red">
+      <svg><use href="#i-alert"/></svg>
+      <div>
+        <div class="t">停經後出血不是「回春」</div>
+        <p>有些含類似雌激素成分的健康食品強調能讓身體逆齡，讓人誤以為停經後出血是回春現象。停經後的女性<b>「一滴血都不該流」</b>，有異常出血請就醫檢查。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 -->
+<section class="band tint" id="s4">
+  <div class="wrap">
+    <div class="eyebrow">04　診斷</div>
+    <h2>怎麼確定是不是子宮內膜癌</h2>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-scan"/></svg>骨盆腔內診<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">醫師以視診配合觸診，檢查子宮、陰道、卵巢、膀胱和直腸有沒有異常。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-scan"/></svg>子宮內膜刮除術　最常用、可靠<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">從子宮腔內膜切片採樣，經病理檢查判斷是否確診。需要輕度麻醉。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-scan"/></svg>子宮內膜取樣　門診即可，不用麻醉<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">用特製的吸管放入子宮腔，吸取部分內膜組織送病理診斷，是較簡單的方式。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-scan"/></svg>子宮腔鏡、婦科超音波<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft"><b>子宮腔鏡</b>可直接觀察罹癌部位的位置、大小和形態。<b>婦科超音波</b>是重要工具，發現子宮腔影像異常時，需要配合其他檢查確立診斷。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-scan"/></svg>電腦斷層、核磁共振、正子攝影、血液檢查<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">檢查腫瘤侵犯深度、有無淋巴結或其他器官轉移，是分期和決定治療的重要依據。血液檢查如 CA-125 腫瘤指標。</p></div></div>
+
+    <div class="card mt">
+      <h3>依細胞型態，分成這幾種</h3>
+      <ul class="bul" style="margin-top:10px">
+        <li><b>子宮內膜樣癌</b>（endometrioid carcinoma）：最常見</li>
+        <li><b>漿液性腺癌</b>（serous carcinoma）</li>
+        <li><b>上皮癌肉瘤</b>（惡性混合米勒氏腫瘤，MMMT）</li>
+        <li><b>明亮細胞癌</b>（clear cell carcinoma）</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 05 -->
+<section class="band" id="s5">
+  <div class="wrap">
+    <div class="eyebrow">05　分期</div>
+    <h2>我是第幾期</h2>
+    <p class="sub">依據 2023 年國際婦產科聯盟（FIGO）分期。</p>
+    <div class="card seg-group">
+      <div class="seg" role="tablist">
+        <button data-seg="e1" class="on">第一期</button>
+        <button data-seg="e2">第二期</button>
+        <button data-seg="e3">第三期</button>
+        <button data-seg="e4">第四期</button>
+      </div>
+      <div class="seg-pane" data-seg="e1"><h3>癌細胞侷限在子宮體和卵巢內</h3>
+        <ul class="bul">
+          <li><b>A</b>：侷限於子宮內膜；或非侵犯型組織（如低風險子宮內膜樣癌）、未超過一半肌肉層侵犯、無或僅局部淋巴血管侵犯；或屬預後良好疾病</li>
+          <li><b>B</b>：非侵犯型，合併 ≧ 一半肌肉層侵犯，無或僅局部淋巴血管侵犯</li>
+          <li><b>C</b>：侵犯型，侷限在瘜肉內或子宮內膜層中</li>
+        </ul></div>
+      <div class="seg-pane" data-seg="e2"><h3>侵犯子宮頸；或多量淋巴血管侵犯；或侵犯型併肌肉層侵犯</h3>
+        <ul class="bul">
+          <li><b>A</b>：非侵犯型，侵犯子宮頸基質</li>
+          <li><b>B</b>：非侵犯型，多量淋巴血管侵犯</li>
+          <li><b>C</b>：侵犯型，併肌肉層侵犯</li>
+        </ul></div>
+      <div class="seg-pane" data-seg="e3"><h3>發生局部擴散</h3>
+        <p class="soft">細項分期請與妳的醫師確認。</p></div>
+      <div class="seg-pane" data-seg="e4"><h3>擴散至膀胱黏膜、腸黏膜，或遠端轉移</h3>
+        <ul class="bul">
+          <li><b>A</b>：侵犯至膀胱黏膜和／或腸子黏膜</li>
+          <li><b>B</b>：腹腔腹膜轉移，超過骨盆腔外</li>
+          <li><b>C</b>：遠端轉移，含任何腎血管上方之腹腔淋巴結、肺、肝、腦或骨骼</li>
+        </ul></div>
+    </div>
+    <div class="grid2 mt">
+      <div class="card calm"><h4>低風險</h4><p class="soft">細胞分化較好的一或二級腫瘤，轉移機率較低。</p></div>
+      <div class="card bad"><h4>高風險</h4><p class="soft">細胞分化差的三級腫瘤，容易擴散，如漿液性癌、明亮細胞癌、上皮癌肉瘤。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 -->
+<section class="band tint" id="s6">
+  <div class="wrap">
+    <div class="eyebrow">06　治療</div>
+    <h2>子宮內膜癌怎麼治療</h2>
+    <p class="sub">醫師會依分期、腫瘤生長速度、年齡及健康狀況擬定計畫。<b>不論是否轉移，都以手術為第一選擇。</b></p>
+
+    <div class="acc" id="a-surg">
+      <button class="acc-h"><svg class="ic"><use href="#i-knife"/></svg>手術治療與術後照顧<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p>最常見、也最有效的方式是<b>切除子宮、兩側輸卵管和卵巢</b>。癌細胞可能經輸卵管擴散，一併切除能降低復發。</p>
+        <h4 style="margin-top:16px">前哨淋巴結</h4>
+        <p class="soft">癌細胞經淋巴擴散時，會先到「前哨淋巴結」；這裡沒有癌細胞，其他淋巴結通常也比較安全。現在多在手術中檢查前哨淋巴結，取代過去直接清除多個淋巴結，減少手術風險和不適。醫師會在子宮頸注射螢光染劑「靛氰綠（ICG）」幫忙找出轉移，準確率高。</p>
+        <p class="soft">手術中也會檢查腹腔內有無擴散，術後依結果確認期別、安排後續治療。卵巢要全切或保留，由醫師視病情、年齡及病人意願決定。</p>
+
+        <div class="seg-group card" style="box-shadow:none;margin-top:18px">
+          <h4>三種手術方式比較</h4>
+          <div class="seg" role="tablist">
+            <button data-seg="open" class="on">傳統開腹</button>
+            <button data-seg="lap">腹腔鏡</button>
+            <button data-seg="robot">達文西</button>
+          </div>
+          <div class="seg-pane" data-seg="open"><dl class="spec">
+            <dt>手術時間</dt><dd>2～4 小時</dd><dt>傷口</dt><dd>15～20 公分 × 1 個</dd><dt>費用</dt><dd>健保，只需部分負擔</dd>
+            <dt>優點</dt><dd>能直視病灶、直接操作，用手觸壓可察覺肌肉層內看不到的腫瘤；經濟負擔輕；手術時間較短</dd>
+            <dt>可能併發症</dt><dd>傷口較痛、疤痕明顯、術後腸沾黏風險較高</dd></dl></div>
+          <div class="seg-pane" data-seg="lap"><dl class="spec">
+            <dt>手術時間</dt><dd>4～5 小時</dd><dt>傷口</dt><dd>0.5 公分 × 5 個</dd><dt>費用</dt><dd>約 5 萬，部分健保</dd>
+            <dt>優點</dt><dd>術後體能與進食恢復較快</dd>
+            <dt>可能併發症</dt><dd>手術時間長，可能增加靜脈栓塞、皮下氣腫的風險</dd></dl></div>
+          <div class="seg-pane" data-seg="robot"><dl class="spec">
+            <dt>手術時間</dt><dd>4～6 小時</dd><dt>傷口</dt><dd>0.8～1 公分 × 5 個</dd><dt>費用</dt><dd>約 20 萬，部分健保</dd>
+            <dt>優點</dt><dd>高清晰度 3D 視覺與靈活器械，手術更精確；出血少；術後體能與進食恢復較快</dd></dl></div>
+          <p class="faint" style="margin-top:12px">大型研究（如 GOG-LAP2、LACE 試驗）顯示，微創手術雖然較複雜、時間較長，但出血較少、併發症較低；治療早期子宮內膜癌的效果與開腹相近，病情控制和存活率沒有差別。</p>
+        </div>
+
+        <h4 style="margin-top:18px">術後照顧</h4>
+        <ul class="bul g">
+          <li>觀察傷口，有<b>紅、腫、熱、痛或不正常分泌物</b>，儘速告知醫護人員</li>
+          <li>術後幾天可能有排尿、腸胃蠕動問題，下腹部會痛</li>
+          <li>切除子宮就不會再有月經。未停經、沒切卵巢的人不會出現更年期症狀；切除卵巢或做放療則會停經</li>
+          <li><b>術後 6～8 週</b>內避免提超過 3 公斤的東西、彎腰取物和爬樓梯，可以用束腹帶</li>
+          <li><b>術後 3 個月</b>內避免久坐、長途旅行，也不要做瑜珈、韻律舞等增加腹壓的運動，以免骨盆腔出血</li>
+          <li>多喝水、多吃蔬果等高纖食物，預防便秘</li>
+          <li>切除雙側卵巢容易骨質疏鬆，多攝取高鈣食物，如排骨湯、優酪乳、大豆類</li>
+          <li>傷口和骨盆腔組織復原後，就可以有正常性生活；性慾和性能力通常不會因子宮切除而受影響</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="acc" id="a-rt">
+      <button class="acc-h"><svg class="ic"><use href="#i-beam"/></svg>放射線治療<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <div class="grid2">
+          <div class="card calm" style="box-shadow:none"><h4>體外放療（大電）</h4><p class="soft">高能量 X 射線從體外照射，通常是整個骨盆腔。治療前會在皮膚上定位做記號，療程約五至六週。</p></div>
+          <div class="card calm" style="box-shadow:none"><h4>體內近接放療（小電）</h4><p class="soft">通常在體外放療結束後進行。先在陰道腔內放置器械、計算劑量，確認後開始照射。</p></div>
+        </div>
+        <div class="card seg-group" style="box-shadow:none;margin-top:16px">
+          <h4>副作用與照顧</h4>
+          <div class="seg" role="tablist">
+            <button data-seg="rs" class="on">皮膚</button>
+            <button data-seg="rg">腸胃</button>
+            <button data-seg="rb">膀胱</button>
+            <button data-seg="rv">陰道</button>
+          </div>
+          <div class="seg-pane" data-seg="rs"><p class="soft"><b>皮膚紅癢、色素沉澱</b></p><ul class="bul g">
+            <li>穿寬鬆棉質衣物，內褲要排汗透氣，保持會陰肛門清潔乾燥</li>
+            <li><b>禁止盆浴</b>；放療部位用水清潔，毛巾輕輕拍乾</li>
+            <li>治療期間到結束後兩週內，<b>不要用肥皂、沐浴乳</b></li>
+            <li>會陰肛門破皮疼痛時，請醫師開外用藥膏</li></ul></div>
+          <div class="seg-pane" data-seg="rg"><p class="soft"><b>噁心、腹痛、腹瀉</b>，通常在體外放療開始後 3～4 週出現</p><ul class="bul g">
+            <li>均衡飲食，避免油膩、油炸</li>
+            <li>腹瀉、腹部絞痛可請醫師開止瀉整腸藥；腹瀉期間採低纖維飲食</li>
+            <li>少數人在治療後 6 個月或更久發生腸炎和潰瘍，<b>有大便帶血、腸阻塞時，請醫師診治</b></li></ul></div>
+          <div class="seg-pane" data-seg="rb"><p class="soft"><b>頻尿、血尿、解尿疼痛、下腹悶痛</b>（近接治療可能造成短暫膀胱發炎）</p><ul class="bul g">
+            <li>多補充水分</li><li>不要憋尿</li><li>症狀嚴重時請醫師開藥</li></ul></div>
+          <div class="seg-pane" data-seg="rv"><p class="soft"><b>陰道乾燥或萎縮狹窄；少量出血或分泌物</b></p><ul class="bul g">
+            <li>保持會陰部清潔乾燥</li>
+            <li>近接治療後規律使用<b>陰道擴張棒</b>，減輕攣縮狹窄：每天一次，約 10～15 分鐘</li>
+            <li>使用<b>陰道沖洗器</b>清除分泌物：10cc 優碘加入 500cc 溫水稀釋，每天沖洗 1～2 次，預防感染、增加舒適</li></ul></div>
+        </div>
+        <a class="xlink" href="../radiation/index.html" style="--accent-x:#E07B39"><span class="bk"></span><span class="tx"><small>放療的完整說明</small>《面對放射線治療》</span><span class="ar">→</span></a>
+      </div>
+    </div>
+
+    <div class="acc" id="a-hormone">
+      <button class="acc-h"><svg class="ic"><use href="#i-fertility"/></svg>荷爾蒙治療與生育保留<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <h4>早期、年輕、想保留生育的人</h4>
+        <p class="soft">可以考慮用荷爾蒙藥物（口服高劑量黃體素，或放入子宮內的黃體素）暫時控制癌細胞、爭取時間懷孕；醫師會先做「子宮刮除」保留子宮。懷孕時體內的黃體素也有助抑制癌症。<b>生完小孩後，還是需要切除子宮</b>以降低復發。這樣做有一定風險和副作用，要和醫師、家人仔細討論。</p>
+        <div class="card calm" style="box-shadow:none;margin:12px 0">
+          <h4>可以考慮保留生育的條件</h4>
+          <ol class="num" style="margin-top:8px">
+            <li>核磁共振（MRI）及／或正子攝影確認是早期子宮內膜癌，<b>沒有子宮肌肉層及淋巴轉移</b></li>
+            <li>病理切片結果是<b>細胞分化良好</b></li>
+          </ol>
+          <p class="faint" style="margin-top:8px">可參考「癌友生育健康資訊平台」。</p>
+        </div>
+        <h4 style="margin-top:16px">晚期或復發、無法手術的人</h4>
+        <p class="soft">主要也是用黃體素製劑，約 15～33% 的人有反應。副作用包括水分滯留、浮腫、藥物性肝炎；因為容易血栓、中風，通常搭配低劑量阿斯匹靈。停藥後副作用會逐漸改善。</p>
+        <p class="soft">常見製劑：Megestrol Acetate（麥格斯口服懸液劑）、Tamoxifen（泰莫西芬、諾瓦得士錠）、Medroxyprogesterone（福祿多錠、美普羅錠、普維拉錠）、Aromatase inhibitors（芳香環轉化酶抑制劑）。</p>
+      </div>
+    </div>
+
+    <div class="acc" id="a-chemo">
+      <button class="acc-h"><svg class="ic"><use href="#i-pill"/></svg>化學治療與照顧<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p class="soft">可作為手術的輔助，或和放療、荷爾蒙藥物合併，維持效果、預防轉移或復發；也用於晚期、不適合開刀或復發的人。常見副作用有掉髮、白血球偏低、噁心、嘔吐、貧血，大多在恢復期或治療結束後消失。</p>
+        <div class="grid2 mt">
+          <div class="card" style="box-shadow:none"><h4>飲食對策</h4><ul class="bul g" style="margin-top:8px">
+            <li><b>禁吃生食</b>，可吃剝皮水果</li><li>少量多餐</li>
+            <li>避免太甜、油膩、辛辣、多纖維、易產氣或刺激性食物</li>
+            <li>多補充水分，可多吃流質</li><li>多攝取高蛋白、高熱量飲食，如肉、蛋、牛奶</li>
+            <li>口腔發炎潰瘍時，改吃果凍、布丁、冰淇淋、蛋糕等冷涼食物，增加清潔次數</li></ul></div>
+          <div class="card" style="box-shadow:none"><h4>日常保護</h4><ul class="bul g" style="margin-top:8px">
+            <li>避免出入公共場所，外出戴口罩；餐前、如廁後用肥皂洗手</li>
+            <li>避免撞擊外傷，用軟毛牙刷、電動刮鬍刀</li>
+            <li>睡飽多休息，體力許可做些散步等輕鬆運動</li></ul>
+            <h4 style="margin-top:14px">適應掉髮</h4><ul class="bul g" style="margin-top:8px">
+            <li>預先剪短頭髮，掉髮比較不明顯、不突然</li><li>先準備假髮、頭巾、帽子或髮飾</li>
+            <li>整理頭髮動作輕柔</li><li>不要燙髮，避免染髮劑、髮膠</li></ul></div>
+        </div>
+        <div class="card bad" style="margin-top:14px">
+          <p style="margin:0">體溫<b>超過 38°C</b>、發冷顫抖、不正常出血或瘀斑、呼吸急促、治療後持續嘔吐、嚴重便秘或腹瀉、排尿疼痛或燒灼感、血尿、解血便或黑便——<b>盡快告知醫護人員</b>。</p>
+        </div>
+        <a class="xlink" href="../chemo/index.html" style="--accent-x:#F5B921"><span class="bk"></span><span class="tx"><small>化療的完整照顧方法</small>《面對化學治療》</span><span class="ar">→</span></a>
+      </div>
+    </div>
+
+    <div class="acc" id="a-new">
+      <button class="acc-h"><svg class="ic"><use href="#i-shield"/></svg>免疫、標靶與抗體藥物複合體<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <h4>免疫治療</h4>
+        <p class="soft">過去主要靠化療，近年有新突破：免疫治療可單獨使用，或和標靶藥（如樂衛瑪）或化療合併，為轉移性病人帶來新希望。醫師會依基因檢查結果，如「腫瘤突變量高（TMB-H）」、「微衛星不穩定（MSI-H）」或「修復功能異常（dMMR）」，決定是否適合。</p>
+        <h4 style="margin-top:16px">標靶治療</h4>
+        <p class="soft">阻止腫瘤血管生成、減少癌細胞營養。像樂衛瑪這類標靶藥，通常和免疫治療或化療一起用，適用於無法手術或已轉移的情況。</p>
+        <h4 style="margin-top:16px">抗體藥物複合體（ADC）</h4>
+        <p class="soft">部分晚期或轉移的病人有高表現的 HER2 靶點，可以用抗體把化療藥送進癌細胞，精準提高效果、減少副作用。</p>
+        <div class="grid2 mt">
+          <a class="xlink" href="../immuno/index.html" style="--accent-x:#6A8CAF;margin-top:0"><span class="bk"></span><span class="tx">免疫治療手冊</span><span class="ar">→</span></a>
+          <a class="xlink" href="../targeted/index.html" style="--accent-x:#2F7D6E;margin-top:0"><span class="bk"></span><span class="tx">標靶治療手冊</span><span class="ar">→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc">
+      <button class="acc-h"><svg class="ic"><use href="#i-cal"/></svg>醫師怎麼決定第一次治療<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <h4>病灶侷限在子宮內</h4>
+        <ul class="bul">
+          <li><b>無法手術</b>：放射線治療，可考慮化療</li>
+          <li><b>可以手術</b>：全子宮切除＋雙側輸卵管卵巢切除＋分期手術</li>
+          <li>若是不完全分期手術或意外發現（僅切除子宮，或加上單側／雙側輸卵管卵巢），再依病況評估</li>
+        </ul>
+        <h4 style="margin-top:14px">懷疑或肉眼可見子宮頸侵襲</h4>
+        <ul class="bul">
+          <li>先做子宮頸切片或核磁共振</li>
+          <li>沒有子宮頸轉移、病灶只在子宮：同上「可以手術」的方式</li>
+          <li>有子宮頸轉移：依能否手術，選擇根除性子宮切除（合併雙側卵巢輸卵管切除、淋巴結摘除），或骨盆腔放療＋陰道近接治療，並視情況加上化學、標靶、免疫治療</li>
+        </ul>
+        <p class="soft" style="margin-top:12px">術後會依病理結果，安排觀察、骨盆腔放療、陰道近接治療、化療、荷爾蒙、標靶或免疫治療，之後定期追蹤。漿液性腺癌、明亮細胞癌或上皮癌肉瘤，會做主動脈旁／骨盆腔淋巴結摘除。</p>
+      </div>
+    </div>
+
+    <h3 class="mt2">子宮內膜癌常用藥物查詢</h3>
+    <div class="search-box">
+      <svg><use href="#i-search"/></svg>
+      <input type="search" id="drugQ" placeholder="例如：卡鉑、Paclitaxel、樂衛瑪…" autocomplete="off">
+    </div>
+    <div class="drug-tabs">
+      <button class="on" data-cat="all">全部</button>
+      <button data-cat="chemo">化療</button>
+      <button data-cat="immuno">免疫</button>
+      <button data-cat="target">標靶／ADC</button>
+    </div>
+    <div class="drug-count" id="drugCount"></div>
+    <div id="drugList"></div>
+  </div>
+</section>
+
+<!-- 07 -->
+<section class="band" id="s7">
+  <div class="wrap">
+    <div class="eyebrow">07　風暴之後</div>
+    <h2>治療結束後</h2>
+    <h3>慢性合併症照護</h3>
+    <div class="grid2">
+      <div class="card"><h4>慢性直腸黏膜炎</h4><p class="soft">解血便，一般在放療半年後發生。<b>需請醫師確認診斷</b>、處方用藥。</p></div>
+      <div class="card"><h4>慢性膀胱炎</h4><p class="soft">血尿、頻尿、小便疼痛，可多喝水並服用醫師處方。</p></div>
+      <div class="card"><h4>下肢水腫</h4><p class="soft">多休息，睡覺時把腳墊高，或穿彈性襪。</p></div>
+      <div class="card"><h4>更年期症狀</h4><p class="soft">心悸、盜汗、熱潮紅、不安、全身痠痛、失眠，請告訴醫師，醫師會視情況開荷爾蒙藥物減緩不適。</p></div>
+      <div class="card"><h4>性生活</h4><p class="soft">治療結束後<b>約兩個月</b>可以恢復性生活。手術或放療可能造成陰道乾澀、性交疼痛或出血，可使用水性潤滑液（如 K-Y Jelly）。平時做<b>凱格爾運動</b>鍛鍊骨盆底肌，能改善尿失禁，也讓親密生活更圓滿。</p>
+        <a class="xlink" href="../intimacy/index.html" style="--accent-x:#D98C8C"><span class="bk"></span><span class="tx"><small>延伸閱讀</small>《女人的癌後性福》</span><span class="ar">→</span></a></div>
+    </div>
+
+    <div class="card calm mt">
+      <h3>返診追蹤</h3>
+      <p class="soft">治療後<b>兩年內最容易復發</b>，要定期回診。依國衛院子宮內膜癌診療指引：</p>
+      <dl class="spec" style="margin-top:10px">
+        <dt>陰道細胞學檢查</dt><dd>每 3～6 個月一次，連續五年</dd>
+        <dt>胸部 X 光</dt><dd>每年一次，或有症狀時</dd>
+        <dt>腫瘤指數 CA-125</dt><dd>一開始有升高的人，之後每次追蹤都要複驗</dd>
+        <dt>懷疑復發時</dt><dd>電腦斷層、核磁共振或正子掃描</dd>
+        <dt>身體檢查</dt><dd>每次回診</dd>
+      </dl>
+    </div>
+
+    <div class="card mt">
+      <h3>面對子宮內膜癌</h3>
+      <p class="soft">罹癌時會害怕、沮喪、顫抖或生氣，情緒起起伏伏都很正常。能和家人朋友公開討論病情和感受，通常比較能有條理地面對治療。就醫時最好有信賴的人陪同，一起聽醫師說明；不放心的話，可以尋求另一位醫師的意見。</p>
+      <p class="soft"><b>給家人朋友：</b>練習同理她的情緒，她可能擔心工作、家庭、經濟和親密關係。適時鼓勵她說出來，必要時尋求醫護人員、個案管理師、社工師、病友團體的協助。</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="band tint" id="s8">
+  <div class="wrap">
+    <div class="eyebrow">08　你不必自己撐</div>
+    <h2>可以找誰幫忙</h2>
+    <div class="hot">
+      <div>
+        <div class="lab">癌症問題 我幫您</div>
+        <a class="num" href="tel:0809010580">0809-010-580</a>
+        <p>癌友家庭正面臨人生艱難的挑戰。鈴一鈴，一通電話，提供您專業支持與貼心陪伴。</p>
+      </div>
+    </div>
+    <div class="card mt">
+      <h3>希望小站提供的服務</h3>
+      <p class="soft" style="margin-bottom:14px">資源補助 · 照護諮詢服務 · 癌症教育出版品 · 教育系列講座與支持團體 · 心理諮詢 · 營養衛教 · <b>康復用品服務（假髮、頭巾、義乳胸衣）</b></p>
+      <div class="stations">
+        <div class="station"><div class="c">台北希望小站</div>
+          <div class="d">10058 台北市中正區臨沂街 3 巷 5 號 1 樓（捷運忠孝新生站 1 號出口）<br>
+          TEL <a href="tel:0233226286">(02) 3322-6286</a>　FAX (02) 3322-1314</div></div>
+        <div class="station"><div class="c">台中希望小站</div>
+          <div class="d">40341 台中市西區民權路 312 巷 4-1 號（茄苳腳站）<br>
+          TEL <a href="tel:0423055731">(04) 2305-5731</a>　FAX (04) 2305-5736</div></div>
+        <div class="station"><div class="c">高雄希望小站</div>
+          <div class="d">81355 高雄市左營區翠峰路 22 號<br>
+          TEL <a href="tel:075810661">(07) 581-0661</a>　FAX (07) 581-0663</div></div>
+        <div class="station"><div class="c">服務時間</div><div class="d">週一至週六 9:00～18:00</div></div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<button class="sos-fab" id="sosBtn"><svg><use href="#i-alert"/></svg>何時找醫護</button>
+<div class="sos-modal" id="sosModal" role="dialog" aria-modal="true" aria-label="何時找醫護">
+  <div class="sos-panel">
+    <h3>這些情況，<br>請盡快告知醫護人員</h3>
+    <p class="soft" style="font-size:.94em">本手冊提到需要告知醫護或請醫師診治的情況：</p>
+    <ul class="sos-list">
+      <li><span class="mk">1</span><div>化療期間體溫<b>超過 38°C</b>、發冷、顫抖</div></li>
+      <li><span class="mk">2</span><div><b>不正常出血</b>或瘀斑、解血便或黑便、血尿</div></li>
+      <li><span class="mk">3</span><div><b>呼吸急促</b></div></li>
+      <li><span class="mk">4</span><div>治療後<b>持續嘔吐</b>、嚴重便秘或腹瀉</div></li>
+      <li><span class="mk">5</span><div>排尿疼痛或燒灼感</div></li>
+      <li><span class="mk">6</span><div>術後傷口<b>紅、腫、熱、痛</b>或有不正常分泌物</div></li>
+      <li><span class="mk">7</span><div>使用 Cisplatin 後<b>耳鳴</b>或聽力下降</div></li>
+      <li><span class="mk">8</span><div>放療後（甚至半年以上）<b>大便帶血、腸阻塞</b></div></li>
+    </ul>
+    <button class="sos-close" id="sosClose">我知道了</button>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="src">
+      <b>資料來源</b><br>
+      本頁內容出自財團法人癌症希望基金會《希望之路——面對子宮內膜癌》手冊（2025 年 5 月，四版一刷）。審稿顧問：<b>陳怡仁</b>醫師（臺北榮民總醫院婦女醫學部主任、國立陽明交通大學醫學系婦產學科主任）、<b>魏凌鴻</b>醫師（臺大醫院婦產部主治醫師、婦癌治療團隊召集人）。藥品資料來源：衛生福利部食品藥物管理署藥品仿單查詢平台。
+    </div>
+    <p>
+      <b>本頁不能取代醫療專業判斷。</b>手冊內容雖經專業審閱，然醫療科技進展快速，
+      關於你的治療建議，請務必與<b>你的主治醫師</b>諮詢。若有緊急狀況，請直接就醫或聯絡你的醫療團隊。
+    </p>
+    <p class="faint">原手冊版權屬財團法人癌症希望基金會所有，如需轉載或對外散布，須經該會同意。</p>
+    <a class="totop" href="#top">↑ 回到最上面</a><a class="totop" href="../index.html">← 回到書架</a>
+  </div>
+</footer>
+<script>window.DRUGS=[{"n": "佳鉑帝；卡鉑（二代白金）", "e": "Carboplatin (Paraplatin)", "r": "靜脈注射", "c": "chemo", "f": [["副作用", "噁心、嘔吐、食慾不振、掉頭髮、皮膚發疹、白血球減少、血小板減少、聽力受損"], ["注意事項", "注意補充水分。", "care"]]}, {"n": "克莫・順鉑（白金）", "e": "Cisplatin (Kemoplat; CDDP)", "r": "靜脈注射", "c": "chemo", "f": [["副作用", "嚴重噁心、嘔吐、白血球及血小板減少、貧血、腎功能受損、耳鳴、聽力受損、周邊神經病變（手、腳麻木感）"], ["注意事項", "需注意水分的補充。當有耳鳴或喪失聽力，即時通知醫護人員。", "care"]]}, {"n": "艾黴素（小紅莓）", "e": "Doxorubicin (Adriamycin)", "r": "靜脈注射", "c": "chemo", "f": [["副作用", "噁心、嘔吐、靜脈炎、白血球減少、血小板減少、嚴重掉頭髮、心臟毒性（與累積劑量有關）、皮膚色素沉著"], ["注意事項", "心臟功能不全者應小心使用。注射後 24 到 48 小時尿液會變紅色，應給予適量水分。", "care"]]}, {"n": "好克癌", "e": "Ifosfamide (Holoxan)", "r": "靜脈注射", "c": "chemo", "f": [["副作用", "噁心、嘔吐、掉髮、白血球及血小板減少、貧血、泌尿毒性"], ["注意事項", "攝取適量水分，注意解尿情形。", "care"]]}, {"n": "汰癌勝／輝克癒蘇（太平洋紫杉醇）", "e": "Paclitaxel (Taxol; Phyxol)", "r": "靜脈注射", "c": "chemo", "f": [["副作用", "輕微噁心、嘔吐、腹瀉、過敏反應、白血球及血小板過低、貧血、手腳麻木、刺痛感、肌肉酸痛、掉髮、心跳過慢、低血壓、水腫、肝功能異常"], ["注意事項", "在投予此藥前會先給予適當預防過敏發生之藥物。", "care"]]}, {"n": "吉舒達", "e": "Pembrolizumab (Keytruda)", "r": "靜脈注射，每三週一次", "c": "immuno", "f": [["副作用", "免疫相關副作用，如腸炎、皮膚反應、內分泌或甲狀腺功能異常等"], ["注意事項", "作用：抗PD-1單株抗體", "care"]]}, {"n": "抑癌寧", "e": "Durvalumab (Imfinzi)", "r": "靜脈注射，每三週一次", "c": "immuno", "f": [["副作用", "免疫相關副作用，如腸炎、皮膚反應、內分泌或甲狀腺功能異常等"], ["注意事項", "作用：抗PD-L1單株抗體", "care"]]}, {"n": "樂衛瑪", "e": "Lenvatinib (Lenvima)", "r": "口服", "c": "target", "f": [["副作用", "高血壓、疲倦、腹瀉、關節肌肉疼痛、食慾減退、體重減輕、蛋白尿"], ["注意事項", "作用：多重激酶抑制劑", "care"]]}, {"n": "優赫得", "e": "Trastuzumab deruxtecan (Enhertu)", "r": "靜脈注射，每三週一次", "c": "target", "f": [["副作用", "疲倦、噁心、嘔吐、掉髮、便秘、腹瀉、貧血、血球減少、感染、咳嗽、頭痛"], ["注意事項", "作用：HER2 抗體藥物複合體", "care"]]}];</script>
+<script src="../assets/hope.js"></script>
+</body>
+</html>

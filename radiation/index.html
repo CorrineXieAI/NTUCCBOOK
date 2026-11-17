@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#FFFCF5">
+<meta name="format-detection" content="telephone=no">
+<title>面對放射線治療 · 互動衛教手冊</title>
+<meta name="description" content="放射線治療的種類、治療流程、各部位副作用與照顧方法。改編自癌症希望基金會《希望之路—面對放射線治療》。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/hope.css">
+<style>:root{--accent:#E07B39}</style>
+<script>try{if(localStorage.getItem('hope-big')==='1')document.documentElement.classList.add('big')}catch(e){}</script>
+</head>
+<body>
+
+<!-- ==================== ICON SPRITE ==================== -->
+<svg style="display:none" aria-hidden="true">
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-tired" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 10.5h2.5M13.5 10.5H16"/><path d="M9 15.5c1.8-1.2 4.2-1.2 6 0"/></symbol>
+  <symbol id="i-skin" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M8 11c1.5 1 2.5-1 4 0s2.5-1 4 0"/><path d="M8 15c1.5 1 2.5-1 4 0"/></symbol>
+  <symbol id="i-food" viewBox="0 0 24 24"><path d="M5 3v8a2 2 0 002 2h0a2 2 0 002-2V3"/><path d="M7 13v8"/><path d="M17 3c-1.5 2-2 4-2 6s.7 3 2 3v9"/></symbol>
+  <symbol id="i-tooth" viewBox="0 0 24 24"><path d="M7 3c-2.5 0-4 2-4 4.5 0 3 1.5 4.5 2 7 .5 3 1 6.5 3 6.5s2-4 4-4 2 4 4 4 2.5-3.5 3-6.5c.5-2.5 2-4 2-7C21 5 19.5 3 17 3c-2 0-3 1-5 1S9 3 7 3z"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 10.5A6 6 0 016 13.5C6 9.5 12 3 12 3z"/><path d="M4 4l16 16"/></symbol>
+  <symbol id="i-nausea" viewBox="0 0 24 24"><path d="M4 8h10a4 4 0 010 8H8"/><path d="M17 5v6M20 5v6"/><path d="M6 19h6"/></symbol>
+  <symbol id="i-gut" viewBox="0 0 24 24"><path d="M6 3v6a4 4 0 004 4h1a4 4 0 014 4v4"/><path d="M18 3v4a3 3 0 01-3 3"/><path d="M4 21h6"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4l9 16H3l9-16z"/><path d="M12 10v4M12 17.5h.01"/></symbol>
+  <symbol id="i-nurse" viewBox="0 0 24 24"><path d="M12 13a4 4 0 100-8 4 4 0 000 8z"/><path d="M4 21a8 8 0 0116 0"/><path d="M12 2.5v2M11 3.5h2"/></symbol>
+  <symbol id="i-beam" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.8 2.8M16.2 16.2L19 19M5 19l2.8-2.8M16.2 7.8L19 5"/></symbol>
+  <symbol id="i-seed" viewBox="0 0 24 24"><path d="M7 17L17 7"/><circle cx="17" cy="7" r="2.5"/><path d="M4 20l3-3"/></symbol>
+</svg>
+
+<!-- ==================== 頂列 ==================== -->
+<header class="topbar">
+  <div class="topbar-in">
+    <a href="../index.html" class="shelf-link" aria-label="回到書架"><svg><use href="#i-back"/></svg><span class="lb">書架</span></a>
+    <a href="#top" class="brand">
+      <span class="dot"></span>
+      <span>面對放射線治療<small>互動衛教手冊</small></span>
+    </a>
+    <div class="tb-actions">
+      <button class="fs-btn" id="fsBtn" aria-label="切換大字">大字</button>
+      <button class="nav-btn" id="tocBtn" aria-label="開啟目錄"><span class="lb">目錄 </span>☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- ==================== 目錄抽屜 ==================== -->
+<div class="toc" id="toc">
+  <div class="toc-panel">
+    <button class="toc-close" id="tocClose" aria-label="關閉目錄">✕</button>
+    <h3>目錄</h3>
+    <p class="hint">不必從頭看到尾，找你需要的那一段就好。</p>
+    <a href="#s1"><i>01</i>放射線治療是什麼</a>
+    <a href="#s2"><i>02</i>為什麼要做放療</a>
+    <a href="#s3"><i>03</i>治療前，先問清楚</a>
+    <a href="#s4"><i>04</i>體外放療：機器與技術</a>
+    <a href="#s5"><i>05</i>從定位到開始照射</a>
+    <a href="#s6"><i>06</i>體內近接治療</a>
+    <a href="#s7"><i>07</i>照哪裡，會有什麼副作用</a>
+    <a href="#s8"><i>08</i>副作用怎麼照顧</a>
+    <a href="#s9"><i>09</i>可以找誰幫忙</a>
+    <a class="out" href="../index.html">← 回到書架，看其他手冊</a>
+  </div>
+</div>
+
+<!-- ==================== HERO ==================== -->
+<div id="top"></div>
+<section class="hero">
+  <div class="wrap">
+    <div class="kicker">希望之路　放射線治療</div>
+    <h1>照到哪裡，<br>才影響<em>哪裡</em></h1>
+    <p class="lede">
+      放療跟手術一樣屬於<b>局部治療</b>：只有照到的地方才會產生副作用。
+      做體外照射時，感覺就像照 X 光，照完身上<b>不會帶有輻射，不需要和家人隔離</b>。
+    </p>
+
+    <div class="picker">
+      <h3>你想先看哪一段？</h3>
+      <p class="why">點一下，直接跳到那一段。</p>
+      <h4 class="grp">我照射的部位是</h4>
+      <div class="sym-grid">
+        <button class="sym" data-go="site-brain">腦部</button>
+        <button class="sym" data-go="site-head">臉及頸部</button>
+        <button class="sym" data-go="site-chest">胸部、肺</button>
+        <button class="sym" data-go="site-breast">乳房</button>
+        <button class="sym" data-go="site-upper">上腹部</button>
+        <button class="sym" data-go="site-lower">下腹部、骨盆腔</button>
+      </div>
+      <h4 class="grp">我現在不舒服的是</h4>
+      <div class="sym-grid">
+        <button class="sym" data-go="a-tired">很累</button>
+        <button class="sym" data-go="a-skin">皮膚紅、痛、脫皮</button>
+        <button class="sym" data-go="a-eat">吃不下、吞嚥痛</button>
+        <button class="sym" data-go="a-mouth">牙齒、口腔</button>
+        <button class="sym" data-go="a-dry">口乾</button>
+        <button class="sym" data-go="a-nausea">噁心、嘔吐</button>
+        <button class="sym" data-go="a-diarrhea">腹瀉</button>
+        <button class="sym" data-go="s4">各種「刀」差在哪</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 01 ==================== -->
+<section class="band" id="s1">
+  <div class="wrap">
+    <div class="eyebrow">01　先弄懂它</div>
+    <h2>放射線治療是什麼</h2>
+    <p class="sub">
+      俗稱「<b>電療</b>」，名稱源自閩南語把「X 光」叫做「電光」。它是利用
+      X、γ、電子、質子、中子或重粒子射線殺死腫瘤細胞，使用的能量約是診斷用 X 光的<b>數百到數千倍</b>，
+      用來破壞癌細胞、防止癌細胞生長與分裂。
+    </p>
+
+    <div class="grid2">
+      <div class="card sun">
+        <h4>只有照到的地方會有副作用</h4>
+        <p class="soft">放療跟手術一樣屬於局部性治療。除了少數人可能感到疲倦，副作用都發生在照射的部位。</p>
+      </div>
+      <div class="card sun">
+        <h4>照的時候沒有感覺</h4>
+        <p class="soft">體外照射的感覺就像照 X 光，不會有明顯的光感、熱感或電擊感。</p>
+      </div>
+      <div class="card calm">
+        <h4>照完身上不帶輻射</h4>
+        <p class="soft">接受體外照射後，體內不會留下任何放射性物質，<b>不需要和家人隔離</b>。</p>
+      </div>
+      <div class="card bad">
+        <h4>療程要做完才有效</h4>
+        <p class="soft">療效來自每天（每次）累積的劑量。做到一半就停，<b>並不會得到一半的效果</b>，必須完成整個療程，才有機會達到預期效果。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 02 ==================== -->
+<section class="band tint" id="s2">
+  <div class="wrap">
+    <div class="eyebrow">02　目的</div>
+    <h2>為什麼要做放射線治療</h2>
+    <p class="sub">
+      癌症治療有局部的手術、放療，也有全身性的化療、標靶和免疫治療，可以單獨使用，也可以合併。
+      醫師會依據你的<b>癌症種類、期別、病理報告、治療目的與身體狀況</b>來決定治療計畫。
+    </p>
+
+    <div class="grid3">
+      <div class="card"><h4>全程治癒性治療</h4><p class="soft">以放療作為主要治療方式。常見於<b>鼻咽癌、口咽癌、下咽癌</b>等。</p></div>
+      <div class="card"><h4>輔助治癒性治療</h4><p class="soft">在手術<b>前或後</b>進行，輔助手術的效果。常見於：</p>
+        <ul class="bul" style="margin-top:10px;font-size:.94em">
+          <li>頭頸癌症，如口腔癌、唾腺癌、喉癌</li>
+          <li>乳癌做乳房部分切除者</li>
+          <li>食道癌、直腸癌、子宮頸癌</li>
+          <li>病理報告有「高風險因子」者，如腫瘤大、淋巴結侵犯、神經血管浸潤、手術邊緣不乾淨</li>
+        </ul></div>
+      <div class="card"><h4>症狀緩和性治療</h4><p class="soft">針對晚期或轉移的症狀控制，例如腦轉移、骨轉移，或局部照射以減少腫瘤壓迫，達到<b>止痛、止血</b>等效果。</p></div>
+    </div>
+
+    <div class="card calm mt">
+      <h4>手術範圍可以變小</h4>
+      <p class="soft">近年的趨勢是以小範圍手術配合放療，取代傳統的大範圍切除。例如早期乳癌切除局部乳房後加上放療，效果可和全乳切除一樣；食道癌、腸癌在開刀前先做放療與藥物治療，可縮小切除範圍，有機會保留重要器官。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 03 ==================== -->
+<section class="band" id="s3">
+  <div class="wrap">
+    <div class="eyebrow">03　帶著它去看診</div>
+    <h2>治療前，你應該先問清楚</h2>
+    <p class="sub">這張就醫提問單可以直接勾選使用。問到了就打勾，沒問到的下次補問。</p>
+
+    <div class="card">
+      <h3>放射線治療前的 7 個問題</h3>
+      <div data-checklist="askNote" data-done="七題都問到了。把答案記下來，之後回診都用得上。" style="margin-top:14px">
+        <label class="chk"><input type="checkbox"><span>這次治療的<b>目的</b>是什麼？</span></label>
+        <label class="chk"><input type="checkbox"><span><b>照射位置</b>在哪裡？</span></label>
+        <label class="chk"><input type="checkbox"><span>用的是哪一種<b>治療方式</b>？</span></label>
+        <label class="chk"><input type="checkbox"><span><b>療程怎麼安排</b>？</span></label>
+        <label class="chk"><input type="checkbox"><span>要<b>合併其他治療</b>嗎？（化療、標靶…）</span></label>
+        <label class="chk"><input type="checkbox"><span>可能會有哪些<b>副作用</b>？</span></label>
+        <label class="chk"><input type="checkbox"><span>治療前我要做哪些<b>準備</b>？</span></label>
+      </div>
+      <div class="chk-note" id="askNote"></div>
+    </div>
+
+    <div class="nurse">
+      <svg><use href="#i-nurse"/></svg>
+      <div>
+        <div class="t">有生育計畫，治療前一定要提</div>
+        <p>如果治療可能照到<b>下腹部、腦部，甚至是全身</b>，照射次數與強度可能影響生育能力。未來有生育計畫，請先和醫師討論；還不確定的話，可以到「<b>癌友生育健康資訊平台</b>」了解治療與疾病對生育的影響。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 04 ==================== -->
+<section class="band tint" id="s4">
+  <div class="wrap">
+    <div class="eyebrow">04　種類</div>
+    <h2>體外放療：機器與技術</h2>
+    <p class="sub">
+      依射線種類，放療分為「<b>光子</b>」（X 射線、γ 射線）與「<b>粒子</b>」（如質子、重粒子）。
+      依治療方式，又分為從體外照射的「<b>體外遠隔</b>」放療，以及把射源放進體內的「<b>體內近接</b>」放療（見第 06 段）。
+    </p>
+
+    <!-- 三種機器 -->
+    <div class="card seg-group">
+      <h3>三種機器怎麼選</h3>
+      <div class="seg" role="tablist">
+        <button data-seg="lin" class="on">直線加速器</button>
+        <button data-seg="pro">質子治療</button>
+        <button data-seg="ion">重粒子治療</button>
+      </div>
+      <div class="seg-pane" data-seg="lin">
+        <p class="faint" style="margin-bottom:12px">一般放射線治療</p>
+        <dl class="spec">
+          <dt>射線</dt><dd>X 光（光子）</dd>
+          <dt>原理</dt><dd>利用 X 光能量照射腫瘤，消滅癌細胞</dd>
+          <dt>優點</dt><dd>費用低、最普遍、容易執行</dd>
+          <dt>缺點</dt><dd>會破壞腫瘤周圍組織，產生副作用，如皮膚黏膜破損等</dd>
+          <dt>療程</dt><dd>約 25～35 次</dd>
+          <dt>費用</dt><dd>最低；需部分耗材或技術自費</dd>
+        </dl>
+      </div>
+      <div class="seg-pane" data-seg="pro">
+        <dl class="spec">
+          <dt>射線</dt><dd>質子</dd>
+          <dt>原理</dt><dd>利用加速器讓質子產生能量，到達腫瘤後再集中釋放，消滅癌細胞</dd>
+          <dt>優點</dt><dd>對腫瘤周圍正常組織傷害低，副作用小</dd>
+          <dt>缺點</dt><dd>費用高；以治療局部腫瘤為主</dd>
+          <dt>療程</dt><dd>約 20～30 次</dd>
+          <dt>費用</dt><dd>中；每一次約 2～3 萬元</dd>
+        </dl>
+      </div>
+      <div class="seg-pane" data-seg="ion">
+        <dl class="spec">
+          <dt>射線</dt><dd>帶電重粒子（如碳元素）</dd>
+          <dt>原理</dt><dd>將重粒子加速產生更大能量，到達腫瘤後再集中釋放，消滅癌細胞</dd>
+          <dt>優點</dt><dd>治療效果最佳；對周圍組織傷害低，副作用小</dd>
+          <dt>缺點</dt><dd>費用較質子治療高；高規設備，可執行的醫院少</dd>
+          <dt>療程</dt><dd>療程短，約 10～20 次</dd>
+          <dt>費用</dt><dd>最高；整個療程約 90～150 萬</dd>
+        </dl>
+      </div>
+    </div>
+
+    <!-- 技術 -->
+    <h3 class="mt2">直線加速器發展出的精準技術</h3>
+    <p class="sub">名稱很多，點開想了解的那一項就好。</p>
+
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-beam"/></svg>三度空間順形放射治療（3D CRT）<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">使用傳統直線加速器，以能精確掌握腫瘤目標區的三度空間、多角度照射來集中劑量，摧毀腫瘤並減少附近正常組織的傷害，藉此提高劑量與局部控制率。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-beam"/></svg>強度調控放射治療（IMRT）<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">目前<b>最常使用</b>的直線加速器光子治療技術，是 3D 順形放療的進階版。每個照射角度可再分成多個「次照野」，調整出不同的照射強度，把高劑量集中在腫瘤、減少照到正常器官。</p>
+        <p class="soft">已廣泛用於多數癌症，例如頭頸癌治療時保存唾液腺功能，或攝護腺癌治療時提高劑量、減少直腸及膀胱傷害。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-beam"/></svg>影像導引放射治療（IGRT）<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">這是搭配治療的<b>影像對位技術</b>，不是治療技術本身。治療仍使用 3D 順形或強度調控技術，但每天治療時透過直線加速器上加裝的影像設備（X 光或電腦斷層）同步顯示並即時調整治療部位，增加準確性。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-beam"/></svg>螺旋刀（影像導引斷層式放療，Tomotherapy）<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">結合影像導引與強度調控技術，外型類似電腦斷層機。病人躺在治療床上緩慢送進機頭，機頭以 360 度斷層方式照射。</p>
+        <p class="soft">沒有一般直線加速器角度有限的限制，劑量更貼合腫瘤，可治療<b>較長範圍或多處腫瘤</b>，每次治療前也能做電腦斷層掃描，讓位置更精準。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-beam"/></svg>體積調控弧形放療（VMAT）<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">如「弧形刀」、「銳速刀」、「真光刀」等。機頭旋轉照射，同時使用強度調控技術，大幅增加照射角度，讓劑量更貼合腫瘤，並<b>縮短治療時間</b>（約為固定多角度技術的一半）。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-beam"/></svg>四度空間放療（4D CRT）<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">用於會<b>隨呼吸移動</b>的腫瘤，如肺癌、肝癌、胰臟癌。直線加速器加裝呼吸調控裝置，在呼吸到相同位置時才照射。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-beam"/></svg>立體定位放射手術（SRS）<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">用於<b>顱內腫瘤</b>的少次數大劑量治療，使用直線加速器（如電腦刀）或鈷 60（如伽瑪刀）。由電腦算出腫瘤位置與最佳角度，以單次或五次以內的「短療程大劑量」照射，摧毀癌細胞又不傷及正常細胞。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-beam"/></svg>軀體立體定位放療（SBRT）<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">用於<b>顱外腫瘤</b>的少次數大劑量治療。多使用高劑量率直線加速器，配合更密實的身體固定輔具與影像導引對位，以單次或五至六次以內的短療程照射，強化療效但不增加副作用。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-beam"/></svg>核磁共振影像導航放療（MR Linac）<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">把核磁共振掃描（MRI）結合直線加速器的新技術。腫瘤會隨每天治療改變大小和形狀，MRI 能精密追蹤每次的變化、適時調整劑量分布，提升效果並減少對周邊健康組織的傷害。</p>
+        <p class="soft">治療中不易受到呼吸、心跳或吞嚥干擾，可即時追蹤軟組織變化。目前台灣已有醫院引進。</p></div></div>
+
+    <!-- 各種刀 -->
+    <div class="card seg-group mt2">
+      <h3>常聽到的各種「刀」，差在哪裡？</h3>
+      <p class="soft">這些都<b>不是真的手術刀</b>，而是放療中不同的技術、儀器或射線種類。</p>
+      <div class="seg" role="tablist">
+        <button data-seg="k1" class="on">銳速刀等</button>
+        <button data-seg="k2">好神刀</button>
+        <button data-seg="k3">螺旋刀</button>
+        <button data-seg="k4">電腦刀</button>
+      </div>
+      <div class="seg-pane" data-seg="k1">
+        <p class="faint" style="margin-bottom:12px">銳速刀、亞瑟刀、真光刀、弧旋刀</p>
+        <dl class="spec">
+          <dt>適應症</dt><dd>各種大小的腫瘤；照射範圍約 40 公分</dd>
+          <dt>電腦斷層定位</dt><dd>有</dd>
+          <dt>優點</dt><dd>每次治療時間短，劑量集中，適合各種腫瘤</dd>
+          <dt>限制</dt><dd>無</dd>
+          <dt>費用</dt><dd>健保有條件給付；自費約 3～6 萬</dd>
+        </dl>
+      </div>
+      <div class="seg-pane" data-seg="k2">
+        <dl class="spec">
+          <dt>適應症</dt><dd>各種大小的腫瘤</dd>
+          <dt>電腦斷層定位</dt><dd>有</dd>
+          <dt>優點</dt><dd>每次治療時間更短</dd>
+          <dt>限制</dt><dd>無法執行非共平面治療</dd>
+          <dt>費用</dt><dd>健保有條件給付；自費約 3～6 萬</dd>
+        </dl>
+      </div>
+      <div class="seg-pane" data-seg="k3">
+        <dl class="spec">
+          <dt>適應症</dt><dd>各種大小的腫瘤；照射範圍約 160 公分</dd>
+          <dt>電腦斷層定位</dt><dd>有</dd>
+          <dt>特點</dt><dd>每次治療時間較長</dd>
+          <dt>限制</dt><dd>無法執行非共平面治療</dd>
+          <dt>費用</dt><dd>健保有條件給付；自費約 5～35 萬</dd>
+        </dl>
+      </div>
+      <div class="seg-pane" data-seg="k4">
+        <dl class="spec">
+          <dt>適應症</dt><dd>適合 3.5～5 公分內腫瘤的短療程次數治療</dd>
+          <dt>電腦斷層定位</dt><dd>無</dd>
+          <dt>優點</dt><dd>對正常組織保護性佳，較常使用在腦和脊椎</dd>
+          <dt>限制</dt><dd>每次治療時間較久，僅用於立體定位放射治療</dd>
+          <dt>費用</dt><dd>健保僅給付特定條件，如顱內腫瘤、肝癌、肺癌；自費約 20～30 萬</dd>
+        </dl>
+      </div>
+      <div class="card warn mt" style="padding:16px 18px">
+        <p class="soft" style="font-size:.92em">本表僅供參考。不同適應症有不同的治療方式，<b>不一定最新、最貴就是最好</b>；健保給付條件及各醫院自費金額也可能不同，請與醫療團隊討論最適合你的治療方式。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 05 ==================== -->
+<section class="band" id="s5">
+  <div class="wrap">
+    <div class="eyebrow">05　實務</div>
+    <h2>從定位到開始照射</h2>
+    <p class="sub">模擬定位之後，通常要再等幾天才會開始照射，這段時間是在設計你的治療計畫，不是被耽擱。</p>
+    <div class="flow"><span>製作模具</span><i>→</i><span>電腦斷層模擬定位</span><i>→</i><span>設計治療計畫</span><i>→</i><span>驗證片</span><i>→</i><span>開始治療</span></div>
+
+    <div class="card mt">
+      <ol class="steps">
+        <li><span class="no">1</span><h4>病況評估</h4><p>醫療團隊先針對病灶做影像檢查與病情分析，評估是否適合接受放療。</p></li>
+        <li><span class="no">2</span><h4>模擬攝影定位</h4><p>定出照射範圍與治療姿勢，約需半小時至 2 小時。通常以 X 光機或電腦斷層，配合固定輔具或呼吸調控裝置，模擬實際治療時的姿勢。</p></li>
+        <li><span class="no">3</span><h4>標示照野或對位點</h4><p>放射師會用非水溶性簽字筆或微小刺青，在身上標示照射範圍或對位座標點。</p></li>
+        <li><span class="no">4</span><h4>治療護理衛教</h4><p>護理師說明治療中的注意事項，包括副作用的因應、標記的保存方法與就診細節。</p></li>
+        <li><span class="no">5</span><h4>設計治療</h4><p>團隊依所有資料決定各部位的劑量分布與照射角度，讓腫瘤得到最大劑量、正常組織傷害最小。這個過程<b>通常需要幾天</b>。</p></li>
+        <li><span class="no">6</span><h4>確認照野</h4><p>正式治療前先進治療室擺位，以小劑量拍出驗證片或電腦斷層影像，與原先設計的照野核對是否吻合。</p></li>
+        <li><span class="no">7</span><h4>開始治療</h4><p>驗證確認無誤後，才開始第一次照射。放射師依電腦設計的程式執行，並視需要做影像導引對位。</p></li>
+        <li><span class="no">8</span><h4>定期評估</h4><p>除了每天的治療，<b>每週仍要回門診</b>，評估病情變化、治療反應，並預防和處理副作用。</p></li>
+      </ol>
+    </div>
+
+    <div class="nurse red">
+      <svg><use href="#i-alert"/></svg>
+      <div>
+        <div class="t">身上的標示，療程結束前都要保持完整</div>
+        <p>洗澡、換衣服時小心不要擦掉。發現標示不清楚時，<b>請通知醫護人員在對位下補畫，不要自己描</b>，以免影響準確度。</p>
+      </div>
+    </div>
+
+    <h3 class="mt2">療程怎麼安排</h3>
+    <div class="grid3">
+      <div class="card">
+        <h4>傳統分次治療　最常見</h4>
+        <ul class="bul" style="margin-top:10px">
+          <li>多為<b>每天一次、一週五次</b>，共約 30～35 次、6～7 週；依疾病與目標不同</li>
+          <li>每次約 10～30 分鐘，但實際照射只有約 <b>1～5 分鐘</b>，其餘時間在確認和調整位置</li>
+          <li>假日暫停，是為了讓照射的組織修復</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>短療程立體定位治療</h4>
+        <p class="soft">如電腦刀，可能隔天治療，或一週內每天、連續五次。</p>
+      </div>
+      <div class="card">
+        <h4>單次大劑量、短療程立體定位治療</h4>
+        <p class="soft">劑量較大並配合影像導引對位，每次可能長達 <b>30 分鐘至 2 小時</b>。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 06 ==================== -->
+<section class="band tint" id="s6">
+  <div class="wrap">
+    <div class="eyebrow">06　另一種放療</div>
+    <h2>體內近接治療</h2>
+    <p class="sub">
+      簡稱近接治療：把高能量的放射性物質放到<b>離腫瘤最近的地方</b>，短時間內給予高劑量，
+      有效摧毀腫瘤並避免正常組織受傷。較常用於<b>子宮體及子宮頸癌、甲狀腺癌、攝護腺癌與復發食道癌</b>。因為具侵入性，現在已較少使用。
+    </p>
+
+    <h3>五種做法</h3>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-seed"/></svg>組織插種近接治療<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">將內含放射性物質的細管或細針，直接插種到腫瘤區域。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-seed"/></svg>體腔內近接治療<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">將內含放射性物質的管狀器械，放進身體內的腔室中（如胸腔或子宮腔）治療。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-seed"/></svg>手術中近接治療<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">手術盡可能切除腫瘤後、結束之前，直接對準殘存腫瘤或癌細胞可能擴散的部位，一次給予較大劑量，提升腫瘤劑量並避免傷害正常組織。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-seed"/></svg>後荷式近接治療　國內最普遍<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">先把<b>不含</b>放射物質的空管狀器械放進體內，用 X 光或電腦斷層確認位置、由電腦規劃劑量，再把設計結果傳到近接治療機，精準控制放射物質在管內停留的位置與時間。因為「先」放器械、「後」才荷載放射物質而得名。</p>
+        <p class="soft">放射物質是在病人進入有特殊屏蔽的房間後，才由機器自動送入，可避免周圍人員受到照射。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-seed"/></svg>碘 131 或釔 90 治療<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">把放射性物質以口服或血管注射送進體內：甲狀腺癌細胞會吸收<b>碘 131</b>；<b>釔 90</b> 微球體經血管栓塞附著在肝腫瘤上，近距離緩慢釋放輻射。病人常需住在有隔離屏蔽的病房幾天，等輻射衰減到不影響周圍的人才離開。放射性物質會留在體內，但輻射性會持續降低至沒有危害的程度。</p>
+        <h4 style="margin-top:16px">釔 90 怎麼做</h4>
+        <p class="soft">做法和血管栓塞類似：在血管攝影室平躺，醫師從鼠蹊部把導管送進腹動脈、到肝腫瘤的動脈分支，再注入直徑僅頭髮 1/3 的樹脂釔 90 微球體，讓它們嵌在腫瘤的微細血管裡，近距離給予高劑量。</p></div></div>
+
+    <h3 class="mt2">低速率和高速率，差在哪裡？</h3>
+    <p class="sub">大多數人會在局部或全身麻醉下放置器械。兩種射源的治療結果目前研究認為大致相同，國內多數選用高速率。</p>
+    <div class="grid2">
+      <div class="card">
+        <h4>低速率射源</h4>
+        <ul class="bul" style="margin-top:10px">
+          <li>治療約需 <b>1～7 天</b>，器械要固定在體內，病人需在病房維持固定姿勢及輻射屏蔽</li>
+          <li>移除器械後通常要<b>在醫院多觀察一天</b></li>
+          <li>若是植入後不再取出的低穿透射源（如攝護腺癌「粒子刀」），完成插種即可返家；放射線多被組織吸收，身體周圍不致有危害劑量</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>高速率射源</h4>
+        <ul class="bul" style="margin-top:10px">
+          <li>治療時間縮短為<b>幾分鐘至幾十分鐘</b></li>
+          <li>治療結束、射源收回、器械取出後，觀察約半小時至一小時即可返家</li>
+          <li>可在門診當天完成</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card warn mt">
+      <h3>治療期間，家人和訪客要注意</h3>
+      <p class="soft">近接治療是在一段時間內（10 分鐘到幾個鐘頭不等）持續照射，身邊的人會受到放射線照射，所以通常會住在有特殊輻射防護的病房。</p>
+      <ul class="bul r" style="margin-top:12px">
+        <li><b>未滿 18 歲的孩童與孕婦</b>，要避免接近治療中的病人</li>
+        <li>一般訪客要保持 <b>2 公尺以上</b>距離，每天探訪<b>不宜超過 10～30 分鐘</b></li>
+      </ul>
+      <p class="soft" style="margin-top:14px">器械從體內移出，就代表放射性物質都離開了，身上不再殘留輻射，<b>家人不需要再保持距離</b>。</p>
+    </div>
+
+    <div class="grid2 mt">
+      <div class="card calm">
+        <h4>治療中的不舒服</h4>
+        <p class="soft">主要來自放進體內的器械。醫師通常會給鎮靜劑、止痛劑或肌肉鬆弛劑，減緩不適、幫助放鬆。</p>
+      </div>
+      <div class="card calm">
+        <h4>回家以後</h4>
+        <p class="soft">治療部位附近幾天內可能有些酸痛或敏感。這幾天<b>避免過度運動或性行為</b>，通常幾天內就會恢復正常。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 07 ==================== -->
+<section class="band" id="s7">
+  <div class="wrap">
+    <div class="eyebrow">07　先知道會怎樣</div>
+    <h2>照哪裡，會有什麼副作用</h2>
+    <p class="sub">
+      放療是局部治療，副作用只出現在被照射的區域。影響程度與<b>照射部位、劑量、範圍大小</b>、
+      合併的化療或標靶藥物、其他用藥及當時的健康狀況有關。
+    </p>
+
+    <div class="grid2">
+      <div class="card sun">
+        <h4>大多會在幾週內消失</h4>
+        <p class="soft">隨著技術越來越精密，副作用已逐漸減少。大多數急性副作用在<b>治療結束後數週內</b>就會消失。</p>
+      </div>
+      <div class="card sun">
+        <h4>少數是長期的，但不一定會發生</h4>
+        <p class="soft">少數長期副作用可能持續較久，或在治療後數月至數年才出現，<b>但並非一定發生</b>。</p>
+      </div>
+    </div>
+
+    <div class="card seg-group mt">
+      <h3>選擇你的照射部位</h3>
+      <div class="seg" role="tablist">
+        <button data-seg="brain" class="on">腦部</button>
+        <button data-seg="head">臉及頸部</button>
+        <button data-seg="chest">胸部、肺</button>
+        <button data-seg="breast">乳房</button>
+        <button data-seg="upper">上腹部</button>
+        <button data-seg="lower">下腹部</button>
+      </div>
+      <div class="seg-pane" data-seg="brain" id="site-brain">
+        <div style="margin-bottom:12px"><span class="pill">頭痛</span><span class="pill">嘔吐</span><span class="pill">掉髮</span><span class="pill">頭皮反應</span><span class="pill">影響視力</span></div>
+        <p class="soft">照射後的腦組織會有短暫的組織反應，可能造成頭痛，有時會噁心或偶爾視覺改變；照射的局部也會掉頭髮。</p>
+      </div>
+      <div class="seg-pane" data-seg="head" id="site-head">
+        <div style="margin-bottom:12px"><span class="pill">口水黏稠</span><span class="pill">味覺改變</span><span class="pill">口腔黏膜紅腫</span><span class="pill">吞嚥困難</span><span class="pill">皮膚破皮</span></div>
+        <p class="soft">治療約 <b>2～3 週</b>，唾液可能變黏稠、變少，味覺改變；到 <b>5～7 週</b>，可能出現口腔黏膜紅腫、口乾、吞嚥疼痛，甚至沒有胃口，因此容易營養不足。</p>
+        <p class="soft">有些人在治療中或治療後短期內，可能出現耳痛、下巴浮腫，或下顎較僵硬、嘴巴張不太開。</p>
+        <p style="margin-top:12px"><a href="#a-eat" data-go="a-eat" style="color:var(--orange);font-weight:700">→ 看吃不下、吞嚥困難的照顧</a>　<a href="#a-dry" data-go="a-dry" style="color:var(--orange);font-weight:700">→ 口乾</a>　<a href="#a-mouth" data-go="a-mouth" style="color:var(--orange);font-weight:700">→ 口腔保健</a></p>
+      </div>
+      <div class="seg-pane" data-seg="chest" id="site-chest">
+        <div style="margin-bottom:12px"><span class="pill">喉嚨異物感</span><span class="pill">吞嚥疼痛</span><span class="pill">咳嗽</span><span class="pill">血球數降低</span></div>
+        <p class="soft">可能引起食道黏膜發炎，喉嚨像有異物，甚至吞嚥疼痛。照到肺時，有時會刺激氣管或支氣管，引起少許咳嗽。</p>
+        <p class="soft">如果照射範圍較大、涵蓋較多骨髓，也可能影響造血功能，使<b>白血球、紅血球或血小板降低</b>。</p>
+      </div>
+      <div class="seg-pane" data-seg="breast" id="site-breast">
+        <div style="margin-bottom:12px"><span class="pill">皮膚發紅刺痛</span><span class="pill">乳房腫脹或疼痛</span><span class="pill">影響腋下淋巴循環</span></div>
+        <p class="soft">主要是照射區域的皮膚發紅。少數人乳房附近的淋巴回流較不通暢，淋巴積聚造成乳房腫脹或疼痛，通常在<b>治療結束後 4～6 週</b>會逐漸消失。</p>
+        <p style="margin-top:12px"><a href="#a-skin" data-go="a-skin" style="color:var(--orange);font-weight:700">→ 看皮膚照顧</a></p>
+      </div>
+      <div class="seg-pane" data-seg="upper" id="site-upper">
+        <div style="margin-bottom:12px"><span class="pill">噁心</span><span class="pill">消化不良</span></div>
+        <p class="soft">通常在治療的 <b>1～2 週</b>出現噁心或消化不良。少數特別敏感的年輕病人，可能每次治療後數小時內噁心嘔吐。</p>
+        <p style="margin-top:12px"><a href="#a-nausea" data-go="a-nausea" style="color:var(--orange);font-weight:700">→ 看噁心、嘔吐的照顧</a></p>
+      </div>
+      <div class="seg-pane" data-seg="lower" id="site-lower">
+        <div style="margin-bottom:12px"><span class="pill">腹瀉、腹絞痛</span><span class="pill">頻尿</span><span class="pill">影響下肢淋巴循環</span><span class="pill">影響性功能、不孕</span></div>
+        <p class="soft">骨盆腔照射或多或少會影響小腸、大腸與膀胱，引起腹瀉、腹絞痛、頻尿。照射範圍包含生殖器官時，可能造成暫時性或永久性的功能障礙。</p>
+        <ul class="bul" style="margin-top:12px">
+          <li><b>女性</b>：是否引起停經或停經症候群，與照射劑量多寡有關；照射陰道可能讓分泌液減少，比較乾燥或發癢</li>
+          <li><b>男性</b>：療程若包含睪丸，可能使精蟲數量與受孕能力降低</li>
+        </ul>
+        <p style="margin-top:12px"><a href="#a-diarrhea" data-go="a-diarrhea" style="color:var(--orange);font-weight:700">→ 看腹瀉的照顧</a></p>
+      </div>
+    </div>
+
+    <div class="card warn mt">
+      <h4>皮膚：不論照哪裡都可能出現</h4>
+      <p class="soft">通常在治療 <b>3～4 週</b>出現發紅，甚至發炎破皮，特別是皮膚皺摺或容易摩擦的地方，如<b>腋下、胯下、屁股及胸部下方</b>。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 08 ==================== -->
+<section class="band tint" id="s8">
+  <div class="wrap">
+    <div class="eyebrow">08　照顧方法</div>
+    <h2>副作用怎麼照顧</h2>
+    <p class="sub">點開你需要的那一項，沒有的症狀就跳過。</p>
+
+    <div class="acc" id="a-tired">
+      <button class="acc-h"><svg class="ic"><use href="#i-tired"/></svg>疲倦<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p>大部分人在治療開始幾週後會特別疲倦，這種倦怠感會在治療中逐漸適應，或在治療結束後逐漸消失。主要原因有：</p>
+        <ul class="bul" style="margin-bottom:18px">
+          <li>身體需要更多能量，修復受治療影響的正常組織</li>
+          <li>疾病帶來的壓力</li>
+          <li>每天往返醫院治療的奔波</li>
+          <li>放射線對正常組織暫時性、但可以復原的影響</li>
+        </ul>
+        <h4>希望的叮嚀</h4>
+        <ul class="bul g">
+          <li><b>充分休息和睡眠</b>，利用白天的空檔多休息</li>
+          <li>感到疲倦時，減少日常活動，適度增加休閒娛樂</li>
+          <li><b>還在上班</b>的話，可以把治療安排在接近下班的時間，治療完直接回家休息</li>
+          <li>採買、接送小孩、打掃或往返醫院，請親友偶爾幫忙，可以省下體力順利完成治療</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="acc" id="a-skin">
+      <button class="acc-h"><svg class="ic"><use href="#i-skin"/></svg>皮膚反應<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p>開始治療約 <b>3～4 週</b>後，照射部位的皮膚會像曬太久一樣逐漸變紅、敏感、乾燥，有時會脫皮、疼痛或有滲出液，特別是皮膚皺摺處。通常在治療結束後數週內逐漸消失，但有些人的膚色可能會比以前深一些。</p>
+        <h4 style="margin-top:16px">穿著</h4>
+        <ul class="bul g">
+          <li>治療部位穿<b>寬鬆、吸汗的棉質</b>衣物</li>
+          <li>避免戴耳環、項鍊，不穿硬領襯衫或有腰帶的衣服，減少摩擦</li>
+          <li>女性治療期間<b>不要穿戴胸罩</b>，只穿棉質內衣就好</li>
+        </ul>
+        <h4 style="margin-top:18px">清潔與保護</h4>
+        <ul class="bul g">
+          <li>不要摩擦、刮或刷治療部位的皮膚</li>
+          <li><b>沒有醫師同意，不要塗肥皂、痱子粉、化妝品或其他化學藥品</b>——可能影響皮膚的劑量分布，延遲復原</li>
+          <li>避免貼膠帶；真的需要時盡量用紙膠帶，並貼在照射範圍外</li>
+          <li><b>不可熱敷或冰敷</b>，連一般熱水都會傷害脆弱的皮膚；用溫水清洗，洗完立刻保持乾燥</li>
+          <li>經醫護人員同意才可刮鬍子，務必用<b>電動刮鬍刀</b>，不用剃刀、刮鬍膏或去毛劑</li>
+          <li>治療結束後<b>一年內</b>仍要減少日曬：出門撐傘、戴帽子或穿長袖</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="acc" id="a-eat">
+      <button class="acc-h"><svg class="ic"><use href="#i-food"/></svg>食慾不振、吞嚥困難<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p>頭頸部放療約 <b>3～4 週</b>後，口腔和喉嚨黏膜可能發炎破皮而疼痛，通常在治療結束後一個月內消失。原因包括黏膜受損、疾病與治療的壓力，以及照射範圍涵蓋口腔造成唾液減少、吞嚥不適或味覺改變。</p>
+        <h4 style="margin-top:16px">希望的叮嚀</h4>
+        <ul class="bul g">
+          <li><b>少量多餐</b>，採高熱量、高蛋白飲食</li>
+          <li>咀嚼或吞嚥有困難時，改成流質飲食</li>
+          <li>隨身準備小零嘴，想吃時馬上可以吃</li>
+          <li>流質飲食<b>加牛奶</b>提高熱量，<b>不要加水</b>，以免熱量還不夠就先飽了</li>
+          <li>正餐之間補充奶昔或其他高蛋白流質食品</li>
+          <li>蔬菜裡加奶油或乳酪，調味又能提高熱量</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="acc" id="a-mouth">
+      <button class="acc-h"><svg class="ic"><use href="#i-tooth"/></svg>口腔保健<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p>頭頸部放療會讓唾液減少、容易蛀牙。<b>治療開始前要先做完整的口腔與牙齒檢查</b>，把發炎或蛀牙先處理好，以免治療期間惡化。</p>
+        <h4 style="margin-top:16px">希望的叮嚀</h4>
+        <ul class="bul g">
+          <li><b>治療期間不可任意拔牙</b></li>
+          <li>治療期間牙齦會腫脹，假牙位置可能跑掉，<b>最好先停戴假牙</b>到治療結束，以免磨傷牙齦</li>
+          <li>飯後及睡前用軟毛牙刷徹底清潔牙齒與牙齦</li>
+          <li>使用含氟牙膏，或依牙醫師指示把高量氟化物塗在齒模內、戴在牙齒上，預防蛀牙</li>
+          <li>吃完東西用牙線或牙間刷輕柔清潔齒縫</li>
+          <li>刷牙後用鹽水或蘇打水再漱一次口</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="acc" id="a-dry">
+      <button class="acc-h"><svg class="ic"><use href="#i-drop"/></svg>口乾<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p>頭頸部放療常把部分唾液腺包含在照射範圍內，使唾液腺功能降低、口水變少。口乾不只在療程中出現，<b>還會持續到治療結束後很長一段時間</b>。</p>
+        <h4 style="margin-top:16px">希望的叮嚀</h4>
+        <ul class="bul g">
+          <li>常喝冰涼的飲料</li>
+          <li>喝汽水或嚼口香糖</li>
+          <li><b>避免抽菸、喝酒</b>，以免刺激黏膜、變得更乾</li>
+          <li>選擇可口的食物，嘗試液態或半液態的飲食</li>
+          <li>必要時使用人工唾液</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="acc" id="a-nausea">
+      <button class="acc-h"><svg class="ic"><use href="#i-nausea"/></svg>噁心、嘔吐<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p>照射胃或腹部時，會刺激胃黏膜與上方敏感的接受器，少數人因而噁心或嘔吐。</p>
+        <h4 style="margin-top:16px">希望的叮嚀</h4>
+        <ul class="bul g">
+          <li>空腹時這類副作用通常較輕，可在<b>治療前後 2～4 小時內先不要吃東西或喝水</b></li>
+          <li>每餐份量不要太多，<b>少量多餐</b>、細嚼慢嚥</li>
+          <li>避免油炸和高脂肪的食物</li>
+          <li>兩餐之間可喝冰涼飲料助消化；儘量吃溫和的流質（如肉湯、果汁），或白吐司、果凍等容易消化的食物</li>
+        </ul>
+        <div class="card bad" style="margin-top:16px"><p style="margin:0">噁心、嘔吐<b>較嚴重時，要立即通知醫護人員</b>。</p></div>
+      </div>
+    </div>
+
+    <div class="acc" id="a-diarrhea">
+      <button class="acc-h"><svg class="ic"><use href="#i-gut"/></svg>腹瀉<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p>腹部放療可能在治療開始後<b>第 3～4 週</b>出現腹瀉，通常在治療結束後數週內逐漸消失。</p>
+        <h4 style="margin-top:16px">希望的叮嚀</h4>
+        <ul class="bul g">
+          <li>改吃<b>清淡的流質</b>，如白稀飯、蘋果汁、水蜜桃汁、茶、清淡的肉湯</li>
+          <li>避免高纖或容易產氣的食物，如較粗的蔬果、咖啡、豆類、甘藍菜、含穀類食品、甜食或辛辣食物</li>
+          <li>平常喝牛奶就會拉肚子的人，要避開牛奶和乳製品</li>
+          <li>腹瀉會流失鉀，可補充<b>橘子、香蕉</b>等富含鉀的食物</li>
+        </ul>
+        <div class="card bad" style="margin-top:16px"><p style="margin:0"><b>嚴重腹瀉時，要立即通知醫護人員</b>。</p></div>
+      </div>
+    </div>
+
+    <a class="xlink" href="../chemo/index.html#s5" style="--accent-x:#F5B921">
+      <span class="bk"></span>
+      <span class="tx"><small>同時在做化療？</small>化療的副作用與照顧，請看《面對化學治療》</span>
+      <span class="ar">→</span>
+    </a>
+
+    <div class="card calm mt2">
+      <h3>結語</h3>
+      <p class="soft">放射線治療不是仙丹靈藥，不能保證百分之百根除所有癌症；但它有百分之百的科學根據，結合數理、生化與醫學，成為一種獨特的治癌方法。在現代科學嚴格的審核下，放療已是非常精密、先進的醫學專業，在癌症治療中有不可抹滅的地位。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 09 ==================== -->
+<section class="band" id="s9">
+  <div class="wrap">
+    <div class="eyebrow">09　你不必自己撐</div>
+    <h2>可以找誰幫忙</h2>
+
+    <div class="hot">
+      <div>
+        <div class="lab">癌症問題 我幫您</div>
+        <a class="num" href="tel:0809010580">0809-010-580</a>
+        <p>癌友家庭正面臨人生艱難的挑戰。鈴一鈴，一通電話，提供您專業支持與貼心陪伴。</p>
+      </div>
+    </div>
+
+    <div class="card mt">
+      <h3>希望小站提供的服務</h3>
+      <p class="soft" style="margin-bottom:14px">資源補助 · 照護諮詢服務 · 癌症教育出版品 · 教育系列講座與支持團體 · 心理諮詢 · 營養衛教 · <b>康復用品服務（假髮、頭巾、義乳胸衣）</b></p>
+      <div class="stations">
+        <div class="station"><div class="c">台北希望小站</div>
+          <div class="d">10058 台北市中正區臨沂街 3 巷 5 號 1 樓（捷運忠孝新生站 1 號出口）<br>
+          TEL <a href="tel:0233226286">(02) 3322-6286</a>　FAX (02) 3322-1314</div></div>
+        <div class="station"><div class="c">台中希望小站</div>
+          <div class="d">40341 台中市西區民權路 312 巷 4-1 號（茄苳腳站）<br>
+          TEL <a href="tel:0423055731">(04) 2305-5731</a>　FAX (04) 2305-5736</div></div>
+        <div class="station"><div class="c">高雄希望小站</div>
+          <div class="d">81355 高雄市左營區翠峰路 22 號<br>
+          TEL <a href="tel:075810661">(07) 581-0661</a>　FAX (07) 581-0663</div></div>
+        <div class="station"><div class="c">服務時間</div><div class="d">週一至週六 9:00～18:00</div></div>
+      </div>
+    </div>
+
+    <div class="card calm mt">
+      <h4>財團法人癌症防治基金會</h4>
+      <p class="soft">由醫療專業及熱心公益人士組成，贊助癌症預防、治療、研究及推廣教育，並提供癌症病人接受高科技治療所需的資訊或協助。服務項目包含<b>清寒病友高科技醫療交通補助</b>。</p>
+      <p class="soft">服務電話：<a href="tel:0223224388" style="color:var(--orange)">(02) 2322-4388</a>、<a href="tel:0223562842" style="color:var(--orange)">(02) 2356-2842</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 通知醫護 ==================== -->
+<button class="sos-fab" id="sosBtn"><svg><use href="#i-alert"/></svg>何時找醫護</button>
+<div class="sos-modal" id="sosModal" role="dialog" aria-modal="true" aria-label="何時要通知醫護人員">
+  <div class="sos-panel">
+    <h3>這些情況，<br>請通知醫護人員</h3>
+    <p class="soft" style="font-size:.94em">本手冊提到需要立即告知醫療團隊的狀況：</p>
+    <ul class="sos-list">
+      <li><span class="mk">1</span><div><b>較嚴重的噁心、嘔吐</b></div></li>
+      <li><span class="mk">2</span><div><b>嚴重腹瀉</b></div></li>
+      <li><span class="mk">3</span><div>身上的<b>照射標示不清楚</b>——請醫護人員補畫，不要自己描</div></li>
+    </ul>
+    <p class="soft" style="font-size:.92em">若同時在做化療，發燒、畏寒、不正常出血等情況請看化療手冊的<a href="../chemo/index.html" style="color:var(--orange);font-weight:700">立刻就醫指標</a>。任何讓你擔心的變化，都可以直接聯絡你的醫療團隊。</p>
+    <button class="sos-close" id="sosClose">我知道了</button>
+  </div>
+</div>
+
+<!-- ==================== 頁尾 ==================== -->
+<footer>
+  <div class="wrap">
+    <div class="src">
+      <b>資料來源</b><br>
+      本頁內容出自財團法人癌症希望基金會《希望之路——面對放射線治療》手冊（2026 年 1 月，十二版二刷）。
+      審稿顧問：<b>成佳憲</b>醫師（臺大醫院腫瘤醫學部放射腫瘤科主治醫師、臺大醫學院腫瘤醫學研究所教授、美國放射腫瘤醫學會院士）、<b>黃英彥</b>醫師（高雄長庚醫院放射腫瘤科教授級主治醫師、長庚大學教授、醫學研究部副主任、生物統計中心主任）。
+    </div>
+    <p>
+      <b>本頁不能取代醫療專業判斷。</b>手冊內容雖經專科醫師審閱，然醫療科技進展快速，
+      關於你的治療建議，請務必與<b>你的主治醫師</b>諮詢。若有緊急狀況，請直接就醫或聯絡你的醫療團隊。
+    </p>
+    <p class="faint">原手冊版權屬財團法人癌症希望基金會所有，如需轉載或對外散布，須經該會同意。</p>
+    <a class="totop" href="#top">↑ 回到最上面</a><a class="totop" href="../index.html">← 回到書架</a>
+  </div>
+</footer>
+
+<script src="../assets/hope.js"></script>
+</body>
+</html>

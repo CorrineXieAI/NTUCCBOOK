@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#FFFCF5">
+<meta name="format-detection" content="telephone=no">
+<title>面對子宮頸癌 · 互動衛教手冊</title>
+<meta name="description" content="子宮頸癌的成因、HPV 與疫苗、抹片報告、分期與治療、副作用照護。改編自癌症希望基金會《希望之路—面對子宮頸癌》。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/hope.css">
+<style>:root{--accent:#C9718B}</style>
+<script>try{if(localStorage.getItem('hope-big')==='1')document.documentElement.classList.add('big')}catch(e){}</script>
+</head>
+<body>
+
+<svg style="display:none" aria-hidden="true">
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4l9 16H3l9-16z"/><path d="M12 10v4M12 17.5h.01"/></symbol>
+  <symbol id="i-nurse" viewBox="0 0 24 24"><path d="M12 13a4 4 0 100-8 4 4 0 000 8z"/><path d="M4 21a8 8 0 0116 0"/><path d="M12 2.5v2M11 3.5h2"/></symbol>
+  <symbol id="i-fertility" viewBox="0 0 24 24"><circle cx="9" cy="9" r="4.5"/><path d="M9 13.5V21M6 18h6"/><circle cx="17" cy="16" r="4"/><path d="M20 13l3-3M20 10h3v3"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+  <symbol id="i-pill" viewBox="0 0 24 24"><rect x="3" y="9" width="18" height="6" rx="3" transform="rotate(-35 12 12)"/><path d="M9.5 8.5l5 7"/></symbol>
+  <symbol id="i-scan" viewBox="0 0 24 24"><path d="M4 8V5a1 1 0 011-1h3M16 4h3a1 1 0 011 1v3M20 16v3a1 1 0 01-1 1h-3M8 20H5a1 1 0 01-1-1v-3"/><path d="M8 12h8"/></symbol>
+  <symbol id="i-knife" viewBox="0 0 24 24"><path d="M4 20L18 6l2 2L8 20H4z"/><path d="M14 10l2 2"/></symbol>
+  <symbol id="i-beam" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.8 2.8M16.2 16.2L19 19M5 19l2.8-2.8M16.2 7.8L19 5"/></symbol>
+</svg>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a href="../index.html" class="shelf-link" aria-label="回到書架"><svg><use href="#i-back"/></svg><span class="lb">書架</span></a>
+    <a href="#top" class="brand">
+      <span class="dot"></span>
+      <span>面對子宮頸癌<small>互動衛教手冊</small></span>
+    </a>
+    <div class="tb-actions">
+      <button class="fs-btn" id="fsBtn" aria-label="切換大字">大字</button>
+      <button class="nav-btn" id="tocBtn" aria-label="開啟目錄"><span class="lb">目錄 </span>☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="toc" id="toc">
+  <div class="toc-panel">
+    <button class="toc-close" id="tocClose" aria-label="關閉目錄">✕</button>
+    <h3>目錄</h3>
+    <p class="hint">不必從頭看到尾，找你需要的那一段就好。</p>
+    <a href="#s1"><i>01</i>子宮頸癌小檔案</a>
+    <a href="#s2"><i>02</i>為什麼會得</a>
+    <a href="#s3"><i>03</i>有什麼症狀</a>
+    <a href="#s4"><i>04</i>怎麼確定診斷</a>
+    <a href="#s5"><i>05</i>分期與治療原則</a>
+    <a href="#s6"><i>06</i>治療方式與藥物</a>
+    <a href="#s7"><i>07</i>副作用照護與追蹤</a>
+    <a href="#s8"><i>08</i>可以找誰幫忙</a>
+    <a class="out" href="../index.html">← 回到書架，看其他手冊</a>
+  </div>
+</div>
+
+<div id="top"></div>
+<section class="hero">
+  <div class="wrap">
+    <div class="kicker">希望之路　子宮頸癌</div>
+    <h1>早期發現，<br>治癒率<em>相當高</em></h1>
+    <p class="lede">
+      子宮頸癌通常是由「癌前病變」經過很長時間慢慢轉變而來。在這段時間內，
+      靠篩檢<b>早期發現、早期治療</b>，治癒率相當高。
+    </p>
+    <div class="picker">
+      <h3>你想先看哪一段？</h3>
+      <p class="why">點一下，直接跳到那一段。</p>
+      <div class="sym-grid">
+        <button class="sym" data-go="pap">看懂抹片報告</button>
+        <button class="sym" data-go="s2">HPV 與疫苗</button>
+        <button class="sym" data-go="s3">有什麼症狀</button>
+        <button class="sym" data-go="s5">我是第幾期、怎麼治療</button>
+        <button class="sym" data-go="a-surg">手術</button>
+        <button class="sym" data-go="a-rt">放射線治療</button>
+        <button class="sym" data-go="a-drug">化療、標靶、免疫</button>
+        <button class="sym" data-go="s7">副作用與治療後</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 01 -->
+<section class="band" id="s1">
+  <div class="wrap">
+    <div class="eyebrow">01　先弄懂它</div>
+    <h2>子宮頸癌小檔案</h2>
+    <div class="grid2">
+      <div class="card sun"><h4>女性癌症第九名</h4><p class="soft">根據衛福部民國 111 年癌症登記報告，當年新增 1,384 例。標準化發生率與死亡率持續下降，發病年齡中位數為 57 歲。</p></div>
+      <div class="card sun"><h4>鱗狀細胞癌最多</h4><p class="soft">組織形態以「鱗狀細胞癌」最多，約占 70%。</p></div>
+      <div class="card calm"><h4>疫苗可以預防，但不能治療</h4><p class="soft">HPV 疫苗能有效預防感染，進而避免 <b>65～90%</b> 的子宮頸癌；但已經感染 HPV 的人，疫苗無法用來治療。</p></div>
+      <div class="card calm"><h4>抹片救命</h4><p class="soft">國健署資料顯示，子宮頸抹片檢查可降低台灣婦女約 <b>70%</b> 的子宮頸癌死亡率。</p></div>
+    </div>
+
+    <div class="card mt">
+      <h3>子宮頸在哪裡</h3>
+      <p class="soft">子宮位在骨盆底部，前面是膀胱、後面是直腸，外型像倒放的西洋梨。子宮頸是子宮的下段，分成外頸部（鱗狀上皮細胞）和內頸部（柱狀上皮細胞），兩者交接處稱為鱗狀柱狀上皮接合處。</p>
+      <p class="soft">正常的子宮頸口被一層厚黏液擋住，能防止感染；月經時會稍微打開，分娩時會擴張到 10 公分以上讓胎兒通過。</p>
+    </div>
+
+    <div class="card mt">
+      <h3>治療前，你應該先知道</h3>
+      <div data-checklist="askNote" data-done="都問清楚了。把答案記下來，之後回診都用得上。" style="margin-top:12px">
+        <label class="chk"><input type="checkbox"><span>我的<b>醫師、個管師</b>姓名？</span></label>
+        <label class="chk"><input type="checkbox"><span>我的<b>治療計畫</b>？</span></label>
+        <label class="chk"><input type="checkbox"><span>可能有哪些<b>副作用</b>？</span></label>
+        <label class="chk"><input type="checkbox"><span><b>治療費用</b>大概多少？</span></label>
+        <label class="chk"><input type="checkbox"><span>我的<b>保單</b>涵蓋哪些？</span></label>
+      </div>
+      <div class="chk-note" id="askNote"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 -->
+<section class="band tint" id="s2">
+  <div class="wrap">
+    <div class="eyebrow">02　原因</div>
+    <h2>為什麼會得子宮頸癌</h2>
+    <p class="sub">
+      子宮和子宮頸交接的「<b>移形上皮區</b>」是最常發生病變的地方，位置會隨荷爾蒙和酸鹼度改變。
+      做抹片時，一定要從這裡採檢，才能判斷有沒有子宮頸癌。
+    </p>
+    <div class="card">
+      <h3>高風險族群</h3>
+      <ul class="bul" style="margin-top:10px">
+        <li><b>感染人類乳突病毒（HPV）</b>：病毒侵入子宮頸上皮細胞核、改變基因，引起病變。超過 99% 的子宮頸癌由 HPV 引起</li>
+        <li><b>性行為</b>：越早有性行為、性伴侶越多，風險越高</li>
+        <li><b>吸菸</b>：尼古丁會降低子宮頸局部免疫力，吸越多、菸齡越久，風險越大</li>
+        <li><b>女性荷爾蒙暴露、長期吃口服避孕藥</b>：可能改變子宮頸上皮細胞的穩定性</li>
+        <li><b>免疫力較弱</b>：因其他疾病需要免疫抑制治療時</li>
+      </ul>
+    </div>
+
+    <div class="grid2 mt">
+      <div class="card">
+        <h4>HPV 是什麼</h4>
+        <ul class="bul" style="margin-top:8px">
+          <li>主要經由<b>性接觸</b>傳染，男女都會</li>
+          <li>可能引起子宮頸癌、陰莖癌、肛門癌、扁桃腺癌、口腔癌、舌癌、菜花</li>
+          <li>感染者多半<b>沒有明顯症狀</b>，部分會出現菜花或其他生殖器病變</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>哪些型別最危險</h4>
+        <dl class="spec" style="margin-top:8px">
+          <dt>高危險型</dt><dd>第 16、18 型，及 31、33、52、58 型等。約 60～70% 子宮頸癌由 16、18 型造成</dd>
+          <dt>低危險型</dt><dd>第 6、11 型，引起菜花，致癌機率小</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="card seg-group mt">
+      <h3>三種 HPV 疫苗比較</h3>
+      <div class="seg" role="tablist">
+        <button data-seg="v2" class="on">二價</button>
+        <button data-seg="v4">四價</button>
+        <button data-seg="v9">九價</button>
+      </div>
+      <div class="seg-pane" data-seg="v2">
+        <p class="faint" style="margin-bottom:10px">保蓓 Cervarix</p>
+        <dl class="spec">
+          <dt>預防型別</dt><dd>HPV 16、18 型</dd>
+          <dt>預防疾病</dt><dd>子宮頸癌、癌前病變</dd>
+          <dt>施打對象</dt><dd>女性，9 歲以上</dd>
+          <dt>成效</dt><dd>對 16、18 型有高效保護力，抗體持久</dd>
+          <dt>特色</dt><dd>無法預防菜花</dd>
+          <dt>台灣公費</dt><dd>✔ 國中女生（多數地區選用）</dd>
+        </dl>
+      </div>
+      <div class="seg-pane" data-seg="v4">
+        <p class="faint" style="margin-bottom:10px">嘉喜 Gardasil</p>
+        <dl class="spec">
+          <dt>預防型別</dt><dd>HPV 6、11、16、18 型</dd>
+          <dt>預防疾病</dt><dd>子宮頸癌、外陰癌、陰道癌、肛門癌、菜花（尖型濕疣）</dd>
+          <dt>施打對象</dt><dd>男女皆可，9～45 歲（部分可至 46 歲以上）</dd>
+          <dt>成效</dt><dd>對預防癌症及菜花均有效</dd>
+          <dt>特色</dt><dd>可預防癌症及菜花</dd>
+          <dt>台灣公費</dt><dd>✕ 無公費</dd>
+        </dl>
+      </div>
+      <div class="seg-pane" data-seg="v9">
+        <p class="faint" style="margin-bottom:10px">嘉喜 9 Gardasil-9</p>
+        <dl class="spec">
+          <dt>預防型別</dt><dd>HPV 6、11、16、18、31、33、45、52、58 型</dd>
+          <dt>預防疾病</dt><dd>子宮頸癌、外陰癌、陰道癌、肛門癌、菜花，以及九種型別相關癌症</dd>
+          <dt>施打對象</dt><dd>男女皆可，9～45 歲（部分可至 46 歲以上）</dd>
+          <dt>成效</dt><dd>覆蓋 90% 致癌型 HPV，保護力最高</dd>
+          <dt>特色</dt><dd>防護範圍最廣，預防 90% 相關癌症與菜花</dd>
+          <dt>台灣公費</dt><dd>✔ 國中女生（部分縣市選用，2025 年擴大施打）</dd>
+        </dl>
+      </div>
+      <div class="card sun mt" style="padding:16px 18px">
+        <p class="soft" style="font-size:.92em"><b>劑次</b>：9～14 歲打 2 劑（第 0、6 個月）；15 歲以上打 3 劑（第 0、1、6 個月）。<br>
+        截至 2025 年，台灣男生尚未納入常規公費施打，但部分縣市（如新北、台中）開始針對高風險群補助或試辦接種。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 -->
+<section class="band" id="s3">
+  <div class="wrap">
+    <div class="eyebrow">03　警訊</div>
+    <h2>子宮頸癌有什麼症狀</h2>
+    <p class="sub">早期常沒有症狀，所以定期抹片很重要。出現以下情況請就醫檢查：</p>
+    <div class="grid2">
+      <div class="card bad"><h4>陰道出血　最常見</h4><p class="soft">一定要提高警覺。可能在兩次月經之間、性交後、沖洗陰道或骨盆腔檢查時出血；月經量比平常多、時間久，多帶惡臭。</p></div>
+      <div class="card"><h4>陰道分泌物增加</h4><p class="soft">隨著腫瘤變大，異常分泌物也會增加。</p></div>
+      <div class="card"><h4>疼痛</h4><p class="soft">腫瘤侵犯骨盆腔神經時，會下腹部疼痛、坐骨神經痛。</p></div>
+      <div class="card"><h4>腎水腫</h4><p class="soft">輸尿管被腫瘤壓迫，造成腎盂水腫。</p></div>
+      <div class="card"><h4>腸道症狀</h4><p class="soft">腫瘤壓迫直腸，引起裡急後重感、腹瀉等。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 -->
+<section class="band tint" id="s4">
+  <div class="wrap">
+    <div class="eyebrow">04　診斷</div>
+    <h2>怎麼確定是不是子宮頸癌</h2>
+    <p class="sub">不論是例行檢查或有症狀就醫，醫師都會問診，同時做骨盆腔檢查和抹片檢查。</p>
+
+    <div class="card" id="pap">
+      <h3>看懂妳的抹片報告</h3>
+      <p class="soft">抹片結果分成 17 級。選妳報告上的級數：</p>
+      <div class="seg" id="papSel" style="grid-template-columns:repeat(auto-fit,minmax(46px,1fr))"></div>
+      <div class="scale-out" id="papOut" style="border-radius:14px;padding:18px 20px;background:var(--paper-2);border:1.5px solid var(--line)">選一個級數，看看代表什麼。</div>
+      <p class="faint" style="margin-top:10px">月經結束後到下次月經來之前，都適合做抹片。</p>
+    </div>
+
+    <div class="card mt">
+      <h3>癌前病變（CIN）分三級</h3>
+      <p class="soft">子宮頸上皮內病變（CIN）是「癌前期病變」，病變只在上皮細胞；超出上皮就屬於子宮頸癌了。</p>
+      <div class="grid3 mt">
+        <div class="card calm" style="box-shadow:none"><h4>CIN 1　輕度</h4><p class="soft">多由 HPV 感染引起，<b>有機會恢復正常</b>。建議每 3～6 個月再追蹤抹片，或直接做陰道鏡。</p></div>
+        <div class="card warn" style="box-shadow:none"><h4>CIN 2　中度</h4><p class="soft">建議局部治療：雷射、冷凍、電圈部分切除（用發熱的電圈去除變異組織）或子宮頸錐形切除。</p></div>
+        <div class="card bad" style="box-shadow:none"><h4>CIN 3　重度或原位癌</h4><p class="soft">建議電圈部分切除或錐形切除。切片邊緣沒有殘留可達治癒；仍有殘留，可再做一次錐狀切除或單純性子宮切除。</p></div>
+      </div>
+    </div>
+
+    <h3 class="mt2">其他檢查</h3>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-scan"/></svg>骨盆腔檢查<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">用鴨嘴器撐開陰道觀察陰道和子宮頸，再觸診子宮、陰道、卵巢、輸卵管、膀胱及直腸，看外型和大小有沒有異常。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-scan"/></svg>HPV 檢測<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">找出子宮頸或陰道細胞裡有沒有高致癌型 HPV，評估罹癌風險。採檢方式和抹片相同，篩檢重度病變的敏感度<b>幾乎可達 100%</b>，但「偽陽性」較多（有感染病毒但沒有病變）。</p>
+        <p class="soft">合理的做法是和抹片一起做，或先做 HPV 檢測、需要時再做抹片。若是 <b>16 或 18 型</b>感染，可以直接做陰道鏡。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-scan"/></svg>陰道鏡檢查<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">骨盆腔檢查或抹片異常、或有 16、18 型感染時要做。用放大和強光觀察子宮頸表面，發現異常可以直接切片送檢。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-scan"/></svg>子宮頸內頸刮除術<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">抹片有問題、但陰道鏡看不出病變位置時（不在子宮頸表面），醫師會刮取內頸組織送檢。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-scan"/></svg>抽血腫瘤指數<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">作為診斷、治療和追蹤的參考，常見的有 CA 125、CEA、SCC、CA 199。準確性因人而異：不是每個人指數都會升高，指數異常也<b>不一定是腫瘤引起</b>。</p></div></div>
+    <div class="acc"><button class="acc-h"><svg class="ic"><use href="#i-scan"/></svg>確診後的其他檢查<span class="cv">＋</span></button>
+      <div class="acc-b"><p class="soft">血液、胸部 X 光、膀胱鏡、直腸鏡、靜脈注射腎臟攝影、電腦斷層（CT）、核磁共振（MRI）及正子攝影（PET），了解有無肺、膀胱、淋巴結、大腸等遠端轉移。</p></div></div>
+  </div>
+</section>
+
+<!-- 05 -->
+<section class="band" id="s5">
+  <div class="wrap">
+    <div class="eyebrow">05　分期</div>
+    <h2>我是第幾期，怎麼治療</h2>
+    <p class="sub">台灣採用 2018 年國際婦產科聯盟（FIGO）分期。治療會考量期別、年齡及整體健康狀況。</p>
+
+    <div class="card seg-group">
+      <div class="seg" role="tablist">
+        <button data-seg="st0" class="on">第零期</button>
+        <button data-seg="st1">第一期</button>
+        <button data-seg="st2">第二期</button>
+        <button data-seg="st3">第三期</button>
+        <button data-seg="st4">第四期</button>
+      </div>
+      <div class="seg-pane" data-seg="st0">
+        <h3>原位癌</h3>
+        <p class="soft">癌細胞局限在子宮頸上皮區內。通常<b>沒有症狀</b>。</p>
+        <dl class="spec mt"><dt>治療原則</dt><dd><b>手術為首選</b>，如錐狀切除</dd><dt>5 年存活率</dt><dd><b>99.7%</b></dd></dl>
+      </div>
+      <div class="seg-pane" data-seg="st1">
+        <h3>腫瘤局限在子宮頸</h3>
+        <ul class="bul">
+          <li><b>1A</b>：侵犯基底膜下 ≦ 5mm（A1 ≦ 3mm；A2 介於 3～5mm）</li>
+          <li><b>1B</b>：侵犯 > 5mm 但仍在子宮頸（B1 腫瘤 ≦ 2cm；B2 腫瘤 2～4cm；B3 腫瘤 > 4cm）</li>
+        </ul>
+        <dl class="spec mt"><dt>治療原則</dt><dd><b>手術為首選</b>：錐狀切除、子宮切除或根除性子宮切除</dd><dt>5 年存活率</dt><dd><b>89.9%</b></dd></dl>
+      </div>
+      <div class="seg-pane" data-seg="st2">
+        <h3>侵犯到陰道上端 2/3 或子宮旁組織</h3>
+        <ul class="bul">
+          <li><b>2A</b>：侵犯陰道，但還沒到下三分之一或子宮旁組織（A1 腫瘤 < 4cm；A2 ≧ 4cm）</li>
+          <li><b>2B</b>：侵犯子宮兩側旁組織</li>
+        </ul>
+        <p class="soft" style="margin-top:10px">症狀：陰道異常出血、分泌物嚴重增多、惡臭。</p>
+        <dl class="spec mt"><dt>2A 治療</dt><dd><b>手術為首選</b></dd><dt>2B 治療</dt><dd><b>同步化學及放射線治療（CCRT）</b>為主，包括體外照射和子宮腔內近接治療</dd><dt>5 年存活率</dt><dd><b>71.3%</b></dd></dl>
+      </div>
+      <div class="seg-pane" data-seg="st3">
+        <h3>侵犯陰道下端 1/3、骨盆腔壁或腎水腫</h3>
+        <ul class="bul">
+          <li><b>3A</b>：侵犯陰道下三分之一</li>
+          <li><b>3B</b>：侵犯骨盆腔壁；或單側腎盂水腫／腎功能喪失</li>
+          <li><b>3C1</b>：骨盆腔淋巴結轉移；<b>3C2</b>：主動脈旁淋巴結轉移</li>
+        </ul>
+        <p class="soft" style="margin-top:10px">症狀：下腹痛、坐骨神經痛、腰背痛、血尿、血便。</p>
+        <dl class="spec mt"><dt>治療原則</dt><dd><b>同步化學及放射線治療（CCRT）</b>為主</dd><dt>5 年存活率</dt><dd><b>56.8%</b></dd></dl>
+      </div>
+      <div class="seg-pane" data-seg="st4">
+        <h3>侵犯膀胱、直腸，或遠端轉移</h3>
+        <ul class="bul">
+          <li><b>4A</b>：侵犯直腸或膀胱黏膜層</li>
+          <li><b>4B</b>：轉移到肺、肝、骨頭等遠端器官</li>
+        </ul>
+        <dl class="spec mt"><dt>4A 治療</dt><dd><b>同步化學及放射線治療（CCRT）</b>為主</dd><dt>4B 治療</dt><dd><b>全身性治療</b>：化療（鉑金、太平洋紫杉醇、癌康定）、標靶（抗血管新生類）或免疫藥物</dd><dt>5 年存活率</dt><dd><b>22%</b></dd></dl>
+      </div>
+      <p class="faint" style="margin-top:16px">5 年存活率資料來源：衛生福利部國民健康署，中華民國 111 年癌症登記報告。存活率是整體統計，不代表個人預後，請和醫師討論妳的情況。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 06 -->
+<section class="band tint" id="s6">
+  <div class="wrap">
+    <div class="eyebrow">06　治療方式</div>
+    <h2>子宮頸癌的治療</h2>
+
+    <div class="acc" id="a-surg">
+      <button class="acc-h"><svg class="ic"><use href="#i-knife"/></svg>手術治療<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <h4>子宮頸錐狀切除術</h4>
+        <p class="soft">主要用於診斷；原位癌（第零期）也可以用它完全清除病灶。傷口比一般切片大，術後要<b>小心陰道出血</b>，或傷口過度癒合造成子宮頸管狹窄。</p>
+        <h4 style="margin-top:16px">單純性子宮切除</h4>
+        <p class="soft">把子宮和子宮頸一起切除，再把陰道接子宮頸的地方縫合，<b>術後陰道不會比較短</b>。</p>
+        <h4 style="margin-top:16px">根除性子宮切除</h4>
+        <p class="soft">除了子宮和子宮頸，還包括周圍淋巴組織和部分陰道。範圍大，可能傷害骨盆腔神經和肌肉、留下沾黏，常見副作用有排尿困難或失禁、解便困難、腸沾黏造成腹脹和下腹痛。若卵巢也切除，會出現潮紅、心悸、失眠、夜間盜汗、情緒低落等更年期變化。</p>
+      </div>
+    </div>
+
+    <div class="acc" id="a-rt">
+      <button class="acc-h"><svg class="ic"><use href="#i-beam"/></svg>放射線治療<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p class="soft">分為體外和體內兩種，<b>通常兩者搭配</b>才是完整療程。</p>
+        <div class="grid2" style="margin:14px 0">
+          <div class="card calm" style="box-shadow:none"><h4>體外遠距放療（大電）</h4><p class="soft">從體外照射子宮頸腫瘤和可能擴散的淋巴結（骨盆腔、主動脈旁、鼠蹊部）。<b>每週五次，約五至七週</b>，每天只要 10～15 分鐘。</p></div>
+          <div class="card calm" style="box-shadow:none"><h4>體內近接放療（小電）</h4><p class="soft">把導管放進子宮或陰道，射源由機器導入停留，劑量足夠後收回。直接把劑量送到腫瘤，共約 3～7 次。</p>
+            <ul class="bul" style="margin-top:8px;font-size:.94em"><li><b>腔內</b>：還有子宮的人，涵蓋子宮頸及子宮腔，約 4～6 次</li><li><b>陰道內</b>：已切除子宮的人，針對陰道縫合末端，約 2～3 次</li></ul></div>
+        </div>
+        <h4>怎麼搭配</h4>
+        <ul class="bul">
+          <li><b>沒有手術的人</b>（年紀太大不適合手術，或 2B 期以上）：5～7 週體外照射＋4～6 次近接治療，以骨盆腔為主，視情況加照主動脈旁或鼠蹊淋巴結</li>
+          <li><b>手術後的人</b>（1 期或 2A 期根除手術後，發現淋巴結轉移、子宮頸旁組織侵犯或邊緣不乾淨）：術後 6～8 週恢復後，做 5～6 週體外照射＋2～3 次陰道內近接治療</li>
+          <li><b>同步化學放射治療（CCRT）</b>：多項研究證實，放療合併化療能提高局部控制率與存活率</li>
+        </ul>
+        <h4 style="margin-top:16px">短期副作用</h4>
+        <ul class="bul">
+          <li><b>腸道反應</b>：噁心、腹瀉、大便帶血、腸沾黏，嚴重時腹絞痛、腸阻塞或腸穿孔，依嚴重度處理。輕中度以軟便劑、灌腸、類固醇或輸血等保守治療；多在第 3～4 週出現，療程結束後 1～2 週緩解</li>
+          <li><b>皮膚反應</b>：肛門或會陰部發紅疼痛，約第 3～4 週出現，治療後 1～2 週緩解</li>
+          <li><b>頻尿、血尿、解尿疼痛</b>：可能在每次近接治療後出現</li>
+        </ul>
+        <h4 style="margin-top:16px">長期副作用</h4>
+        <p class="soft">治療後 3～6 個月或追蹤期間才出現，有些甚至在 1～2 年後。<b>約 30% 的人可能陰道狹窄、性交疼痛</b>，可以在治療中或治療後使用<b>陰道擴張器搭配潤滑劑</b>減輕不適。</p>
+        <a class="xlink" href="../radiation/index.html" style="--accent-x:#E07B39"><span class="bk"></span><span class="tx"><small>放療的完整說明與照顧</small>《面對放射線治療》</span><span class="ar">→</span></a>
+      </div>
+    </div>
+
+    <div class="acc" id="a-drug">
+      <button class="acc-h"><svg class="ic"><use href="#i-pill"/></svg>化學、標靶與免疫藥物治療<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <h4>化學治療</h4>
+        <p class="soft">多作為輔助或緩解性療法。一般來說，一、二期以手術為主；三、四期以放療為主、化療為輔。常用藥物有 Carboplatin、Cisplatin、5-FU、Ifosfamide、Paclitaxel、Topotecan 等。</p>
+        <h4 style="margin-top:16px">標靶治療</h4>
+        <p class="soft">「血管新生抑制劑」Bevacizumab 阻止腫瘤血管生成、餓死癌細胞，可與化療合併使用；持續性、復發或轉移的病人<b>已有條件健保給付</b>，可以和醫師討論。</p>
+        <h4 style="margin-top:16px">免疫藥物治療</h4>
+        <p class="soft">免疫檢查點抑制劑幫免疫系統鬆開手煞車，讓免疫細胞重新攻擊癌細胞。適用於：</p>
+        <ol class="num" style="margin-top:8px">
+          <li>與同步化學放射治療併用，治療高復發風險的局部晚期病人</li>
+          <li>與化療併用（可合併或不合併 Bevacizumab），治療 PD-L1 表現（CPS ≧ 1）的持續性、復發或轉移病人</li>
+          <li>單獨使用，治療 PD-L1 表現（CPS ≧ 1）且化療後惡化的復發或轉移病人</li>
+        </ol>
+        <div class="grid3 mt">
+          <a class="xlink" href="../chemo/index.html" style="--accent-x:#F5B921;margin-top:0"><span class="bk"></span><span class="tx">化學治療</span><span class="ar">→</span></a>
+          <a class="xlink" href="../targeted/index.html" style="--accent-x:#2F7D6E;margin-top:0"><span class="bk"></span><span class="tx">標靶治療</span><span class="ar">→</span></a>
+          <a class="xlink" href="../immuno/index.html" style="--accent-x:#6A8CAF;margin-top:0"><span class="bk"></span><span class="tx">免疫治療</span><span class="ar">→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc">
+      <button class="acc-h"><svg class="ic"><use href="#i-fertility"/></svg>懷孕時罹患子宮頸癌<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <ul class="bul">
+          <li><b>懷孕初期</b>：做子宮根除手術時一併拿掉胎兒，或直接放療讓胎兒自然流產後再繼續治療</li>
+          <li><b>懷孕超過 12 週</b>：先做流產手術中止懷孕，隔 2～4 週再做子宮切除或放療</li>
+          <li><b>懷孕後期</b>：時間許可的話，等胎兒接近成熟先剖腹生產，隔 2～4 週再做子宮切除或放療</li>
+        </ul>
+        <p class="soft" style="margin-top:12px">更多生育決策資訊，可參考「癌友生育健康資訊平台」。</p>
+      </div>
+    </div>
+
+    <h3 class="mt2">子宮頸癌常用藥物查詢</h3>
+    <div class="search-box">
+      <svg><use href="#i-search"/></svg>
+      <input type="search" id="drugQ" placeholder="例如：順鉑、Paclitaxel、吉舒達…" autocomplete="off">
+    </div>
+    <div class="drug-tabs">
+      <button class="on" data-cat="all">全部</button>
+      <button data-cat="chemo">化療</button>
+      <button data-cat="target">標靶</button>
+      <button data-cat="immuno">免疫</button>
+    </div>
+    <div class="drug-count" id="drugCount"></div>
+    <div id="drugList"></div>
+  </div>
+</section>
+
+<!-- 07 -->
+<section class="band" id="s7">
+  <div class="wrap">
+    <div class="eyebrow">07　照顧與追蹤</div>
+    <h2>副作用照護與治療之後</h2>
+    <div class="grid2">
+      <div class="card"><h4>腹腔沾黏</h4><p class="soft">婦科手術後可能長期腹腔沾黏，伴隨腹脹、腹痛、便秘。除了調整飲食、規律運動，<b>請告訴醫師</b>，必要時用藥調整。</p></div>
+      <div class="card"><h4>化療副作用</h4><p class="soft">掉髮、血球低下、口腔炎、手腳麻刺、水腫、癌疲憊。可藉高蛋白飲食、注重衛生、預防跌倒、抬高下肢、運動、戴上漂亮的頭巾和假髮來改善。</p></div>
+      <div class="card"><h4>更年期症狀</h4><p class="soft">心悸、盜汗、熱潮紅、情緒不安、疼痛、失眠。若嚴重干擾作息，和醫師討論因應方法。</p></div>
+      <div class="card"><h4>性生活</h4><p class="soft">陰道乾澀、性交疼痛、出血可能影響性慾，也有人誤以為性行為會讓癌症復發。行房時可用<b>水性潤滑劑</b>（如 K-Y Jelly），並和伴侶多溝通，找到增進情趣的共識。</p>
+        <a class="xlink" href="../intimacy/index.html" style="--accent-x:#D98C8C"><span class="bk"></span><span class="tx"><small>延伸閱讀</small>《女人的癌後性福》</span><span class="ar">→</span></a></div>
+    </div>
+
+    <div class="card calm mt">
+      <h3>妳不是一個人</h3>
+      <p class="soft">罹癌時承受的不只是身體的病痛，還有情緒的震盪。害怕、沮喪、生氣、無力都是正常的。試著和信任的家人朋友談談；就醫時也建議有可信任的親友陪同，一起理解病情、討論治療，必要時也可以尋求第二意見。</p>
+      <p class="soft"><b>給親友：</b>病人往往不只擔心病情，也憂慮工作、家庭、經濟與親密關係。請多一點理解與耐心，傾聽她、陪伴她，鼓勵她表達情緒，適時尋求專業或病友資源。</p>
+    </div>
+
+    <div class="card mt">
+      <h3>治療告一段落之後</h3>
+      <p class="soft">要定期追蹤：骨盆腔檢查、子宮頸抹片、肺和肝等器官的影像檢查。<b>就算已經全子宮切除、子宮頸也切掉了，還是要每年做陰道抹片。</b></p>
+    </div>
+  </div>
+</section>
+
+
+<section class="band tint" id="s8">
+  <div class="wrap">
+    <div class="eyebrow">08　你不必自己撐</div>
+    <h2>可以找誰幫忙</h2>
+    <div class="hot">
+      <div>
+        <div class="lab">癌症問題 我幫您</div>
+        <a class="num" href="tel:0809010580">0809-010-580</a>
+        <p>癌友家庭正面臨人生艱難的挑戰。鈴一鈴，一通電話，提供您專業支持與貼心陪伴。</p>
+      </div>
+    </div>
+    <div class="card mt">
+      <h3>希望小站提供的服務</h3>
+      <p class="soft" style="margin-bottom:14px">資源補助 · 照護諮詢服務 · 癌症教育出版品 · 教育系列講座與支持團體 · 心理諮詢 · 營養衛教 · <b>康復用品服務（假髮、頭巾、義乳胸衣）</b></p>
+      <div class="stations">
+        <div class="station"><div class="c">台北希望小站</div>
+          <div class="d">10058 台北市中正區臨沂街 3 巷 5 號 1 樓（捷運忠孝新生站 1 號出口）<br>
+          TEL <a href="tel:0233226286">(02) 3322-6286</a>　FAX (02) 3322-1314</div></div>
+        <div class="station"><div class="c">台中希望小站</div>
+          <div class="d">40341 台中市西區民權路 312 巷 4-1 號（茄苳腳站）<br>
+          TEL <a href="tel:0423055731">(04) 2305-5731</a>　FAX (04) 2305-5736</div></div>
+        <div class="station"><div class="c">高雄希望小站</div>
+          <div class="d">81355 高雄市左營區翠峰路 22 號<br>
+          TEL <a href="tel:075810661">(07) 581-0661</a>　FAX (07) 581-0663</div></div>
+        <div class="station"><div class="c">服務時間</div><div class="d">週一至週六 9:00～18:00</div></div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<button class="sos-fab" id="sosBtn"><svg><use href="#i-alert"/></svg>何時找醫護</button>
+<div class="sos-modal" id="sosModal" role="dialog" aria-modal="true" aria-label="何時找醫護">
+  <div class="sos-panel">
+    <h3>這些情況，<br>請告訴醫護人員</h3>
+    <p class="soft" style="font-size:.94em">本手冊提到需要通知醫護或醫師的情況：</p>
+    <ul class="sos-list">
+      <li><span class="mk">1</span><div>錐狀切除術後<b>陰道出血</b></div></li>
+      <li><span class="mk">2</span><div>使用 Cisplatin 後<b>耳鳴</b>，或聽不清楚高頻聲音——即時通知</div></li>
+      <li><span class="mk">3</span><div>化療期間出現<b>發燒、感染</b>症狀</div></li>
+      <li><span class="mk">4</span><div>手腳<b>持續麻木</b></div></li>
+      <li><span class="mk">5</span><div>手術後長期<b>腹脹、腹痛、便秘</b></div></li>
+    </ul>
+    <p class="soft" style="font-size:.92em">做化療的人，也請看化療手冊的<a href="../chemo/index.html" style="color:var(--orange);font-weight:700">立刻就醫指標</a>（如發燒超過 38.5 度）。</p>
+    <button class="sos-close" id="sosClose">我知道了</button>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="src">
+      <b>資料來源</b><br>
+      本頁內容出自財團法人癌症希望基金會《希望之路——面對子宮頸癌》手冊（2025 年 7 月，十三版一刷）。審稿顧問：<b>陳怡仁</b>醫師（臺北榮民總醫院婦女醫學部主任、主治醫師）、<b>黃家彥</b>醫師（國泰綜合醫院婦產科主治醫師）。藥品資料來源：衛生福利部食品藥物管理署藥品仿單查詢平台。
+    </div>
+    <p>
+      <b>本頁不能取代醫療專業判斷。</b>手冊內容雖經專業審閱，然醫療科技進展快速，
+      關於你的治療建議，請務必與<b>你的主治醫師</b>諮詢。若有緊急狀況，請直接就醫或聯絡你的醫療團隊。
+    </p>
+    <p class="faint">原手冊版權屬財團法人癌症希望基金會所有，如需轉載或對外散布，須經該會同意。</p>
+    <a class="totop" href="#top">↑ 回到最上面</a><a class="totop" href="../index.html">← 回到書架</a>
+  </div>
+</footer>
+<script>window.DRUGS=[{"n": "佳鉑帝；卡鉑（二代白金）", "e": "Carboplatin (Paraplatin)", "r": "靜脈注射／腹膜內注射", "c": "chemo", "f": [["副作用", "噁心、嘔吐、食慾不振、皮膚發疹、白血球減少、血小板減少"], ["注意事項", "需增加水分補充。", "care"]]}, {"n": "克莫；順鉑（白金）", "e": "Cisplatin (Kemoplat; CDDP)", "r": "靜脈注射", "c": "chemo", "f": [["副作用", "嚴重噁心、嘔吐、白血球及血小板減少、貧血、掉髮、腎功能受損、耳鳴、手腳麻木感、高尿酸血症、聽力受損"], ["注意事項", "1. 需增加水分補充。2. 當有耳鳴及／或喪失高頻率聽力，請即時通知醫護人員。", "care"]]}, {"n": "好復；有利癌", "e": "Fluorouracil (5-FU)", "r": "靜脈注射／口服", "c": "chemo", "f": [["副作用", "噁心、嘔吐、食慾不振、口腔及腸胃黏膜潰瘍、腹瀉、脫皮、紅疹、皮膚色素沉著、指甲變形、光敏感"], ["注意事項", "1. 有腹瀉時，注意水分的補充。2. 防曬。", "care"]]}, {"n": "健擇；健仕", "e": "Gemcitabine (Gemzar; Gemmis; Gemita)", "r": "靜脈注射", "c": "chemo", "f": [["副作用", "輕微噁心、嘔吐、貧血、白血球及血小板減少、輕微掉頭髮、皮膚紅疹、類似感冒症狀、發燒、水腫"], ["注意事項", "", "care"]]}, {"n": "好克癌", "e": "Ifosfamide (Holoxan)", "r": "靜脈注射", "c": "chemo", "f": [["副作用", "噁心、嘔吐、白血球及血小板減少、貧血、出血性膀胱炎、掉頭髮、停經"], ["注意事項", "增加水分補充，注意解尿情形。", "care"]]}, {"n": "汰癌勝；輝克癒蘇（太平洋紫杉醇）", "e": "Paclitaxel (Taxol; Phyxol)", "r": "靜脈注射", "c": "chemo", "f": [["副作用", "輕微噁心、嘔吐、腹瀉、過敏反應、白血球及血小板減少、貧血、手腳麻木、刺痛感、肌肉痠痛、掉髮、低血壓、水腫、肝功能異常"], ["注意事項", "1. 在投藥前會先給予預防過敏發生之藥物。2. 若手腳有持續性麻木感請告知醫護人員。", "care"]]}, {"n": "癌康定", "e": "Topotecan (Hycamtin)", "r": "靜脈注射", "c": "chemo", "f": [["副作用", "噁心、嘔吐、食慾不振、腹瀉、白血球及血小板減少、貧血、掉頭髮、頭痛、疲倦、發燒、口腔發炎、便秘、腹痛"], ["注意事項", "密切監測血球低下及感染發燒症狀。", "care"]]}, {"n": "癌思停；艾麥斯；艾法施；安備茲；力癌停", "e": "Bevacizumab (Avastin; Alymsys; Mvasi; Onbevzi; Zirabev)", "r": "靜脈注射", "c": "target", "f": [["副作用", "高血壓、蛋白尿、胃腸出血、血管栓塞、流鼻血"], ["注意事項", "出血或傷口未癒合病人不建議使用。", "care"]]}, {"n": "吉舒達", "e": "Pembrolizumab (Keytruda)", "r": "靜脈注射，每三週一次", "c": "immuno", "f": [["副作用", "高血壓、蛋白尿，因活化免疫系統造成的肝炎、肺炎、甲狀腺功能異常等"], ["注意事項", "藥理作用：抗PD-1單株抗體", "care"]]}];</script><script>
+(function(){
+  const P=[['正常','正常（Normal）'],['正常','良性發炎反應（Reactive change）'],['正常','荷爾蒙缺乏性萎縮（Atrophy）'],
+  ['非典型病變','非典型鱗狀細胞病變（ASC-US）'],['非典型病變','非典型腺細胞病變（AGC）'],
+  ['輕度病變','HPV 導致病變（CIN 1）'],['輕度病變','輕度病變（CIN 1）'],
+  ['重度病變','中度病變（CIN 2）'],['重度病變','重度病變（CIN 3）'],['重度病變','原位癌（CIN 3 / CIS）'],
+  ['侵犯性癌','鱗狀細胞癌（SCC）'],['侵犯性癌','腺癌（Adenocarcinoma）'],['侵犯性癌','其他惡性腫瘤'],
+  ['其他','其他'],['疑似惡性','非典型腺體細胞，疑惡性（AGC-favor neoplasm, AGC-FN）'],
+  ['疑似重度病變','非典型鱗狀細胞，疑重度病變（ASC favor HSIL, ASC-H）'],['疑似重度病變','細胞病變，疑重度病變（Dysplasia cannot exclude HSIL）']];
+  const sel=document.getElementById('papSel'), out=document.getElementById('papOut');
+  P.forEach((p,i)=>{const b=document.createElement('button');b.textContent=i+1;b.setAttribute('aria-label','第 '+(i+1)+' 級');
+    b.onclick=()=>{[...sel.children].forEach(x=>x.classList.remove('on'));b.classList.add('on');
+      const ok=i<3;
+      out.style.background= ok?'var(--calm-soft)':'var(--alert-soft)';
+      out.style.borderColor= ok?'#BEDCD6':'#F0C3BC';
+      out.innerHTML='<b style="font-family:var(--f-disp);font-size:1.12em;display:block;margin-bottom:4px">第 '+(i+1)+' 級 · '+p[0]+'</b>'
+        +'<span class="soft">'+p[1]+'</span><br><br>'
+        +(ok?'正常、無惡性。在抹片品質良好的情況下，<b>只需定期抹片追蹤</b>即可。'
+            :'報告會顯示「結果異常」。<b>請盡速就醫</b>，依婦產科醫師建議安排子宮頸切片或進一步檢查。');};
+    sel.appendChild(b);});
+})();
+</script>
+<script src="../assets/hope.js"></script>
+</body>
+</html>

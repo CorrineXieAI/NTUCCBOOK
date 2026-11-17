@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#FFFCF5">
+<meta name="format-detection" content="telephone=no">
+<title>面對標靶治療 · 互動衛教手冊</title>
+<meta name="description" content="標靶治療的原理、基因檢測、皮膚與其他副作用照顧、藥物查詢。改編自癌症希望基金會《希望之路—面對標靶治療》。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/hope.css">
+<style>:root{--accent:#2F7D6E}</style>
+<script>try{if(localStorage.getItem('hope-big')==='1')document.documentElement.classList.add('big')}catch(e){}</script>
+</head>
+<body>
+
+<svg style="display:none" aria-hidden="true">
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-mouth" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 14c1.2 1.6 6.8 1.6 8 0"/><path d="M9 9.5h.01M15 9.5h.01"/></symbol>
+  <symbol id="i-gut" viewBox="0 0 24 24"><path d="M6 3v6a4 4 0 004 4h1a4 4 0 014 4v4"/><path d="M18 3v4a3 3 0 01-3 3"/><path d="M4 21h6"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4l9 16H3l9-16z"/><path d="M12 10v4M12 17.5h.01"/></symbol>
+  <symbol id="i-nurse" viewBox="0 0 24 24"><path d="M12 13a4 4 0 100-8 4 4 0 000 8z"/><path d="M4 21a8 8 0 0116 0"/><path d="M12 2.5v2M11 3.5h2"/></symbol>
+  <symbol id="i-blood" viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 10.5A6 6 0 016 13.5C6 9.5 12 3 12 3z"/></symbol>
+  <symbol id="i-organ" viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.4A4.1 4.1 0 0112 8a4.1 4.1 0 017 2.6c0 4.8-7 9.4-7 9.4z"/></symbol>
+  <symbol id="i-fertility" viewBox="0 0 24 24"><circle cx="9" cy="9" r="4.5"/><path d="M9 13.5V21M6 18h6"/><circle cx="17" cy="16" r="4"/><path d="M20 13l3-3M20 10h3v3"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+  <symbol id="i-pressure" viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 13l4-4"/><path d="M8 3h8"/></symbol>
+  <symbol id="i-swell" viewBox="0 0 24 24"><path d="M7 3h10v6a5 5 0 01-10 0V3z"/><path d="M5 21c2-3 12-3 14 0"/></symbol>
+  <symbol id="i-flu" viewBox="0 0 24 24"><path d="M7 18a4 4 0 010-8 6 6 0 0111.5 1.5A3.5 3.5 0 0118 18H7z"/></symbol>
+</svg>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a href="../index.html" class="shelf-link" aria-label="回到書架"><svg><use href="#i-back"/></svg><span class="lb">書架</span></a>
+    <a href="#top" class="brand">
+      <span class="dot"></span>
+      <span>面對標靶治療<small>互動衛教手冊</small></span>
+    </a>
+    <div class="tb-actions">
+      <button class="fs-btn" id="fsBtn" aria-label="切換大字">大字</button>
+      <button class="nav-btn" id="tocBtn" aria-label="開啟目錄"><span class="lb">目錄 </span>☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="toc" id="toc">
+  <div class="toc-panel">
+    <button class="toc-close" id="tocClose" aria-label="關閉目錄">✕</button>
+    <h3>目錄</h3>
+    <p class="hint">不必從頭看到尾，找你需要的那一段就好。</p>
+    <a href="#s1"><i>01</i>標靶治療是什麼</a>
+    <a href="#s2"><i>02</i>為什麼要做標靶治療</a>
+    <a href="#s3"><i>03</i>治療前，先問清楚</a>
+    <a href="#s4"><i>04</i>為什麼還是有副作用</a>
+    <a href="#s5"><i>05</i>副作用怎麼照顧</a>
+    <a href="#s6"><i>06</i>治療期間的飲食起居</a>
+    <a href="#s7"><i>07</i>我還要注意什麼</a>
+    <a href="#s8"><i>08</i>藥物查詢</a>
+    <a href="#s9"><i>09</i>可以找誰幫忙</a>
+    <a class="out" href="../index.html">← 回到書架，看其他手冊</a>
+  </div>
+</div>
+
+<div id="top"></div>
+<section class="hero">
+  <div class="wrap">
+    <div class="kicker">希望之路　標靶治療</div>
+    <h1>先找到<em>靶心</em>，<br>才能精準出手</h1>
+    <p class="lede">
+      標靶藥物是用「標」去辨識癌細胞的「靶」，再攻擊特定的癌細胞。
+      副作用跟化療不一樣，<b>大多比較少、比較輕</b>，而且絕大多數是短暫、可以恢復的。
+    </p>
+
+    <div class="picker">
+      <h3>你現在最在意的是什麼？</h3>
+      <p class="why">點一下，直接跳到那一段。</p>
+      <div class="sym-grid">
+        <button class="sym" data-go="sk-acne">臉上胸背長痘痘</button>
+        <button class="sym" data-go="sk-nail">指甲旁紅腫痛</button>
+        <button class="sym" data-go="sk-dry">皮膚乾癢、龜裂</button>
+        <button class="sym" data-go="sk-hfs">手掌腳掌紅痛</button>
+        <button class="sym" data-go="sk-hair">頭髮、睫毛變化</button>
+        <button class="sym" data-go="sk-sun">曬到就痛</button>
+        <button class="sym" data-go="a-mouth">嘴破、牙齦痛</button>
+        <button class="sym" data-go="a-gut">腹瀉、腹痛</button>
+        <button class="sym" data-go="a-bp">血壓變高</button>
+        <button class="sym" data-go="a-bleed">流鼻血、出血</button>
+        <button class="sym" data-go="s3b">要不要做基因檢測</button>
+        <button class="sym" data-go="s8">查我在用的藥</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 01 -->
+<section class="band" id="s1">
+  <div class="wrap">
+    <div class="eyebrow">01　先弄懂它</div>
+    <h2>標靶治療是什麼</h2>
+    <p class="sub">
+      要找到「標靶」，關鍵在腫瘤的特性。有些癌症可以從病理切片和免疫染色推估；
+      有些則要先做<b>基因檢驗</b>找出分子異常，才能選對藥物、精準治療。
+    </p>
+
+    <div class="grid2">
+      <div class="card sun">
+        <h4>副作用比化療少、比較輕</h4>
+        <p class="soft">標靶治療雖然是針對癌細胞量身訂「治」，還是會有副作用；但和化療相比，副作用較少、較不嚴重，絕大多數是短暫且可以恢復的。</p>
+      </div>
+      <div class="card bad">
+        <h4>不要吃來路不明的藥</h4>
+        <p class="soft">治療期間避免使用來路不明的藥物；想吃<b>保健食品，也先問醫師</b>，以免造成不必要的干擾。</p>
+      </div>
+    </div>
+
+    <h3 class="mt2">標靶藥物怎麼殺死癌細胞</h3>
+    <p class="sub">標靶藥物大致分為「蛋白質藥物（單株抗體、大分子）」和「小分子藥物」兩類，透過三種方式對付癌細胞。</p>
+    <div class="grid3">
+      <div class="card">
+        <h4>命中：直接攻擊</h4>
+        <p class="soft">部分治療乳癌、大腸癌、淋巴癌的單株抗體，能辨識癌細胞表面特有的標記（靶），結合後破壞靶位，讓腫瘤失去分裂增生能力而瓦解。</p>
+      </div>
+      <div class="card">
+        <h4>斷電：阻斷訊息傳遞</h4>
+        <p class="soft">像把網路中斷，阻斷癌細胞內的訊息傳遞，抑制增生和擴散、促使癌細胞死亡。例如肺癌的 EGFR 抑制劑、乳癌和腎癌的 mTOR 抑制劑、乳癌的 CDK4/6 抑制劑、血癌的酪胺酸酶抑制劑。</p>
+      </div>
+      <div class="card">
+        <h4>孤立：餓死癌細胞</h4>
+        <p class="soft">腫瘤會刺激附近的正常細胞製造新生血管。「血管內皮細胞生長因子（VEGF）」抑制劑能讓新生血管萎縮，腫瘤拿不到養分就會慢慢死亡。</p>
+      </div>
+    </div>
+
+    <div class="card calm mt">
+      <h4>標靶治療的小故事</h4>
+      <ul class="tl-v" style="margin-top:14px">
+        <li><b>1970 年代：餓死腫瘤的創見</b><span>美國哈佛醫學院佛克曼（Judah Folkman）醫師提出阻斷血管新生、「餓死」腫瘤的想法。</span></li>
+        <li><b>研究突破：鎖定差異</b><span>研究聚焦在癌細胞和正常細胞的差異，精準攻擊並降低副作用。</span></li>
+        <li><b>1997 年後：標靶藥問世</b><span>莫須瘤、基利克等藥物陸續上市，證實療效佳、身體負擔小。</span></li>
+        <li><b>今日：多元選擇</b><span>多種標靶藥物不僅提升療效，也改善生活品質、延長存活。</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 02 -->
+<section class="band tint" id="s2">
+  <div class="wrap">
+    <div class="eyebrow">02　目的</div>
+    <h2>為什麼要做標靶治療</h2>
+    <div class="mini">
+      <div><b>延緩癌症惡化</b><span>控制病情，延長晚期病友的存活期。</span></div>
+      <div><b>保有生活品質</b><span>精準對症，維持體力，兼顧工作與家庭。</span></div>
+      <div><b>副作用相對少</b><span>較少掉髮、嘔吐等嚴重副作用，耐受性佳。</span></div>
+      <div><b>提高治療效益</b><span>可單獨使用或合併其他療法，提升整體成效。</span></div>
+      <div><b>減少復發機會</b><span>針對特定早期癌症，降低復發風險。</span></div>
+      <div><b>便利口服劑型</b><span>部分藥物可以在家服用，減少奔波。</span></div>
+      <div><b>長期穩定控制</b><span>副作用少，有助於讓癌症「慢性病化」。</span></div>
+      <div><b>延後化療時機</b><span>推遲、甚至避免使用化學治療。</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 -->
+<section class="band" id="s3">
+  <div class="wrap">
+    <div class="eyebrow">03　帶著它去看診</div>
+    <h2>治療前，你應該先問清楚</h2>
+    <p class="sub">問到了就打勾，沒問到的下次補問。</p>
+    <div class="card">
+      <h3>標靶治療前的 8 個問題</h3>
+      <div data-checklist="askNote" data-done="八題都問到了。把答案記下來，之後回診都用得上。" style="margin-top:14px">
+        <label class="chk"><input type="checkbox"><span>這次治療的<b>目的</b>是什麼？</span></label>
+        <label class="chk"><input type="checkbox"><span>用的是什麼<b>藥物</b>？</span></label>
+        <label class="chk"><input type="checkbox"><span><b>用藥方式</b>是什麼？（口服、注射）</span></label>
+        <label class="chk"><input type="checkbox"><span><b>療程</b>怎麼安排？</span></label>
+        <label class="chk"><input type="checkbox"><span>要<b>合併其他治療</b>嗎？（化療、免疫、放療、其他標靶…）</span></label>
+        <label class="chk"><input type="checkbox"><span>可能有哪些<b>副作用</b>？</span></label>
+        <label class="chk"><input type="checkbox"><span><b>治療費用</b>大概多少？</span></label>
+        <label class="chk"><input type="checkbox"><span>我的<b>私人保單</b>涵蓋哪些？</span></label>
+      </div>
+      <div class="chk-note" id="askNote"></div>
+    </div>
+
+    <h3 class="mt2" id="s3b">精準抗癌，從「找靶心」開始</h3>
+    <p class="sub">
+      標靶治療一定要有「靶心」才有效，不能亂槍打鳥。醫師會綜合評估癌症種類與期別、體能狀況、
+      過去的治療，甚至經濟考量，而<b>最關鍵的是找出腫瘤的特性</b>。
+    </p>
+    <div class="grid2">
+      <div class="card"><h4>基因檢測是關鍵</h4><p class="soft">現在是個人化精準醫療的時代，癌細胞常帶有特定的基因突變。不論是剛確診或復發，都盡量配合做基因檢測，才能對症下藥。</p></div>
+      <div class="card"><h4>檢測方式各不同</h4><p class="soft">有時看病理報告就能推斷，但常需要進一步分析切片組織或抽血，確定有沒有適合你的標靶藥物。</p></div>
+      <div class="card"><h4>治療計畫會調整</h4><p class="soft">治療是動態的。例如肺腺癌會先驗幾個常見基因；治療一陣子若產生抗藥性，可能要再驗一次，看有沒有新的突變。</p></div>
+      <div class="card"><h4>廣泛搜尋新利器</h4><p class="soft">常見基因都沒驗到時，「次世代基因定序（NGS）」能一次掃描數百個基因，找出罕見變異來配對藥物，健保目前也有部分補助。</p></div>
+    </div>
+
+    <div class="card seg-group mt">
+      <h3>基因檢測的三種範圍</h3>
+      <div class="seg" role="tablist">
+        <button data-seg="g1" class="on">單基因</button>
+        <button data-seg="g2">數十個基因</button>
+        <button data-seg="g3">廣泛型</button>
+      </div>
+      <div class="seg-pane" data-seg="g1"><p class="soft">一次檢測<b>一個基因</b>。優點是便宜，但能提供的資訊有限。例如肺腺癌的 EGFR 基因檢測。</p></div>
+      <div class="seg-pane" data-seg="g2"><p class="soft">一次檢測<b>數十個基因</b>，可提供標靶治療及免疫治療（MSI 檢測）的用藥參考。</p></div>
+      <div class="seg-pane" data-seg="g3"><p class="soft">一次檢測和癌症高度相關的 <b>400 個基因</b>，提供完整的用藥參考，包含化學治療、荷爾蒙治療、標靶治療及免疫治療（MSI 及 TMB 檢測）。</p></div>
+    </div>
+
+    <div class="card warn mt">
+      <h4>關於檢測，還要知道的事</h4>
+      <ul class="bul" style="margin-top:10px">
+        <li><b>找藥新方向</b>：以前看部位（肺癌用肺癌藥），現在看腫瘤的生物標記或基因特徵（如 NTRK 基因、PD-L1 指數）找最適配的藥</li>
+        <li><b>機會與風險並存</b>：配對到的可能是還在臨床試驗的新藥，或原本核准給其他癌症的藥，療效和副作用還不確定，一定要和醫師好好商量</li>
+        <li><b>費用考量</b>：基因檢測通常不便宜，健保只補助特定癌症的一部分。可以問問自己的保險有沒有給付，或打聽有無臨床試驗機會</li>
+        <li><b>跟醫師好好談</b>：選對時機、做對檢測，才能找到最適合的治療計畫</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 04 -->
+<section class="band tint" id="s4">
+  <div class="wrap">
+    <div class="eyebrow">04　先知道會怎樣</div>
+    <h2>為什麼標靶藥還是有副作用</h2>
+    <p class="sub">
+      標靶藥是針對癌細胞上的特定基因作用，所以副作用和傳統化療的血球低下、掉髮、嘔吐不同；
+      <b>不同類型的標靶藥，副作用也不一樣</b>。
+    </p>
+    <div class="grid2">
+      <div class="card"><h4>EGFR 抑制劑（第一型）</h4><p class="faint">肺癌、頭頸癌、大腸癌</p><p class="soft">皮膚疹、甲溝炎、腹瀉、毛髮捲曲、黏膜受損</p></div>
+      <div class="card"><h4>HER-2 抑制劑（第二型 EGFR）</h4><p class="faint">乳癌、胃癌</p><p class="soft">心衰竭（少見）</p></div>
+      <div class="card"><h4>多重激酶（MKI）抑制劑</h4><p class="faint">肝癌、腎癌、子宮內膜癌、甲狀腺癌、基質瘤</p><p class="soft">手足症候群、高血壓、蛋白尿、腹瀉、黏膜受損</p></div>
+      <div class="card"><h4>抗血管新生單株抗體</h4><p class="faint">肝癌、胃癌、大腸癌、子宮頸癌、卵巢癌、肺癌</p><p class="soft">高血壓、出血、血栓、蛋白尿</p></div>
+      <div class="card"><h4>PARP 抑制劑</h4><p class="faint">乳癌、卵巢癌、輸卵管癌、腹膜癌、胰臟癌、攝護腺癌</p><p class="soft">貧血、噁心、嘔吐、腹瀉</p></div>
+      <div class="card"><h4>CDK 4/6 抑制劑</h4><p class="faint">乳癌</p><p class="soft">白血球下降、貧血、腹瀉</p></div>
+    </div>
+
+    <div class="grid2 mt">
+      <div class="card sun">
+        <h4>不是每個人都會發生</h4>
+        <p class="soft">部位和嚴重程度因藥物和體質而異。調整給藥通常能緩解，停藥後副作用也會漸漸消失。定期回診，有助醫師掌握延遲出現或長期用藥的副作用。</p>
+      </div>
+      <div class="card bad">
+        <h4>副作用大小 ≠ 療效好壞</h4>
+        <p class="soft">大多數標靶藥只要有效就要持續用。醫師會權衡後調整劑量、暫停或換藥；<b>沒問過醫師，不要自己改劑量或停藥</b>。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 -->
+<section class="band" id="s5">
+  <div class="wrap">
+    <div class="eyebrow">05　照顧方法</div>
+    <h2>副作用怎麼照顧</h2>
+    <p class="sub">藥物開始發揮作用時，最先出現、也最常見的是<b>皮膚反應</b>。先選你的症狀：</p>
+
+    <div class="card seg-group">
+      <h3>皮膚反應</h3>
+      <div class="seg" role="tablist">
+        <button data-seg="acne" class="on">痘樣皮疹</button>
+        <button data-seg="nail">甲溝炎</button>
+        <button data-seg="dry">乾癢龜裂</button>
+        <button data-seg="hair">毛髮改變</button>
+        <button data-seg="hfs">手足症候群</button>
+        <button data-seg="sun">光敏感</button>
+      </div>
+      <div class="seg-pane" data-seg="acne" id="sk-acne">
+        <h4>丘疹、膿疱疹、痘樣皮膚疹</h4>
+        <dl class="spec" style="margin:10px 0 16px">
+          <dt>何時</dt><dd><b>最常見！</b>治療 2 週內發生</dd>
+          <dt>哪裡</dt><dd>臉、頭皮、上胸、背部</dd>
+          <dt>變化</dt><dd>皮膚紅腫 → 丘疹、膿疱、紅斑、乾裂 → 結痂</dd>
+        </dl>
+        <ol class="num">
+          <li>不要抓破膿疱或皮膚</li>
+          <li>盡量只用清水洗臉、洗澡</li>
+          <li>每天多次冰敷；用少量洗潔劑、冷水快速洗臉，全身塗保濕乳液</li>
+          <li>需要擦類固醇或消炎藥膏時，先用棉棒、紗布沾食鹽水濕敷，清潔皮膚、軟化痂皮後再擦藥</li>
+        </ol>
+      </div>
+      <div class="seg-pane" data-seg="nail" id="sk-nail">
+        <h4>甲溝炎</h4>
+        <dl class="spec" style="margin:10px 0 16px">
+          <dt>何時</dt><dd>治療約 4～8 週</dd>
+          <dt>哪裡</dt><dd>指甲根部，通常以<b>大腳趾</b>較嚴重</dd>
+          <dt>變化</dt><dd>指甲周圍紅腫痛 → 邊緣化膿、肉芽組織增生、感染</dd>
+        </dl>
+        <ol class="num">
+          <li>穿涼鞋、真皮透氣軟鞋墊，戴透氣手套、穿透氣襪子</li>
+          <li>避免過度使用腳趾，如長時間走路、跑步、爬山</li>
+          <li>指甲修成弧度方形，再用磨甲器把兩端尖角磨圓</li>
+          <li>有傷口時適當包紮，用指套保護指頭</li>
+          <li>嚴重時由醫師評估以抗生素、硝酸銀化學燒灼、冷凍、電燒或趾甲修剪術處理肉芽組織</li>
+        </ol>
+      </div>
+      <div class="seg-pane" data-seg="dry" id="sk-dry">
+        <h4>乾癢、龜裂</h4>
+        <dl class="spec" style="margin:10px 0 16px">
+          <dt>何時</dt><dd>治療約 4～6 週</dd>
+          <dt>哪裡</dt><dd>四肢</dd>
+          <dt>變化</dt><dd>乾燥、癢 → 脫皮、龜裂 → 裂傷、出血、形成傷口</dd>
+        </dl>
+        <ol class="num">
+          <li>冰敷、用冷水和少量洗潔劑，不要過度搓洗</li>
+          <li>加強保濕：臉上擦較不油的保濕乳；四肢塗含尿素、燕麥膠、凡士林的高保濕乳液</li>
+          <li>洗完澡立刻塗醫療性保濕乳</li>
+          <li>腳皮乾硬：一天塗兩次角質軟化膏、保養乳霜，按摩腳底促進角質代謝</li>
+          <li>剪短指甲，癢時用輕拍的方式，不要抓出傷口</li>
+        </ol>
+      </div>
+      <div class="seg-pane" data-seg="hair" id="sk-hair">
+        <h4>毛髮改變（掉髮、捲毛）</h4>
+        <dl class="spec" style="margin:10px 0 16px">
+          <dt>何時</dt><dd>治療約 3 個月後逐漸發生</dd>
+          <dt>變化</dt><dd>頭皮發炎、膿疱 → 毛囊炎 → 掉髮；或毛髮變長、濃密、捲曲 → 睫毛倒插 → 眼睛發炎</dd>
+        </dl>
+        <ol class="num">
+          <li>每天用溫冷水洗頭，冷風吹乾，不要摳抓頭皮</li>
+          <li>掉髮是頭皮發炎或膿疱引起，可以就醫。擦藥前先用棉棒、紗布沾食鹽水濕敷，清潔皮膚、軟化痂皮</li>
+          <li><b>睫毛捲曲、倒插造成眼睛發炎時，需要就醫</b></li>
+        </ol>
+      </div>
+      <div class="seg-pane" data-seg="hfs" id="sk-hfs">
+        <h4>手足症候群</h4>
+        <dl class="spec" style="margin:10px 0 16px">
+          <dt>何時</dt><dd>治療約 2～6 週</dd>
+          <dt>哪裡</dt><dd>手掌、腳掌</dd>
+          <dt>變化</dt><dd>局部紅、痛 → 受壓處形成像雞眼的淺黃色角質 → 中央表皮潰爛、起水泡</dd>
+        </dl>
+        <ol class="num">
+          <li>減少洗手，用溫和的洗潔劑</li>
+          <li>多次塗抹含尿素、燕麥膠、凡士林的高保濕乳液，再戴上棉質手套</li>
+          <li>做家事前先戴棉質手套、再戴塑膠手套，避免接觸清潔劑</li>
+          <li>有傷口時，擦消炎藥膏後立刻塗保濕乳霜</li>
+        </ol>
+      </div>
+      <div class="seg-pane" data-seg="sun" id="sk-sun">
+        <h4>光敏感反應</h4>
+        <dl class="spec" style="margin:10px 0 16px">
+          <dt>哪裡</dt><dd>曬到太陽的皮膚，如臉、頸、手掌與前臂</dd>
+          <dt>變化</dt><dd>像曬傷一樣疼痛；常見膚色改變、微血管擴張、苔癬狀疹、甲溝炎</dd>
+        </dl>
+        <ol class="num">
+          <li>出門穿長袖、防紫外線衣物，戴寬邊帽</li>
+          <li>使用 SPF ≧ 30 的防曬乳，並定時補擦</li>
+          <li>避免刺激性乳膏，如含酒精、A 酸或殺菌藥膏</li>
+        </ol>
+      </div>
+      <div class="nurse" style="margin-top:20px">
+        <svg><use href="#i-nurse"/></svg>
+        <div>
+          <div class="t">什麼時候要看醫生</div>
+          <p>這些皮膚問題大多不嚴重，但可能影響心情和社交。出現<b>傷口、症狀持續，或嚴重影響生活自理</b>時，應盡快就醫，由醫師開藥或調整治療計畫。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card warn mt">
+      <h3>手足症候群和 SJS，怎麼分？</h3>
+      <p class="soft">「史蒂文強生症候群（SJS）」是嚴重的藥物過敏反應，要和手足症候群分清楚：</p>
+      <div class="grid2 mt">
+        <div class="card" style="box-shadow:none">
+          <h4>手足症候群</h4>
+          <p class="soft">手腳局部發紅，可能疼痛。出現在手指、手掌、腳掌<b>常受壓的地方</b>（走路、提重物、勞動），伴隨水泡或脫皮，<b>不會擴及手腳以外</b>。</p>
+        </div>
+        <div class="card bad" style="box-shadow:none">
+          <h4>SJS（嚴重藥物過敏）</h4>
+          <p class="soft">皮疹多從<b>臉部與前胸開始</b>，對稱分布到軀幹與四肢，<b>很少</b>擴及手掌腳掌；皮疹處有壓痛感，甚至伴隨水泡。</p>
+        </div>
+      </div>
+      <p class="soft" style="margin-top:14px">可以先問醫療人員哪些情況要特別注意。<b>症狀急遽惡化或越來越嚴重，最好就醫。</b></p>
+    </div>
+
+    <h3 class="mt2">其他副作用</h3>
+
+    <div class="acc" id="a-mouth">
+      <button class="acc-h"><svg class="ic"><use href="#i-mouth"/></svg>口腔黏膜破損<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p>常見口腔破皮、發炎、牙齦發紅出血；其次是臉頰、舌頭、牙齦、口腔底部的潰瘍或口內瘡，從針頭到豌豆大小都有。常因怕痛而疏於清潔，反而容易感染。</p>
+        <h4 style="margin-top:16px">清潔</h4>
+        <ul class="bul g">
+          <li>治療前先去牙科<b>洗牙、清牙結石</b>，治療蛀牙和牙周病</li>
+          <li>三餐飯後和睡前用軟毛牙刷輕輕刷牙；不方便刷時用漱口水漱口</li>
+          <li>選<b>食鹽水或無酒精</b>的漱口水，減少刺激</li>
+          <li>吃室溫或清涼、好入口的食物，避免熱食、辛辣、粗糙、刺激性食物；必要時可用冰塊鈍化口腔感覺</li>
+          <li>吞藥有困難時，先問醫護或藥師藥錠能不能剝半、磨粉或溶水——<b>有些標靶藥不適合磨粉分次吃</b></li>
+        </ul>
+        <h4 style="margin-top:18px">潰瘍的處理</h4>
+        <ul class="bul g">
+          <li>牙齦敏感或長瘡時，用沾濕的棉花棒、漱口水清潔</li>
+          <li>止痛：在潰瘍處塗口內膏，或用含類固醇、止痛成分的漱口水或噴劑；必要時請醫師開止痛藥</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="acc" id="a-gut">
+      <button class="acc-h"><svg class="ic"><use href="#i-gut"/></svg>腹瀉及腹痛<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p>排便次數變多、糞便稀軟是最常見的副作用；有些標靶藥空腹吃時，可能胃痛、噁心或胃口不佳。</p>
+        <div class="card bad" style="margin:14px 0">
+          <p style="margin:0">每天排便<b>比平常多 7 次以上</b>、伴隨<b>腹部絞痛</b>、或<b>腹瀉 2～3 天以上</b>，要盡快和醫師聯絡，評估是否腸胃道發炎。</p>
+        </div>
+        <p class="soft">醫師可能預先開備用的緩瀉藥、止瀉劑，最好隨身攜帶並依指示使用。不要自己改標靶藥劑量或停藥。</p>
+        <h4 style="margin-top:16px">希望的叮嚀</h4>
+        <ul class="bul g">
+          <li>除非有禁忌，每天補充足夠水分，保持電解質平衡</li>
+          <li>吃清淡的食物，少量多餐，讓腸胃休息</li>
+          <li>避免含酒精、辛辣、油膩的飲食</li>
+          <li><b>避免高纖</b>：全穀飯、全麥麵包、燕麥粥、水果及果乾、花生、核果、菜籽、未過濾果汁、棗子、黑棗、番石榴，以及易產氣的豆類、乳製品、青花菜、甘藍菜</li>
+          <li><b>改吃低纖低渣</b>：乾飯、烤土司、白饅頭、香蕉、清蛋糕、去皮去筋的嫩肉、魚肉、嫩菜葉、清果汁、去皮水果（蘋果、梨子、瓜類、葡萄、蓮霧）</li>
+          <li>除非醫師指示，不要自己吃軟便劑、止瀉劑或腸胃成藥</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="acc" id="a-bp">
+      <button class="acc-h"><svg class="ic"><use href="#i-pressure"/></svg>高血壓<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p>「血管內皮生長因子（VEGF）」抑制劑，不論針劑或口服，都可能讓血壓升高。血壓持續超出正常範圍時，要和醫師討論調整用藥。</p>
+        <p class="soft">原本就有高血壓的人，可以請醫師評估調整降血壓藥的種類和劑量，避免交互作用讓血壓不穩。</p>
+        <ul class="bul g">
+          <li><b>每天量血壓並記錄</b></li>
+          <li>有胸悶、頭暈，或血壓異常，請聯絡醫護人員</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="acc" id="a-bleed">
+      <button class="acc-h"><svg class="ic"><use href="#i-blood"/></svg>出血、栓塞及傷口癒合<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p>阻斷腫瘤血管生成的標靶藥，會影響血管構造、干擾凝血、影響傷口癒合。治療期間要留意有無出血，如<b>流鼻血、鼻涕帶血絲或血塊、牙齦出血</b>。</p>
+        <p class="soft">有胃潰瘍、十二指腸潰瘍、食道靜脈曲張病史，或平常吃止痛藥、抗凝血藥的人，治療後消化道潰瘍、出血、穿孔的風險可能提高。</p>
+        <ul class="bul g">
+          <li>避免用力擤鼻涕、挖鼻孔、咳嗽、打噴嚏、解便，以免黏膜受傷出血不止</li>
+          <li>用軟毛牙刷輕柔刷牙，牙刷洗淨後放乾燥處</li>
+          <li>牙齦出血或敏感時，用棉花棒沾牙膏輕輕清潔，或用無酒精漱口水</li>
+          <li>避免解熱鎮痛的抗發炎藥，特別是含<b>阿斯匹靈、水楊酸</b>的成分</li>
+        </ul>
+        <div class="card bad" style="margin-top:16px">
+          <p style="margin:0 0 8px"><b>出現以下情況，請立刻就醫：</b></p>
+          <ul class="bul r">
+            <li>胸痛、突然喘不過氣、視力異常、痙攣、說話困難——可能是<b>血栓</b></li>
+            <li>糞便變成<b>瀝青狀</b>，同時上腹痛、頭昏眼花、站不穩或跌倒——可能是<b>消化道潰瘍出血</b></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc" id="a-swell">
+      <button class="acc-h"><svg class="ic"><use href="#i-swell"/></svg>水腫<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p class="soft">可能出現眼眶周圍或腳水腫，通常不必特別治療，除非皮膚破損引發感染。可以<b>減少鹽分</b>，加工食品常常鈉含量高，也要少吃。</p>
+      </div>
+    </div>
+
+    <div class="acc" id="a-flu">
+      <button class="acc-h"><svg class="ic"><use href="#i-flu"/></svg>類似感冒的症狀<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p class="soft">倦怠、乏力、發燒、頭痛，肌肉、骨骼和關節疼痛較明顯，很像感冒。這些多發生在治療初期，<b>身體適應後大多會自己緩解</b>。</p>
+      </div>
+    </div>
+
+    <div class="acc" id="a-organ">
+      <button class="acc-h"><svg class="ic"><use href="#i-organ"/></svg>腎、肝、心、肺的影響<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <h4>腎功能異常</h4>
+        <p class="soft">部分藥物或其代謝產物要經腎臟排出，可能損害腎功能，出現蛋白尿、水腫、膽固醇升高。治療前和治療中要定期驗尿、監測腎功能。</p>
+        <h4 style="margin-top:18px">肝功能異常</h4>
+        <p class="soft">有些人肝指數 GOT、GPT 會異常上升，和劑量多寡沒有必然關係。<b>B 型、C 型肝炎帶原者</b>可能因病毒再活化而肝功能異常，治療前評估和治療中監測都不可少。</p>
+        <h4 style="margin-top:18px">心臟毒性</h4>
+        <p class="soft">有些靜脈注射的藥物會讓人心跳加快、呼吸急促，可能影響心臟功能，少數會引起心律不整、心臟衰竭，在治療前到治療後 3～6 個月都可能發生。醫師會評估心臟功能及左心室搏出分率。</p>
+        <h4 style="margin-top:18px">間質性肺炎</h4>
+        <p class="soft">不常見，發生時間不一定。<b>有呼吸困難、持續不明原因咳嗽、發燒時，應儘速回門診或掛急診。</b>確定診斷後要立刻停止標靶治療，改用類固醇治療。</p>
+      </div>
+    </div>
+
+    <div class="acc" id="a-sex">
+      <button class="acc-h"><svg class="ic"><use href="#i-fertility"/></svg>生育與親密關係<span class="cv">＋</span></button>
+      <div class="acc-b">
+        <p>癌症本身、手術和藥物的副作用，都可能造成短暫或永久的性功能障礙，在生理和心理上有不同程度的影響。</p>
+        <h4 style="margin-top:16px">生育能力</h4>
+        <p class="soft">標靶藥對性器官和性荷爾蒙的傷害比化療少很多；但有些標靶藥可能使胎兒發生先天缺陷。<b>治療前要告訴醫師你是否懷孕或計劃懷孕，治療期間全程正確避孕。</b>更多生育決策資訊，可參考「癌友生育健康資訊平台」。</p>
+        <h4 style="margin-top:18px">心理調適</h4>
+        <p class="soft">外表改變、焦慮、經濟壓力和治療副作用，都可能讓性慾下降；伴侶過度擔心、怕親密行為對病人不好或怕傳染，也會讓關係蒙上陰影。</p>
+        <p class="soft"><b>大部分癌症病人從事性行為並不會造成傷害。</b>治療期間可以放寬心；如果性交不舒服，換個方式，擁抱、愛撫、依偎也能表達愛意。</p>
+        <a class="xlink" href="../intimacy/index.html" style="--accent-x:#D98C8C"><span class="bk"></span><span class="tx"><small>延伸閱讀</small>《女人的癌後性福》</span><span class="ar">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 -->
+<section class="band tint" id="s6">
+  <div class="wrap">
+    <div class="eyebrow">06　生活</div>
+    <h2>治療期間的飲食起居</h2>
+    <p class="sub">
+      食物沒辦法直接抑制癌細胞或阻止復發。癌症病人通常沒有特殊飲食禁忌，只要六大類食物吃到需要的份量，
+      不偏食，也<b>不要以為價格高就等於營養高</b>。口腔破皮時，避開刺激、粗硬會刮口的食物。
+    </p>
+    <div class="grid2">
+      <div class="card">
+        <h4>吃的原則</h4>
+        <ul class="bul g" style="margin-top:10px">
+          <li>營養均衡為大原則；流行的生機飲食當成蔬果來源，要搭配其他食物</li>
+          <li>少量多餐，身邊準備小點心，想吃就吃</li>
+          <li>避免太甜、太油膩、刺激性的食物</li>
+          <li>食物切細、煮軟，方便入口</li>
+        </ul>
+      </div>
+      <div class="card bad">
+        <h4>和藥物有關，要避免</h4>
+        <ul class="bul r" style="margin-top:10px">
+          <li><b>酒精</b>可能影響療效或增加副作用</li>
+          <li><b>葡萄柚、柚子</b>等水果或果汁不要拿來配藥，以免交互作用</li>
+          <li>不要隨意服用<b>偏方草藥</b>，可能干擾藥物代謝</li>
+          <li>想用保健食品、醫療營養補充品，先問專業醫療人員</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card calm mt">
+      <h4>動一動、放輕鬆</h4>
+      <p class="soft">體力許可時散步、打太極、做健身操或瑜伽等和緩運動，能促進食慾、幫助消化。冥想、靜坐、放鬆技巧對舒緩副作用也有幫助。適度安排旅遊、和親友聚餐聊天、培養嗜好，為生病的日子帶來陽光。</p>
+    </div>
+    <a class="xlink" href="../nutrition/index.html" style="--accent-x:#7FA05A"><span class="bk"></span><span class="tx"><small>想知道更多怎麼吃</small>《飲食滿分・抗癌加分》</span><span class="ar">→</span></a>
+  </div>
+</section>
+
+<!-- 07 -->
+<section class="band" id="s7">
+  <div class="wrap">
+    <div class="eyebrow">07　常見疑問</div>
+    <h2>我還要注意什麼</h2>
+    <p class="sub">克服副作用需要的時間因人而異。了解越多，越有信心處理這一切。</p>
+    <div class="qa"><h4>做標靶治療時，我還能工作、上學嗎？</h4>
+      <p class="soft">絕大多數人在療程中仍然可以上班、上學。有些針劑要定期回門診注射，安排在下午或週末前，比較不妨礙工作。少數藥物在投藥初期可能要住院觀察。</p></div>
+    <div class="qa"><h4>我可能有哪些情緒起伏？</h4>
+      <p class="soft">你、伴侶或家人可能感到難過、焦慮、易怒、沮喪或憂鬱，這些都是正常的。親友可能想關心又怕傷害你；不妨大方談你的病、治療和需要，請他們有話直說，相處會更自在。</p></div>
+    <div class="qa"><h4>我需要加入病友支持團體嗎？</h4>
+      <p class="soft">能向願意聆聽的人傾訴，本身就很療癒。病友團體由過來人組成，更能讀懂你的心，可以彼此分享、相互扶持，也協助治療後順利回到生活。</p></div>
+  </div>
+</section>
+
+<!-- 08 -->
+<section class="band tint" id="s8">
+  <div class="wrap">
+    <div class="eyebrow">08　查詢</div>
+    <h2>我在用的是什麼藥？</h2>
+    <p class="sub">輸入中文、英文藥名或癌別都可以。<b>最準確的答案永遠是你的主治醫師和藥師</b>；癌症基因變異與治療會隨研究更新，醫師會依你的檢測與病情建議合適藥物。</p>
+    <div class="search-box">
+      <svg><use href="#i-search"/></svg>
+      <input type="search" id="drugQ" placeholder="例如：泰格莎、Osimertinib、乳癌、EGFR…" autocomplete="off">
+    </div>
+    <div class="drug-tabs">
+      <button class="on" data-cat="all">全部</button>
+      <button data-cat="oral">口服</button>
+      <button data-cat="inj">注射</button>
+    </div>
+    <div class="drug-count" id="drugCount"></div>
+    <div id="drugList"></div>
+  </div>
+</section>
+
+
+<section class="band" id="s9">
+  <div class="wrap">
+    <div class="eyebrow">09　你不必自己撐</div>
+    <h2>可以找誰幫忙</h2>
+    <div class="hot">
+      <div>
+        <div class="lab">癌症問題 我幫您</div>
+        <a class="num" href="tel:0809010580">0809-010-580</a>
+        <p>癌友家庭正面臨人生艱難的挑戰。鈴一鈴，一通電話，提供您專業支持與貼心陪伴。</p>
+      </div>
+    </div>
+    <div class="card mt">
+      <h3>希望小站提供的服務</h3>
+      <p class="soft" style="margin-bottom:14px">資源補助 · 照護諮詢服務 · 癌症教育出版品 · 教育系列講座與支持團體 · 心理諮詢 · 營養衛教 · <b>康復用品服務（假髮、頭巾、義乳胸衣）</b></p>
+      <div class="stations">
+        <div class="station"><div class="c">台北希望小站</div>
+          <div class="d">10058 台北市中正區臨沂街 3 巷 5 號 1 樓（捷運忠孝新生站 1 號出口）<br>
+          TEL <a href="tel:0233226286">(02) 3322-6286</a>　FAX (02) 3322-1314</div></div>
+        <div class="station"><div class="c">台中希望小站</div>
+          <div class="d">40341 台中市西區民權路 312 巷 4-1 號（茄苳腳站）<br>
+          TEL <a href="tel:0423055731">(04) 2305-5731</a>　FAX (04) 2305-5736</div></div>
+        <div class="station"><div class="c">高雄希望小站</div>
+          <div class="d">81355 高雄市左營區翠峰路 22 號<br>
+          TEL <a href="tel:075810661">(07) 581-0661</a>　FAX (07) 581-0663</div></div>
+        <div class="station"><div class="c">服務時間</div><div class="d">週一至週六 9:00～18:00</div></div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<button class="sos-fab" id="sosBtn"><svg><use href="#i-alert"/></svg>立刻就醫指標</button>
+<div class="sos-modal" id="sosModal" role="dialog" aria-modal="true" aria-label="立刻就醫指標">
+  <div class="sos-panel">
+    <h3>出現以下狀況，<br>請盡快就醫</h3>
+    <p class="soft" style="font-size:.94em">本手冊提到需要就醫或聯絡醫師的情況：</p>
+    <ul class="sos-list">
+      <li><span class="mk">1</span><div><b>胸痛、突然喘不過氣</b>、視力異常、痙攣、說話困難（疑似血栓）——立刻就醫</div></li>
+      <li><span class="mk">2</span><div>糞便呈<b>瀝青狀</b>，合併上腹痛、頭昏眼花、站不穩（疑似消化道出血）——立刻就醫</div></li>
+      <li><span class="mk">3</span><div><b>呼吸困難、持續不明原因咳嗽、發燒</b>（疑似間質性肺炎）——儘速回門診或急診</div></li>
+      <li><span class="mk">4</span><div>每天排便比平常<b>多 7 次以上</b>、腹部絞痛、或腹瀉 2～3 天以上——盡快聯絡醫師</div></li>
+      <li><span class="mk">5</span><div><b>胸悶、頭暈</b>或血壓異常——聯絡醫護人員</div></li>
+      <li><span class="mk">6</span><div>皮疹從臉、前胸開始對稱擴散、有壓痛或水泡，或<b>皮膚症狀急遽惡化</b>——就醫</div></li>
+      <li><span class="mk">7</span><div>睫毛倒插造成<b>眼睛發炎</b>——就醫</div></li>
+    </ul>
+    <button class="sos-close" id="sosClose">我知道了</button>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="src">
+      <b>資料來源</b><br>
+      本頁內容出自財團法人癌症希望基金會《希望之路——面對標靶治療》手冊（2026 年 1 月，四版一刷）。審稿顧問：<b>柯博升</b>醫師（臺大醫院內科部血液腫瘤科主治醫師、臺大癌醫中心分院血液腫瘤部主任）、<b>彭夢婷</b>醫師（林口長庚醫院腫瘤科主治醫師）、<b>饒坤銘</b>醫師（義大癌治療醫院內科副院長、血液腫瘤部主治醫師）。藥品資料依原手冊整理。
+    </div>
+    <p>
+      <b>本頁不能取代醫療專業判斷。</b>手冊內容雖經專業審閱，然醫療科技進展快速，
+      關於你的治療建議，請務必與<b>你的主治醫師</b>諮詢。若有緊急狀況，請直接就醫或聯絡你的醫療團隊。
+    </p>
+    <p class="faint">原手冊版權屬財團法人癌症希望基金會所有，如需轉載或對外散布，須經該會同意。</p>
+    <a class="totop" href="#top">↑ 回到最上面</a><a class="totop" href="../index.html">← 回到書架</a>
+  </div>
+</footer>
+<script>window.DRUGS=[{"n": "捷癌寧", "e": "Abemaciclib (Verzenio)", "r": "口服", "c": "oral", "f": [["適用癌別", "ER/PR(+)、HER2(-)乳癌"], ["可能副作用", "血球低下、腹瀉"], ["注意事項", "", "care"]]}, {"n": "克瘤康", "e": "Acalabrutinib (Calquence)", "r": "口服", "c": "oral", "f": [["適用癌別", "被套細胞淋巴癌；慢性淋巴性白血病"], ["可能副作用", "血球低下、疲倦、噁心、腹瀉"], ["注意事項", "", "care"]]}, {"n": "妥復克", "e": "Afatinib (Giotrif)", "r": "口服", "c": "oral", "f": [["適用癌別", "EGFR(+)肺癌"], ["可能副作用", "腹瀉、痤瘡性皮疹、口腔黏膜發炎、甲溝炎、皮膚乾燥、皮膚搔癢"], ["注意事項", "", "care"]]}, {"n": "安立適", "e": "Alectinib (Alecensa)", "r": "口服", "c": "oral", "f": [["適用癌別", "ALK(+)肺癌"], ["可能副作用", "輕微噁心、嘔吐、腹瀉與味覺改變、肌肉痠痛、貧血"], ["注意事項", "", "care"]]}, {"n": "愛克利", "e": "Alpelisib (Piqray)", "r": "口服", "c": "oral", "f": [["適用癌別", "PIK3CA(+)乳癌"], ["可能副作用", "高血糖、皮疹、腹瀉、噁心、口腔炎、食慾不振"], ["注意事項", "", "care"]]}, {"n": "肺倍恩", "e": "Amivantamab (Rybrevant)", "r": "靜脈注射", "c": "inj", "f": [["適用癌別", "EGFR Exon 20(+)肺癌；EGFR Exon 19缺失或 Exon 21 L858R突變肺癌（與lazertinib併用）"], ["可能副作用", "皮疹、輸注反應、甲溝炎、肌肉骨骼疼痛"], ["注意事項", "", "care"]]}, {"n": "欣覓力", "e": "Asciminib (Scemblix)", "r": "口服", "c": "oral", "f": [["適用癌別", "慢性骨髓性白血病"], ["可能副作用", "疲勞、血小板低下、貧血、關節痛"], ["注意事項", "", "care"]]}, {"n": "泰時維", "e": "Avapritinib (Ayvakit)", "r": "口服", "c": "oral", "f": [["適用癌別", "胃腸道基質瘤"], ["可能副作用", "貧血、胃腸道不適、中樞神經症狀"], ["注意事項", "", "care"]]}, {"n": "抑癌特", "e": "Axitinib (Inlyta)", "r": "口服", "c": "oral", "f": [["適用癌別", "腎細胞癌"], ["可能副作用", "腹瀉、高血壓、虛弱、噁心、聲音沙啞、手足症候群、甲狀腺功能低下等"], ["注意事項", "", "care"]]}, {"n": "癌思停；癌畢珥；艾麥斯；艾法施；衛癌瑪", "e": "Bevacizumab (Abevmy; Avastin; Alymsys; Mvasi; Vegzelma)", "r": "靜脈注射", "c": "inj", "f": [["適用癌別", "大腸直腸癌；乳癌；神經膠母細胞瘤；肺癌；肝癌；卵巢癌；子宮頸癌"], ["可能副作用", "高血壓、輕微蛋白尿；血管栓塞、出血"], ["注意事項", "", "care"]]}, {"n": "萬科", "e": "Bortezomib (Velcade)", "r": "靜脈注射", "c": "inj", "f": [["適用癌別", "多發性骨髓瘤；被套細胞淋巴癌"], ["可能副作用", "血小板減少、噁心、便秘或腹瀉、神經痛等"], ["注意事項", "", "care"]]}, {"n": "雅詩力", "e": "Brentuximab (Adcetris)", "r": "靜脈注射", "c": "inj", "f": [["適用癌別", "CD30(+)淋巴癌"], ["可能副作用", "白血球減少、周邊神經病變、腹瀉、噁心、嘔吐"], ["注意事項", "", "care"]]}, {"n": "癌能畢", "e": "Brigatinib (Alunbrig)", "r": "口服", "c": "oral", "f": [["適用癌別", "ALK(+)肺癌"], ["可能副作用", "腹瀉、疲倦、頭痛、噁心、咳嗽、高血糖"], ["注意事項", "", "care"]]}, {"n": "癌必定", "e": "Cabozantinib (Cabometyx)", "r": "口服", "c": "oral", "f": [["適用癌別", "腎細胞癌；肝癌；甲狀腺癌"], ["可能副作用", "腹瀉、噁心嘔吐、食慾不振、疲倦、手足症候群、高血壓"], ["注意事項", "", "care"]]}, {"n": "泛抑癌", "e": "Capivasertib (Truqap)", "r": "口服", "c": "oral", "f": [["適用癌別", "PIK3CA/AKT/PTEN任一變異之乳癌"], ["可能副作用", "腹瀉、皮疹、高血糖、噁心"], ["注意事項", "", "care"]]}, {"n": "泰芮塔", "e": "Capmatinib (Tabrecta)", "r": "口服", "c": "oral", "f": [["適用癌別", "MET Exon 14(+)肺癌"], ["可能副作用", "周邊水腫、噁心、腹瀉、肌肉或關節疼痛"], ["注意事項", "", "care"]]}, {"n": "凱博斯", "e": "Carfilzomib (Kyprolis)", "r": "靜脈注射", "c": "inj", "f": [["適用癌別", "多發性骨髓瘤"], ["可能副作用", "疲倦、貧血、噁心、血小板低下、腹瀉"], ["注意事項", "", "care"]]}, {"n": "立克癌", "e": "Ceritinib (Zykadia)", "r": "口服", "c": "oral", "f": [["適用癌別", "ALK(+)肺癌"], ["可能副作用", "腹瀉、噁心、嘔吐、腹痛、食慾不振、疲憊"], ["注意事項", "", "care"]]}, {"n": "爾必得舒", "e": "Cetuximab (Erbitux)", "r": "靜脈注射", "c": "inj", "f": [["適用癌別", "直腸結腸癌；口咽、下咽及喉癌；頭頸部癌"], ["可能副作用", "痤瘡性皮疹、甲溝炎、手足症候群、低血鎂症"], ["注意事項", "", "care"]]}, {"n": "可泰利", "e": "Cobimetinib (Cotellic)", "r": "口服", "c": "oral", "f": [["適用癌別", "BRAF(+)黑色素瘤"], ["可能副作用", "腹瀉、噁心、嘔吐、光敏感性、發熱"], ["注意事項", "", "care"]]}, {"n": "截剋瘤", "e": "Crizotinib (Xalkori)", "r": "口服", "c": "oral", "f": [["適用癌別", "ALK(+)、ROS-1(+)肺癌"], ["可能副作用", "視覺障礙、腹瀉、噁心、便秘、嘔吐與水腫等"], ["注意事項", "", "care"]]}, {"n": "泰伏樂", "e": "Dabrafenib (Tafinlar)", "r": "口服", "c": "oral", "f": [["適用癌別", "除大腸直腸癌以外的BRAF(+)實體癌"], ["可能副作用", "皮膚症狀、腸胃症狀、關節肌肉疼痛、疲倦、白血球下降、眼睛症狀"], ["注意事項", "", "care"]]}, {"n": "肺欣妥", "e": "Dacomitinib (Vizimpro)", "r": "口服", "c": "oral", "f": [["適用癌別", "EGFR(+)肺癌"], ["可能副作用", "腹瀉、痤瘡性皮疹、口腔黏膜發炎、甲溝炎、皮膚乾燥、皮膚搔癢"], ["注意事項", "", "care"]]}, {"n": "兆科", "e": "Daratumumab (Darzalex)", "r": "靜脈注射", "c": "inj", "f": [["適用癌別", "多發性骨髓瘤"], ["可能副作用", "背痛、咳嗽、貧血、畏寒"], ["注意事項", "", "care"]]}, {"n": "柏萊", "e": "Dasatinib (Sprycel)", "r": "口服", "c": "oral", "f": [["適用癌別", "慢性骨髓性白血病；急性淋巴性白血病"], ["可能副作用", "血球低下、腹瀉、皮膚疹、肌肉痛"], ["注意事項", "", "care"]]}, {"n": "達珂", "e": "Decitabine (Dacogen)", "r": "靜脈注射", "c": "inj", "f": [["適用癌別", "急性骨髓性白血病；骨髓化生不良症候群"], ["可能副作用", "血球低下、噁心、腹瀉、高血糖"], ["注意事項", "", "care"]]}, {"n": "迫癌癒", "e": "Encorafenib (Braftovi)", "r": "口服", "c": "oral", "f": [["適用癌別", "BRAF V600E突變結腸直腸癌（與cetuximab併用）"], ["可能副作用", "疲勞、嘔吐、腹瀉、腹痛、關節痛、皮膚疹"], ["注意事項", "", "care"]]}, {"n": "備思復", "e": "Enfortumab vedotin (Padcev)", "r": "靜脈注射", "c": "inj", "f": [["適用癌別", "泌尿道上皮癌"], ["可能副作用", "皮疹、疲勞、周邊神經病變、味覺異常、腸胃不適、乾眼症、尿路感染、白血球減少、貧血、出血"], ["注意事項", "", "care"]]}, {"n": "羅思克", "e": "Entrectinib (Rozlytrek)", "r": "口服", "c": "oral", "f": [["適用癌別", "ROS-1(+)肺癌；NTRK(+)之實體癌"], ["可能副作用", "疲倦、水腫、便秘、腹瀉、噁心、味覺異常、頭暈、感覺遲鈍、認知障礙、肌痛、體重增加"], ["注意事項", "", "care"]]}, {"n": "盼樂", "e": "Erdafitinib (Balversa)", "r": "口服", "c": "oral", "f": [["適用癌別", "FGFR(+)泌尿道上皮癌"], ["可能副作用", "疲倦、口腔炎、腹瀉、指甲剝離、眼睛乾燥、角膜發炎、視網膜病變、肝功能異常"], ["注意事項", "", "care"]]}, {"n": "癌伏妥", "e": "Everolimus (Afinitor)", "r": "口服", "c": "oral", "f": [["適用癌別", "乳癌；腎細胞癌；神經內分泌腫瘤"], ["可能副作用", "口腔炎、皮疹、腹瀉、食慾降低、咳嗽、味覺障礙、肺炎、高血糖"], ["注意事項", "", "care"]]}, {"n": "得舒緩", "e": "Erlotinib (Tarceva)", "r": "口服", "c": "oral", "f": [["適用癌別", "EGFR(+)肺癌"], ["可能副作用", "皮膚疹、痤瘡、腹瀉、皮膚乾燥、皮膚癢、口腔炎等"], ["注意事項", "", "care"]]}, {"n": "恩瑞比", "e": "Fedratinib (Inrebic)", "r": "口服", "c": "oral", "f": [["適用癌別", "骨髓纖維化"], ["可能副作用", "貧血、血小板過低、噁心、腹瀉、肝功能異常"], ["注意事項", "", "care"]]}, {"n": "伏腸剋", "e": "Fruquintinib (Fruzaqla)", "r": "口服", "c": "oral", "f": [["適用癌別", "大腸直腸癌"], ["可能副作用", "高血壓、手足皮膚反應、蛋白尿、聲音沙啞、腹痛、腹瀉、肝功能異常"], ["注意事項", "", "care"]]}, {"n": "艾瑞莎", "e": "Gefitinib (Iressa)", "r": "口服", "c": "oral", "f": [["適用癌別", "EGFR(+)肺癌"], ["可能副作用", "皮膚疹、痤瘡、腹瀉、皮膚乾燥、口腔炎"], ["注意事項", "", "care"]]}, {"n": "適加坦", "e": "Gilteritinib (Xospata)", "r": "口服", "c": "oral", "f": [["適用癌別", "FLT3(+)急性骨髓性白血病"], ["可能副作用", "頭痛、頭暈、疲勞、嘔吐、咳嗽、口腔炎、關節痛、水腫、皮疹、腹瀉、便秘"], ["注意事項", "", "care"]]}, {"n": "億珂", "e": "Ibrutinib (Imbruvica)", "r": "口服", "c": "oral", "f": [["適用癌別", "淋巴癌；慢性淋巴球性白血病"], ["可能副作用", "高血壓、疲倦、腹瀉、噁心、血球低下、肌肉關節痠痛、呼吸道感染"], ["注意事項", "", "care"]]}, {"n": "基利克", "e": "Imatinib mesylate (Glivec)", "r": "口服", "c": "oral", "f": [["適用癌別", "胃腸道基質瘤；慢性骨髓性白血病；急性淋巴性白血病"], ["可能副作用", "水腫、疲勞、噁心、腹瀉、肌肉痙攣、水腫、血球低下、毛髮褪色"], ["注意事項", "", "care"]]}, {"n": "沛斯博", "e": "Inotuzumab (Besponsa)", "r": "靜脈注射", "c": "inj", "f": [["適用癌別", "CD22(+)急性淋巴性白血病"], ["可能副作用", "血球低下、疲勞、發熱、噁心、頭痛、腹痛、肝毒性"], ["注意事項", "", "care"]]}, {"n": "多髓易", "e": "Isatuximab (Sarclisa)", "r": "靜脈注射", "c": "inj", "f": [["適用癌別", "多發性骨髓瘤"], ["可能副作用", "肺炎、貧血、血小板低下、腹瀉"], ["注意事項", "", "care"]]}, {"n": "免癌諾", "e": "Ixazomib (Ninlaro)", "r": "口服", "c": "oral", "f": [["適用癌別", "多發性骨髓瘤"], ["可能副作用", "噁心、腹瀉、便秘、血小板低下、神經病變、水腫、背痛"], ["注意事項", "", "care"]]}, {"n": "癌受飛", "e": "Inavolisib (Itovebi)", "r": "口服", "c": "oral", "f": [["適用癌別", "PI3KCA突變乳癌"], ["可能副作用", "口腔黏膜發炎、高血糖、腹瀉、皮疹、疲累、頭痛"], ["注意事項", "", "care"]]}, {"n": "泰嘉錠", "e": "Lapatinib (Tykerb)", "r": "口服", "c": "oral", "f": [["適用癌別", "HER2陽性乳癌"], ["可能副作用", "腹瀉、皮膚疹"], ["注意事項", "", "care"]]}, {"n": "維泰凱", "e": "Larotrectinib (Vitrakvi)", "r": "口服", "c": "oral", "f": [["適用癌別", "NTRK(+)之實體癌；甲狀腺癌"], ["可能副作用", "疲倦、水腫、便秘、腹瀉、噁心、味覺異常、頭暈、感覺遲鈍、認知障礙、肌痛、體重增加"], ["注意事項", "", "care"]]}, {"n": "力安莎", "e": "Lazertinib (Lazcluze)", "r": "口服", "c": "oral", "f": [["適用癌別", "EGFR Exon 19缺失或 Exon 21 L858R突變肺癌(與amivantamab併用)"], ["可能副作用", "血栓栓塞、間質性肺病、肺炎、皮疹、角膜炎"], ["注意事項", "", "care"]]}, {"n": "樂衛瑪", "e": "Lenvatinib (Lenvima)", "r": "口服", "c": "oral", "f": [["適用癌別", "甲狀腺癌；腎細胞癌；肝癌；子宮內膜癌"], ["可能副作用", "高血壓、腹瀉、噁心、口腔炎、疲倦、水腫、肌肉關節痛"], ["注意事項", "", "care"]]}, {"n": "瑞復美；瑞伏駭", "e": "Lenalidomide (Revlimid; Leavdo)", "r": "口服", "c": "oral", "f": [["適用癌別", "多發性骨髓瘤；骨髓增生不良症候群；濾泡性淋巴癌"], ["可能副作用", "血球低下、血管栓塞症"], ["注意事項", "", "care"]]}, {"n": "癌利剋", "e": "Lorlatinib (Lorviqua)", "r": "口服", "c": "oral", "f": [["適用癌別", "ALK(+)肺癌"], ["可能副作用", "水腫、周邊神經病變、認知影響、疲倦、關節痛"], ["注意事項", "", "care"]]}, {"n": "療德妥", "e": "Midostaurin (Rydapt)", "r": "口服", "c": "oral", "f": [["適用癌別", "FLT3(+)急性骨髓性白血病"], ["可能副作用", "噁心、腹瀉、頭痛、肌肉骨骼疼痛、黏膜炎、血球低下"], ["注意事項", "", "care"]]}, {"n": "奧莫嘉", "e": "Momelotinib (Omjjara)", "r": "口服", "c": "oral", "f": [["適用癌別", "骨髓纖維化"], ["可能副作用", "噁心、腹瀉、出血、血小板低下、感染、疲倦、頭暈"], ["注意事項", "", "care"]]}, {"n": "賀儷安", "e": "Neratinib (Nerlynx)", "r": "口服", "c": "oral", "f": [["適用癌別", "HER2(+++)乳癌"], ["可能副作用", "腹瀉、噁心、嘔吐、腹痛、疲倦、皮膚疹、口腔炎"], ["注意事項", "", "care"]]}, {"n": "泰息安", "e": "Nilotinib (Tasigna)", "r": "口服", "c": "oral", "f": [["適用癌別", "慢性骨髓細胞白血病"], ["可能副作用", "皮疹、皮膚癢、頭痛、腹痛與便秘等"], ["注意事項", "", "care"]]}, {"n": "截永樂", "e": "Niraparib (Zejula)", "r": "口服", "c": "oral", "f": [["適用癌別", "HRD(+)卵巢癌、輸卵管癌、腹膜癌"], ["可能副作用", "噁心感、疲倦、嘔吐、貧血、類感冒症狀"], ["注意事項", "", "care"]]}, {"n": "澤截", "e": "Niraparib/abiraterone acetate(Akeega)", "r": "口服", "c": "oral", "f": [["適用癌別", "BRCA1/2(+)攝護腺癌(mCRPC)"], ["可能副作用", "貧血、疲勞、高血壓、噁心、肝功能異常"], ["注意事項", "", "care"]]}, {"n": "癌即瓦", "e": "Obinutuzumab (Gazyva)", "r": "靜脈注射", "c": "inj", "f": [["適用癌別", "CD20(+)慢性淋巴性白血病；濾泡性淋巴瘤"], ["可能副作用", "血球低下、肌肉關節疼痛、咳嗽、發燒"], ["注意事項", "", "care"]]}, {"n": "令癌莎", "e": "Olaparib (Lynparza)", "r": "口服", "c": "oral", "f": [["適用癌別", "BRCA(+)乳癌、卵巢癌、輸卵管癌、腹膜癌、胰臟癌、攝護腺癌"], ["可能副作用", "噁心感、疲倦、嘔吐、貧血、類感冒症狀"], ["注意事項", "", "care"]]}, {"n": "泰格莎", "e": "Osimertinib (Tagrisso)", "r": "口服", "c": "oral", "f": [["適用癌別", "EGFR(+)、T790M(+)肺癌"], ["可能副作用", "腹瀉、皮疹、皮膚乾燥、甲溝炎、皮膚搔癢"], ["注意事項", "", "care"]]}, {"n": "愛乳適", "e": "Palbociclib (Ibrance)", "r": "口服", "c": "oral", "f": [["適用癌別", "ER/PR(+)、HER2(-)乳癌"], ["可能副作用", "血球低下"], ["注意事項", "", "care"]]}, {"n": "維必施", "e": "Panitumumab (Vectibix)", "r": "靜脈注射", "c": "inj", "f": [["適用癌別", "大腸直腸癌"], ["可能副作用", "甲溝炎、低血鉀、食慾不振、低血鎂、結膜炎、腹瀉、口腔黏膜炎、皮疹、皮膚乾燥"], ["注意事項", "", "care"]]}, {"n": "福退癌", "e": "Pazopanib (Votrient)", "r": "口服", "c": "oral", "f": [["適用癌別", "腎細胞癌；軟組織肉瘤"], ["可能副作用", "疲倦、腹瀉、噁心、體重減輕、高血壓、髮色改變、嘔吐、味覺異常"], ["注意事項", "", "care"]]}, {"n": "安制巴", "e": "Pegaspargase (Oncaspar)", "r": "靜脈注射", "c": "inj", "f": [["適用癌別", "急性淋巴性白血病"], ["可能副作用", "噁心嘔吐、食慾不振、腸胃不適、虛弱"], ["注意事項", "", "care"]]}, {"n": "達伯坦", "e": "Pemigatinib (Pemazyre)", "r": "口服", "c": "oral", "f": [["適用癌別", "FGFR2(+)膽管癌"], ["可能副作用", "掉髮、噁心、腹瀉、眼睛毒性、高磷酸血症"], ["注意事項", "", "care"]]}, {"n": "賀疾妥", "e": "Pertuzumab (Perjeta)", "r": "靜脈注射", "c": "inj", "f": [["適用癌別", "HER2(+++)乳癌"], ["可能副作用", "腹瀉、皮疹等"], ["注意事項", "", "care"]]}, {"n": "賀雙妥", "e": "Pertuzumab+Trastuzumab (Phesgo)", "r": "皮下注射", "c": "inj", "f": [["適用癌別", "HER2(+++)乳癌"], ["可能副作用", "噁心、掉髮、腹瀉、過敏、影響心臟功能"], ["注意事項", "", "care"]]}, {"n": "杰百康", "e": "Pirtobrutinib (Jaypirca)", "r": "口服", "c": "oral", "f": [["適用癌別", "被套細胞淋巴癌"], ["可能副作用", "頭痛、疲勞、血球低下、感染、出血、噁心、腹瀉、皮疹、關節痛"], ["注意事項", "", "care"]]}, {"n": "保癌寧", "e": "Polatuzumab (Polivy)", "r": "靜脈注射", "c": "inj", "f": [["適用癌別", "瀰漫性大B細胞淋巴癌"], ["可能副作用", "血球減少、感染、周邊神經病變"], ["注意事項", "", "care"]]}, {"n": "鉑美特", "e": "Pomalidomide (Pomalyst)", "r": "口服", "c": "oral", "f": [["適用癌別", "多發性骨髓瘤"], ["可能副作用", "腹瀉、便秘、噁心、骨髓抑制、呼吸道感染、疲倦、發燒"], ["注意事項", "", "care"]]}, {"n": "英可欣", "e": "Ponatinib (Iclusig)", "r": "口服", "c": "oral", "f": [["適用癌別", "急性淋巴性白血病、慢性骨髓性白血病"], ["可能副作用", "頭痛、腹痛、胰臟炎、肝功能異常"], ["注意事項", "", "care"]]}, {"n": "普吉華", "e": "Pralsetinib (Gavreto)", "r": "口服", "c": "oral", "f": [["適用癌別", "RET(+)肺癌、甲狀腺癌"], ["可能副作用", "高血壓、虛弱、貧血、白血球減少、便秘"], ["注意事項", "", "care"]]}, {"n": "欣銳擇", "e": "Ramucirumab (Cyramza)", "r": "靜脈注射", "c": "inj", "f": [["適用癌別", "胃癌；肝癌；肺癌；大腸直腸癌"], ["可能副作用", "高血壓"], ["注意事項", "", "care"]]}, {"n": "癌瑞格", "e": "Regorafenib (Stivarga)", "r": "口服", "c": "oral", "f": [["適用癌別", "大腸直腸癌；腸胃道基質瘤；肝癌"], ["可能副作用", "手足皮膚反應(手腳紅腫、刺痛等)、腹瀉、疲倦、高血壓"], ["注意事項", "搭配「低脂早餐」服藥", "care"]]}, {"n": "擊癌利", "e": "Ribociclib (Kisqali)", "r": "口服", "c": "oral", "f": [["適用癌別", "ER/PR(+)、HER2(-)乳癌"], ["可能副作用", "白血球減少、噁心嘔吐、腹瀉、脫髮"], ["注意事項", "", "care"]]}, {"n": "期樂", "e": "Ripretinib (Qinlock)", "r": "口服", "c": "oral", "f": [["適用癌別", "胃腸道基質瘤"], ["可能副作用", "嘔吐、掉髮、便秘、肌肉疼痛、腹瀉、手足皮膚紅腫、高血壓"], ["注意事項", "", "care"]]}, {"n": "莫須瘤；洛希隆；妥利希瑪", "e": "Rituximab (Mabthera; Rixathon; Truxima)", "r": "皮下注射；靜脈注射", "c": "inj", "f": [["適用癌別", "CD20(+)非何杰金氏淋巴癌；慢性淋巴性白血病"], ["可能副作用", "輸注相關反應，如疲倦、發冷、發熱、搔癢等"], ["注意事項", "", "care"]]}, {"n": "捷可衛", "e": "Ruxolitinib (Jakavi)", "r": "口服", "c": "oral", "f": [["適用癌別", "骨髓纖維化；移植物抗宿主疾病(GVHD)"], ["可能副作用", "白血球減少、貧血、血小板減少、頭暈、頭痛"], ["注意事項", "", "care"]]}, {"n": "拓達維", "e": "Sacituzumab Govitecan (Trodelvy)", "r": "靜脈注射", "c": "inj", "f": [["適用癌別", "三陰性乳癌"], ["可能副作用", "血球低下、噁心、掉髮、腹瀉、便秘、皮膚疹"], ["注意事項", "", "care"]]}, {"n": "保必歐", "e": "Selinexor (Xpovio)", "r": "口服", "c": "oral", "f": [["適用癌別", "多發性骨髓瘤；瀰漫性大B細胞淋巴癌"], ["可能副作用", "嘔吐、體重減輕、血球低下、腹瀉、低血鈉、感染、眩暈、意識障礙、精神狀態改變、白內障、胎兒缺陷"], ["注意事項", "", "care"]]}, {"n": "銳癌寧", "e": "Selpercatinib (Retsevmo)", "r": "口服", "c": "oral", "f": [["適用癌別", "RET(+)肺癌、甲狀腺癌"], ["可能副作用", "高血壓、肝毒性、心臟反應、出血"], ["注意事項", "", "care"]]}, {"n": "蕾莎瓦", "e": "Sorafenib (Nexavar)", "r": "口服", "c": "oral", "f": [["適用癌別", "肝癌；腎細胞癌；甲狀腺癌"], ["可能副作用", "手足症候群、掉髮、噁心、腹瀉"], ["注意事項", "", "care"]]}, {"n": "洛滿舒", "e": "Sotorasib (Lumakras)", "r": "口服", "c": "oral", "f": [["適用癌別", "KRAS G12C突變之肺癌、大腸直腸癌"], ["可能副作用", "噁心、疲倦、腹瀉、肝毒性、肌肉疼痛"], ["注意事項", "", "care"]]}, {"n": "紓癌特", "e": "Sunitinib (Sutent)", "r": "口服", "c": "oral", "f": [["適用癌別", "腸胃道基質瘤；腎細胞癌；胰臟神經內分泌腫瘤"], ["可能副作用", "腹瀉、皮膚脫色、噁心、味覺障礙、口腔炎、嘔吐、血球降低"], ["注意事項", "", "care"]]}, {"n": "達勝癌", "e": "Talazoparib (Talzenna)", "r": "口服", "c": "oral", "f": [["適用癌別", "BRCA(+)、HER2(-)乳癌"], ["可能副作用", "噁心感、疲倦、嘔吐、貧血、類感冒症狀"], ["注意事項", "", "care"]]}, {"n": "特癌適", "e": "Temsirolimus (Torisel)", "r": "靜脈注射", "c": "inj", "f": [["適用癌別", "腎細胞癌；被套細胞淋巴癌"], ["可能副作用", "高血脂、腹瀉、皮膚疹、黏膜發炎、高血糖、口腔炎、水腫"], ["注意事項", "", "care"]]}, {"n": "德邁特", "e": "Tepotinib (Tepmetko)", "r": "口服", "c": "oral", "f": [["適用癌別", "MET Exon 14(+)肺癌"], ["可能副作用", "周邊水腫、噁心、腹瀉、肌肉或關節疼痛"], ["注意事項", "", "care"]]}, {"n": "衛禄", "e": "Tirabrutinib (Velexbru)", "r": "口服", "c": "oral", "f": [["適用癌別", "中樞神經系統B細胞"], ["可能副作用", "血球低下、感染、噁心嘔吐、皮膚疹、肝毒性"], ["注意事項", "", "care"]]}, {"n": "麥欣霓", "e": "Trametinib (Mekinist)", "r": "口服", "c": "oral", "f": [["適用癌別", "除大腸直腸癌以外的BRAF(+)實體癌"], ["可能副作用", "皮膚疹、腹瀉、水腫、眼睛症狀、關節痛"], ["注意事項", "", "care"]]}, {"n": "益康平；賀癌平；康癌停；癌吉清；赫珠瑪；曲斯若", "e": "Trastuzumab (Eirgasun; Herceptin; Kanjinti; Ogivri; Herzuma; Trazimera)", "r": "皮下注射；靜脈注射", "c": "inj", "f": [["適用癌別", "HER2(+++)乳癌；胃癌"], ["可能副作用", "少部分有心臟功能下降情形"], ["注意事項", "", "care"]]}, {"n": "優赫得", "e": "Trastuzumab Deruxtecan (Enhertu)", "r": "靜脈注射", "c": "inj", "f": [["適用癌別", "HER2(+++)、弱陽性乳癌"], ["可能副作用", "噁心、嘔吐、疲勞、血球低下、腹瀉、間質性肺炎"], ["注意事項", "", "care"]]}, {"n": "賀癌寧", "e": "Trastuzumab Emtansine (Kadcyla) (T-DM1)", "r": "靜脈注射", "c": "inj", "f": [["適用癌別", "HER2(+++)乳癌"], ["可能副作用", "疲勞、肝指數上升、血小板減少等"], ["注意事項", "", "care"]]}, {"n": "佳瑞莎", "e": "Vandetanib (Caprelsa)", "r": "口服", "c": "oral", "f": [["適用癌別", "甲狀腺髓質癌"], ["可能副作用", "腹瀉、皮膚疹、噁心、高血壓、頭痛、疲倦"], ["注意事項", "", "care"]]}, {"n": "日沛樂", "e": "Vemurafenib (Zelboraf)", "r": "口服", "c": "oral", "f": [["適用癌別", "BRAF(+)黑色素瘤"], ["可能副作用", "皮膚紅疹、關節酸痛、皮膚鱗狀上皮細胞癌化、皮膚光敏感性高"], ["注意事項", "", "care"]]}, {"n": "唯可來", "e": "Venetoclax (Venclexta)", "r": "口服", "c": "oral", "f": [["適用癌別", "急性骨髓性白血病、慢性淋巴性白血病"], ["可能副作用", "血球低下、腹瀉、噁心、上呼吸道感染"], ["注意事項", "", "care"]]}, {"n": "愛維德", "e": "Vismodegib (Erivedge)", "r": "口服", "c": "oral", "f": [["適用癌別", "基底細胞癌"], ["可能副作用", "疲勞、嘔吐、掉髮、體重減輕、腹瀉、食慾降低、便秘、關節痛、消化不良"], ["注意事項", "", "care"]]}, {"n": "威絡益", "e": "Zolbetuximab (Vyloy)", "r": "靜脈注射", "c": "inj", "f": [["適用癌別", "Claudin (CLDN) 18.2陽性、HER2陰性胃癌或胃食道接合處腺癌"], ["可能副作用", "噁心、嘔吐、食慾下降、過敏反應、發燒"], ["注意事項", "", "care"]]}, {"n": "百悅澤", "e": "Zanubrutinib (Brukinsa)", "r": "口服", "c": "oral", "f": [["適用癌別", "淋巴癌、慢性淋巴性白血病"], ["可能副作用", "血球低下、感染、肝毒性、腹瀉、皮膚疹、疲勞"], ["注意事項", "", "care"]]}];</script>
+<script src="../assets/hope.js"></script>
+</body>
+</html>
